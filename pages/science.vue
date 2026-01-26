@@ -902,7 +902,7 @@ useHead({
             </div>
               <!-- DIGITAL LEARNING SECTION -->
               <div id="digital" class="relative group">
-                <!-- Branch Connector Line -->
+                <!-- Section Divider -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-blue-400 to-transparent rounded-full opacity-60"></div>
                 
                 <div class="pl-8 space-y-6">
@@ -920,147 +920,230 @@ useHead({
                     </div>
                   </div>
                 
-                <div class="grid gap-6">
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-blue-500/5"></div>
-                    </div>
+                <!-- GitHub-style Branch Network for Digital Learning -->
+                <div class="relative min-h-[600px] bg-space-900/30 rounded-xl p-8 overflow-hidden">
+                  <!-- Animated Background Grid -->
+                  <div class="absolute inset-0 opacity-5">
+                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
+                  </div>
+                  
+                  <!-- SVG for Clean Branch Lines with Curved Connections -->
+                  <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
+                    <!-- Main vertical branch line for YouTube Channels (continuous) -->
+                    <line x1="120" y1="60" x2="120" y2="200" stroke="#ef4444" stroke-width="3"/>
                     
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-blue-300 transition-colors">
-                          <div class="flex items-center gap-2 text-blue-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-blue-500/20 rounded border border-blue-500/30">├</span>
-                          </div>
-                          YouTube Physics Channels
-                        </h4>
-                        <div class="px-2 py-1 bg-red-500/20 rounded-full border border-red-500/30">
-                          <span class="text-xs text-red-300 font-medium">Popular</span>
-                        </div>
+                    <!-- YouTube resource branches with curved junctions -->
+                    <path d="M 120 107 Q 155 107 170 107 L 250 107" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 137 Q 155 137 170 137 L 250 137" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                    <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                    
+                    <!-- Main vertical branch line for Mobile Apps (continuous) -->
+                    <line x1="120" y1="250" x2="120" y2="370" stroke="#10b981" stroke-width="3"/>
+                    
+                    <!-- Mobile Apps resource branches with curved junctions -->
+                    <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 307 Q 155 307 170 307 L 250 307" stroke="#3b82f6" stroke-width="3" fill="none"/>
+                    <path d="M 120 337 Q 155 337 170 337 L 250 337" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                    <path d="M 120 367 Q 155 367 170 367 L 250 367" stroke="#ef4444" stroke-width="3" fill="none"/>
+                    
+                    <!-- Main vertical branch line for AI-Powered Education (continuous) -->
+                    <line x1="120" y1="420" x2="120" y2="540" stroke="#8b5cf6" stroke-width="3"/>
+                    
+                    <!-- AI Education resource branches with curved junctions -->
+                    <path d="M 120 447 Q 155 447 170 447 L 250 447" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 477 Q 155 477 170 477 L 250 477" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 507 Q 155 507 170 507 L 250 507" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                    <path d="M 120 537 Q 155 537 170 537 L 250 537" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                  </svg>
+                  
+                  <!-- Main Branch Headers -->
+                  <!-- YouTube Channels Header -->
+                  <div class="absolute top-[45px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-red-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/>
+                          <path d="m10 15 5-3-5-3z"/>
+                        </svg>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Top-rated physics education channels with millions of subscribers.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://www.youtube.com/c/3blue1brown" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">3Blue1Brown (5.7M subscribers) - Mathematical Physics</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.youtube.com/c/veritasium" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Veritasium (14.8M subscribers) - Physics Phenomena</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.youtube.com/c/minutephysics" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">MinutePhysics (5.3M subscribers) - Quick Physics</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.youtube.com/c/SciShow" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">SciShow (7.4M subscribers) - Science Explained</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-red-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-red-500/30">YouTube Channels</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Mobile Apps Header -->
+                  <div class="absolute top-[235px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <rect width="14" height="20" x="5" y="2" rx="2" ry="2"/>
+                          <path d="M12 18h.01"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-emerald-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-emerald-500/30">Mobile Apps & Games</div>
+                    </div>
+                  </div>
+                  
+                  <!-- AI-Powered Education Header -->
+                  <div class="absolute top-[405px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-purple-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-purple-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M12 2a2 2 0 0 1 1.02.24l7 4a2 2 0 0 1 0 3.52l-7 4a2 2 0 0 1-2.04 0l-7-4a2 2 0 0 1 0-3.52l7-4A2 2 0 0 1 12 2Z"/>
+                          <path d="m8 12 4 4 4-4"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-purple-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-purple-500/30">AI-Powered Education</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Individual Resource Nodes -->
+                  <!-- YouTube Resources -->
+                  <div class="absolute top-[95px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.youtube.com/c/3blue1brown" target="_blank" class="hover:text-white">3Blue1Brown</a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-blue-500/5"></div>
-                    </div>
-                    
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-blue-300 transition-colors">
-                          <div class="flex items-center gap-2 text-blue-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-blue-500/20 rounded border border-blue-500/30">├</span>
-                          </div>
-                          Physics Mobile Apps & Games
-                        </h4>
-                        <div class="px-2 py-1 bg-green-500/20 rounded-full border border-green-500/30">
-                          <span class="text-xs text-green-300 font-medium">Interactive</span>
-                        </div>
+                  
+                  <div class="absolute top-[125px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Interactive physics learning through mobile applications and educational games.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://technicalustad.com/best-physics-apps/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">11 Best Physics Apps 2025</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.educationalappstore.com/app/category/physics-apps" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Best Physics Apps for Students</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://play.google.com/store/apps/details?id=com.physic.physicsapp" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Physics Experiment Lab School (Android)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.commonsense.org/education/lists/great-games-for-physics" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Great Games for Physics (Common Sense Education)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.youtube.com/c/veritasium" target="_blank" class="hover:text-white">Veritasium</a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-blue-500/5 via-transparent to-blue-500/5"></div>
-                    </div>
-                    
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-blue-300 transition-colors">
-                          <div class="flex items-center gap-2 text-blue-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-blue-500/20 rounded border border-blue-500/30">└</span>
-                          </div>
-                          AI-Powered Physics Education
-                        </h4>
-                        <div class="px-2 py-1 bg-purple-500/20 rounded-full border border-purple-500/30">
-                          <span class="text-xs text-purple-300 font-medium">AI</span>
-                        </div>
+                  
+                  <div class="absolute top-[155px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Artificial intelligence and machine learning transforming physics learning.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://scale.stanford.edu/ai/repository/beyond-answers-large-language-model-powered-tutoring-system-physics-education-deep" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Physics-STAR: LLM-Powered Tutoring System (Stanford)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://utm.io/uiuow" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Harvard Study: AI Outperforms Active Learning</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://astra-ai.co/subjects/physics" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">Astra AI Physics Tutor (Most Accurate AI)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://slejournal.springeropen.com/articles/10.1186/s40561-023-00273-7" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-blue-500/30">
-                          <div class="w-2 h-2 bg-blue-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-blue-400 hover:text-white transition-colors text-sm flex-1">ChatGPT in Physics Education Research</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-blue-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.youtube.com/c/minutephysics" target="_blank" class="hover:text-white">MinutePhysics</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[185px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-cyan-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.youtube.com/c/SciShow" target="_blank" class="hover:text-white">SciShow</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Mobile Apps Resources -->
+                  <div class="absolute top-[265px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://technicalustad.com/best-physics-apps/" target="_blank" class="hover:text-white">Best Physics Apps 2025</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[295px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-blue-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.educationalappstore.com/app/category/physics-apps" target="_blank" class="hover:text-white">Educational App Store</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[325px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://play.google.com/store/apps/details?id=com.physic.physicsapp" target="_blank" class="hover:text-white">Physics Lab School</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[355px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-red-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.commonsense.org/education/lists/great-games-for-physics" target="_blank" class="hover:text-white">Physics Games</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- AI Education Resources -->
+                  <div class="absolute top-[435px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://scale.stanford.edu/ai/repository/beyond-answers-large-language-model-powered-tutoring-system-physics-education-deep" target="_blank" class="hover:text-white">Physics-STAR (Stanford)</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[465px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://utm.io/uiuow" target="_blank" class="hover:text-white">Harvard AI Study</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[495px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-cyan-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://astra-ai.co/subjects/physics" target="_blank" class="hover:text-white">Astra AI Physics Tutor</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[525px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://slejournal.springeropen.com/articles/10.1186/s40561-023-00273-7" target="_blank" class="hover:text-white">ChatGPT in Physics Education</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Network Statistics -->
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <div class="flex items-center justify-between text-sm text-gray-400">
+                      <span class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                        GitHub-style Branch Network
+                      </span>
+                      <div class="flex items-center gap-4">
+                        <span>3 Main Branches</span>
+                        <span>•</span>
+                        <span>12 Resources</span>
                       </div>
                     </div>
                   </div>
