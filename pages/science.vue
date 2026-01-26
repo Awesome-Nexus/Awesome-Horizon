@@ -653,7 +653,7 @@ useHead({
             </div>
               <!-- INSTITUTIONS SECTION -->
               <div id="institutions" class="relative group">
-                <!-- Branch Connector Line -->
+                <!-- Section Divider -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-emerald-500 via-emerald-400 to-transparent rounded-full opacity-60"></div>
                 
                 <div class="pl-8 space-y-6">
@@ -671,147 +671,229 @@ useHead({
                     </div>
                   </div>
                 
-                <div class="grid gap-6">
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-emerald-500/5"></div>
-                    </div>
+                <!-- GitHub-style Branch Network for Institutions -->
+                <div class="relative min-h-[600px] bg-space-900/30 rounded-xl p-8 overflow-hidden">
+                  <!-- Animated Background Grid -->
+                  <div class="absolute inset-0 opacity-5">
+                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
+                  </div>
+                  
+                  <!-- SVG for Clean Branch Lines with Curved Connections -->
+                  <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
+                    <!-- Main vertical branch line for MIT OpenCourseWare (continuous) -->
+                    <line x1="120" y1="60" x2="120" y2="200" stroke="#10b981" stroke-width="3"/>
                     
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-emerald-300 transition-colors">
-                          <div class="flex items-center gap-2 text-emerald-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-emerald-500/20 rounded border border-emerald-500/30">├</span>
-                          </div>
-                          MIT OpenCourseWare Physics
-                        </h4>
-                        <div class="px-2 py-1 bg-emerald-500/20 rounded-full border border-emerald-500/30">
-                          <span class="text-xs text-emerald-300 font-medium">MIT</span>
-                        </div>
+                    <!-- MIT resource branches with curved junctions -->
+                    <path d="M 120 107 Q 155 107 170 107 L 250 107" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 137 Q 155 137 170 137 L 250 137" stroke="#3b82f6" stroke-width="3" fill="none"/>
+                    <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                    <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                    
+                    <!-- Main vertical branch line for Top Universities (continuous) -->
+                    <line x1="120" y1="250" x2="120" y2="370" stroke="#3b82f6" stroke-width="3"/>
+                    
+                    <!-- University resource branches with curved junctions -->
+                    <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 307 Q 155 307 170 307 L 250 307" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 337 Q 155 337 170 337 L 250 337" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                    <path d="M 120 367 Q 155 367 170 367 L 250 367" stroke="#ef4444" stroke-width="3" fill="none"/>
+                    
+                    <!-- Main vertical branch line for European Programs (continuous) -->
+                    <line x1="120" y1="420" x2="120" y2="540" stroke="#ec4899" stroke-width="3"/>
+                    
+                    <!-- European resource branches with curved junctions -->
+                    <path d="M 120 447 Q 155 447 170 447 L 250 447" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 477 Q 155 477 170 477 L 250 477" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 507 Q 155 507 170 507 L 250 507" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                    <path d="M 120 537 Q 155 537 170 537 L 250 537" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                  </svg>
+                  
+                  <!-- Main Branch Headers -->
+                  <!-- MIT OpenCourseWare Header -->
+                  <div class="absolute top-[45px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-emerald-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                        </svg>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Complete MIT physics courses with lectures, assignments, and exams from world-renowned faculty.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">MIT Classical Mechanics (8.01SC)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">MIT Electricity and Magnetism (8.02)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-spring-2008/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">MIT Thermodynamics and Kinetics</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://blossoms.mit.edu/resources/physics_resources" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">MIT BLOSSOMS Physics Resources</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-emerald-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-emerald-500/30">MIT OpenCourseWare</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Top Universities Header -->
+                  <div class="absolute top-[235px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M12 2l3.09 6.26L22 9l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.87 2 9l6.91-1.74L12 2z"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-blue-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-blue-500/30">Top Universities</div>
+                    </div>
+                  </div>
+                  
+                  <!-- European Programs Header -->
+                  <div class="absolute top-[405px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-pink-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-pink-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <circle cx="12" cy="12" r="10"/>
+                          <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/>
+                          <path d="M2 12h20"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-pink-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-pink-500/30">European Programs</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Individual Resource Nodes -->
+                  <!-- MIT Resources -->
+                  <div class="absolute top-[95px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/" target="_blank" class="hover:text-white">Classical Mechanics</a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-emerald-500/5"></div>
-                    </div>
-                    
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-emerald-300 transition-colors">
-                          <div class="flex items-center gap-2 text-emerald-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-emerald-500/20 rounded border border-emerald-500/30">├</span>
-                          </div>
-                          Top Physics Universities & Programs
-                        </h4>
-                        <div class="px-2 py-1 bg-yellow-500/20 rounded-full border border-yellow-500/30">
-                          <span class="text-xs text-yellow-300 font-medium">Global</span>
-                        </div>
+                  
+                  <div class="absolute top-[125px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Learn from the world's leading physics institutions and top-ranked programs.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://physics.stanford.edu/academics/graduate-students/graduate-resources/physics-education-resources" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">Stanford Physics Education Resources</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="http://web.mit.edu/physics/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">MIT Physics Department (130+ Faculty)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://helpacads.com/worlds-tops-physics-universities/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">World's Top Physics Universities 2024</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://stilt.com/schools/best-physics-schools/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">Best Physics Schools 2024 Rankings</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-blue-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2007/" target="_blank" class="hover:text-white">Electricity & Magnetism</a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-emerald-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-emerald-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-emerald-500/5 via-transparent to-emerald-500/5"></div>
-                    </div>
-                    
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-emerald-300 transition-colors">
-                          <div class="flex items-center gap-2 text-emerald-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-emerald-500/20 rounded border border-emerald-500/30">└</span>
-                          </div>
-                          European Physics Education (CERN & Universities)
-                        </h4>
-                        <div class="px-2 py-1 bg-blue-500/20 rounded-full border border-blue-500/30">
-                          <span class="text-xs text-blue-300 font-medium">CERN</span>
-                        </div>
+                  
+                  <div class="absolute top-[155px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">World-class physics education from European institutions and CERN research programs.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://home.web.cern.ch/summer-student-programme" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">CERN Summer Student Programme</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://cms.cern/interact-with-cms/cms-physics-masterclass" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">CMS Physics Masterclass (High School Students)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://cas.web.cern.ch/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">CERN Accelerator School</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://eps.site-ym.com/page/edu_resources_eu" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-emerald-500/30">
-                          <div class="w-2 h-2 bg-emerald-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-emerald-400 hover:text-white transition-colors text-sm flex-1">European Physical Society Education Resources</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-emerald-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-cyan-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://ocw.mit.edu/courses/5-60-thermodynamics-kinetics-spring-2008/" target="_blank" class="hover:text-white">Thermodynamics</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[185px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://blossoms.mit.edu/resources/physics_resources" target="_blank" class="hover:text-white">BLOSSOMS Resources</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- University Resources -->
+                  <div class="absolute top-[265px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://physics.stanford.edu/academics/graduate-students/graduate-resources/physics-education-resources" target="_blank" class="hover:text-white">Stanford Physics</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[295px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="http://web.mit.edu/physics/" target="_blank" class="hover:text-white">MIT Physics Dept</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[325px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://helpacads.com/worlds-tops-physics-universities/" target="_blank" class="hover:text-white">Top Universities 2024</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[355px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-red-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://stilt.com/schools/best-physics-schools/" target="_blank" class="hover:text-white">Best Physics Schools</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- European Resources -->
+                  <div class="absolute top-[435px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://home.web.cern.ch/summer-student-programme" target="_blank" class="hover:text-white">CERN Summer Program</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[465px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://cms.cern/interact-with-cms/cms-physics-masterclass" target="_blank" class="hover:text-white">CMS Masterclass</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[495px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-cyan-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://cas.web.cern.ch/" target="_blank" class="hover:text-white">CERN Accelerator School</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[525px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://eps.site-ym.com/page/edu_resources_eu" target="_blank" class="hover:text-white">European Physics Society</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Network Statistics -->
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <div class="flex items-center justify-between text-sm text-gray-400">
+                      <span class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-emerald-500 rounded-full"></div>
+                        GitHub-style Branch Network
+                      </span>
+                      <div class="flex items-center gap-4">
+                        <span>3 Main Branches</span>
+                        <span>•</span>
+                        <span>12 Resources</span>
                       </div>
                     </div>
                   </div>
