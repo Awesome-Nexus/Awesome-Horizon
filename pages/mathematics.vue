@@ -31,6 +31,208 @@ useHead({
         <h1 class="text-4xl font-bold text-white mb-8">Mathematics Resources</h1>
         
         <div class="grid gap-6">
+          <!-- Mathematics Statistics Banner -->
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="group p-6 bg-gradient-to-br from-sky-500/20 to-sky-600/20 rounded-2xl border border-sky-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="p-2 bg-sky-500/30 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-300"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-white">320+</div>
+                  <div class="text-xs text-sky-200">Total Resources</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group p-6 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="p-2 bg-purple-500/30 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-300"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-white">40+</div>
+                  <div class="text-xs text-purple-200">Universities</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group p-6 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl border border-green-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="p-2 bg-green-500/30 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-300"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 9h6v6H9z"/><path d="m9 1 3 3 3-3"/></svg>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-white">6</div>
+                  <div class="text-xs text-green-200">Math Areas</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="group p-6 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 rounded-2xl border border-yellow-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
+              <div class="flex items-center gap-3 mb-2">
+                <div class="p-2 bg-yellow-500/30 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-300"><polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26"/></svg>
+                </div>
+                <div>
+                  <div class="text-2xl font-bold text-white">2025</div>
+                  <div class="text-xs text-yellow-200">Latest Content</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mathematics Section -->
+          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
+              <div class="w-8 h-8 bg-sky-500/20 rounded-lg flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg>
+              </div>
+              Mathematics
+            </h2>
+            
+            <!-- Mathematics Categories Overview -->
+            <div class="mb-8 relative">
+              <!-- Animated Background -->
+              <div class="absolute inset-0 bg-gradient-to-r from-sky-500/10 via-purple-500/10 to-green-500/10 rounded-2xl blur-xl"></div>
+              
+              <div class="relative p-8 bg-space-800/40 backdrop-blur-sm rounded-2xl border border-space-700/50 shadow-2xl overflow-hidden">
+                <div class="flex items-center justify-between mb-8">
+                  <h3 class="text-2xl font-bold text-white flex items-center gap-3">
+                    <div class="p-3 bg-gradient-to-br from-sky-500 to-purple-500 rounded-xl">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg>
+                    </div>
+                    Mathematics Learning Journey
+                  </h3>
+                  <div class="flex items-center gap-2 text-sm text-gray-400">
+                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                    320+ Resources
+                  </div>
+                </div>
+                
+                <!-- GitHub-style Branch Network -->
+                <div class="relative min-h-[500px] bg-space-900/30 rounded-xl p-8 overflow-hidden">
+                  <!-- Animated Background Grid -->
+                  <div class="absolute inset-0 opacity-5">
+                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
+                  </div>
+                  
+                  <!-- SVG for Clean Branch Lines -->
+                  <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
+                    <defs>
+                      <filter id="glow-mathematics">
+                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+                        <feMerge> 
+                          <feMergeNode in="coloredBlur"/>
+                          <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                      </filter>
+                    </defs>
+                    
+                    <!-- Main horizontal branch line -->
+                    <line x1="70" y1="235" x2="750" y2="235" stroke="#0ea5e9" stroke-width="3" opacity="0.6" filter="url(#glow-mathematics)"/>
+                    
+                    <!-- Vertical branch lines -->
+                    <line x1="170" y1="235" x2="170" y2="150" stroke="#0ea5e9" stroke-width="2" opacity="0.5"/>
+                    <line x1="270" y1="235" x2="270" y2="320" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
+                    <line x1="370" y1="235" x2="370" y2="150" stroke="#10b981" stroke-width="2" opacity="0.5"/>
+                    <line x1="470" y1="235" x2="470" y2="320" stroke="#eab308" stroke-width="2" opacity="0.5"/>
+                    <line x1="570" y1="235" x2="570" y2="150" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
+                    <line x1="670" y1="235" x2="670" y2="320" stroke="#f97316" stroke-width="2" opacity="0.5"/>
+                  </svg>
+                  
+                  <!-- Main Branch Nodes (Horizontal Flow) -->
+                  <!-- Start -->
+                  <div class="absolute top-[235px] left-[70px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-gray-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <circle cx="12" cy="12" r="10"/>
+                          <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-gray-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Start</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Calculus -->
+                  <div class="absolute top-[235px] left-[170px] z-10">
+                    <div class="group cursor-pointer" onclick="document.getElementById('calculus').scrollIntoView({behavior: 'smooth'})">
+                      <div class="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-sky-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-sky-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Calculus</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Linear Algebra -->
+                  <div class="absolute top-[235px] left-[270px] z-10">
+                    <div class="group cursor-pointer" onclick="document.getElementById('linear-algebra').scrollIntoView({behavior: 'smooth'})">
+                      <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-purple-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <rect width="18" height="18" x="3" y="3" rx="2"/>
+                          <path d="M9 9h6v6H9z"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Linear Algebra</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Statistics -->
+                  <div class="absolute top-[235px] left-[370px] z-10">
+                    <div class="group cursor-pointer" onclick="document.getElementById('statistics').scrollIntoView({behavior: 'smooth'})">
+                      <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-green-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M3 3v18h18"/>
+                          <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-green-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Statistics</div>
+                    </div>
+                  </div>
+                  
+                  <!-- High School -->
+                  <div class="absolute top-[235px] left-[470px] z-10">
+                    <div class="group cursor-pointer" onclick="document.getElementById('high-school').scrollIntoView({behavior: 'smooth'})">
+                      <div class="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-yellow-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-yellow-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">High School</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Tools -->
+                  <div class="absolute top-[235px] left-[570px] z-10">
+                    <div class="group cursor-pointer" onclick="document.getElementById('tools').scrollIntoView({behavior: 'smooth'})">
+                      <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <rect width="16" height="20" x="4" y="2" rx="2" ry="2"/>
+                          <path d="M9 22v-4h6v4"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Tools</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Advanced -->
+                  <div class="absolute top-[235px] left-[670px] z-10">
+                    <div class="group cursor-pointer" onclick="document.getElementById('advanced').scrollIntoView({behavior: 'smooth'})">
+                      <div class="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-orange-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-orange-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Advanced</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Calculus Section -->
           <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
