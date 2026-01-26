@@ -1152,7 +1152,7 @@ useHead({
             </div>
               <!-- INTERACTIVE SECTION -->
               <div id="interactive" class="relative group">
-                <!-- Branch Connector Line -->
+                <!-- Section Divider -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-purple-400 to-transparent rounded-full opacity-60"></div>
                 
                 <div class="pl-8 space-y-6">
@@ -1170,147 +1170,230 @@ useHead({
                     </div>
                   </div>
                 
-                <div class="grid gap-6">
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-purple-500/5"></div>
-                    </div>
+                <!-- GitHub-style Branch Network for Interactive -->
+                <div class="relative min-h-[600px] bg-space-900/30 rounded-xl p-8 overflow-hidden">
+                  <!-- Animated Background Grid -->
+                  <div class="absolute inset-0 opacity-5">
+                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
+                  </div>
+                  
+                  <!-- SVG for Clean Branch Lines with Curved Connections -->
+                  <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
+                    <!-- Main vertical branch line for Simulations & Virtual Labs (continuous) -->
+                    <line x1="120" y1="60" x2="120" y2="200" stroke="#3b82f6" stroke-width="3"/>
                     
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-purple-300 transition-colors">
-                          <div class="flex items-center gap-2 text-purple-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-purple-500/20 rounded border border-purple-500/30">├</span>
-                          </div>
-                          Physics Simulations & Virtual Labs
-                        </h4>
-                        <div class="px-2 py-1 bg-blue-500/20 rounded-full border border-blue-500/30">
-                          <span class="text-xs text-blue-300 font-medium">Virtual</span>
-                        </div>
+                    <!-- Simulations resource branches with curved junctions -->
+                    <path d="M 120 107 Q 155 107 170 107 L 250 107" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 137 Q 155 137 170 137 L 250 137" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                    <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#ef4444" stroke-width="3" fill="none"/>
+                    
+                    <!-- Main vertical branch line for VR/AR/XR Learning (continuous) -->
+                    <line x1="120" y1="250" x2="120" y2="370" stroke="#06b6d4" stroke-width="3"/>
+                    
+                    <!-- VR/AR/XR resource branches with curved junctions -->
+                    <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 307 Q 155 307 170 307 L 250 307" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 337 Q 155 337 170 337 L 250 337" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                    <path d="M 120 367 Q 155 367 170 367 L 250 367" stroke="#ef4444" stroke-width="3" fill="none"/>
+                    
+                    <!-- Main vertical branch line for DIY Physics & Maker Education (continuous) -->
+                    <line x1="120" y1="420" x2="120" y2="540" stroke="#f97316" stroke-width="3"/>
+                    
+                    <!-- DIY Maker resource branches with curved junctions -->
+                    <path d="M 120 447 Q 155 447 170 447 L 250 447" stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                    <path d="M 120 477 Q 155 477 170 477 L 250 477" stroke="#10b981" stroke-width="3" fill="none"/>
+                    <path d="M 120 507 Q 155 507 170 507 L 250 507" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                    <path d="M 120 537 Q 155 537 170 537 L 250 537" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                  </svg>
+                  
+                  <!-- Main Branch Headers -->
+                  <!-- Simulations & Virtual Labs Header -->
+                  <div class="absolute top-[45px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-blue-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <rect width="18" height="18" x="3" y="3" rx="2"/>
+                          <path d="M9 9h6v6H9z"/>
+                          <path d="m9 1 3 3 3-3"/>
+                        </svg>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Interactive physics simulations for hands-on learning and experimentation.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://phet.colorado.edu/en/simulations/filter?subjects=physics&type=html,prototype" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">PhET Physics Simulations (University of Colorado)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://ophysics.com/index.html" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">oPhysics Interactive Simulations</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.thephysicsaviary.com" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">The Physics Aviary</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://sites.google.com/view/afreeparticle/interactives?authuser=0" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">A Free Particle (Newtonian Mechanics)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-blue-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-blue-500/30">Simulations & Virtual Labs</div>
+                    </div>
+                  </div>
+                  
+                  <!-- VR/AR/XR Learning Header -->
+                  <div class="absolute top-[235px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-cyan-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-cyan-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                          <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-cyan-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-cyan-500/30">VR/AR/XR Learning</div>
+                    </div>
+                  </div>
+                  
+                  <!-- DIY Physics & Maker Education Header -->
+                  <div class="absolute top-[405px] left-[50px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-orange-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
+                          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                      </div>
+                      <div class="absolute -right-2 top-1/2 transform -translate-y-1/2 translate-x-full text-sm text-orange-300 font-bold whitespace-nowrap bg-space-800/90 px-3 py-1 rounded-lg border border-orange-500/30">DIY Physics & Maker</div>
+                    </div>
+                  </div>
+                  
+                  <!-- Individual Resource Nodes -->
+                  <!-- Simulations Resources -->
+                  <div class="absolute top-[95px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://phet.colorado.edu/en/simulations/filter?subjects=physics&type=html,prototype" target="_blank" class="hover:text-white">PhET Physics Simulations</a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-purple-500/5"></div>
-                    </div>
-                    
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-purple-300 transition-colors">
-                          <div class="flex items-center gap-2 text-purple-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-purple-500/20 rounded border border-purple-500/30">├</span>
-                          </div>
-                          VR/AR/XR Physics Learning
-                        </h4>
-                        <div class="px-2 py-1 bg-cyan-500/20 rounded-full border border-cyan-500/30">
-                          <span class="text-xs text-cyan-300 font-medium">XR</span>
-                        </div>
+                  
+                  <div class="absolute top-[125px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Next-generation physics education using virtual, augmented, and extended reality.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1410163/full" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">Integrating Immersive Technologies with STEM Education</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://entechonline.com/ar-vr-xr-and-mixed-reality-the-future-of-learning-science/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">AR, VR, XR: The Future of Learning Science</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.un-pub.eu/ojs/index.php/cerj/article/view/9629" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">Augmented Reality in Physics Education Research</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://ui.adsabs.harvard.edu/abs/arXiv:2311.18392" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">AR Technology in Teaching Physics (Systematic Review)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://ophysics.com/index.html" target="_blank" class="hover:text-white">oPhysics Interactive</a>
                       </div>
                     </div>
                   </div>
-
-                  <div class="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-space-800/60 to-space-900/60 backdrop-blur-sm border border-space-700/50 hover:border-purple-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-purple-500/10">
-                    <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-                      <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 via-transparent to-purple-500/5"></div>
-                    </div>
-                    
-                    <div class="relative p-6">
-                      <div class="flex items-start justify-between mb-4">
-                        <h4 class="font-bold text-white text-lg flex items-center gap-3 group-hover:text-purple-300 transition-colors">
-                          <div class="flex items-center gap-2 text-purple-400 font-mono text-sm">
-                            <span class="w-6 h-6 flex items-center justify-center bg-purple-500/20 rounded border border-purple-500/30">└</span>
-                          </div>
-                          DIY Physics & Maker Education
-                        </h4>
-                        <div class="px-2 py-1 bg-orange-500/20 rounded-full border border-orange-500/30">
-                          <span class="text-xs text-orange-300 font-medium">DIY</span>
-                        </div>
+                  
+                  <div class="absolute top-[155px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
                       </div>
-                      
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Build your own physics experiments with Arduino, Raspberry Pi, and maker tools.</p>
-                      
-                      <div class="space-y-3">
-                        <a href="https://www.arduino.cc/education/science-kit/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">Arduino Science Kit (Google Partnership)</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://pubs.aip.org/aapt/pte/article/59/2/134/775917/Implementing-Raspberry-Pi-3-and-Python-in-the" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">Raspberry Pi 3 in Physics Laboratory</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://www.physicsforums.com/threads/physics-experiments-with-arduino-and-raspberry-pi.1078835/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">Physics Experiments with Arduino & Raspberry Pi</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
-                        
-                        <a href="https://studiousguy.com/physics-project-ideas/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-purple-500/30">
-                          <div class="w-2 h-2 bg-purple-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-purple-400 hover:text-white transition-colors text-sm flex-1">50+ DIY Physics Project Ideas</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-purple-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                        </a>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.thephysicsaviary.com" target="_blank" class="hover:text-white">The Physics Aviary</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[185px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-red-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://sites.google.com/view/afreeparticle/interactives?authuser=0" target="_blank" class="hover:text-white">A Free Particle</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- VR/AR/XR Resources -->
+                  <div class="absolute top-[265px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2024.1410163/full" target="_blank" class="hover:text-white">Immersive STEM Education</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[295px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://entechonline.com/ar-vr-xr-and-mixed-reality-the-future-of-learning-science/" target="_blank" class="hover:text-white">Future of Learning Science</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[325px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.un-pub.eu/ojs/index.php/cerj/article/view/9629" target="_blank" class="hover:text-white">AR in Physics Education</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[355px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-red-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-red-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://ui.adsabs.harvard.edu/abs/arXiv:2311.18392" target="_blank" class="hover:text-white">AR Technology Review</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- DIY Maker Resources -->
+                  <div class="absolute top-[435px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.arduino.cc/education/science-kit/" target="_blank" class="hover:text-white">Arduino Science Kit</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[465px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-emerald-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-emerald-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://pubs.aip.org/aapt/pte/article/59/2/134/775917/Implementing-Raspberry-Pi-3-and-Python-in-the" target="_blank" class="hover:text-white">Raspberry Pi in Physics Lab</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[495px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-cyan-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://www.physicsforums.com/threads/physics-experiments-with-arduino-and-raspberry-pi.1078835/" target="_blank" class="hover:text-white">Physics Experiments Forum</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="absolute top-[525px] left-[190px] z-10">
+                    <div class="group cursor-pointer">
+                      <div class="w-6 h-6 bg-amber-500 rounded-full flex items-center justify-center shadow-md hover:scale-125 transition-all duration-300">
+                        <div class="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
+                      <div class="absolute left-8 top-1/2 transform -translate-y-1/2 text-xs text-amber-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">
+                        <a href="https://studiousguy.com/physics-project-ideas/" target="_blank" class="hover:text-white">50+ DIY Physics Projects</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <!-- Network Statistics -->
+                  <div class="absolute bottom-4 left-4 right-4">
+                    <div class="flex items-center justify-between text-sm text-gray-400">
+                      <span class="flex items-center gap-2">
+                        <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                        GitHub-style Branch Network
+                      </span>
+                      <div class="flex items-center gap-4">
+                        <span>3 Main Branches</span>
+                        <span>•</span>
+                        <span>12 Resources</span>
                       </div>
                     </div>
                   </div>
