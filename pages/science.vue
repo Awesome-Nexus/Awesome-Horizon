@@ -64,7 +64,7 @@ useHead({
                 </div>
                 <div>
                   <div class="text-2xl font-bold text-white">10</div>
-                  <div class="text-xs text-blue-200">Learning Branches</div>
+                  <div class="text-xs text-blue-200">Learning Categories</div>
                 </div>
               </div>
             </div>
@@ -91,7 +91,7 @@ useHead({
               Physics
             </h2>
             
-            <!-- Physics Branch Structure -->
+            <!-- Physics Categories Overview -->
             <div class="mb-8 relative">
               <!-- Animated Background -->
               <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-blue-500/10 to-emerald-500/10 rounded-2xl blur-xl"></div>
@@ -102,7 +102,7 @@ useHead({
                     <div class="p-2 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg">
                       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
                     </div>
-                    Physics Knowledge Tree
+                    Physics Categories Overview
                   </h3>
                   <div class="flex items-center gap-2 text-xs text-gray-400">
                     <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
@@ -250,7 +250,7 @@ useHead({
                 <!-- Progress Indicator -->
                 <div class="mt-6 pt-4 border-t border-space-700/50">
                   <div class="flex items-center justify-between text-xs text-gray-400">
-                    <span>Explore branches below ↓</span>
+                    <span>Explore categories below ↓</span>
                     <div class="flex items-center gap-2">
                       <div class="w-1 h-1 bg-primary-400 rounded-full animate-bounce"></div>
                       <div class="w-1 h-1 bg-primary-400 rounded-full animate-bounce" style="animation-delay: 0.1s"></div>
@@ -261,7 +261,7 @@ useHead({
               </div>
             </div>
             
-            <!-- Floating Branch Navigation -->
+            <!-- Floating Category Navigation -->
             <div class="fixed right-6 top-1/2 transform -translate-y-1/2 z-50 hidden xl:block">
               <div class="bg-space-900/80 backdrop-blur-md rounded-2xl border border-space-700/50 p-4 shadow-2xl">
                 <div class="space-y-3">
@@ -321,9 +321,9 @@ useHead({
             </div>
             
             <div class="space-y-8">
-              <!-- FOUNDATIONS BRANCH -->
+              <!-- FOUNDATIONS SECTION -->
               <div id="foundations" class="relative group">
-                <!-- Branch Connector Line -->
+                <!-- Section Divider -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-primary-500 via-primary-400 to-transparent rounded-full opacity-60"></div>
                 
                 <div class="pl-8 space-y-6">
@@ -331,7 +331,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-primary-500/20 to-primary-600/20 rounded-2xl border border-primary-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-primary-400"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Foundations Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Foundations</h3>
                         <p class="text-primary-200 text-sm">Building blocks of physics knowledge</p>
                       </div>
                     </div>
@@ -405,11 +405,11 @@ useHead({
                           World-Class Physics Textbooks
                         </h4>
                         <div class="px-2 py-1 bg-emerald-500/20 rounded-full border border-emerald-500/30">
-                          <span class="text-xs text-emerald-300 font-medium">Free</span>
+                          <span class="text-xs text-emerald-300 font-medium">Textbooks</span>
                         </div>
                       </div>
                       
-                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Access legendary physics textbooks and courses from top institutions, completely free.</p>
+                      <p class="text-gray-400 text-sm mb-4 leading-relaxed">Access legendary physics textbooks and courses from top institutions.</p>
                       
                       <div class="space-y-3">
                         <a href="https://www.feynmanlectures.caltech.edu/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-primary-500/30">
@@ -420,7 +420,7 @@ useHead({
                         
                         <a href="https://openstax.org/details/books/college-physics-2e" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-primary-500/30">
                           <div class="w-2 h-2 bg-primary-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-primary-400 hover:text-white transition-colors text-sm flex-1">OpenStax College Physics (Free Textbook)</span>
+                          <span class="text-primary-400 hover:text-white transition-colors text-sm flex-1">OpenStax College Physics (Open Textbook)</span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-primary-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                         </a>
                         
@@ -489,7 +489,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- INSTITUTIONS BRANCH -->
+              <!-- INSTITUTIONS SECTION -->
               <div id="institutions" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-emerald-500 via-emerald-400 to-transparent rounded-full opacity-60"></div>
@@ -499,7 +499,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-emerald-500/20 to-emerald-600/20 rounded-2xl border border-emerald-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-emerald-400"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Institutions Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Institutions</h3>
                         <p class="text-emerald-200 text-sm">World-class physics education</p>
                       </div>
                     </div>
@@ -656,7 +656,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- DIGITAL LEARNING BRANCH -->
+              <!-- DIGITAL LEARNING SECTION -->
               <div id="digital" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-blue-500 via-blue-400 to-transparent rounded-full opacity-60"></div>
@@ -666,7 +666,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-2xl border border-blue-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Digital Learning Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Digital Learning</h3>
                         <p class="text-blue-200 text-sm">Modern digital physics education</p>
                       </div>
                     </div>
@@ -823,7 +823,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- INTERACTIVE BRANCH -->
+              <!-- INTERACTIVE SECTION -->
               <div id="interactive" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-500 via-purple-400 to-transparent rounded-full opacity-60"></div>
@@ -833,7 +833,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-purple-500/20 to-purple-600/20 rounded-2xl border border-purple-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-400"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 9h6v6H9z"/><path d="m9 1 3 3 3-3"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Interactive Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Interactive</h3>
                         <p class="text-purple-200 text-sm">Hands-on physics experiences</p>
                       </div>
                     </div>
@@ -990,7 +990,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- ADVANCED BRANCH -->
+              <!-- ADVANCED SECTION -->
               <div id="advanced" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-red-500 via-red-400 to-transparent rounded-full opacity-60"></div>
@@ -1000,7 +1000,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-2xl border border-red-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Advanced Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Advanced</h3>
                         <p class="text-red-200 text-sm">Cutting-edge physics research</p>
                       </div>
                     </div>
@@ -1157,7 +1157,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- COMPETITIONS BRANCH -->
+              <!-- COMPETITIONS SECTION -->
               <div id="competitions" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-yellow-500 via-yellow-400 to-transparent rounded-full opacity-60"></div>
@@ -1167,7 +1167,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-yellow-500/20 to-yellow-600/20 rounded-2xl border border-yellow-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-400"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Competitions Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Competitions</h3>
                         <p class="text-yellow-200 text-sm">Physics contests & olympiads</p>
                       </div>
                     </div>
@@ -1276,7 +1276,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- REGIONAL EXCELLENCE BRANCH -->
+              <!-- REGIONAL EXCELLENCE SECTION -->
               <div id="regional" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-cyan-500 via-cyan-400 to-transparent rounded-full opacity-60"></div>
@@ -1286,7 +1286,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-cyan-500/20 to-cyan-600/20 rounded-2xl border border-cyan-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-cyan-400"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Regional Excellence Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Regional Excellence</h3>
                         <p class="text-cyan-200 text-sm">Global physics education leaders</p>
                       </div>
                     </div>
@@ -1491,7 +1491,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- SPECIALIZED BRANCH -->
+              <!-- SPECIALIZED SECTION -->
               <div id="specialized" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-pink-500 via-pink-400 to-transparent rounded-full opacity-60"></div>
@@ -1501,7 +1501,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-pink-500/20 to-pink-600/20 rounded-2xl border border-pink-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-pink-400"><polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Specialized Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Specialized</h3>
                         <p class="text-pink-200 text-sm">Inclusive & diverse physics</p>
                       </div>
                     </div>
@@ -1658,7 +1658,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- APPLIED BRANCH -->
+              <!-- APPLIED SECTION -->
               <div id="applied" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-500 via-orange-400 to-transparent rounded-full opacity-60"></div>
@@ -1668,7 +1668,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-orange-500/20 to-orange-600/20 rounded-2xl border border-orange-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-orange-400"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Applied Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Applied</h3>
                         <p class="text-orange-200 text-sm">Real-world physics applications</p>
                       </div>
                     </div>
@@ -1816,7 +1816,7 @@ useHead({
                         
                         <a href="https://www.guru99.com/online-physics-course.html/" target="_blank" class="group/link flex items-center gap-3 p-3 rounded-lg bg-space-900/40 hover:bg-space-800/60 transition-all duration-300 border border-transparent hover:border-orange-500/30">
                           <div class="w-2 h-2 bg-orange-400 rounded-full group-hover/link:scale-125 transition-transform"></div>
-                          <span class="text-orange-400 hover:text-white transition-colors text-sm flex-1">40 Best FREE Physics Courses with Certificates</span>
+                          <span class="text-orange-400 hover:text-white transition-colors text-sm flex-1">40 Best Physics Courses with Certificates</span>
                           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-500 group-hover/link:text-orange-400 transition-colors"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                         </a>
                       </div>
@@ -1825,7 +1825,7 @@ useHead({
                 </div>
               </div>
             </div>
-              <!-- COMMUNITY BRANCH -->
+              <!-- COMMUNITY SECTION -->
               <div id="community" class="relative group">
                 <!-- Branch Connector Line -->
                 <div class="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-green-500 via-green-400 to-transparent rounded-full opacity-60"></div>
@@ -1835,7 +1835,7 @@ useHead({
                     <div class="flex items-center gap-3 p-4 bg-gradient-to-r from-green-500/20 to-green-600/20 rounded-2xl border border-green-500/30 backdrop-blur-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="m22 21-3-3m0 0a5.5 5.5 0 1 1-7.78-7.78 5.5 5.5 0 0 1 7.78 7.78Z"/></svg>
                       <div>
-                        <h3 class="text-2xl font-bold text-white">Community Branch</h3>
+                        <h3 class="text-2xl font-bold text-white">Community</h3>
                         <p class="text-green-200 text-sm">Physics communities & forums</p>
                       </div>
                     </div>
