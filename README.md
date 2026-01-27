@@ -192,36 +192,45 @@ Production optimizations include:
 <table>
 <tr>
 <td align="center" width="120">
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00DC82" stroke-width="1.5">
-  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-  <path d="M2 17l10 5 10-5"/>
-  <path d="M2 12l10 5 10-5"/>
+<a href="https://nuxt.com/" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 400 400">
+  <g fill="#00DC82">
+    <path d="M227.92 236.84l-52.67-91.2a6.9 6.9 0 0 0-11.94 0l-52.67 91.2a6.9 6.9 0 0 0 5.97 10.35h105.34a6.9 6.9 0 0 0 5.97-10.35z"/>
+    <path d="M345.34 279.2L271.81 147.78a13.8 13.8 0 0 0-23.89 0l-27.55 47.69 38.16 66.09 54.38 94.2h68.95a13.8 13.8 0 0 0 11.95-20.7z"/>
+  </g>
 </svg>
+</a>
 <br /><strong>Nuxt 3</strong>
 <br /><sub>Framework</sub>
 </td>
 <td align="center" width="120">
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
-  <path d="M12 2L3 21h18L12 2z" fill="#42b883"/>
-  <path d="M12 2L7 12l5 9 5-9-5-10z" fill="#35495e"/>
+<a href="https://vuejs.org/" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 221">
+  <path d="M204.8 0H256L128 220.8 0 0h97.92L128 51.2 157.44 0h47.36z" fill="#41B883"/>
+  <path d="M0 0l128 220.8L256 0h-51.2L128 132.48 50.56 0H0z" fill="#41B883"/>
+  <path d="M50.56 0L128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56z" fill="#35495E"/>
 </svg>
+</a>
 <br /><strong>Vue 3</strong>
 <br /><sub>UI Library</sub>
 </td>
 <td align="center" width="120">
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
-  <path d="M12 6.036L7.5 21h2.4l1.3-3.6h4.6l1.3 3.6h2.4L14.5 6.036h-2.5zm-1.4 8.4l1.4-3.9 1.4 3.9h-2.8z" fill="#06B6D4"/>
-  <path d="M5 3L3 7l2 4h2l2-4-2-4H5zm14 0l2 4-2 4h-2l-2-4 2-4h2z" fill="#38BDF8"/>
+<a href="https://tailwindcss.com/" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 153.6">
+  <path d="M128 0C93.867 0 72.533 17.067 64 51.2 76.8 34.133 91.733 27.733 108.8 32c9.737 2.434 16.697 9.499 24.401 17.318C145.751 62.057 160.275 76.8 192 76.8c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C174.249 14.743 159.725 0 128 0zM64 76.8C29.867 76.8 8.533 93.867 0 128c12.8-17.067 27.733-23.467 44.8-19.2 9.737 2.434 16.697 9.499 24.401 17.318C81.751 138.857 96.275 153.6 128 153.6c34.133 0 55.467-17.067 64-51.2-12.8 17.067-27.733 23.467-44.8 19.2-9.737-2.434-16.697-9.499-24.401-17.318C110.249 91.543 95.725 76.8 64 76.8z" fill="#06B6D4"/>
 </svg>
+</a>
 <br /><strong>Tailwind CSS</strong>
 <br /><sub>Styling</sub>
 </td>
 <td align="center" width="120">
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
-  <rect x="3" y="3" width="18" height="18" rx="2" fill="#3178C6"/>
-  <path d="M12 8v8M8 12h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-  <text x="12" y="16" text-anchor="middle" fill="white" font-size="10" font-family="Arial, sans-serif" font-weight="bold">TS</text>
+<a href="https://www.typescriptlang.org/" target="_blank">
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 256 256">
+  <rect width="256" height="256" rx="28" fill="#3178C6"/>
+  <path d="M146.658 223.436c4.68 2.772 10.284 4.68 16.824 4.68 28.08 0 50.4-13.716 50.4-43.524 0-24.192-15.912-32.076-42.048-37.908l-7.956-1.908c-13.068-3.024-18.252-5.796-18.252-12.096 0-5.4 3.672-9.576 12.096-9.576 7.956 0 12.096 2.772 16.824 9.576l18.144-11.16c-6.048-10.608-15.912-15.12-34.992-15.12-22.68 0-37.224 12.096-37.224 31.104 0 21.528 15.912 29.412 39.132 34.452l7.956 1.908c14.04 3.132 19.224 6.696 19.224 13.5 0 6.048-5.508 10.62-15.912 10.62-11.16 0-17.208-4.68-23.364-12.096l-18.252 10.728z" fill="#FFF"/>
+  <path d="M79.004 223.436h23.364V117.936h-23.364v105.5zm23.364-123.876H79.004V76.176h23.364v23.364z" fill="#FFF"/>
 </svg>
+</a>
 <br /><strong>TypeScript</strong>
 <br /><sub>Language</sub>
 </td>
@@ -231,7 +240,7 @@ Production optimizations include:
 ### Additional Tools
 
 - **Content Management**: [Nuxt Content](https://content.nuxt.com/) - File-based CMS with Markdown support
-- **Icons**: [Lucide Icons](https://lucide.dev/) - Beautiful, consistent icon library
+- **Icons**: [Lucide Icons](https://lucide.dev/) - Beautiful, consistent icon library  
 - **Utilities**: [VueUse](https://vueuse.org/) - Collection of essential Vue composition utilities
 - **Build Tool**: [Vite](https://vitejs.dev/) - Next generation frontend tooling
 
@@ -456,43 +465,7 @@ npm run preview
 
 ---
 
-## 🛠️ Tech Stack
-
-<div align="center">
-
-<table>
-<tr>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="48" height="48" alt="Nuxt" />
-<br>Nuxt 3
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48" height="48" alt="Vue" />
-<br>Vue 3
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="48" height="48" alt="Tailwind" />
-<br>Tailwind CSS
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
-<br>TypeScript
-</td>
-<td align="center" width="96">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="48" height="48" alt="SQLite" />
-<br>SQLite
-</td>
-</tr>
-</table>
-
-**Framework:** [Nuxt 3](https://nuxt.com/) • **UI:** [Vue 3](https://vuejs.org/) • **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
-**Content:** [Nuxt Content](https://content.nuxt.com/) • **Icons:** [Lucide](https://lucide.dev/) • **Utilities:** [VueUse](https://vueuse.org/)
-
-</div>
-
----
-
-## 📁 Project Structure
+## Project Structure
 
 ```
 📦 Awesome-Horizon/
