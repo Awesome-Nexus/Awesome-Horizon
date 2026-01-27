@@ -1,7 +1,41 @@
 {
   "name": "Awesome-Horizon",
+  "version": "1.0.0",
+  "description": "A curated educational resource platform providing high-quality learning materials across STEAM disciplines - Science, Technology, Engineering, Arts, and Mathematics",
+  "author": "Awesome Horizon Contributors",
+  "license": "MIT",
+  "keywords": [
+    "education",
+    "learning-resources",
+    "educational-platform",
+    "steam",
+    "curated-list",
+    "awesome-list",
+    "science",
+    "technology",
+    "engineering",
+    "arts",
+    "mathematics",
+    "nuxt",
+    "nuxt3",
+    "vue",
+    "vue3",
+    "tailwindcss",
+    "typescript",
+    "nuxt-content",
+    "open-education",
+    "free-education"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/Awesome-Horizon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/Awesome-Horizon/issues"
+  },
+  "homepage": "https://github.com/yourusername/Awesome-Horizon#readme",
   "type": "module",
-  "private": true,
+  "private": false,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev --port 3310",
