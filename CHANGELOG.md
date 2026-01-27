@@ -1,115 +1,126 @@
-# 📜 Changelog
+# Changelog
 
-<div align="center">
+All notable changes to **Awesome Horizon** will be documented in this file.
 
-**All notable changes to Awesome Horizon will be documented in this file.**
-
-[![Keep a Changelog](https://img.shields.io/badge/Keep%20a%20Changelog-1.0.0-informational)](https://keepachangelog.com/en/1.0.0/)
-[![Semantic Versioning](https://img.shields.io/badge/Semantic%20Versioning-2.0.0-success)](https://semver.org/spec/v2.0.0.html)
-
-</div>
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
 
 ## [Unreleased]
 
-### ✨ Added
-- 🚀 Initial project setup with Nuxt 3
-- 💚 Vue 3 integration with Composition API
-- 🎨 Tailwind CSS styling system
-- 📝 Nuxt Content module for content management
-- 🔧 VueUse utilities integration
-- 🎯 Lucide Vue Next icons library
-- 💾 Better SQLite3 database support
-- 📘 TypeScript configuration
-- 🌐 Custom development server on port 3310
-- 📚 Five core STEAM categories (Science, Technology, Engineering, Arts, Mathematics)
-- 🎭 Beautiful, responsive UI components
-- 📱 Mobile-first responsive design
-- ⚡ Performance optimizations
+### Added
+- Initial project setup with Nuxt 3 framework
+- Vue 3 integration with Composition API
+- Tailwind CSS styling system
+- Nuxt Content module for content management
+- VueUse utilities collection
+- Lucide Icons library integration
+- Better SQLite3 database support
+- TypeScript configuration and strict mode
+- Custom development server on port 3310
+- Five core STEAM categories (Science, Technology, Engineering, Arts, Mathematics)
+- Responsive UI components with mobile-first design
+- Performance optimizations including code splitting
+- SEO meta tags and structured data
+- Accessibility features (ARIA labels, keyboard navigation)
 
-### 🔄 Changed
+### Changed
 - N/A
 
-### ⚠️ Deprecated
+### Deprecated
 - N/A
 
-### 🗑️ Removed
+### Removed
 - N/A
 
-### 🐛 Fixed
+### Fixed
 - N/A
 
-### 🔒 Security
+### Security
 - N/A
 
 ---
 
 ## [1.0.0] - 2026-01-27
 
-### ✨ Added
-- 🎉 **Initial public release**
-- 📦 Core project structure
-- 🎨 Premium UI/UX design
-- 📚 Educational resource curation system
-- 🌟 Five main category pages
-- ℹ️ Comprehensive about page
-- 📄 Open source documentation (LICENSE, CODE_OF_CONDUCT, CONTRIBUTING)
-- 🚀 Production-ready build system
+### Added
+- **Initial Public Release**
+- Core project structure and architecture
+- Premium UI/UX design system
+- Educational resource curation framework
+- Five main category pages with content
+- Comprehensive about page
+- Open source documentation (LICENSE, CODE_OF_CONDUCT, CONTRIBUTING)
+- Production-ready build configuration
+- CI/CD pipeline setup
+- Documentation site with examples
 
 ---
 
-## 📝 How to Update This Changelog
+## Changelog Guidelines
 
-### Types of Changes
+### Version Format
 
-| Emoji | Type | Description |
-|-------|------|-------------|
-| ✨ | **Added** | New features |
-| 🔄 | **Changed** | Changes in existing functionality |
-| ⚠️ | **Deprecated** | Soon-to-be removed features |
-| 🗑️ | **Removed** | Now removed features |
-| 🐛 | **Fixed** | Bug fixes |
-| 🔒 | **Security** | Vulnerability patches |
+This project uses [Semantic Versioning](https://semver.org/):
 
-### Guidelines
+- **MAJOR** version for incompatible API changes
+- **MINOR** version for backwards-compatible functionality additions
+- **PATCH** version for backwards-compatible bug fixes
 
-1. ✅ Add new entries under the `[Unreleased]` section
-2. ✅ When releasing a new version:
-   - Change `[Unreleased]` to the new version number with date
-   - Create a new `[Unreleased]` section at the top
-3. ✅ Use present tense ("Add feature" not "Added feature")
-4. ✅ Link to relevant issues or PRs when applicable
-5. ✅ Group similar changes together
-6. ✅ Keep entries concise but descriptive
-7. ✅ Use emojis to make entries more scannable
+### Change Categories
 
-### Example Entry Format
+| Category | Usage |
+|:---------|:------|
+| **Added** | New features and capabilities |
+| **Changed** | Changes to existing functionality |
+| **Deprecated** | Features that will be removed in future versions |
+| **Removed** | Features that have been removed |
+| **Fixed** | Bug fixes and corrections |
+| **Security** | Security vulnerability patches |
+
+### Best Practices
+
+1. **Chronological Order**: Most recent changes appear first
+2. **Present Tense**: Use present tense verbs (e.g., "Add" not "Added")
+3. **Issue References**: Link to relevant GitHub issues or pull requests
+4. **User Impact**: Focus on user-facing changes, not internal refactors
+5. **Semantic Grouping**: Group related changes together
+6. **Clear Descriptions**: Be concise but informative
+
+### Example Entry
 
 ```markdown
-## [1.1.0] - 2026-02-15
+## [1.2.0] - 2026-03-15
 
-### ✨ Added
-- 🎯 User authentication system with JWT (#123)
-- 🌙 Dark mode toggle for better accessibility (#124)
-- 📊 Analytics dashboard for learning progress (#125)
+### Added
+- User authentication system with JWT tokens (#123)
+- Dark mode toggle with system preference detection (#124)
+- Analytics dashboard for learning progress tracking (#125)
+- Export functionality for bookmarked resources (#126)
 
-### 🐛 Fixed
-- 🔧 Navigation menu responsive issue on mobile devices (#126)
-- 📝 Form validation bug on contact page (#127)
-- 🎨 CSS styling conflicts in category cards (#128)
+### Changed
+- Improved search algorithm for better relevance (#127)
+- Updated category navigation for easier browsing (#128)
+- Redesigned mobile navigation menu (#129)
 
-### 🔄 Changed
-- ⚡ Improved page load performance by 40% (#129)
-- 🎨 Updated color scheme for better contrast (#130)
+### Fixed
+- Navigation menu not closing on mobile devices (#130)
+- Form validation errors on contact page (#131)
+- Image loading issues on slow connections (#132)
+- TypeScript type errors in component props (#133)
+
+### Security
+- Updated dependencies to patch security vulnerabilities (#134)
+- Implemented rate limiting on API endpoints (#135)
 ```
 
 ---
 
 <div align="center">
 
-**[⬆ back to top](#-changelog)**
-
-*For more information about keeping a changelog, visit [keepachangelog.com](https://keepachangelog.com/)*
+[View Full Changelog](https://github.com/Awesome-Nexus/Awesome-Horizon/blob/main/CHANGELOG.md) •
+[Report Issues](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) •
+[Request Features](https://github.com/Awesome-Nexus/Awesome-Horizon/issues/new?labels=enhancement)
 
 </div>

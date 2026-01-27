@@ -1,52 +1,100 @@
 <div align="center">
 
-![Awesome Horizon Banner](https://via.placeholder.com/1200x300/6366f1/ffffff?text=Awesome+Horizon)
+<img src="https://raw.githubusercontent.com/Awesome-Nexus/Awesome-Horizon/main/.github/assets/banner.svg" alt="Awesome Horizon" width="100%" />
 
-# 🌟 Awesome Horizon
+<h1>Awesome Horizon</h1>
 
-### *Unlock Your Learning Potential*
+<p align="center">
+  <strong>A Premium Curated Educational Resource Platform</strong>
+</p>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.x-00DC82?logo=nuxt.js)](https://nuxt.com/)
-[![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D?logo=vue.js)](https://vuejs.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Stars](https://img.shields.io/github/stars/Awesome-Nexus/Awesome-Horizon?style=social)](https://github.com/Awesome-Nexus/Awesome-Horizon)
+<p align="center">
+  Delivering the finest learning materials across Science, Technology, Engineering, Arts, and Mathematics (STEAM)
+</p>
 
-**A premium curated educational resource platform** delivering the finest learning materials across **Science, Technology, Engineering, Arts, and Mathematics (STEAM)**. Experience education reimagined with a stunning modern interface.
+<p align="center">
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square" alt="License: MIT" />
+  </a>
+  <a href="https://nuxt.com/">
+    <img src="https://img.shields.io/badge/Nuxt-3.x-00DC82?style=flat-square&logo=nuxt.js&logoColor=white" alt="Nuxt 3" />
+  </a>
+  <a href="https://vuejs.org/">
+    <img src="https://img.shields.io/badge/Vue-3.x-4FC08D?style=flat-square&logo=vue.js&logoColor=white" alt="Vue 3" />
+  </a>
+  <a href="https://tailwindcss.com/">
+    <img src="https://img.shields.io/badge/Tailwind-3.x-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+  </a>
+  <a href="https://www.typescriptlang.org/">
+    <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  </a>
+</p>
 
-[🚀 Live Demo](https://awesome-horizon.vercel.app) · [📖 Documentation](https://github.com/Awesome-Nexus/Awesome-Horizon/wiki) · [🐛 Report Bug](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) · [✨ Request Feature](https://github.com/Awesome-Nexus/Awesome-Horizon/issues)
+<p align="center">
+  <a href="https://github.com/Awesome-Nexus/Awesome-Horizon/stargazers">
+    <img src="https://img.shields.io/github/stars/Awesome-Nexus/Awesome-Horizon?style=social" alt="GitHub stars" />
+  </a>
+  <a href="https://github.com/Awesome-Nexus/Awesome-Horizon/network/members">
+    <img src="https://img.shields.io/github/forks/Awesome-Nexus/Awesome-Horizon?style=social" alt="GitHub forks" />
+  </a>
+  <a href="https://github.com/Awesome-Nexus/Awesome-Horizon/watchers">
+    <img src="https://img.shields.io/github/watchers/Awesome-Nexus/Awesome-Horizon?style=social" alt="GitHub watchers" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#project-structure">Project Structure</a> •
+  <a href="#contributing">Contributing</a> •
+  <a href="#license">License</a>
+</p>
 
 </div>
 
 ---
 
-## ✨ Features
+## Overview
+
+Awesome Horizon is an open-source educational platform that aggregates and curates high-quality learning resources across all major STEAM disciplines. Built with modern web technologies, it provides an exceptional user experience while making education accessible to everyone, everywhere.
+
+### Key Highlights
+
+- **Curated Excellence**: Every resource is hand-selected and vetted by educators and industry professionals
+- **Comprehensive Coverage**: Five major categories covering the entire STEAM spectrum
+- **Modern Architecture**: Built with Nuxt 3, Vue 3, and Tailwind CSS for optimal performance
+- **Fully Open Source**: MIT licensed - free to use, modify, and distribute
+- **Community Driven**: Contributions welcome from educators and learners worldwide
+
+---
+
+## Features
 
 <table>
 <tr>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🎯 **Premium Curation**
-Hand-picked educational materials vetted by educators and industry professionals. Only the highest quality resources make the cut.
+#### Premium Curation
+Hand-picked educational materials vetted by educators and industry professionals. Every resource undergoes rigorous quality assessment to ensure learning excellence.
 
-### 🚀 **Blazing Fast**
-Built with Nuxt 3 for optimal performance. Lightning-fast page loads and seamless navigation.
+#### Modern Architecture
+Built with cutting-edge technologies including Nuxt 3, Vue 3, and Tailwind CSS. Optimized for performance with server-side rendering and static site generation.
 
-### 📱 **Responsive Design**
-Pixel-perfect experience across all devices - desktop, tablet, and mobile.
+#### Responsive Design
+Seamless experience across all devices and screen sizes. Mobile-first approach ensures accessibility on smartphones, tablets, and desktops.
 
 </td>
-<td width="50%">
+<td width="50%" valign="top">
 
-### 🎨 **Beautiful UI/UX**
-Stunning, intuitive interface designed with Vue 3 and Tailwind CSS. Learning has never looked this good.
+#### Intuitive Interface
+Clean, beautiful design that prioritizes usability and accessibility. Navigation is intuitive, making it easy to discover and explore resources.
 
-### 🔬 **5 Core Categories**
-Science • Technology • Engineering • Arts • Mathematics
+#### Five Core Categories
+Comprehensive coverage across Science, Technology, Engineering, Arts, and Mathematics - everything a learner needs in one platform.
 
-### 🆓 **100% Free & Open**
-All resources are completely free and open source. Education for everyone.
+#### Open Source
+100% free and open source. Transparent development, community contributions, and no paywalls. Education should be accessible to all.
 
 </td>
 </tr>
@@ -54,40 +102,34 @@ All resources are completely free and open source. Education for everyone.
 
 ---
 
-## 🎓 What's Inside
+## Categories
 
 <div align="center">
 
-| Category | Description | Topics |
-|:--------:|:------------|:-------|
-| 🔬 **Science** | Explore the fundamental laws of nature | Physics • Chemistry • Biology • Psychology • Environmental Science |
-| 💻 **Technology** | Master cutting-edge innovations | Programming • AI • Web Development • Mobile • Cloud Computing |
-| 🔧 **Engineering** | Build the world of tomorrow | Civil • Mechanical • Electrical • Aerospace • Software Engineering |
-| 🎨 **Arts** | Unleash your creativity | Design • Photography • Music • Visual Arts • Art History |
-| 📐 **Mathematics** | The language of the universe | Algebra • Calculus • Statistics • Linear Algebra • Logic |
+| Category | Focus Areas | Resource Types |
+|:---------|:------------|:---------------|
+| **Science** | Physics, Chemistry, Biology, Psychology, Environmental Science | Video Courses, Interactive Labs, Research Papers |
+| **Technology** | Programming, AI/ML, Web Development, Mobile Development, Cloud | Tutorials, Code Examples, Documentation, Tools |
+| **Engineering** | Civil, Mechanical, Electrical, Aerospace, Software | Projects, Simulations, Technical Guides |
+| **Arts** | Design, Photography, Music, Visual Arts, Art History | Galleries, Tutorials, Creative Tools, Inspiration |
+| **Mathematics** | Algebra, Calculus, Statistics, Linear Algebra, Logic | Problem Sets, Interactive Visualizations, Proofs |
 
 </div>
 
 ---
 
-## 🚀 Quick Start
+## Getting Started
 
-<details>
-<summary><b>📋 Prerequisites</b></summary>
+### Prerequisites
 
-<br>
+Before you begin, ensure your development environment meets these requirements:
 
-Ensure you have the following installed:
+- **Node.js**: Version 18.0.0 or higher
+- **Package Manager**: npm, pnpm, yarn, or bun
+- **Git**: For version control
+- **Code Editor**: VS Code recommended with Vue and Tailwind extensions
 
-- **Node.js** `v18.0.0` or higher
-- **Package Manager:** npm, pnpm, yarn, or bun
-
-</details>
-
-<details open>
-<summary><b>⚡ Installation</b></summary>
-
-<br>
+### Installation
 
 ```bash
 # Clone the repository
@@ -96,8 +138,273 @@ git clone https://github.com/Awesome-Nexus/Awesome-Horizon.git
 # Navigate to project directory
 cd Awesome-Horizon
 
-# Install dependencies (choose one)
+# Install dependencies
 npm install
+
+# Or using alternative package managers
+pnpm install  # pnpm
+yarn install  # yarn
+bun install   # bun
+```
+
+### Development
+
+Start the development server with hot module replacement:
+
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:3310`
+
+Features in development mode:
+- Hot module replacement for instant updates
+- Detailed error messages and stack traces
+- Vue DevTools integration
+- Source maps for debugging
+
+### Production Build
+
+Build the application for production deployment:
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+Production optimizations include:
+- Code splitting and lazy loading
+- Asset minification and compression
+- Tree shaking to remove unused code
+- Optimized images and fonts
+
+---
+
+## Tech Stack
+
+<div align="center">
+
+### Core Technologies
+
+<table>
+<tr>
+<td align="center" width="120">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="48" height="48" alt="Nuxt.js" />
+<br /><strong>Nuxt 3</strong>
+<br /><sub>Framework</sub>
+</td>
+<td align="center" width="120">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48" height="48" alt="Vue.js" />
+<br /><strong>Vue 3</strong>
+<br /><sub>UI Library</sub>
+</td>
+<td align="center" width="120">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="48" height="48" alt="Tailwind CSS" />
+<br /><strong>Tailwind CSS</strong>
+<br /><sub>Styling</sub>
+</td>
+<td align="center" width="120">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
+<br /><strong>TypeScript</strong>
+<br /><sub>Language</sub>
+</td>
+<td align="center" width="120">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="48" height="48" alt="SQLite" />
+<br /><strong>SQLite</strong>
+<br /><sub>Database</sub>
+</td>
+</tr>
+</table>
+
+### Additional Tools
+
+- **Content Management**: [Nuxt Content](https://content.nuxt.com/) - File-based CMS with Markdown support
+- **Icons**: [Lucide Icons](https://lucide.dev/) - Beautiful, consistent icon library
+- **Utilities**: [VueUse](https://vueuse.org/) - Collection of essential Vue composition utilities
+- **Build Tool**: [Vite](https://vitejs.dev/) - Next generation frontend tooling
+
+</div>
+
+---
+
+## Project Structure
+
+```
+awesome-horizon/
+│
+├── app/                          # Application configuration
+│   ├── router.options.ts         # Vue Router configuration
+│   └── spa-loading-template.html # SPA loading screen
+│
+├── assets/                       # Static assets
+│   ├── css/
+│   │   └── main.css             # Global styles and Tailwind imports
+│   └── images/                  # Image assets
+│
+├── components/                   # Reusable Vue components
+│   ├── CategoryCard.vue         # Category display card
+│   ├── AppLogo.vue              # Application logo
+│   └── LoadingSpinner.vue       # Loading indicator
+│
+├── content/                      # Markdown content files
+│   ├── science.md               # Science resources
+│   ├── technology.md            # Technology resources
+│   ├── engineering.md           # Engineering resources
+│   ├── arts.md                  # Arts resources
+│   └── mathematics.md           # Mathematics resources
+│
+├── layouts/                      # Layout components
+│   └── default.vue              # Default layout wrapper
+│
+├── pages/                        # Application pages (file-based routing)
+│   ├── index.vue                # Homepage with category overview
+│   ├── about.vue                # About page
+│   ├── science.vue              # Science category page
+│   ├── technology.vue           # Technology category page
+│   ├── engineering.vue          # Engineering category page
+│   ├── arts.vue                 # Arts category page
+│   └── mathematics.vue          # Mathematics category page
+│
+├── public/                       # Static files served at root
+│   ├── favicon.ico              # Favicon
+│   └── robots.txt               # SEO robots file
+│
+├── server/                       # Server-side code
+│   ├── api/                     # API endpoints
+│   └── middleware/              # Server middleware
+│
+├── .github/                      # GitHub configuration
+│   └── workflows/               # CI/CD workflows
+│
+├── app.vue                       # Root application component
+├── error.vue                     # Error page component
+├── nuxt.config.ts               # Nuxt configuration
+├── tailwind.config.ts           # Tailwind CSS configuration
+├── tsconfig.json                # TypeScript configuration
+└── package.json                 # Project dependencies and scripts
+```
+
+---
+
+## Contributing
+
+We welcome contributions from the community! Whether you're fixing bugs, adding new resources, improving documentation, or suggesting features, your help is appreciated.
+
+### Ways to Contribute
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/book.svg" width="48" height="48" alt="Resources" />
+<br /><strong>Add Resources</strong>
+<br />Share quality educational materials
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/bug.svg" width="48" height="48" alt="Bug Reports" />
+<br /><strong>Report Bugs</strong>
+<br />Help us identify and fix issues
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/bulb.svg" width="48" height="48" alt="Features" />
+<br /><strong>Suggest Features</strong>
+<br />Propose new ideas and improvements
+</td>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/file-text.svg" width="48" height="48" alt="Documentation" />
+<br /><strong>Improve Docs</strong>
+<br />Enhance documentation clarity
+</td>
+</tr>
+</table>
+
+### Contribution Process
+
+1. **Fork the Repository**: Create your own copy of the project
+2. **Create a Branch**: `git checkout -b feature/your-feature-name`
+3. **Make Changes**: Implement your improvements
+4. **Test Thoroughly**: Ensure everything works as expected
+5. **Commit Changes**: `git commit -m 'Add: description of changes'`
+6. **Push to Fork**: `git push origin feature/your-feature-name`
+7. **Submit Pull Request**: Open a PR with a clear description
+
+Please read our [Contributing Guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
+
+---
+
+## Documentation
+
+| Document | Description |
+|:---------|:------------|
+| [License](LICENSE) | MIT License - free to use and modify |
+| [Changelog](CHANGELOG.md) | Version history and release notes |
+| [Contributing](CONTRIBUTING.md) | Guidelines for contributing to the project |
+| [Code of Conduct](CODE_OF_CONDUCT.md) | Community standards and expectations |
+
+---
+
+## Community & Support
+
+<div align="center">
+
+### Get Help
+
+<a href="https://github.com/Awesome-Nexus/Awesome-Horizon/issues">
+  <img src="https://img.shields.io/badge/GitHub-Issues-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Issues" />
+</a>
+<a href="https://github.com/Awesome-Nexus/Awesome-Horizon/discussions">
+  <img src="https://img.shields.io/badge/GitHub-Discussions-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Discussions" />
+</a>
+
+### Project Stats
+
+<img src="https://img.shields.io/github/issues/Awesome-Nexus/Awesome-Horizon?style=flat-square" alt="Issues" />
+<img src="https://img.shields.io/github/issues-pr/Awesome-Nexus/Awesome-Horizon?style=flat-square" alt="Pull Requests" />
+<img src="https://img.shields.io/github/contributors/Awesome-Nexus/Awesome-Horizon?style=flat-square" alt="Contributors" />
+<img src="https://img.shields.io/github/last-commit/Awesome-Nexus/Awesome-Horizon?style=flat-square" alt="Last Commit" />
+<img src="https://img.shields.io/github/commit-activity/m/Awesome-Nexus/Awesome-Horizon?style=flat-square" alt="Commit Activity" />
+
+</div>
+
+---
+
+## Acknowledgments
+
+This project stands on the shoulders of giants. We're grateful to:
+
+- **[Nuxt Team](https://nuxt.com/)** - For creating an outstanding Vue framework
+- **[Vue.js Team](https://vuejs.org/)** - For the progressive JavaScript framework
+- **[Tailwind Labs](https://tailwindcss.com/)** - For the utility-first CSS framework
+- **[Vercel](https://vercel.com/)** - For providing hosting and deployment infrastructure
+- **All Contributors** - For dedicating time to improve education accessibility
+
+---
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for complete details.
+
+**TL;DR**: You can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of this software.
+
+---
+
+<div align="center">
+
+### Show Your Support
+
+If this project helps you, please consider giving it a star!
+
+<a href="https://github.com/Awesome-Nexus/Awesome-Horizon/stargazers">
+  <img src="https://img.shields.io/github/stars/Awesome-Nexus/Awesome-Horizon?style=social" alt="GitHub stars" />
+</a>
+
+**Made with dedication by educators, for learners**
+
+*Empowering minds, one resource at a time*
+
+</div>
 # or
 pnpm install
 # or
