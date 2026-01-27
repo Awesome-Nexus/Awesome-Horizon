@@ -4,15 +4,15 @@ import CategoryCard from '~/components/CategoryCard.vue'
 
 // Set page meta
 useHead({
-  title: 'Awesome Horizon - Unlock Your Learning Potential',
+  title: 'Awesome Horizon - Curated Learning Resources for STEAM Education',
   meta: [
-    { name: 'description', content: 'Discover the world\'s finest learning resources across Science, Technology, Engineering, Arts, and Mathematics. Hand-picked by educators, completely free and open source.' },
-    { property: 'og:title', content: 'Awesome Horizon - Unlock Your Learning Potential' },
-    { property: 'og:description', content: 'Curated STEAM learning resources for students, educators, and lifelong learners.' },
+    { name: 'description', content: 'A thoughtfully assembled collection of exceptional learning materials across Science, Technology, Engineering, Arts, and Mathematics. Handpicked by educators and learners.' },
+    { property: 'og:title', content: 'Awesome Horizon - Curated Learning Resources' },
+    { property: 'og:description', content: 'Exceptional STEAM learning materials handpicked by educators. 500+ carefully selected resources, freely accessible.' },
     { property: 'og:type', content: 'website' },
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Awesome Horizon - Unlock Your Learning Potential' },
-    { name: 'twitter:description', content: 'Discover curated learning resources across Science, Technology, Engineering, Arts, and Mathematics.' }
+    { name: 'twitter:title', content: 'Awesome Horizon - Curated Learning Resources' },
+    { name: 'twitter:description', content: 'Exceptional STEAM learning materials handpicked by educators and learners worldwide.' }
   ]
 })
 
@@ -69,38 +69,38 @@ const categories = [
       <div class="absolute top-20 left-1/4 w-72 h-72 bg-primary-500/5 rounded-full blur-[100px] animate-pulse"></div>
       <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px] animate-pulse delay-1000"></div>
       
-      <div class="relative z-10 max-w-5xl mx-auto px-4">
+      <div class="relative z-10 w-full px-8">
         <!-- Main Headline -->
         <div class="space-y-6">
-          <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/10 border border-primary-500/20 rounded-full text-primary-300 text-sm font-medium mb-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/10 border border-primary-500/20 rounded-full text-primary-300 text-sm font-medium mb-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse">
               <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
             </svg>
             Curated by Educators, Built for Learners
           </div>
           
-          <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none">
-            <span class="bg-gradient-to-r from-white via-primary-100 to-emerald-200 bg-clip-text text-transparent animate-fade-in">
-              Unlock Your
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-none text-white w-full text-center">
+            <span class="animate-fade-in">
+              STEAM Horizon Resources
             </span>
             <br>
-            <span class="bg-gradient-to-r from-primary-400 via-emerald-400 to-purple-400 bg-clip-text text-transparent animate-slide-up">
-              Potential
+            <span class="animate-slide-up">
+              for Everyone!
             </span>
           </h1>
           
-          <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-slide-up delay-200">
-            Discover the world's finest learning resources across 
-            <span class="text-primary-400 font-semibold">Science</span>, 
-            <span class="text-emerald-400 font-semibold">Technology</span>, 
-            <span class="text-amber-400 font-semibold">Engineering</span>, 
-            <span class="text-rose-400 font-semibold">Arts</span>, and 
-            <span class="text-sky-400 font-semibold">Mathematics</span>
+          <p class="text-xl md:text-2xl text-gray-300 w-full leading-relaxed animate-slide-up delay-200">
+            A community curated collection of quality 
+            <span class="text-primary-400 font-mono font-medium">Science</span>, 
+            <span class="text-emerald-400 font-mono font-medium">Technology</span>, 
+            <span class="text-amber-400 font-mono font-medium">Engineering</span>, 
+            <span class="text-rose-400 font-mono font-medium">Arts</span>, and 
+            <span class="text-sky-400 font-mono font-medium">Mathematics</span> resources
           </p>
           
-          <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-slide-up delay-300">
-            Hand-picked by educators and industry professionals. From K-12 to advanced research. 
-            <span class="text-white font-medium">Completely free</span> and open source.
+          <p class="text-lg text-gray-400 w-full animate-slide-up delay-300">
+            For students and educators all over the world across all grade levels to enhance their learning. 
+            <span class="text-white font-medium">500+ curated resources</span> — open source and free forever.
           </p>
         </div>
 

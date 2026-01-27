@@ -35,7 +35,8 @@ export default <Config>{
                 }
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Monaco', 'Menlo', 'Ubuntu Mono', 'monospace'],
+                mono: ['Monaco', 'Menlo', 'Ubuntu Mono', 'monospace'],
             },
             animation: {
                 'fade-in': 'fadeIn 0.5s ease-out',
