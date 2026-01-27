@@ -192,22 +192,36 @@ Production optimizations include:
 <table>
 <tr>
 <td align="center" width="120">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="48" height="48" alt="Nuxt.js" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#00DC82" stroke-width="1.5">
+  <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+  <path d="M2 17l10 5 10-5"/>
+  <path d="M2 12l10 5 10-5"/>
+</svg>
 <br /><strong>Nuxt 3</strong>
 <br /><sub>Framework</sub>
 </td>
 <td align="center" width="120">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48" height="48" alt="Vue.js" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
+  <path d="M12 2L3 21h18L12 2z" fill="#42b883"/>
+  <path d="M12 2L7 12l5 9 5-9-5-10z" fill="#35495e"/>
+</svg>
 <br /><strong>Vue 3</strong>
 <br /><sub>UI Library</sub>
 </td>
 <td align="center" width="120">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="48" height="48" alt="Tailwind CSS" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
+  <path d="M12 6.036L7.5 21h2.4l1.3-3.6h4.6l1.3 3.6h2.4L14.5 6.036h-2.5zm-1.4 8.4l1.4-3.9 1.4 3.9h-2.8z" fill="#06B6D4"/>
+  <path d="M5 3L3 7l2 4h2l2-4-2-4H5zm14 0l2 4-2 4h-2l-2-4 2-4h2z" fill="#38BDF8"/>
+</svg>
 <br /><strong>Tailwind CSS</strong>
 <br /><sub>Styling</sub>
 </td>
 <td align="center" width="120">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none">
+  <rect x="3" y="3" width="18" height="18" rx="2" fill="#3178C6"/>
+  <path d="M12 8v8M8 12h8" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+  <text x="12" y="16" text-anchor="middle" fill="white" font-size="10" font-family="Arial, sans-serif" font-weight="bold">TS</text>
+</svg>
 <br /><strong>TypeScript</strong>
 <br /><sub>Language</sub>
 </td>
