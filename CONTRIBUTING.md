@@ -1,152 +1,174 @@
-# Contributing to Awesome Horizon
+<div align="center">
 
-Thank you for considering contributing to Awesome Horizon! This document provides guidelines and instructions for contributing to the project.
+# 🤝 Contributing to Awesome Horizon
 
----
+**Thank you for considering contributing to Awesome Horizon!**
 
-## Table of Contents
+*Together, we're making education accessible to everyone worldwide* 🌍
 
-- [Code of Conduct](#code-of-conduct)
-- [How Can I Contribute?](#how-can-i-contribute)
-- [Getting Started](#getting-started)
-- [Development Workflow](#development-workflow)
-- [Coding Standards](#coding-standards)
-- [Commit Guidelines](#commit-guidelines)
-- [Pull Request Process](#pull-request-process)
-- [Community](#community)
+[![Contributors](https://img.shields.io/github/contributors/Awesome-Nexus/Awesome-Horizon?style=for-the-badge)](https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors)
+[![Pull Requests](https://img.shields.io/github/issues-pr/Awesome-Nexus/Awesome-Horizon?style=for-the-badge)](https://github.com/Awesome-Nexus/Awesome-Horizon/pulls)
+[![Issues](https://img.shields.io/github/issues/Awesome-Nexus/Awesome-Horizon?style=for-the-badge)](https://github.com/Awesome-Nexus/Awesome-Horizon/issues)
+
+</div>
 
 ---
 
-## Code of Conduct
+## 📋 Table of Contents
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
+- [🤝 Code of Conduct](#-code-of-conduct)
+- [🚀 How Can I Contribute?](#-how-can-i-contribute)
+- [⚡ Getting Started](#-getting-started)
+- [🔄 Development Workflow](#-development-workflow)
+- [📏 Coding Standards](#-coding-standards)
+- [💬 Commit Guidelines](#-commit-guidelines)
+- [🔀 Pull Request Process](#-pull-request-process)
+- [👥 Community](#-community)
 
 ---
 
-## How Can I Contribute?
+## 🤝 Code of Conduct
 
-### Reporting Bugs
+This project and everyone participating in it is governed by our [**Code of Conduct**](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
 
-Before creating bug reports, please check the [existing issues](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) to avoid duplicates.
+---
 
-When creating a bug report, include:
+## 🚀 How Can I Contribute?
 
-- **Clear Title**: Use a descriptive title that summarizes the issue
-- **Description**: Provide a clear description of the problem
-- **Steps to Reproduce**: List the exact steps to reproduce the issue
-- **Expected Behavior**: Describe what you expected to happen
-- **Actual Behavior**: Describe what actually happened
-- **Screenshots**: Include screenshots if applicable
-- **Environment**: Specify your OS, browser, Node version, etc.
+<div align="center">
 
-**Bug Report Template:**
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://via.placeholder.com/80x80/EF4444/ffffff?text=🐛" alt="Bug Reports" width="60"/>
+<h3>🐛 Bug Reports</h3>
+<p>Help us identify and fix issues</p>
+</td>
+<td align="center" width="25%">
+<img src="https://via.placeholder.com/80x80/10B981/ffffff?text=✨" alt="Feature Requests" width="60"/>
+<h3>✨ Feature Requests</h3>
+<p>Suggest new features and improvements</p>
+</td>
+<td align="center" width="25%">
+<img src="https://via.placeholder.com/80x80/8B5CF6/ffffff?text=📚" alt="Educational Content" width="60"/>
+<h3>📚 Educational Content</h3>
+<p>Add high-quality learning resources</p>
+</td>
+<td align="center" width="25%">
+<img src="https://via.placeholder.com/80x80/F59E0B/ffffff?text=📝" alt="Documentation" width="60"/>
+<h3>📝 Documentation</h3>
+<p>Improve guides and documentation</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+### 🐛 Reporting Bugs
+
+Before creating bug reports, please check [**existing issues**](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) to avoid duplicates.
+
+#### 📝 Bug Report Template
 
 ```markdown
-**Bug Description**
+## 🐛 Bug Description
 A clear and concise description of what the bug is.
 
-**To Reproduce**
-Steps to reproduce the behavior:
+## 🔄 Steps to Reproduce
 1. Navigate to '...'
 2. Click on '...'
 3. Scroll to '...'
 4. Observe error
 
-**Expected Behavior**
+## ✅ Expected Behavior
 Description of what you expected to happen.
 
-**Screenshots**
+## ❌ Actual Behavior
+Description of what actually happened.
+
+## 📸 Screenshots
 If applicable, add screenshots to help explain the problem.
 
-**Environment:**
-- OS: [e.g., macOS 13.0, Windows 11, Ubuntu 22.04]
-- Browser: [e.g., Chrome 120, Firefox 121, Safari 17]
-- Node Version: [e.g., 18.19.0]
-- Package Manager: [e.g., npm 10.2.0]
+## 🖥️ Environment
+- **OS**: [e.g., macOS 13.0, Windows 11, Ubuntu 22.04]
+- **Browser**: [e.g., Chrome 120, Firefox 121, Safari 17]
+- **Node Version**: [e.g., 18.19.0]
+- **Package Manager**: [e.g., npm 10.2.0]
+
+## 📋 Additional Context
+Add any other context about the problem here.
 ```
 
-### Suggesting Enhancements
+### ✨ Suggesting Enhancements
 
 Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion:
 
-- **Use a Clear Title**: Be specific about what you're suggesting
-- **Provide Details**: Explain the enhancement in detail
-- **Explain Benefits**: Describe why this would be useful
-- **Include Examples**: Provide mockups, code examples, or references
-- **Consider Scope**: Ensure the suggestion aligns with project goals
+- **🎯 Use a Clear Title**: Be specific about what you're suggesting
+- **📝 Provide Details**: Explain the enhancement in detail
+- **💡 Explain Benefits**: Describe why this would be useful
+- **🖼️ Include Examples**: Provide mockups, code examples, or references
+- **🎯 Consider Scope**: Ensure the suggestion aligns with project goals
 
-### Adding Educational Resources
+### 📚 Adding Educational Resources
 
 To add educational resources:
 
 1. Navigate to the appropriate content file in `/content/`
 2. Follow the existing format and structure
 3. Ensure the resource meets quality criteria:
-   - High quality and accurate content
-   - Freely accessible (or clearly marked if paid)
-   - Actively maintained and up-to-date
-   - Relevant to the category
-   - Appropriate for target audience
-
-### Improving Documentation
-
-Documentation improvements are always welcome:
-
-- Fix typos and grammatical errors
-- Clarify confusing sections
-- Add missing information
-- Improve code examples
-- Update outdated content
+   - ✅ High quality and accurate content
+   - ✅ Freely accessible (or clearly marked if paid)
+   - ✅ Actively maintained and up-to-date
+   - ✅ Relevant to the category
+   - ✅ Appropriate for target audience
 
 ---
 
-## Getting Started
+## ⚡ Getting Started
 
-### Prerequisites
+### 🔧 Prerequisites
 
-- **Node.js**: Version 18.0.0 or higher
-- **Package Manager**: npm, pnpm, yarn, or bun
-- **Git**: For version control
-- **Code Editor**: VS Code recommended with extensions:
-  - Vue Language Features (Volar)
-  - TypeScript Vue Plugin (Volar)
-  - Tailwind CSS IntelliSense
-  - ESLint
-  - Prettier
+<div align="center">
 
-### Fork and Clone
+| Requirement | Version | Purpose |
+|:------------|:--------|:--------|
+| ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white) | 18.0.0+ | Runtime environment |
+| ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white) | Latest | Version control |
+| ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white) | Latest | Recommended editor |
 
-1. Fork the repository on GitHub
-2. Clone your fork locally:
+</div>
+
+#### 🔌 Recommended VS Code Extensions
+
+- **Vue Language Features (Volar)** - Vue 3 support
+- **TypeScript Vue Plugin (Volar)** - TypeScript integration
+- **Tailwind CSS IntelliSense** - CSS utility suggestions
+- **ESLint** - Code linting
+- **Prettier** - Code formatting
+
+### 🍴 Fork and Clone
 
 ```bash
+# 1. Fork the repository on GitHub
+# 2. Clone your fork locally
 git clone https://github.com/YOUR_USERNAME/Awesome-Horizon.git
 cd Awesome-Horizon
-```
 
-3. Add upstream remote:
-
-```bash
+# 3. Add upstream remote
 git remote add upstream https://github.com/Awesome-Nexus/Awesome-Horizon.git
-```
 
-4. Install dependencies:
-
-```bash
+# 4. Install dependencies
 npm install
-```
 
-5. Create a feature branch:
-
-```bash
+# 5. Create a feature branch
 git checkout -b feature/your-feature-name
 ```
 
 ---
 
-## Development Workflow
+## 🔄 Development Workflow
 
-### 1. Setup Development Environment
+### 1. 🛠️ Setup Development Environment
 
 ```bash
 # Install dependencies
@@ -158,7 +180,7 @@ npm run dev
 # Open http://localhost:3310 in your browser
 ```
 
-### 2. Make Changes
+### 2. ✏️ Make Changes
 
 - Write clean, maintainable code
 - Follow existing code style and patterns
@@ -166,11 +188,14 @@ npm run dev
 - Update documentation as needed
 - Write or update tests if applicable
 
-### 3. Test Your Changes
+### 3. 🧪 Test Your Changes
 
 ```bash
 # Run linter
 npm run lint
+
+# Type checking
+npm run type-check
 
 # Build for production to catch build errors
 npm run build
@@ -179,11 +204,11 @@ npm run build
 npm run preview
 ```
 
-### 4. Commit Your Changes
+### 4. 💾 Commit Your Changes
 
-Follow the [Commit Guidelines](#commit-guidelines) below.
+Follow the [**Commit Guidelines**](#-commit-guidelines) below.
 
-### 5. Keep Your Fork Updated
+### 5. 🔄 Keep Your Fork Updated
 
 ```bash
 # Fetch upstream changes
@@ -193,7 +218,7 @@ git fetch upstream
 git merge upstream/main
 ```
 
-### 6. Push and Create Pull Request
+### 6. 📤 Push and Create Pull Request
 
 ```bash
 # Push to your fork
@@ -204,50 +229,61 @@ git push origin feature/your-feature-name
 
 ---
 
-## Coding Standards
+## 📏 Coding Standards
 
-### JavaScript/TypeScript
+### 🟨 JavaScript/TypeScript
 
-- Use ES6+ features
-- Prefer `const` and `let` over `var`
-- Use template literals for string interpolation
-- Use arrow functions where appropriate
-- Follow functional programming principles when possible
-- Use meaningful variable and function names
+<div align="center">
 
-### Vue Components
+| ✅ Do | ❌ Don't |
+|:------|:---------|
+| Use ES6+ features | Use `var` declarations |
+| Use `const` and `let` | Use outdated syntax |
+| Use template literals | Use string concatenation |
+| Use arrow functions appropriately | Ignore TypeScript errors |
+| Use meaningful names | Use single-letter variables |
 
-- Use Vue 3 Composition API with `<script setup>` syntax
-- Keep components small and focused (Single Responsibility Principle)
-- Use TypeScript for type safety
-- Use meaningful component and prop names
-- Follow Vue 3 style guide and best practices
-- Use computed properties for derived state
-- Implement proper prop validation
+</div>
 
-### Styling
+### 🟢 Vue Components
 
-- Use Tailwind CSS utility classes primarily
-- Keep custom CSS minimal
-- Use Tailwind configuration for theme customization
-- Follow mobile-first responsive design approach
-- Ensure accessibility (proper color contrast, focus states)
+- ✅ Use Vue 3 Composition API with `<script setup>` syntax
+- ✅ Keep components small and focused (Single Responsibility Principle)
+- ✅ Use TypeScript for type safety
+- ✅ Use meaningful component and prop names
+- ✅ Follow Vue 3 style guide and best practices
+- ✅ Use computed properties for derived state
+- ✅ Implement proper prop validation
 
-### File Naming Conventions
+### 🎨 Styling
 
-- **Components**: PascalCase (e.g., `CategoryCard.vue`)
-- **Composables**: camelCase with `use` prefix (e.g., `useAuth.ts`)
-- **Utilities**: camelCase (e.g., `formatDate.ts`)
-- **Pages**: kebab-case (e.g., `about-us.vue`)
-- **Content**: kebab-case (e.g., `getting-started.md`)
+- ✅ Use Tailwind CSS utility classes primarily
+- ✅ Keep custom CSS minimal
+- ✅ Use Tailwind configuration for theme customization
+- ✅ Follow mobile-first responsive design approach
+- ✅ Ensure accessibility (proper color contrast, focus states)
+
+### 📁 File Naming Conventions
+
+<div align="center">
+
+| File Type | Convention | Example |
+|:----------|:-----------|:--------|
+| **Components** | PascalCase | `CategoryCard.vue` |
+| **Composables** | camelCase with `use` prefix | `useAuth.ts` |
+| **Utilities** | camelCase | `formatDate.ts` |
+| **Pages** | kebab-case | `about-us.vue` |
+| **Content** | kebab-case | `getting-started.md` |
+
+</div>
 
 ---
 
-## Commit Guidelines
+## 💬 Commit Guidelines
 
-We follow the [Conventional Commits](https://www.conventionalcommits.org/) specification.
+We follow the [**Conventional Commits**](https://www.conventionalcommits.org/) specification.
 
-### Format
+### 📝 Format
 
 ```
 <type>(<scope>): <subject>
@@ -257,38 +293,26 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/) speci
 <footer>
 ```
 
-### Types
+### 🏷️ Types
 
-| Type | Usage |
-|:-----|:------|
-| **feat** | New feature |
-| **fix** | Bug fix |
-| **docs** | Documentation changes |
-| **style** | Code style changes (formatting, missing semicolons, etc.) |
-| **refactor** | Code refactoring without functionality changes |
-| **perf** | Performance improvements |
-| **test** | Adding or updating tests |
-| **build** | Build system or external dependency changes |
-| **ci** | CI/CD configuration changes |
-| **chore** | Other changes that don't modify src or test files |
+<div align="center">
 
-### Examples
+| Type | Usage | Example |
+|:-----|:------|:--------|
+| **feat** | New feature | `feat(science): add quantum physics resources` |
+| **fix** | Bug fix | `fix(navigation): resolve mobile menu toggle issue` |
+| **docs** | Documentation changes | `docs(readme): update installation instructions` |
+| **style** | Code style changes | `style(components): fix indentation` |
+| **refactor** | Code refactoring | `refactor(components): simplify CategoryCard` |
+| **perf** | Performance improvements | `perf(images): optimize loading` |
+| **test** | Adding or updating tests | `test(utils): add formatDate tests` |
+| **build** | Build system changes | `build(deps): update dependencies` |
+| **ci** | CI/CD configuration | `ci(github): add automated testing` |
+| **chore** | Other changes | `chore(cleanup): remove unused files` |
 
-```bash
-# Feature addition
-git commit -m "feat(science): add quantum physics resources"
+</div>
 
-# Bug fix
-git commit -m "fix(navigation): resolve mobile menu toggle issue"
-
-# Documentation update
-git commit -m "docs(readme): update installation instructions"
-
-# Refactoring
-git commit -m "refactor(components): simplify CategoryCard component"
-```
-
-### Detailed Commit Message
+### 📋 Detailed Commit Message Example
 
 ```
 feat(auth): implement user authentication system
@@ -304,9 +328,9 @@ Closes #123
 
 ---
 
-## Pull Request Process
+## 🔀 Pull Request Process
 
-### Before Submitting
+### ✅ Before Submitting
 
 - [ ] Code follows project style guidelines
 - [ ] Self-review of code completed
@@ -317,21 +341,21 @@ Closes #123
 - [ ] All tests pass
 - [ ] Build succeeds
 
-### Pull Request Template
+### 📝 Pull Request Template
 
 ```markdown
-## Description
+## 📝 Description
 Brief description of the changes made.
 
-## Type of Change
-- [ ] Bug fix (non-breaking change fixing an issue)
-- [ ] New feature (non-breaking change adding functionality)
-- [ ] Breaking change (fix or feature causing existing functionality to not work as expected)
-- [ ] Documentation update
-- [ ] Code refactoring
-- [ ] Performance improvement
+## 🔄 Type of Change
+- [ ] 🐛 Bug fix (non-breaking change fixing an issue)
+- [ ] ✨ New feature (non-breaking change adding functionality)
+- [ ] 💥 Breaking change (fix or feature causing existing functionality to not work as expected)
+- [ ] 📚 Documentation update
+- [ ] 🔧 Code refactoring
+- [ ] ⚡ Performance improvement
 
-## Testing
+## 🧪 Testing
 Describe the testing performed:
 - [ ] Tested locally
 - [ ] Tested in multiple browsers
@@ -339,14 +363,14 @@ Describe the testing performed:
 - [ ] Added unit tests
 - [ ] Added integration tests
 
-## Screenshots
+## 📸 Screenshots
 If applicable, add screenshots demonstrating the changes.
 
-## Related Issues
+## 🔗 Related Issues
 Closes #(issue number)
 Related to #(issue number)
 
-## Checklist
+## ✅ Checklist
 - [ ] Code follows style guidelines
 - [ ] Self-reviewed code
 - [ ] Commented complex code
@@ -357,209 +381,64 @@ Related to #(issue number)
 - [ ] Build succeeds
 ```
 
-### Review Process
+### 🔍 Review Process
 
-1. Maintainers will review your pull request
-2. Address any requested changes
-3. Once approved, maintainers will merge your PR
-4. Your contribution will be included in the next release
+1. **👀 Review**: Maintainers will review your pull request
+2. **🔄 Iterate**: Address any requested changes
+3. **✅ Approval**: Once approved, maintainers will merge your PR
+4. **🎉 Release**: Your contribution will be included in the next release
 
 ---
 
-## Community
+## 👥 Community
 
-### Getting Help
+### 🆘 Getting Help
 
-- **GitHub Discussions**: Ask questions and discuss ideas
-- **GitHub Issues**: Report bugs and request features
-- **Discord**: Join our community (coming soon)
+<div align="center">
 
-### Recognition
+| Platform | Purpose |
+|:--------:|:--------|
+| 💬 [**GitHub Discussions**](https://github.com/Awesome-Nexus/Awesome-Horizon/discussions) | Ask questions and discuss ideas |
+| 🐛 [**GitHub Issues**](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) | Report bugs and request features |
+| 📧 [**Email**](mailto:support@awesome-horizon.dev) | Direct support |
+
+</div>
+
+### 🏆 Recognition
 
 All contributors are recognized in our project. Your contributions will be listed in:
 
-- GitHub contributors page
-- Release notes
-- Project acknowledgments
+- 📊 GitHub contributors page
+- 📋 Release notes
+- 🙏 Project acknowledgments
+- 🌟 Hall of Fame (coming soon)
 
 ---
 
-## Questions?
+## ❓ Questions?
 
 If you have questions not covered in this guide, please:
 
-1. Check existing documentation
-2. Search closed issues for similar questions
-3. Open a new discussion on GitHub
-4. Contact project maintainers
+1. 📖 Check existing documentation
+2. 🔍 Search closed issues for similar questions
+3. 💬 Open a new discussion on GitHub
+4. 📧 Contact project maintainers
 
 ---
 
 <div align="center">
 
-**Thank you for contributing to Awesome Horizon!**
+**🎉 Thank you for contributing to Awesome Horizon! 🎉**
 
-Together, we're making education accessible to everyone.
+*Together, we're making education accessible to everyone.*
 
 <a href="https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Awesome-Nexus/Awesome-Horizon" alt="Contributors" />
 </a>
 
+---
+
+[![Made with ❤️](https://img.shields.io/badge/Made%20with-❤️-red?style=for-the-badge)](https://github.com/Awesome-Nexus/Awesome-Horizon)
+[![Open Source](https://img.shields.io/badge/Open%20Source-💚-green?style=for-the-badge)](https://opensource.org/)
+
 </div>
-
-## Development Workflow
-
-1. **Setup**: Install dependencies and ensure the project runs locally
-   ```bash
-   npm install
-   npm run dev
-   ```
-
-2. **Make Changes**: Implement your feature or fix
-   - Write clean, maintainable code
-   - Follow existing code style
-   - Add comments for complex logic
-
-3. **Test**: Verify your changes work as expected
-   ```bash
-   npm run build
-   ```
-
-4. **Commit**: Commit your changes with a clear message
-   ```bash
-   git add .
-   git commit -m "feat: add new feature"
-   ```
-
-5. **Push**: Push to your fork
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. **Pull Request**: Open a PR against the main repository
-
-## Style Guidelines
-
-### JavaScript/TypeScript Style
-
-- Use ES6+ features
-- Use `const` and `let` instead of `var`
-- Use template literals for string interpolation
-- Use arrow functions where appropriate
-- Follow Vue 3 Composition API patterns
-
-### Vue Component Guidelines
-
-- Use `<script setup>` syntax
-- Use TypeScript for type safety
-- Keep components small and focused
-- Use meaningful component and prop names
-- Follow Vue 3 best practices
-
-### CSS/Tailwind Guidelines
-
-- Use Tailwind utility classes primarily
-- Keep custom CSS minimal
-- Use Tailwind config for theme customization
-- Follow mobile-first responsive design
-
-### File Naming
-
-- Components: PascalCase (e.g., `MyComponent.vue`)
-- Utilities/Composables: camelCase (e.g., `useMyComposable.ts`)
-- Pages: kebab-case (e.g., `my-page.vue`)
-
-## Commit Messages
-
-Follow the [Conventional Commits](https://www.conventionalcommits.org/) specification:
-
-```
-<type>(<scope>): <subject>
-
-<body>
-
-<footer>
-```
-
-### Types
-
-- `feat`: A new feature
-- `fix`: A bug fix
-- `docs`: Documentation changes
-- `style`: Code style changes (formatting, etc.)
-- `refactor`: Code refactoring
-- `perf`: Performance improvements
-- `test`: Adding or updating tests
-- `chore`: Maintenance tasks
-- `ci`: CI/CD changes
-
-### Examples
-
-```
-feat(auth): add user authentication
-
-Implement JWT-based authentication system with login and logout functionality.
-
-Closes #123
-```
-
-```
-fix(navigation): resolve mobile menu toggle issue
-
-The mobile navigation menu wasn't closing when clicking outside.
-Added click-outside directive to handle this case.
-```
-
-## Pull Request Process
-
-1. **Update Documentation**: Ensure README, CHANGELOG, and other docs are updated
-2. **Update Dependencies**: Add any new dependencies to package.json
-3. **Test Thoroughly**: Ensure all functionality works as expected
-4. **Write Clear Description**: Explain what changes were made and why
-5. **Link Issues**: Reference any related issues
-6. **Request Review**: Tag maintainers for review
-7. **Address Feedback**: Make requested changes promptly
-8. **Squash Commits**: Consider squashing commits before merge
-
-### PR Title Format
-
-Use the same format as commit messages:
-```
-feat: add dark mode toggle
-fix: resolve navigation bug
-docs: update installation guide
-```
-
-### PR Description Template
-
-```markdown
-## Description
-Brief description of changes
-
-## Type of Change
-- [ ] Bug fix
-- [ ] New feature
-- [ ] Breaking change
-- [ ] Documentation update
-
-## Testing
-Describe testing performed
-
-## Screenshots (if applicable)
-Add screenshots
-
-## Checklist
-- [ ] Code follows style guidelines
-- [ ] Self-reviewed code
-- [ ] Commented complex code
-- [ ] Updated documentation
-- [ ] No new warnings
-- [ ] Added tests (if applicable)
-- [ ] All tests pass
-```
-
-## Questions?
-
-Feel free to open an issue with your question or reach out to the maintainers.
-
-Thank you for contributing! 🎉
