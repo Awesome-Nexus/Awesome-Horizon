@@ -211,11 +211,6 @@ Production optimizations include:
 <br /><strong>TypeScript</strong>
 <br /><sub>Language</sub>
 </td>
-<td align="center" width="120">
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="48" height="48" alt="SQLite" />
-<br /><strong>SQLite</strong>
-<br /><sub>Database</sub>
-</td>
 </tr>
 </table>
 
@@ -298,22 +293,22 @@ We welcome contributions from the community! Whether you're fixing bugs, adding 
 <table>
 <tr>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/book.svg" width="48" height="48" alt="Resources" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
 <br /><strong>Add Resources</strong>
 <br />Share quality educational materials
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/bug.svg" width="48" height="48" alt="Bug Reports" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><circle cx="12" cy="14" r="3"/></svg>
 <br /><strong>Report Bugs</strong>
 <br />Help us identify and fix issues
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/bulb.svg" width="48" height="48" alt="Features" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></svg>
 <br /><strong>Suggest Features</strong>
 <br />Propose new ideas and improvements
 </td>
 <td align="center" width="25%">
-<img src="https://raw.githubusercontent.com/tabler/tabler-icons/master/icons/file-text.svg" width="48" height="48" alt="Documentation" />
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><line x1="10" x2="8" y1="9" y2="9"/></svg>
 <br /><strong>Improve Docs</strong>
 <br />Enhance documentation clarity
 </td>
