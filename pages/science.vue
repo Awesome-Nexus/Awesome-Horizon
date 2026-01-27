@@ -297,6 +297,12 @@ useHead({
                 <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#06b6d4" stroke-width="3" fill="none"/>
                 <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#f59e0b" stroke-width="3" fill="none"/>
                 
+                <!-- Junction dots for Introduction branch -->
+                <circle cx="120" cy="107" r="4" fill="#10b981"/>
+                <circle cx="120" cy="137" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="167" r="4" fill="#06b6d4"/>
+                <circle cx="120" cy="197" r="4" fill="#f59e0b"/>
+                
                 <!-- Main vertical branch line for Textbooks (continuous) -->
                 <line x1="120" y1="250" x2="120" y2="370" stroke="#10b981" stroke-width="3"/>
                 
@@ -304,6 +310,11 @@ useHead({
                 <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#8b5cf6" stroke-width="3" fill="none"/>
                 <path d="M 120 307 Q 155 307 170 307 L 250 307" stroke="#3b82f6" stroke-width="3" fill="none"/>
                 <path d="M 120 337 Q 155 337 170 337 L 250 337" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for Textbooks branch -->
+                <circle cx="120" cy="277" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="307" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="337" r="4" fill="#f59e0b"/>
                 
                 <!-- Main vertical branch line for AP & Advanced (continuous) -->
                 <line x1="120" y1="420" x2="120" y2="540" stroke="#ef4444" stroke-width="3"/>
@@ -313,6 +324,12 @@ useHead({
                 <path d="M 120 477 Q 155 477 170 477 L 250 477" stroke="#10b981" stroke-width="3" fill="none"/>
                 <path d="M 120 507 Q 155 507 170 507 L 250 507" stroke="#06b6d4" stroke-width="3" fill="none"/>
                 <path d="M 120 537 Q 155 537 170 537 L 250 537" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for AP & Advanced branch -->
+                <circle cx="120" cy="447" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="477" r="4" fill="#10b981"/>
+                <circle cx="120" cy="507" r="4" fill="#06b6d4"/>
+                <circle cx="120" cy="537" r="4" fill="#f59e0b"/>
               </svg>
               
               <!-- Main Branch Headers -->
@@ -532,6 +549,12 @@ useHead({
                 <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#f59e0b" stroke-width="3" fill="none"/>
                 <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#ef4444" stroke-width="3" fill="none"/>
                 
+                <!-- Junction dots for General Chemistry branch -->
+                <circle cx="120" cy="107" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="137" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="167" r="4" fill="#f59e0b"/>
+                <circle cx="120" cy="197" r="4" fill="#ef4444"/>
+                
                 <!-- Main vertical branch line for Organic Chemistry (continuous) -->
                 <line x1="120" y1="250" x2="120" y2="350" stroke="#8b5cf6" stroke-width="3"/>
                 
@@ -539,12 +562,20 @@ useHead({
                 <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#10b981" stroke-width="3" fill="none"/>
                 <path d="M 120 317 Q 155 317 170 317 L 250 317" stroke="#3b82f6" stroke-width="3" fill="none"/>
                 
+                <!-- Junction dots for Organic Chemistry branch -->
+                <circle cx="120" cy="277" r="4" fill="#10b981"/>
+                <circle cx="120" cy="317" r="4" fill="#3b82f6"/>
+                
                 <!-- Main vertical branch line for Simulations (continuous) -->
                 <line x1="120" y1="400" x2="120" y2="500" stroke="#06b6d4" stroke-width="3"/>
                 
                 <!-- Simulations resource branches with curved junctions -->
                 <path d="M 120 427 Q 155 427 170 427 L 250 427" stroke="#8b5cf6" stroke-width="3" fill="none"/>
                 <path d="M 120 467 Q 155 467 170 467 L 250 467" stroke="#10b981" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for Simulations branch -->
+                <circle cx="120" cy="427" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="467" r="4" fill="#10b981"/>
               </svg>
               
               <!-- Main Branch Headers -->
@@ -735,12 +766,22 @@ useHead({
                 <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#f59e0b" stroke-width="3" fill="none"/>
                 <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#10b981" stroke-width="3" fill="none"/>
                 
+                <!-- Junction dots for General Biology branch -->
+                <circle cx="120" cy="107" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="137" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="167" r="4" fill="#f59e0b"/>
+                <circle cx="120" cy="197" r="4" fill="#10b981"/>
+                
                 <!-- Main vertical branch line for Molecular Biology (continuous) -->
                 <line x1="120" y1="250" x2="120" y2="350" stroke="#8b5cf6" stroke-width="3"/>
                 
                 <!-- Molecular Biology resource branches with curved junctions -->
                 <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#22c55e" stroke-width="3" fill="none"/>
                 <path d="M 120 317 Q 155 317 170 317 L 250 317" stroke="#3b82f6" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for Molecular Biology branch -->
+                <circle cx="120" cy="277" r="4" fill="#22c55e"/>
+                <circle cx="120" cy="317" r="4" fill="#3b82f6"/>
               </svg>
               
               <!-- Main Branch Headers -->
@@ -895,6 +936,11 @@ useHead({
                 <path d="M 120 107 Q 155 107 170 107 L 250 107" stroke="#8b5cf6" stroke-width="3" fill="none"/>
                 <path d="M 120 137 Q 155 137 170 137 L 250 137" stroke="#3b82f6" stroke-width="3" fill="none"/>
                 <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#10b981" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for AP Psychology branch -->
+                <circle cx="120" cy="107" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="137" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="167" r="4" fill="#10b981"/>
               </svg>
               
               <!-- Main Branch Headers -->
@@ -999,12 +1045,21 @@ useHead({
                 <path d="M 120 137 Q 155 137 170 137 L 250 137" stroke="#10b981" stroke-width="3" fill="none"/>
                 <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#f59e0b" stroke-width="3" fill="none"/>
                 
+                <!-- Junction dots for AP Environmental Science branch -->
+                <circle cx="120" cy="107" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="137" r="4" fill="#10b981"/>
+                <circle cx="120" cy="167" r="4" fill="#f59e0b"/>
+                
                 <!-- Main vertical branch line for Climate Science (continuous) -->
                 <line x1="120" y1="250" x2="120" y2="350" stroke="#10b981" stroke-width="3"/>
                 
                 <!-- Climate Science resource branches with curved junctions -->
                 <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#3b82f6" stroke-width="3" fill="none"/>
                 <path d="M 120 317 Q 155 317 170 317 L 250 317" stroke="#06b6d4" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for Climate Science branch -->
+                <circle cx="120" cy="277" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="317" r="4" fill="#06b6d4"/>
               </svg>
               
               <!-- Main Branch Headers -->
@@ -1149,6 +1204,12 @@ useHead({
                 <path d="M 120 167 Q 155 167 170 167 L 250 167" stroke="#10b981" stroke-width="3" fill="none"/>
                 <path d="M 120 197 Q 155 197 170 197 L 250 197" stroke="#f59e0b" stroke-width="3" fill="none"/>
                 
+                <!-- Junction dots for Space Science branch -->
+                <circle cx="120" cy="107" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="137" r="4" fill="#3b82f6"/>
+                <circle cx="120" cy="167" r="4" fill="#10b981"/>
+                <circle cx="120" cy="197" r="4" fill="#f59e0b"/>
+                
                 <!-- Main vertical branch line for Interactive Simulations (continuous) -->
                 <line x1="120" y1="250" x2="120" y2="370" stroke="#06b6d4" stroke-width="3"/>
                 
@@ -1156,6 +1217,11 @@ useHead({
                 <path d="M 120 277 Q 155 277 170 277 L 250 277" stroke="#8b5cf6" stroke-width="3" fill="none"/>
                 <path d="M 120 307 Q 155 307 170 307 L 250 307" stroke="#10b981" stroke-width="3" fill="none"/>
                 <path d="M 120 337 Q 155 337 170 337 L 250 337" stroke="#f59e0b" stroke-width="3" fill="none"/>
+                
+                <!-- Junction dots for Interactive Simulations branch -->
+                <circle cx="120" cy="277" r="4" fill="#8b5cf6"/>
+                <circle cx="120" cy="307" r="4" fill="#10b981"/>
+                <circle cx="120" cy="337" r="4" fill="#f59e0b"/>
               </svg>
               
               <!-- Main Branch Headers -->
@@ -1312,5 +1378,25 @@ useHead({
   color: #fff;
   margin-top: 3rem;
   font-size: 1.875rem;
+}
+
+/* 3D Space Animations */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 0.8; }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Enhanced hover effects for 3D elements */
+.group:hover .transform-gpu {
+  transform: translateZ(10px);
 }
 </style>
