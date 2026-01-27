@@ -2,6 +2,20 @@
 import { FlaskConical, Cpu, Wrench, Palette, Sigma } from 'lucide-vue-next'
 import CategoryCard from '~/components/CategoryCard.vue'
 
+// Set page meta
+useHead({
+  title: 'Awesome Horizon - Unlock Your Learning Potential',
+  meta: [
+    { name: 'description', content: 'Discover the world\'s finest learning resources across Science, Technology, Engineering, Arts, and Mathematics. Hand-picked by educators, completely free and open source.' },
+    { property: 'og:title', content: 'Awesome Horizon - Unlock Your Learning Potential' },
+    { property: 'og:description', content: 'Curated STEAM learning resources for students, educators, and lifelong learners.' },
+    { property: 'og:type', content: 'website' },
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Awesome Horizon - Unlock Your Learning Potential' },
+    { name: 'twitter:description', content: 'Discover curated learning resources across Science, Technology, Engineering, Arts, and Mathematics.' }
+  ]
+})
+
 const categories = [
   {
     title: 'Science',
@@ -49,20 +63,92 @@ const categories = [
 <template>
   <div class="space-y-16">
     <!-- Hero Section -->
-    <section class="text-center space-y-6 pt-12 pb-8 relative">
-      <div class="absolute inset-0 bg-primary-500/5 blur-[120px] rounded-full pointer-events-none"></div>
+    <section class="text-center space-y-8 pt-16 pb-12 relative overflow-hidden">
+      <!-- Background Effects -->
+      <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-emerald-500/5 to-purple-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+      <div class="absolute top-20 left-1/4 w-72 h-72 bg-primary-500/5 rounded-full blur-[100px] animate-pulse"></div>
+      <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px] animate-pulse delay-1000"></div>
       
-      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
-        <span class="text-white animate-fade-in">
-          Unlock Your Potential
-        </span>
-      </h1>
-      <p class="text-xl text-gray-400 max-w-2xl mx-auto animate-slide-up">
-        A curated collection of the best learning resources for the modern creator.
-        Dive into Science, Tech, and more.
-      </p>
-      
+      <div class="relative z-10 max-w-5xl mx-auto px-4">
+        <!-- Main Headline -->
+        <div class="space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/10 border border-primary-500/20 rounded-full text-primary-300 text-sm font-medium mb-6">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="animate-pulse">
+              <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+            </svg>
+            Curated by Educators, Built for Learners
+          </div>
+          
+          <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold tracking-tight leading-none">
+            <span class="bg-gradient-to-r from-white via-primary-100 to-emerald-200 bg-clip-text text-transparent animate-fade-in">
+              Unlock Your
+            </span>
+            <br>
+            <span class="bg-gradient-to-r from-primary-400 via-emerald-400 to-purple-400 bg-clip-text text-transparent animate-slide-up">
+              Potential
+            </span>
+          </h1>
+          
+          <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed animate-slide-up delay-200">
+            Discover the world's finest learning resources across 
+            <span class="text-primary-400 font-semibold">Science</span>, 
+            <span class="text-emerald-400 font-semibold">Technology</span>, 
+            <span class="text-amber-400 font-semibold">Engineering</span>, 
+            <span class="text-rose-400 font-semibold">Arts</span>, and 
+            <span class="text-sky-400 font-semibold">Mathematics</span>
+          </p>
+          
+          <p class="text-lg text-gray-400 max-w-2xl mx-auto animate-slide-up delay-300">
+            Hand-picked by educators and industry professionals. From K-12 to advanced research. 
+            <span class="text-white font-medium">Completely free</span> and open source.
+          </p>
+        </div>
 
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8 animate-slide-up delay-500">
+          <NuxtLink 
+            to="/science"
+            class="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-xl font-semibold transition-all hover:scale-105 shadow-lg hover:shadow-primary-500/25 transform-gpu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-12 transition-transform">
+              <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/>
+            </svg>
+            Start Exploring
+          </NuxtLink>
+          
+          <NuxtLink 
+            to="/about"
+            class="flex items-center gap-3 px-6 py-4 border border-gray-600 hover:border-gray-500 bg-transparent hover:bg-gray-800/50 text-gray-300 hover:text-white rounded-xl font-semibold transition-all hover:scale-105 backdrop-blur-sm"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 16v-4"/>
+              <path d="M12 8h.01"/>
+            </svg>
+            Learn More
+          </NuxtLink>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 animate-slide-up delay-700">
+          <div class="text-center p-4 bg-space-900/30 backdrop-blur-sm rounded-xl border border-space-800/50">
+            <div class="text-2xl md:text-3xl font-bold text-primary-400">500+</div>
+            <div class="text-sm text-gray-400">Curated Resources</div>
+          </div>
+          <div class="text-center p-4 bg-space-900/30 backdrop-blur-sm rounded-xl border border-space-800/50">
+            <div class="text-2xl md:text-3xl font-bold text-emerald-400">5</div>
+            <div class="text-sm text-gray-400">STEAM Categories</div>
+          </div>
+          <div class="text-center p-4 bg-space-900/30 backdrop-blur-sm rounded-xl border border-space-800/50">
+            <div class="text-2xl md:text-3xl font-bold text-amber-400">100%</div>
+            <div class="text-sm text-gray-400">Free & Open</div>
+          </div>
+          <div class="text-center p-4 bg-space-900/30 backdrop-blur-sm rounded-xl border border-space-800/50">
+            <div class="text-2xl md:text-3xl font-bold text-rose-400">∞</div>
+            <div class="text-sm text-gray-400">Learning Potential</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Categories Grid -->
@@ -175,3 +261,71 @@ const categories = [
     </section>
   </div>
 </template>
+
+<style scoped>
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slide-up 1s ease-out forwards;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+  opacity: 0;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+  opacity: 0;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+  opacity: 0;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
+
+/* Gradient text animation */
+.bg-clip-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Enhanced hover effects */
+.transform-gpu {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+</style>
