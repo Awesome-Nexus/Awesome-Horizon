@@ -1,73 +1,117 @@
-# Contributing to Awesome Horizon
+# 🤝 Contributing to Awesome Horizon
 
-First off, thank you for considering contributing to Awesome Horizon! It's people like you that make this project great.
+<div align="center">
 
-## Table of Contents
+![Contributing Banner](https://via.placeholder.com/1000x200/6366f1/ffffff?text=Join+Our+Community)
 
-- [Code of Conduct](#code-of-conduct)
-- [Getting Started](#getting-started)
-- [How Can I Contribute?](#how-can-i-contribute)
-- [Development Workflow](#development-workflow)
-- [Style Guidelines](#style-guidelines)
-- [Commit Messages](#commit-messages)
-- [Pull Request Process](#pull-request-process)
+**Thank you for considering contributing to Awesome Horizon!** 🎉
 
-## Code of Conduct
+Together, we're building the ultimate educational resource platform for learners worldwide.
 
-This project and everyone participating in it is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
+[![Contributors](https://img.shields.io/github/contributors/Awesome-Nexus/Awesome-Horizon?style=for-the-badge)](https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors)
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen?style=for-the-badge)](https://github.com/Awesome-Nexus/Awesome-Horizon/pulls)
 
-## Getting Started
+</div>
 
-1. Fork the repository on GitHub
-2. Clone your fork locally:
-   ```bash
-   git clone https://github.com/your-username/Awesome-Horizon.git
-   cd Awesome-Horizon
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Create a new branch for your feature or fix:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
+---
 
-## How Can I Contribute?
+## 📑 Table of Contents
 
-### Reporting Bugs
+- [Code of Conduct](#-code-of-conduct)
+- [How Can I Contribute?](#-how-can-i-contribute)
+- [Getting Started](#-getting-started)
+- [Development Workflow](#-development-workflow)
+- [Style Guidelines](#-style-guidelines)
+- [Commit Messages](#-commit-messages)
+- [Pull Request Process](#-pull-request-process)
 
-Before creating bug reports, please check the existing issues to avoid duplicates. When you create a bug report, include as many details as possible:
+---
 
-- **Use a clear and descriptive title**
-- **Describe the exact steps to reproduce the problem**
-- **Provide specific examples** (code snippets, screenshots, etc.)
-- **Describe the behavior you observed and what you expected**
-- **Include your environment details** (OS, Node version, browser, etc.)
+## 🛡️ Code of Conduct
 
-### Suggesting Enhancements
+This project and everyone participating in it is governed by our [**Code of Conduct**](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code. Please report unacceptable behavior to the project maintainers.
 
-Enhancement suggestions are tracked as GitHub issues. When creating an enhancement suggestion:
+---
 
-- **Use a clear and descriptive title**
-- **Provide a detailed description of the suggested enhancement**
-- **Explain why this enhancement would be useful**
-- **Include mockups or examples if applicable**
+## 💡 How Can I Contribute?
 
-### Your First Code Contribution
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/lady-beetle_1f41e.png" width="64" alt="Bug">
+<h3>🐛 Report Bugs</h3>
+Found a bug? Help us squash it!
+</td>
+<td align="center" width="25%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/books_1f4da.png" width="64" alt="Resources">
+<h3>📚 Add Resources</h3>
+Share quality educational materials
+</td>
+<td align="center" width="25%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/sparkles_2728.png" width="64" alt="Features">
+<h3>✨ Suggest Features</h3>
+Have an idea? We'd love to hear it!
+</td>
+<td align="center" width="25%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/memo_1f4dd.png" width="64" alt="Docs">
+<h3>📝 Improve Docs</h3>
+Help make our docs better
+</td>
+</tr>
+</table>
 
-Unsure where to begin? Look for issues labeled:
-- `good first issue` - Good for newcomers
-- `help wanted` - Extra attention needed
+### 🐛 Reporting Bugs
 
-### Pull Requests
+Before creating bug reports, please **check existing issues** to avoid duplicates.
 
-1. Follow the [Development Workflow](#development-workflow)
-2. Follow the [Style Guidelines](#style-guidelines)
-3. Write meaningful commit messages
-4. Update documentation as needed
-5. Add tests if applicable
-6. Ensure all tests pass
+**When creating a bug report, include:**
+
+```markdown
+**Describe the bug**
+A clear description of what the bug is.
+
+**To Reproduce**
+Steps to reproduce the behavior:
+1. Go to '...'
+2. Click on '...'
+3. Scroll down to '...'
+4. See error
+
+**Expected behavior**
+What you expected to happen.
+
+**Screenshots**
+If applicable, add screenshots.
+
+**Environment:**
+ - OS: [e.g. macOS, Windows, Linux]
+ - Browser: [e.g. Chrome, Safari]
+ - Node Version: [e.g. 18.0.0]
+ - Project Version: [e.g. 1.0.0]
+```
+
+### ✨ Suggesting Enhancements
+
+Enhancement suggestions are tracked as GitHub issues.
+
+**When creating an enhancement suggestion:**
+
+- 🎯 Use a clear and descriptive title
+- 📝 Provide a detailed description of the suggested enhancement
+- 💡 Explain why this enhancement would be useful
+- 🎨 Include mockups or examples if applicable
+
+### 📚 Adding Educational Resources
+
+1. Navigate to the appropriate content file in `/content`
+2. Follow the existing format
+3. Ensure the resource is:
+   - ✅ High quality and accurate
+   - ✅ Freely accessible (or clearly marked if paid)
+   - ✅ Currently maintained/updated
+   - ✅ Relevant to the category
+
+---
 
 ## Development Workflow
 

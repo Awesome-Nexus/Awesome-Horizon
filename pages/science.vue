@@ -1290,6 +1290,7 @@ useHead({
             </div>
           </div>
         </div>
+        </div>
       </div>
     </div>
   </div>
@@ -1312,5 +1313,4 @@ useHead({
   margin-top: 3rem;
   font-size: 1.875rem;
 }
-</style>
 </style>

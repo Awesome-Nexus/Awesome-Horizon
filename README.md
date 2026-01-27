@@ -1,36 +1,102 @@
-# Awesome Horizon
+<div align="center">
 
-A curated educational resource platform that provides high-quality learning materials across Science, Technology, Engineering, Arts, and Mathematics (STEAM). Built with Nuxt 3, Vue 3, and Tailwind CSS.
+![Awesome Horizon Banner](https://via.placeholder.com/1200x300/6366f1/ffffff?text=Awesome+Horizon)
+
+# 🌟 Awesome Horizon
+
+### *Unlock Your Learning Potential*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.x-00DC82?logo=nuxt.js)](https://nuxt.com/)
+[![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D?logo=vue.js)](https://vuejs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.x-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Stars](https://img.shields.io/github/stars/Awesome-Nexus/Awesome-Horizon?style=social)](https://github.com/Awesome-Nexus/Awesome-Horizon)
+
+**A premium curated educational resource platform** delivering the finest learning materials across **Science, Technology, Engineering, Arts, and Mathematics (STEAM)**. Experience education reimagined with a stunning modern interface.
+
+[🚀 Live Demo](https://awesome-horizon.vercel.app) · [📖 Documentation](https://github.com/Awesome-Nexus/Awesome-Horizon/wiki) · [🐛 Report Bug](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) · [✨ Request Feature](https://github.com/Awesome-Nexus/Awesome-Horizon/issues)
+
+</div>
+
+---
 
 ## ✨ Features
 
-- 📚 **Curated Learning Resources** - Hand-picked educational materials across STEAM disciplines
-- 🔬 **Multiple Categories** - Science, Technology, Engineering, Arts, and Mathematics
-- 🎯 **Quality Focused** - Every resource vetted by educators and industry professionals
-- 🌐 **Modern UI/UX** - Beautiful, intuitive interface built with Vue 3 and Tailwind CSS
-- 📱 **Responsive Design** - Seamless experience across all devices
-- 🚀 **Fast & Performant** - Built with Nuxt 3 for optimal performance
-- 📝 **Content Management** - Easy to update with Nuxt Content
-- 🆓 **100% Free** - All resources are free and open source
+<table>
+<tr>
+<td width="50%">
 
-## 📋 Prerequisites
+### 🎯 **Premium Curation**
+Hand-picked educational materials vetted by educators and industry professionals. Only the highest quality resources make the cut.
 
-Before you begin, ensure you have the following installed:
-- Node.js (v18 or higher)
-- npm, pnpm, yarn, or bun
+### 🚀 **Blazing Fast**
+Built with Nuxt 3 for optimal performance. Lightning-fast page loads and seamless navigation.
 
-## 🚀 Getting Started
+### 📱 **Responsive Design**
+Pixel-perfect experience across all devices - desktop, tablet, and mobile.
 
-### Installation
+</td>
+<td width="50%">
 
-1. Clone the repository:
+### 🎨 **Beautiful UI/UX**
+Stunning, intuitive interface designed with Vue 3 and Tailwind CSS. Learning has never looked this good.
+
+### 🔬 **5 Core Categories**
+Science • Technology • Engineering • Arts • Mathematics
+
+### 🆓 **100% Free & Open**
+All resources are completely free and open source. Education for everyone.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎓 What's Inside
+
+<div align="center">
+
+| Category | Description | Topics |
+|:--------:|:------------|:-------|
+| 🔬 **Science** | Explore the fundamental laws of nature | Physics • Chemistry • Biology • Psychology • Environmental Science |
+| 💻 **Technology** | Master cutting-edge innovations | Programming • AI • Web Development • Mobile • Cloud Computing |
+| 🔧 **Engineering** | Build the world of tomorrow | Civil • Mechanical • Electrical • Aerospace • Software Engineering |
+| 🎨 **Arts** | Unleash your creativity | Design • Photography • Music • Visual Arts • Art History |
+| 📐 **Mathematics** | The language of the universe | Algebra • Calculus • Statistics • Linear Algebra • Logic |
+
+</div>
+
+---
+
+## 🚀 Quick Start
+
+<details>
+<summary><b>📋 Prerequisites</b></summary>
+
+<br>
+
+Ensure you have the following installed:
+
+- **Node.js** `v18.0.0` or higher
+- **Package Manager:** npm, pnpm, yarn, or bun
+
+</details>
+
+<details open>
+<summary><b>⚡ Installation</b></summary>
+
+<br>
+
 ```bash
-git clone https://github.com/yourusername/Awesome-Horizon.git
+# Clone the repository
+git clone https://github.com/Awesome-Nexus/Awesome-Horizon.git
+
+# Navigate to project directory
 cd Awesome-Horizon
-```
 
-2. Install dependencies:
-```bash
+# Install dependencies (choose one)
 npm install
 # or
 pnpm install
@@ -40,136 +106,239 @@ yarn install
 bun install
 ```
 
-### Development Server
+</details>
+
+<details open>
+<summary><b>🔥 Development</b></summary>
+
+<br>
 
 Start the development server on `http://localhost:3310`:
 
 ```bash
 npm run dev
-# or
-pnpm dev
-# or
-yarn dev
-# or
-bun run dev
 ```
 
-### Production
+Your app will be running with hot-reload at **http://localhost:3310** 🎉
 
-Build the application for production:
+</details>
+
+<details>
+<summary><b>🏗️ Production Build</b></summary>
+
+<br>
 
 ```bash
+# Build for production
 npm run build
-# or
-pnpm build
-# or
-yarn build
-# or
-bun run build
-```
 
-Locally preview production build:
-
-```bash
+# Preview production build locally
 npm run preview
-# or
-pnpm preview
-# or
-yarn preview
-# or
-bun run preview
 ```
 
-## 📦 Tech Stack
+</details>
 
-- **Framework:** [Nuxt 3](https://nuxt.com/)
-- **UI Framework:** [Vue 3](https://vuejs.org/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-- **Content:** [Nuxt Content](https://content.nuxt.com/)
-- **Icons:** [Lucide Vue Next](https://lucide.dev/)
-- **Utilities:** [VueUse](https://vueuse.org/)
-- **Database:** [Better SQLite3](https://github.com/WiseLibs/better-sqlite3)
+---
 
-## 🎓 What's Inside
+## 🛠️ Tech Stack
 
-Awesome Horizon curates and organizes educational resources across five main categories:
+<div align="center">
 
-- **🔬 Science** - Physics, Chemistry, Biology, Psychology, Environmental Science
-- **💻 Technology** - Programming, AI, Web Development, Computer Science
-- **🔧 Engineering** - Civil, Mechanical, Electrical, Aerospace Engineering
-- **🎨 Arts** - Design, Photography, Music, Visual Arts, Art History
-- **📐 Mathematics** - Algebra, Calculus, Statistics, Linear Algebra, Logic
+<table>
+<tr>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nuxtjs/nuxtjs-original.svg" width="48" height="48" alt="Nuxt" />
+<br>Nuxt 3
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" width="48" height="48" alt="Vue" />
+<br>Vue 3
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="48" height="48" alt="Tailwind" />
+<br>Tailwind CSS
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" width="48" height="48" alt="TypeScript" />
+<br>TypeScript
+</td>
+<td align="center" width="96">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="48" height="48" alt="SQLite" />
+<br>SQLite
+</td>
+</tr>
+</table>
+
+**Framework:** [Nuxt 3](https://nuxt.com/) • **UI:** [Vue 3](https://vuejs.org/) • **Styling:** [Tailwind CSS](https://tailwindcss.com/)  
+**Content:** [Nuxt Content](https://content.nuxt.com/) • **Icons:** [Lucide](https://lucide.dev/) • **Utilities:** [VueUse](https://vueuse.org/)
+
+</div>
+
+---
 
 ## 📁 Project Structure
 
 ```
-Awesome-Horizon/
-├── app/              # App configuration
-├── assets/           # Static assets (CSS, images)
-├── components/       # Vue components (CategoryCard, AppLogo, etc.)
-├── content/          # Educational content in Markdown
-│   ├── science.md
-│   ├── technology.md
-│   ├── engineering.md
-│   ├── arts.md
-│   └── mathematics.md
-├── layouts/          # Layout components
-├── pages/            # Application pages (auto-routing)
-│   ├── index.vue     # Homepage with categories
-│   ├── about.vue     # About page
-│   ├── science.vue
-│   ├── technology.vue
-│   ├── engineering.vue
-│   ├── arts.vue
-│   └── mathematics.vue
-├── public/           # Public static files
-├── server/           # Server-side code and API routes
-├── app.vue           # Main app component
-├── error.vue         # Error page component
-├── nuxt.config.ts    # Nuxt configuration
-└── tailwind.config.ts # Tailwind configuration
+📦 Awesome-Horizon/
+┣ 📂 app/                    # App configuration & middleware
+┣ 📂 assets/                 # Static assets (CSS, images, fonts)
+┣ 📂 components/             # Reusable Vue components
+┃ ┣ 📄 CategoryCard.vue      # Category display cards
+┃ ┣ 📄 AppLogo.vue           # Application logo component
+┃ └ 📄 LoadingSpinner.vue    # Loading state component
+┣ 📂 content/                # Educational content (Markdown)
+┃ ┣ 📄 science.md            # Science resources
+┃ ┣ 📄 technology.md         # Technology resources
+┃ ┣ 📄 engineering.md        # Engineering resources
+┃ ┣ 📄 arts.md               # Arts resources
+┃ └ 📄 mathematics.md        # Mathematics resources
+┣ 📂 layouts/                # Layout components
+┣ 📂 pages/                  # Application pages (auto-routing)
+┃ ┣ 📄 index.vue             # 🏠 Homepage
+┃ ┣ 📄 about.vue             # ℹ️ About page
+┃ ┣ 📄 science.vue           # 🔬 Science category
+┃ ┣ 📄 technology.vue        # 💻 Technology category
+┃ ┣ 📄 engineering.vue       # 🔧 Engineering category
+┃ ┣ 📄 arts.vue              # 🎨 Arts category
+┃ └ 📄 mathematics.vue       # 📐 Mathematics category
+┣ 📂 public/                 # Public static files
+┣ 📂 server/                 # Server-side code & API routes
+┣ 📄 app.vue                 # Main app component
+┣ 📄 error.vue               # Error page component
+┣ 📄 nuxt.config.ts          # ⚙️ Nuxt configuration
+┣ 📄 tailwind.config.ts      # 🎨 Tailwind configuration
+┗ 📄 package.json            # Dependencies & scripts
 ```
+
+---
 
 ## 🤝 Contributing
 
-We believe in the power of community-driven education! Know of excellent educational resources that should be included? Please contribute!
+<div align="center">
 
-**Ways to contribute:**
-- 📚 Add new learning resources to existing categories
-- ✨ Suggest new categories or subcategories
-- 🐛 Report issues or broken links
-- 💡 Propose UI/UX improvements
-- 📝 Improve documentation
+**We believe in the power of community-driven education!** 💪
 
-Please read our [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing Guidelines](CONTRIBUTING.md) before getting started.
+Know of excellent educational resources that should be included? We'd love your contribution!
 
-### Quick Contribution Steps
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AddNewResource`)
-3. Add your resources to the appropriate content file in `/content`
-4. Commit your changes (`git commit -m 'Add [Resource Name] to [Category]'`)
-5. Push to the branch (`git push origin feature/AddNewResource`)
-6. Open a Pull Request
+[![Contribute](https://img.shields.io/badge/Contribute-Now-6366f1?style=for-the-badge&logo=github)](CONTRIBUTING.md)
 
-## 📄 License
+</div>
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### 🌟 Ways to Contribute
 
-## 📝 Changelog
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/books_1f4da.png" width="48" alt="Books">
+<br><b>Add Resources</b>
+<br>Share quality learning materials
+</td>
+<td align="center" width="33%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/bug_1f41b.png" width="48" alt="Bug">
+<br><b>Report Issues</b>
+<br>Find bugs or broken links
+</td>
+<td align="center" width="33%">
+<img src="https://em-content.zobj.net/thumbs/120/apple/354/light-bulb_1f4a1.png" width="48" alt="Bulb">
+<br><b>Suggest Features</b>
+<br>Propose improvements
+</td>
+</tr>
+</table>
 
-See [CHANGELOG.md](CHANGELOG.md) for a list of changes and version history.
+### 🚀 Quick Contribution Steps
+
+```bash
+# 1. Fork the repository
+# 2. Clone your fork
+git clone https://github.com/YOUR_USERNAME/Awesome-Horizon.git
+
+# 3. Create a feature branch
+git checkout -b feature/AddAwesomeResource
+
+# 4. Add your resources to /content or make changes
+# 5. Commit your changes
+git commit -m "Add [Resource Name] to [Category]"
+
+# 6. Push to your fork
+git push origin feature/AddAwesomeResource
+
+# 7. Open a Pull Request 🎉
+```
+
+📖 Read our [**Contributing Guidelines**](CONTRIBUTING.md) and [**Code of Conduct**](CODE_OF_CONDUCT.md) before getting started.
+
+---
+
+## 📊 Project Stats
+
+<div align="center">
+
+[![GitHub issues](https://img.shields.io/github/issues/Awesome-Nexus/Awesome-Horizon?style=flat-square)](https://github.com/Awesome-Nexus/Awesome-Horizon/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Awesome-Nexus/Awesome-Horizon?style=flat-square)](https://github.com/Awesome-Nexus/Awesome-Horizon/pulls)
+[![GitHub contributors](https://img.shields.io/github/contributors/Awesome-Nexus/Awesome-Horizon?style=flat-square)](https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Awesome-Nexus/Awesome-Horizon?style=flat-square)](https://github.com/Awesome-Nexus/Awesome-Horizon/commits/main)
+
+</div>
+
+---
+
+## 📝 Documentation
+
+| Document | Description |
+|----------|-------------|
+| 📜 [**LICENSE**](LICENSE) | MIT License - Free to use and modify |
+| 📋 [**CHANGELOG**](CHANGELOG.md) | Version history and release notes |
+| 🤝 [**CONTRIBUTING**](CONTRIBUTING.md) | How to contribute to the project |
+| 🛡️ [**CODE OF CONDUCT**](CODE_OF_CONDUCT.md) | Community guidelines and standards |
+
+---
+
+## 💬 Support & Community
+
+<div align="center">
+
+**Need help or have questions?**
+
+[![GitHub Issues](https://img.shields.io/badge/GitHub-Issues-6366f1?style=for-the-badge&logo=github)](https://github.com/Awesome-Nexus/Awesome-Horizon/issues)
+[![Discussions](https://img.shields.io/badge/GitHub-Discussions-6366f1?style=for-the-badge&logo=github)](https://github.com/Awesome-Nexus/Awesome-Horizon/discussions)
+
+**Join our community of learners and educators!**
+
+</div>
+
+---
 
 ## 🙏 Acknowledgments
 
-- [Nuxt Team](https://nuxt.com/) for the amazing framework
-- All contributors who help improve this project
+<div align="center">
 
-## 📞 Support
+Special thanks to:
 
-If you have any questions or need help, please:
-- Open an issue on GitHub
-- Check the [Nuxt documentation](https://nuxt.com/docs)
+**[Nuxt Team](https://nuxt.com/)** • **[Vue.js Team](https://vuejs.org/)** • **[Tailwind Labs](https://tailwindcss.com/)**
 
-## ⭐ Show your support
+And to all our amazing **[Contributors](https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors)** who help make education accessible to everyone! 💚
 
-Give a ⭐️ if this project helped you!
+</div>
+
+---
+
+<div align="center">
+
+## ⭐ Show Your Support
+
+If this project helped you learn something new or find valuable resources, please give it a ⭐!
+
+**Share the knowledge with others!**
+
+[![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fgithub.com%2FAwesome-Nexus%2FAwesome-Horizon)](https://twitter.com/intent/tweet?text=Check%20out%20Awesome%20Horizon%20-%20A%20curated%20STEAM%20learning%20platform!&url=https://github.com/Awesome-Nexus/Awesome-Horizon)
+
+---
+
+**Made with ❤️ by educators, for learners**
+
+*Empowering minds, one resource at a time* ✨
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](LICENSE)
+
+</div>
