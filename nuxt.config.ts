@@ -19,13 +19,27 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Awesome Horizon',
+      title: 'Awesome Horizon - Curated STEAM Learning Resources',
       meta: [
-        { name: 'description', content: 'Curated learning resources for the modern era.' }
+        { name: 'description', content: 'Discover curated educational resources for Science, Technology, Engineering, Arts, and Mathematics. Free, high-quality learning materials for students and educators.' },
+        { name: 'keywords', content: 'education, STEAM, science, technology, engineering, arts, mathematics, learning resources, free education' },
+        { name: 'author', content: 'Awesome Horizon' },
+        { property: 'og:title', content: 'Awesome Horizon - Curated STEAM Learning Resources' },
+        { property: 'og:description', content: 'Discover curated educational resources for Science, Technology, Engineering, Arts, and Mathematics.' },
+        { property: 'og:type', content: 'website' },
+        { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' }
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' }
       ]
+    }
+  },
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml']
     }
   }
 })

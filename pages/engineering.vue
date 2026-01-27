@@ -130,16 +130,29 @@ useHead({
                     </defs>
                     
                     <!-- Main horizontal branch line -->
-                    <line x1="70" y1="235" x2="750" y2="235" stroke="#f59e0b" stroke-width="3" opacity="0.6" filter="url(#glow-engineering)"/>
+                    <line x1="70" y1="235" x2="750" y2="235" stroke="#4a5568" stroke-width="2"/>
                     
-                    <!-- Vertical branch lines -->
-                    <line x1="170" y1="235" x2="170" y2="150" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
-                    <line x1="270" y1="235" x2="270" y2="320" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
-                    <line x1="370" y1="235" x2="370" y2="150" stroke="#eab308" stroke-width="2" opacity="0.5"/>
-                    <line x1="470" y1="235" x2="470" y2="320" stroke="#10b981" stroke-width="2" opacity="0.5"/>
-                    <line x1="570" y1="235" x2="570" y2="150" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
-                    <line x1="670" y1="235" x2="670" y2="320" stroke="#ef4444" stroke-width="2" opacity="0.5"/>
-                    <line x1="750" y1="235" x2="750" y2="150" stroke="#06b6d4" stroke-width="2" opacity="0.5"/>
+                    <!-- Vertical branch lines with curved junctions -->
+                    <!-- Mechanical branch (top) -->
+                    <path d="M 170 235 Q 170 195 170 150" stroke="#f59e0b" stroke-width="2" fill="none"/>
+                    
+                    <!-- Aerospace branch (bottom) -->
+                    <path d="M 270 235 Q 270 275 270 320" stroke="#3b82f6" stroke-width="2" fill="none"/>
+                    
+                    <!-- Electrical branch (top) -->
+                    <path d="M 370 235 Q 370 195 370 150" stroke="#eab308" stroke-width="2" fill="none"/>
+                    
+                    <!-- Chemical branch (bottom) -->
+                    <path d="M 470 235 Q 470 275 470 320" stroke="#10b981" stroke-width="2" fill="none"/>
+                    
+                    <!-- General branch (top) -->
+                    <path d="M 570 235 Q 570 195 570 150" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                    
+                    <!-- Inspiring Talks branch (bottom) -->
+                    <path d="M 670 235 Q 670 275 670 320" stroke="#ef4444" stroke-width="2" fill="none"/>
+                    
+                    <!-- Additional branch (top) -->
+                    <path d="M 750 235 Q 750 195 750 150" stroke="#06b6d4" stroke-width="2" fill="none"/>
                   </svg>
                   
                   <!-- Main Branch Nodes (Horizontal Flow) -->
@@ -420,123 +433,863 @@ useHead({
               </div>
             </div>
           </div>
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-amber-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-amber-400"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.106-3.105c.32-.322.863-.22.983.218a6 6 0 0 1-8.259 7.057l-7.91 7.91a1 1 0 0 1-2.999-3l7.91-7.91a6 6 0 0 1 7.057-8.259c.438.12.54.662.219.984z"/></svg>
-              </div>
-              Mechanical Engineering
-            </h2>
-            <div class="space-y-4">
-              <div class="p-4 bg-space-800/50 rounded-lg border border-space-700 hover:border-primary-500/50 transition-colors">
-                <h3 class="font-semibold text-white mb-2">Fundamentals & Design</h3>
-                <p class="text-gray-400 text-sm mb-3">Core mechanical engineering concepts, design principles, and applications.</p>
-                <div class="space-y-2">
-                  <a href="https://youtu.be/ht9GwXQMgpo" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Understanding Engineering Drawings</a>
-                  <a href="https://www.youtube.com/playlist?list=PLX2gX-ftPVXUjkEEXJoC0mx8mxTlfqpCn" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Simple Machines (Dr. George Mehler)</a>
-                  <a href="http://www.ilectureonline.com/lectures/subject/ENGINEERING/29" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• iLectureOnline Mechanical Engineering</a>
-                </div>
-              </div>
-            </div>
-          </div>
 
           <!-- Aerospace Engineering Section -->
-          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
+          <div id="aerospace" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <div class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
               </div>
               Aerospace Engineering
             </h2>
-            <div class="space-y-4">
-              <div class="p-4 bg-space-800/50 rounded-lg border border-space-700 hover:border-primary-500/50 transition-colors">
-                <h3 class="font-semibold text-white mb-2">Flight & Aerodynamics</h3>
-                <p class="text-gray-400 text-sm mb-3">Principles of flight, aerodynamics, and aerospace engineering fundamentals.</p>
-                <div class="space-y-2">
-                  <a href="https://youtu.be/5O-j0w-h7v0" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Principles of Flight</a>
-                  <a href="https://youtu.be/edLnZgF9mUg" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Airplane Aerodynamics (MIT)</a>
-                  <a href="https://youtu.be/E3i_XHlVCeU" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Understanding Aerodynamic Lift</a>
-                </div>
+            
+            <!-- GitHub-style Branch Network for Aerospace Engineering -->
+            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
+              <svg class="absolute inset-0 w-full h-full pointer-events-none">
+                <!-- Main vertical branches -->
+                <line x1="100" y1="50" x2="100" y2="350" stroke="#3b82f6" stroke-width="3" opacity="0.6"/>
+                <line x1="300" y1="50" x2="300" y2="350" stroke="#1d4ed8" stroke-width="3" opacity="0.6"/>
+                <line x1="500" y1="50" x2="500" y2="350" stroke="#1e40af" stroke-width="3" opacity="0.6"/>
+                
+                <!-- Horizontal resource branches -->
+                <line x1="100" y1="100" x2="250" y2="100" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="150" x2="250" y2="150" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="200" x2="250" y2="200" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="250" x2="250" y2="250" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="300" y1="100" x2="450" y2="100" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="150" x2="450" y2="150" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="200" x2="450" y2="200" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="250" x2="450" y2="250" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="500" y1="100" x2="650" y2="100" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="150" x2="650" y2="150" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="200" x2="650" y2="200" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="250" x2="650" y2="250" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
+                
+                <!-- Junction circles -->
+                <circle cx="100" cy="100" r="4" fill="#3b82f6"/>
+                <circle cx="100" cy="150" r="4" fill="#3b82f6"/>
+                <circle cx="100" cy="200" r="4" fill="#3b82f6"/>
+                <circle cx="100" cy="250" r="4" fill="#3b82f6"/>
+                <circle cx="300" cy="100" r="4" fill="#1d4ed8"/>
+                <circle cx="300" cy="150" r="4" fill="#1d4ed8"/>
+                <circle cx="300" cy="200" r="4" fill="#1d4ed8"/>
+                <circle cx="300" cy="250" r="4" fill="#1d4ed8"/>
+                <circle cx="500" cy="100" r="4" fill="#1e40af"/>
+                <circle cx="500" cy="150" r="4" fill="#1e40af"/>
+                <circle cx="500" cy="200" r="4" fill="#1e40af"/>
+                <circle cx="500" cy="250" r="4" fill="#1e40af"/>
+              </svg>
+              
+              <!-- Branch Headers -->
+              <div class="absolute top-4 left-[70px] text-center">
+                <div class="text-sm font-bold text-blue-300 mb-2">Flight Principles</div>
+              </div>
+              <div class="absolute top-4 left-[270px] text-center">
+                <div class="text-sm font-bold text-blue-300 mb-2">Aerodynamics</div>
+              </div>
+              <div class="absolute top-4 left-[470px] text-center">
+                <div class="text-sm font-bold text-blue-300 mb-2">Space Systems</div>
+              </div>
+              
+              <!-- Flight Principles Branch -->
+              <div class="absolute top-[85px] left-[260px] z-10">
+                <a href="https://youtu.be/5O-j0w-h7v0" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Principles of Flight</div>
+                    <div class="text-xs text-gray-300">Basic Flight Physics</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[260px] z-10">
+                <a href="https://youtu.be/edLnZgF9mUg" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">MIT Aerodynamics</div>
+                    <div class="text-xs text-gray-300">Airplane Aerodynamics</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[260px] z-10">
+                <a href="https://youtu.be/E3i_XHlVCeU" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Aerodynamic Lift</div>
+                    <div class="text-xs text-gray-300">Understanding Lift</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[260px] z-10">
+                <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-aeronautics-k4.html" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">NASA Aeronautics</div>
+                    <div class="text-xs text-gray-300">What is Aeronautics</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Aerodynamics Branch -->
+              <div class="absolute top-[85px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=6UlsArvbTeo" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Wind Tunnel Testing</div>
+                    <div class="text-xs text-gray-300">Aerodynamic Testing</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=QKCK4lJLQHU" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Supersonic Flight</div>
+                    <div class="text-xs text-gray-300">Breaking Sound Barrier</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=wuJIqmha2Hc" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Computational Fluid</div>
+                    <div class="text-xs text-gray-300">CFD Simulation</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=Gg0TXNXgz-w" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Hypersonic Flight</div>
+                    <div class="text-xs text-gray-300">Extreme Speeds</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Space Systems Branch -->
+              <div class="absolute top-[85px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=DKK4KeLBcuw" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Rocket Propulsion</div>
+                    <div class="text-xs text-gray-300">Space Launch Systems</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=ZJijzqSJPAk" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Orbital Mechanics</div>
+                    <div class="text-xs text-gray-300">Spacecraft Orbits</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=_q4DrUHKC0Q" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Satellite Design</div>
+                    <div class="text-xs text-gray-300">Space Technology</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=Hm8UrrkwG9k" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-blue-300 mb-1">Mars Missions</div>
+                    <div class="text-xs text-gray-300">Planetary Exploration</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
 
           <!-- Electrical Engineering Section -->
-          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
+          <div id="electrical" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <div class="w-8 h-8 bg-yellow-500/20 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-400"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7"/></svg>
               </div>
               Electrical Engineering
             </h2>
-            <div class="space-y-4">
-              <div class="p-4 bg-space-800/50 rounded-lg border border-space-700 hover:border-primary-500/50 transition-colors">
-                <h3 class="font-semibold text-white mb-2">Circuits & Systems</h3>
-                <p class="text-gray-400 text-sm mb-3">Electrical circuits, systems analysis, and electronic engineering principles.</p>
-                <div class="space-y-2">
-                  <a href="http://www.ilectureonline.com/lectures/subject/ENGINEERING/28" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• iLectureOnline Electrical Engineering</a>
-                </div>
+            
+            <!-- GitHub-style Branch Network for Electrical Engineering -->
+            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
+              <svg class="absolute inset-0 w-full h-full pointer-events-none">
+                <!-- Main vertical branches -->
+                <line x1="100" y1="50" x2="100" y2="350" stroke="#eab308" stroke-width="3" opacity="0.6"/>
+                <line x1="300" y1="50" x2="300" y2="350" stroke="#ca8a04" stroke-width="3" opacity="0.6"/>
+                <line x1="500" y1="50" x2="500" y2="350" stroke="#a16207" stroke-width="3" opacity="0.6"/>
+                
+                <!-- Horizontal resource branches -->
+                <line x1="100" y1="100" x2="250" y2="100" stroke="#eab308" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="150" x2="250" y2="150" stroke="#eab308" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="200" x2="250" y2="200" stroke="#eab308" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="250" x2="250" y2="250" stroke="#eab308" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="300" y1="100" x2="450" y2="100" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="150" x2="450" y2="150" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="200" x2="450" y2="200" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="250" x2="450" y2="250" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="500" y1="100" x2="650" y2="100" stroke="#a16207" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="150" x2="650" y2="150" stroke="#a16207" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="200" x2="650" y2="200" stroke="#a16207" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="250" x2="650" y2="250" stroke="#a16207" stroke-width="2" opacity="0.4"/>
+                
+                <!-- Junction circles -->
+                <circle cx="100" cy="100" r="4" fill="#eab308"/>
+                <circle cx="100" cy="150" r="4" fill="#eab308"/>
+                <circle cx="100" cy="200" r="4" fill="#eab308"/>
+                <circle cx="100" cy="250" r="4" fill="#eab308"/>
+                <circle cx="300" cy="100" r="4" fill="#ca8a04"/>
+                <circle cx="300" cy="150" r="4" fill="#ca8a04"/>
+                <circle cx="300" cy="200" r="4" fill="#ca8a04"/>
+                <circle cx="300" cy="250" r="4" fill="#ca8a04"/>
+                <circle cx="500" cy="100" r="4" fill="#a16207"/>
+                <circle cx="500" cy="150" r="4" fill="#a16207"/>
+                <circle cx="500" cy="200" r="4" fill="#a16207"/>
+                <circle cx="500" cy="250" r="4" fill="#a16207"/>
+              </svg>
+              
+              <!-- Branch Headers -->
+              <div class="absolute top-4 left-[70px] text-center">
+                <div class="text-sm font-bold text-yellow-300 mb-2">Circuit Basics</div>
+              </div>
+              <div class="absolute top-4 left-[270px] text-center">
+                <div class="text-sm font-bold text-yellow-300 mb-2">Power Systems</div>
+              </div>
+              <div class="absolute top-4 left-[470px] text-center">
+                <div class="text-sm font-bold text-yellow-300 mb-2">Electronics</div>
+              </div>
+              
+              <!-- Circuit Basics Branch -->
+              <div class="absolute top-[85px] left-[260px] z-10">
+                <a href="http://www.ilectureonline.com/lectures/subject/ENGINEERING/28" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Online Lectures</div>
+                    <div class="text-xs text-gray-300">Electrical Engineering</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=VQOfz2SXWQs" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Basic Circuits</div>
+                    <div class="text-xs text-gray-300">Ohm's Law & Circuits</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=8jF1OhgOdAg" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">AC vs DC</div>
+                    <div class="text-xs text-gray-300">Current Types</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=NLnw2EUYc7M" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Capacitors</div>
+                    <div class="text-xs text-gray-300">Energy Storage</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Power Systems Branch -->
+              <div class="absolute top-[85px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=w4QFJb9a8vo" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Power Grid</div>
+                    <div class="text-xs text-gray-300">Electrical Grid Systems</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=ZPyUKyGY_Tg" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Transformers</div>
+                    <div class="text-xs text-gray-300">Voltage Conversion</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=1fAAOrlHlsM" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Motors & Generators</div>
+                    <div class="text-xs text-gray-300">Electromechanical</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=S1jWdeRKvvk" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Renewable Energy</div>
+                    <div class="text-xs text-gray-300">Solar & Wind Power</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Electronics Branch -->
+              <div class="absolute top-[85px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=6Maq5IyHSuc" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Semiconductors</div>
+                    <div class="text-xs text-gray-300">Diodes & Transistors</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=7ukDKVHnac4" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Digital Logic</div>
+                    <div class="text-xs text-gray-300">Logic Gates & Circuits</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=sTHqnDKJdVQ" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Microcontrollers</div>
+                    <div class="text-xs text-gray-300">Arduino & Embedded</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=Maq24bX0jvs" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-yellow-300 mb-1">Signal Processing</div>
+                    <div class="text-xs text-gray-300">DSP & Filters</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
 
           <!-- Chemical Engineering Section -->
-          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
+          <div id="chemical" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <div class="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M14 2v6a2 2 0 0 0 .245.96l5.51 10.08A2 2 0 0 1 18 22H6a2 2 0 0 1-1.755-2.96l5.51-10.08A2 2 0 0 0 10 8V2"/><path d="M6.453 15h11.094"/><path d="M8.5 2h7"/></svg>
               </div>
               Chemical Engineering
             </h2>
-            <div class="space-y-4">
-              <div class="p-4 bg-space-800/50 rounded-lg border border-space-700 hover:border-primary-500/50 transition-colors">
-                <h3 class="font-semibold text-white mb-2">Process Engineering</h3>
-                <p class="text-gray-400 text-sm mb-3">Chemical processes, refining, and industrial applications.</p>
-                <div class="space-y-2">
-                  <a href="https://www.youtube.com/watch?v=k4cVxGndh9g" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• The Principle of Refining</a>
-                  <a href="https://www.youtube.com/watch?v=hC1PKRmiEvs" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• How an Oil Refinery Works (1950 Shell Film)</a>
-                </div>
+            
+            <!-- GitHub-style Branch Network for Chemical Engineering -->
+            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
+              <svg class="absolute inset-0 w-full h-full pointer-events-none">
+                <!-- Main vertical branches -->
+                <line x1="100" y1="50" x2="100" y2="350" stroke="#10b981" stroke-width="3" opacity="0.6"/>
+                <line x1="300" y1="50" x2="300" y2="350" stroke="#059669" stroke-width="3" opacity="0.6"/>
+                <line x1="500" y1="50" x2="500" y2="350" stroke="#047857" stroke-width="3" opacity="0.6"/>
+                
+                <!-- Horizontal resource branches -->
+                <line x1="100" y1="100" x2="250" y2="100" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="150" x2="250" y2="150" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="200" x2="250" y2="200" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="250" x2="250" y2="250" stroke="#10b981" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="300" y1="100" x2="450" y2="100" stroke="#059669" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="150" x2="450" y2="150" stroke="#059669" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="200" x2="450" y2="200" stroke="#059669" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="250" x2="450" y2="250" stroke="#059669" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="500" y1="100" x2="650" y2="100" stroke="#047857" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="150" x2="650" y2="150" stroke="#047857" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="200" x2="650" y2="200" stroke="#047857" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="250" x2="650" y2="250" stroke="#047857" stroke-width="2" opacity="0.4"/>
+                
+                <!-- Junction circles -->
+                <circle cx="100" cy="100" r="4" fill="#10b981"/>
+                <circle cx="100" cy="150" r="4" fill="#10b981"/>
+                <circle cx="100" cy="200" r="4" fill="#10b981"/>
+                <circle cx="100" cy="250" r="4" fill="#10b981"/>
+                <circle cx="300" cy="100" r="4" fill="#059669"/>
+                <circle cx="300" cy="150" r="4" fill="#059669"/>
+                <circle cx="300" cy="200" r="4" fill="#059669"/>
+                <circle cx="300" cy="250" r="4" fill="#059669"/>
+                <circle cx="500" cy="100" r="4" fill="#047857"/>
+                <circle cx="500" cy="150" r="4" fill="#047857"/>
+                <circle cx="500" cy="200" r="4" fill="#047857"/>
+                <circle cx="500" cy="250" r="4" fill="#047857"/>
+              </svg>
+              
+              <!-- Branch Headers -->
+              <div class="absolute top-4 left-[70px] text-center">
+                <div class="text-sm font-bold text-green-300 mb-2">Process Design</div>
+              </div>
+              <div class="absolute top-4 left-[270px] text-center">
+                <div class="text-sm font-bold text-green-300 mb-2">Refining</div>
+              </div>
+              <div class="absolute top-4 left-[470px] text-center">
+                <div class="text-sm font-bold text-green-300 mb-2">Biotechnology</div>
+              </div>
+              
+              <!-- Process Design Branch -->
+              <div class="absolute top-[85px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=k4cVxGndh9g" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Refining Principles</div>
+                    <div class="text-xs text-gray-300">Chemical Processes</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=hC1PKRmiEvs" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Oil Refinery</div>
+                    <div class="text-xs text-gray-300">Shell Film 1950</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=RMWQbmjGgs0" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Mass Transfer</div>
+                    <div class="text-xs text-gray-300">Unit Operations</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=7KuHuxM_5iI" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Heat Transfer</div>
+                    <div class="text-xs text-gray-300">Thermal Processes</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Refining Branch -->
+              <div class="absolute top-[85px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=Nji1xZ3n5jc" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Distillation</div>
+                    <div class="text-xs text-gray-300">Separation Process</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=hxMS4QJjbzg" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Catalysis</div>
+                    <div class="text-xs text-gray-300">Chemical Reactions</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=Qw8IiRgSMFQ" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Petrochemicals</div>
+                    <div class="text-xs text-gray-300">Chemical Industry</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=2LM0CZZ9Uw8" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Process Control</div>
+                    <div class="text-xs text-gray-300">Automation Systems</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Biotechnology Branch -->
+              <div class="absolute top-[85px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=8kK2zwjRV0M" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Bioprocessing</div>
+                    <div class="text-xs text-gray-300">Biological Systems</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=gG7uCskUOrA" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Fermentation</div>
+                    <div class="text-xs text-gray-300">Microbial Processes</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=jAhjPd4uNFY" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Biofuels</div>
+                    <div class="text-xs text-gray-300">Renewable Energy</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=FkVomB6cVJE" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-green-300 mb-1">Pharmaceuticals</div>
+                    <div class="text-xs text-gray-300">Drug Manufacturing</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
 
           <!-- General Engineering Section -->
-          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
+          <div id="general" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <div class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-400"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
               </div>
               General Engineering
             </h2>
-            <div class="space-y-4">
-              <div class="p-4 bg-space-800/50 rounded-lg border border-space-700 hover:border-primary-500/50 transition-colors">
-                <h3 class="font-semibold text-white mb-2">Engineering Fundamentals</h3>
-                <p class="text-gray-400 text-sm mb-3">Core engineering principles and interdisciplinary resources.</p>
-                <div class="space-y-2">
-                  <a href="https://youtu.be/btGYcizV0iI" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• What is Engineering?</a>
-                  <a href="https://youtu.be/FAJGx3zP-Eo" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Who Makes Things Happen? Engineers!</a>
-                  <a href="https://www.engineer4free.com" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Engineer4Free University Level Courses</a>
-                  <a href="https://cosmolearning.org/engineering/" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• CosmoLearning Engineering Videos</a>
-                </div>
+            
+            <!-- GitHub-style Branch Network for General Engineering -->
+            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
+              <svg class="absolute inset-0 w-full h-full pointer-events-none">
+                <!-- Main vertical branches -->
+                <line x1="100" y1="50" x2="100" y2="350" stroke="#8b5cf6" stroke-width="3" opacity="0.6"/>
+                <line x1="300" y1="50" x2="300" y2="350" stroke="#7c3aed" stroke-width="3" opacity="0.6"/>
+                <line x1="500" y1="50" x2="500" y2="350" stroke="#6d28d9" stroke-width="3" opacity="0.6"/>
+                
+                <!-- Horizontal resource branches -->
+                <line x1="100" y1="100" x2="250" y2="100" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="150" x2="250" y2="150" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="200" x2="250" y2="200" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="250" x2="250" y2="250" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="300" y1="100" x2="450" y2="100" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="150" x2="450" y2="150" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="200" x2="450" y2="200" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="250" x2="450" y2="250" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="500" y1="100" x2="650" y2="100" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="150" x2="650" y2="150" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="200" x2="650" y2="200" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="250" x2="650" y2="250" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
+                
+                <!-- Junction circles -->
+                <circle cx="100" cy="100" r="4" fill="#8b5cf6"/>
+                <circle cx="100" cy="150" r="4" fill="#8b5cf6"/>
+                <circle cx="100" cy="200" r="4" fill="#8b5cf6"/>
+                <circle cx="100" cy="250" r="4" fill="#8b5cf6"/>
+                <circle cx="300" cy="100" r="4" fill="#7c3aed"/>
+                <circle cx="300" cy="150" r="4" fill="#7c3aed"/>
+                <circle cx="300" cy="200" r="4" fill="#7c3aed"/>
+                <circle cx="300" cy="250" r="4" fill="#7c3aed"/>
+                <circle cx="500" cy="100" r="4" fill="#6d28d9"/>
+                <circle cx="500" cy="150" r="4" fill="#6d28d9"/>
+                <circle cx="500" cy="200" r="4" fill="#6d28d9"/>
+                <circle cx="500" cy="250" r="4" fill="#6d28d9"/>
+              </svg>
+              
+              <!-- Branch Headers -->
+              <div class="absolute top-4 left-[70px] text-center">
+                <div class="text-sm font-bold text-purple-300 mb-2">Fundamentals</div>
+              </div>
+              <div class="absolute top-4 left-[270px] text-center">
+                <div class="text-sm font-bold text-purple-300 mb-2">Education</div>
+              </div>
+              <div class="absolute top-4 left-[470px] text-center">
+                <div class="text-sm font-bold text-purple-300 mb-2">Resources</div>
+              </div>
+              
+              <!-- Fundamentals Branch -->
+              <div class="absolute top-[85px] left-[260px] z-10">
+                <a href="https://youtu.be/btGYcizV0iI" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">What is Engineering?</div>
+                    <div class="text-xs text-gray-300">Engineering Basics</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[260px] z-10">
+                <a href="https://youtu.be/FAJGx3zP-Eo" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Engineers Impact</div>
+                    <div class="text-xs text-gray-300">Who Makes Things Happen</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=bipTWWHya8A" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Engineering Design</div>
+                    <div class="text-xs text-gray-300">Design Process</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=fxZWIbNKJNs" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Problem Solving</div>
+                    <div class="text-xs text-gray-300">Engineering Method</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Education Branch -->
+              <div class="absolute top-[85px] left-[460px] z-10">
+                <a href="https://www.engineer4free.com" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Engineer4Free</div>
+                    <div class="text-xs text-gray-300">University Courses</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[460px] z-10">
+                <a href="https://cosmolearning.org/engineering/" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">CosmoLearning</div>
+                    <div class="text-xs text-gray-300">Engineering Videos</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[460px] z-10">
+                <a href="https://www.khanacademy.org/science/physics" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Khan Academy</div>
+                    <div class="text-xs text-gray-300">Physics & Engineering</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[460px] z-10">
+                <a href="https://www.edx.org/learn/engineering" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">edX Engineering</div>
+                    <div class="text-xs text-gray-300">Online Courses</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Resources Branch -->
+              <div class="absolute top-[85px] left-[660px] z-10">
+                <a href="https://www.asme.org/topics-resources/content/7-different-types-of-engineering" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Engineering Types</div>
+                    <div class="text-xs text-gray-300">ASME Guide</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[660px] z-10">
+                <a href="https://www.engineeringchallenges.org/" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">Grand Challenges</div>
+                    <div class="text-xs text-gray-300">21st Century</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[660px] z-10">
+                <a href="https://www.nspe.org/" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">NSPE</div>
+                    <div class="text-xs text-gray-300">Professional Society</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[660px] z-10">
+                <a href="https://www.ieee.org/" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-purple-300 mb-1">IEEE</div>
+                    <div class="text-xs text-gray-300">Engineering Society</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
 
           <!-- Engineering Talks Section -->
-          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
+          <div id="talks" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
             <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
               <div class="w-8 h-8 bg-red-500/20 rounded-lg flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-red-400"><path d="M12 2a3 3 0 0 0-3 3c0 1.5 1.5 3 3 3s3-1.5 3-3a3 3 0 0 0-3-3Z"/><path d="M19 11c-.64-.64-1.84-.84-3-1.2a3.9 3.9 0 0 1-2-2c-.36-1.16-.56-2.36-1.2-3"/><path d="M5 11c.64-.64 1.84-.84 3-1.2a3.9 3.9 0 0 0 2-2c.36-1.16.56-2.36 1.2-3"/><path d="M12 22s4-9 4-13"/><path d="M8 22s-4-9-4-13"/></svg>
               </div>
               Inspiring Talks
             </h2>
-            <div class="space-y-4">
-              <div class="p-4 bg-space-800/50 rounded-lg border border-space-700 hover:border-primary-500/50 transition-colors">
-                <h3 class="font-semibold text-white mb-2">Engineering Leadership & Innovation</h3>
-                <p class="text-gray-400 text-sm mb-3">Inspirational talks from engineering leaders and innovators.</p>
-                <div class="space-y-2">
-                  <a href="https://archive.org/details/podcast_businessleadership-video_the-art-engineering_1000084846101" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• The Art of Engineering (James Dyson)</a>
-                  <a href="https://youtu.be/FEeTLopLkEo" target="_blank" class="block text-primary-400 hover:text-white transition-colors text-sm">• Inspiring the Next Generation of Female Engineers</a>
-                </div>
+            
+            <!-- GitHub-style Branch Network for Inspiring Talks -->
+            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
+              <svg class="absolute inset-0 w-full h-full pointer-events-none">
+                <!-- Main vertical branches -->
+                <line x1="100" y1="50" x2="100" y2="350" stroke="#ef4444" stroke-width="3" opacity="0.6"/>
+                <line x1="300" y1="50" x2="300" y2="350" stroke="#dc2626" stroke-width="3" opacity="0.6"/>
+                <line x1="500" y1="50" x2="500" y2="350" stroke="#b91c1c" stroke-width="3" opacity="0.6"/>
+                
+                <!-- Horizontal resource branches -->
+                <line x1="100" y1="100" x2="250" y2="100" stroke="#ef4444" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="150" x2="250" y2="150" stroke="#ef4444" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="200" x2="250" y2="200" stroke="#ef4444" stroke-width="2" opacity="0.4"/>
+                <line x1="100" y1="250" x2="250" y2="250" stroke="#ef4444" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="300" y1="100" x2="450" y2="100" stroke="#dc2626" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="150" x2="450" y2="150" stroke="#dc2626" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="200" x2="450" y2="200" stroke="#dc2626" stroke-width="2" opacity="0.4"/>
+                <line x1="300" y1="250" x2="450" y2="250" stroke="#dc2626" stroke-width="2" opacity="0.4"/>
+                
+                <line x1="500" y1="100" x2="650" y2="100" stroke="#b91c1c" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="150" x2="650" y2="150" stroke="#b91c1c" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="200" x2="650" y2="200" stroke="#b91c1c" stroke-width="2" opacity="0.4"/>
+                <line x1="500" y1="250" x2="650" y2="250" stroke="#b91c1c" stroke-width="2" opacity="0.4"/>
+                
+                <!-- Junction circles -->
+                <circle cx="100" cy="100" r="4" fill="#ef4444"/>
+                <circle cx="100" cy="150" r="4" fill="#ef4444"/>
+                <circle cx="100" cy="200" r="4" fill="#ef4444"/>
+                <circle cx="100" cy="250" r="4" fill="#ef4444"/>
+                <circle cx="300" cy="100" r="4" fill="#dc2626"/>
+                <circle cx="300" cy="150" r="4" fill="#dc2626"/>
+                <circle cx="300" cy="200" r="4" fill="#dc2626"/>
+                <circle cx="300" cy="250" r="4" fill="#dc2626"/>
+                <circle cx="500" cy="100" r="4" fill="#b91c1c"/>
+                <circle cx="500" cy="150" r="4" fill="#b91c1c"/>
+                <circle cx="500" cy="200" r="4" fill="#b91c1c"/>
+                <circle cx="500" cy="250" r="4" fill="#b91c1c"/>
+              </svg>
+              
+              <!-- Branch Headers -->
+              <div class="absolute top-4 left-[70px] text-center">
+                <div class="text-sm font-bold text-red-300 mb-2">Leadership</div>
+              </div>
+              <div class="absolute top-4 left-[270px] text-center">
+                <div class="text-sm font-bold text-red-300 mb-2">Innovation</div>
+              </div>
+              <div class="absolute top-4 left-[470px] text-center">
+                <div class="text-sm font-bold text-red-300 mb-2">Inspiration</div>
+              </div>
+              
+              <!-- Leadership Branch -->
+              <div class="absolute top-[85px] left-[260px] z-10">
+                <a href="https://archive.org/details/podcast_businessleadership-video_the-art-engineering_1000084846101" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-500/30 rounded-lg p-3 hover:border-red-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Art of Engineering</div>
+                    <div class="text-xs text-gray-300">James Dyson</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[260px] z-10">
+                <a href="https://youtu.be/FEeTLopLkEo" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-500/30 rounded-lg p-3 hover:border-red-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Female Engineers</div>
+                    <div class="text-xs text-gray-300">Next Generation</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=Ucp0TTmvqOE" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-500/30 rounded-lg p-3 hover:border-red-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Engineering Ethics</div>
+                    <div class="text-xs text-gray-300">Professional Responsibility</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[260px] z-10">
+                <a href="https://www.youtube.com/watch?v=N7ZmPYaXoic" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-500/30 rounded-lg p-3 hover:border-red-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Engineering Management</div>
+                    <div class="text-xs text-gray-300">Leadership Skills</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Innovation Branch -->
+              <div class="absolute top-[85px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=ZJijzqSJPAk" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-600/30 rounded-lg p-3 hover:border-red-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Future of Engineering</div>
+                    <div class="text-xs text-gray-300">Technology Trends</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=qYvXk_bqlBk" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-600/30 rounded-lg p-3 hover:border-red-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Sustainable Engineering</div>
+                    <div class="text-xs text-gray-300">Green Technology</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=DKK4KeLBcuw" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-600/30 rounded-lg p-3 hover:border-red-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Space Engineering</div>
+                    <div class="text-xs text-gray-300">Mars Mission</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[460px] z-10">
+                <a href="https://www.youtube.com/watch?v=8jF1OhgOdAg" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-600/30 rounded-lg p-3 hover:border-red-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">AI in Engineering</div>
+                    <div class="text-xs text-gray-300">Machine Learning</div>
+                  </div>
+                </a>
+              </div>
+              
+              <!-- Inspiration Branch -->
+              <div class="absolute top-[85px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=w4QFJb9a8vo" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-700/30 rounded-lg p-3 hover:border-red-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Engineering Marvels</div>
+                    <div class="text-xs text-gray-300">Modern Wonders</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[135px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=bipTWWHya8A" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-700/30 rounded-lg p-3 hover:border-red-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Design Thinking</div>
+                    <div class="text-xs text-gray-300">Creative Process</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[185px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=fxZWIbNKJNs" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-700/30 rounded-lg p-3 hover:border-red-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Problem Solving</div>
+                    <div class="text-xs text-gray-300">Engineering Mindset</div>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="absolute top-[235px] left-[660px] z-10">
+                <a href="https://www.youtube.com/watch?v=btGYcizV0iI" target="_blank" class="group block">
+                  <div class="bg-space-800/90 border border-red-700/30 rounded-lg p-3 hover:border-red-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
+                    <div class="text-xs font-medium text-red-300 mb-1">Why Engineering?</div>
+                    <div class="text-xs text-gray-300">Career Motivation</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>

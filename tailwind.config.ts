@@ -17,6 +17,7 @@ export default <Config>{
                     950: '#0f172a', // Main Background: Slate 900 - Professional Deep Blue-Grey
                     900: '#1e293b', // Card Background: Slate 800 - Comfortable contrast
                     800: '#334155', // Border / Hover: Slate 700 - Subtle definition
+                    700: '#475569', // Additional shade for better gradients
                     100: '#f8fafc'  // Text: Slate 50 - High readability
                 },
                 primary: {

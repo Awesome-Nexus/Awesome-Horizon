@@ -130,15 +130,26 @@ useHead({
                     </defs>
                     
                     <!-- Main horizontal branch line -->
-                    <line x1="70" y1="235" x2="650" y2="235" stroke="#4f46e5" stroke-width="3" opacity="0.6" filter="url(#glow-arts)"/>
+                    <line x1="70" y1="235" x2="650" y2="235" stroke="#4a5568" stroke-width="2"/>
                     
-                    <!-- Vertical branch lines -->
-                    <line x1="170" y1="235" x2="170" y2="150" stroke="#ec4899" stroke-width="2" opacity="0.5"/>
-                    <line x1="270" y1="235" x2="270" y2="320" stroke="#8b5cf6" stroke-width="2" opacity="0.5"/>
-                    <line x1="370" y1="235" x2="370" y2="150" stroke="#f59e0b" stroke-width="2" opacity="0.5"/>
-                    <line x1="470" y1="235" x2="470" y2="320" stroke="#10b981" stroke-width="2" opacity="0.5"/>
-                    <line x1="570" y1="235" x2="570" y2="150" stroke="#3b82f6" stroke-width="2" opacity="0.5"/>
-                    <line x1="650" y1="235" x2="650" y2="320" stroke="#f97316" stroke-width="2" opacity="0.5"/>
+                    <!-- Vertical branch lines with curved junctions -->
+                    <!-- Visual Arts branch (top) -->
+                    <path d="M 170 235 Q 170 195 170 150" stroke="#ec4899" stroke-width="2" fill="none"/>
+                    
+                    <!-- Digital Arts branch (bottom) -->
+                    <path d="M 270 235 Q 270 275 270 320" stroke="#8b5cf6" stroke-width="2" fill="none"/>
+                    
+                    <!-- Art History branch (top) -->
+                    <path d="M 370 235 Q 370 195 370 150" stroke="#f59e0b" stroke-width="2" fill="none"/>
+                    
+                    <!-- Traditional Arts branch (bottom) -->
+                    <path d="M 470 235 Q 470 275 470 320" stroke="#10b981" stroke-width="2" fill="none"/>
+                    
+                    <!-- Design Innovation branch (top) -->
+                    <path d="M 570 235 Q 570 195 570 150" stroke="#3b82f6" stroke-width="2" fill="none"/>
+                    
+                    <!-- Creative Expression branch (bottom) -->
+                    <path d="M 650 235 Q 650 275 650 320" stroke="#f97316" stroke-width="2" fill="none"/>
                   </svg>
                   
                   <!-- Main Branch Nodes (Horizontal Flow) -->
@@ -1272,6 +1283,7 @@ useHead({
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <style>
