@@ -41,7 +41,18 @@ export default defineNuxtConfig({
   },
   nitro: {
     prerender: {
-      routes: []
+      routes: [
+        '/',
+        '/science',
+        '/physics',
+        '/chemistry',
+        '/biology',
+        '/mathematics',
+        '/technology',
+        '/engineering',
+        '/arts',
+        '/about'
+      ]
     }
   }
 })
