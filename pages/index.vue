@@ -100,7 +100,7 @@ const categories = [
           
           <p class="text-lg text-gray-400 w-full animate-slide-up delay-300">
             For students and educators all over the world across all grade levels to enhance their learning. 
-            <span class="text-white font-medium">500+ curated resources</span> — open source and free forever.
+            <span class="text-white font-medium">1500+ curated resources</span> — open source and free forever.
           </p>
         </div>
 
@@ -133,7 +133,7 @@ const categories = [
         <!-- Stats -->
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 animate-slide-up delay-700">
           <div class="text-center p-4 bg-space-900/30 backdrop-blur-sm rounded-xl border border-space-800/50">
-            <div class="text-2xl md:text-3xl font-bold text-primary-400">500+</div>
+            <div class="text-2xl md:text-3xl font-bold text-primary-400">1500+</div>
             <div class="text-sm text-gray-400">Curated Resources</div>
           </div>
           <div class="text-center p-4 bg-space-900/30 backdrop-blur-sm rounded-xl border border-space-800/50">
