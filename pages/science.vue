@@ -101,17 +101,17 @@ useHead({
                   <div class="text-xs text-purple-300">1500+ resources</div>
                 </NuxtLink>
                 
-                <button onclick="document.getElementById('chemistry').scrollIntoView({behavior: 'smooth'})" class="p-4 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 rounded-xl border border-emerald-500/30 hover:border-emerald-400 transition-all hover:scale-105 group">
+                <NuxtLink to="/chemistry" class="p-4 bg-gradient-to-br from-emerald-500/20 to-emerald-600/20 rounded-xl border border-emerald-500/30 hover:border-emerald-400 transition-all hover:scale-105 group">
                   <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🧪</div>
                   <div class="text-sm font-medium text-white">Chemistry</div>
-                  <div class="text-xs text-emerald-300">200+ resources</div>
-                </button>
+                  <div class="text-xs text-emerald-300">1000+ resources</div>
+                </NuxtLink>
                 
-                <button onclick="document.getElementById('biology').scrollIntoView({behavior: 'smooth'})" class="p-4 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl border border-green-500/30 hover:border-green-400 transition-all hover:scale-105 group">
+                <NuxtLink to="/biology" class="p-4 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-xl border border-green-500/30 hover:border-green-400 transition-all hover:scale-105 group">
                   <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🧬</div>
                   <div class="text-sm font-medium text-white">Biology</div>
-                  <div class="text-xs text-green-300">250+ resources</div>
-                </button>
+                  <div class="text-xs text-green-300">1000+ resources</div>
+                </NuxtLink>
                 
                 <button onclick="document.getElementById('psychology').scrollIntoView({behavior: 'smooth'})" class="p-4 bg-gradient-to-br from-pink-500/20 to-pink-600/20 rounded-xl border border-pink-500/30 hover:border-pink-400 transition-all hover:scale-105 group">
                   <div class="text-2xl mb-2 group-hover:scale-110 transition-transform">🧠</div>

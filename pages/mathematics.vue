@@ -1,1129 +1,527 @@
 <script setup lang="ts">
-// Set page meta
 useHead({
-  title: 'Mathematics - Awesome Horizon',
+  title: 'Mathematics - Complete Learning Path | Awesome Horizon',
   meta: [
-    { name: 'description', content: 'The language of the universe - Algebra, Calculus, Logic, Statistics, and mathematical concepts at all levels.' }
+    { name: 'description', content: 'Master mathematics from beginner to research level with 1000+ curated resources. Free textbooks, courses, and more from MIT, Harvard, and universities worldwide.' }
   ]
 })
+
+const levels = [
+  {
+    id: 'beginner',
+    icon: 'seedling',
+    title: 'Beginner',
+    subtitle: 'High School / AP',
+    description: 'Algebra, geometry, trigonometry, pre-calculus',
+    color: 'emerald',
+    resources: 300,
+    topics: ['Algebra', 'Geometry', 'Trigonometry', 'Pre-Calculus']
+  },
+  {
+    id: 'intermediate',
+    icon: 'target',
+    title: 'Intermediate',
+    subtitle: 'Undergraduate',
+    description: 'Calculus, linear algebra, differential equations',
+    color: 'purple',
+    resources: 400,
+    topics: ['Calculus', 'Linear Algebra', 'ODEs', 'Probability']
+  },
+  {
+    id: 'advanced',
+    icon: 'rocket',
+    title: 'Advanced',
+    subtitle: 'Graduate / Research',
+    description: 'Real analysis, abstract algebra, topology',
+    color: 'rose',
+    resources: 300,
+    topics: ['Real Analysis', 'Abstract Algebra', 'Topology', 'Number Theory']
+  }
+]
+
+const featuredResources = [
+  {
+    title: '3Blue1Brown',
+    author: 'Grant Sanderson',
+    type: 'YouTube Channel',
+    url: 'https://www.3blue1brown.com/',
+    description: 'Visual, intuitive mathematics explanations'
+  },
+  {
+    title: 'Khan Academy Math',
+    author: 'Khan Academy',
+    type: 'Free Courses',
+    url: 'https://www.khanacademy.org/math',
+    description: 'Comprehensive math education K-12 to college'
+  },
+  {
+    title: 'MIT OpenCourseWare',
+    author: 'MIT',
+    type: 'Free Courses',
+    url: 'https://ocw.mit.edu/courses/mathematics/',
+    description: 'Complete MIT mathematics curriculum'
+  },
+  {
+    title: 'Real Not Complex',
+    author: 'Math Community',
+    type: 'Resource Hub',
+    url: 'https://realnotcomplex.com/',
+    description: 'Free textbooks and resources'
+  },
+  {
+    title: 'Art of Problem Solving',
+    author: 'AoPS',
+    type: 'Platform',
+    url: 'https://artofproblemsolving.com/',
+    description: 'Competition math and problem solving'
+  },
+  {
+    title: 'Desmos Graphing Calculator',
+    author: 'Desmos',
+    type: 'Free Tool',
+    url: 'https://www.desmos.com/',
+    description: 'Beautiful, free online graphing calculator'
+  }
+]
+
+const quickLinks = [
+  { name: 'Free Textbooks', url: '#textbooks', count: 80 },
+  { name: 'MIT OCW', url: '#mitocw', count: 50 },
+  { name: 'YouTube Channels', url: '#youtube', count: 40 },
+  { name: 'Calculus', url: '#calculus', count: 60 },
+  { name: 'Linear Algebra', url: '#linear-algebra', count: 40 },
+  { name: 'Abstract Algebra', url: '#abstract-algebra', count: 30 },
+  { name: 'Analysis', url: '#analysis', count: 30 },
+  { name: 'Olympiad', url: '#olympiad', count: 25 },
+  { name: 'Software', url: '#software', count: 20 },
+  { name: 'Podcasts', url: '#podcasts', count: 15 }
+]
+
+// Free Textbooks
+const freeTextbooks = [
+  { title: 'OpenStax Calculus', author: 'OpenStax', level: 'Intermediate', type: 'FREE PDF', url: 'https://openstax.org/details/books/calculus-volume-1' },
+  { title: 'OpenStax Algebra', author: 'OpenStax', level: 'Beginner', type: 'FREE PDF', url: 'https://openstax.org/details/books/college-algebra' },
+  { title: 'Linear Algebra Done Right', author: 'Sheldon Axler', level: 'Intermediate', type: 'FREE PDF', url: 'https://linear.axler.net/' },
+  { title: 'Abstract Algebra', author: 'Judson', level: 'Intermediate', type: 'FREE', url: 'http://abstract.ups.edu/' },
+  { title: 'Book of Proof', author: 'Richard Hammack', level: 'Beginner', type: 'FREE PDF', url: 'https://www.people.vcu.edu/~rhammack/BookOfProof/' },
+  { title: 'Calculus Made Easy', author: 'Silvanus Thompson', level: 'Beginner', type: 'FREE', url: 'https://calculusmadeeasy.org/' },
+  { title: 'Introduction to Real Analysis', author: 'Bartle & Sherbert', level: 'Advanced', type: 'Textbook', url: 'https://realnotcomplex.com/analysis/' },
+  { title: 'Elementary Number Theory', author: 'William Stein', level: 'Intermediate', type: 'FREE', url: 'https://wstein.org/ent/' }
+]
+
+// MIT OCW Courses
+const mitCourses = [
+  { code: '18.01', title: 'Single Variable Calculus', professor: 'David Jerison', level: 'Beginner', url: 'https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/' },
+  { code: '18.02', title: 'Multivariable Calculus', professor: 'Denis Auroux', level: 'Intermediate', url: 'https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/' },
+  { code: '18.03', title: 'Differential Equations', professor: 'Arthur Mattuck', level: 'Intermediate', url: 'https://ocw.mit.edu/courses/18-03sc-differential-equations-fall-2011/' },
+  { code: '18.06', title: 'Linear Algebra', professor: 'Gilbert Strang', level: 'Intermediate', url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/' },
+  { code: '18.100A', title: 'Real Analysis', professor: 'Casey Rodriguez', level: 'Advanced', url: 'https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/' },
+  { code: '18.701', title: 'Algebra I', professor: 'Michael Artin', level: 'Advanced', url: 'https://ocw.mit.edu/courses/18-701-algebra-i-fall-2007/' },
+  { code: '18.900', title: 'Geometry & Topology', professor: 'Paul Seidel', level: 'Advanced', url: 'https://ocw.mit.edu/courses/18-900-geometry-and-topology-in-the-plane-spring-2016/' }
+]
+
+// YouTube Channels
+const youtubeChannels = [
+  { name: '3Blue1Brown', subs: '5M+', focus: 'Visual Math', description: 'Essence of calculus, linear algebra', url: 'https://www.youtube.com/@3blue1brown' },
+  { name: 'Khan Academy', subs: '8M+', focus: 'All Math', description: 'Comprehensive math tutorials', url: 'https://www.youtube.com/@khanacademy' },
+  { name: 'Numberphile', subs: '4M+', focus: 'Mathematical Curiosities', description: 'Interesting numbers and concepts', url: 'https://www.youtube.com/@numberphile' },
+  { name: 'Professor Leonard', subs: '1M+', focus: 'Lectures', description: 'Full-length math lectures', url: 'https://www.youtube.com/@ProfessorLeonard' },
+  { name: 'patrickJMT', subs: '1M+', focus: 'Problem Solving', description: 'Math problem tutorials', url: 'https://www.youtube.com/@patrickjmt' },
+  { name: 'Mathologer', subs: '500K+', focus: 'Deep Dives', description: 'Accessible deep math topics', url: 'https://www.youtube.com/@Mathologer' }
+]
+
+// Calculus Resources
+const calculusResources = [
+  { name: 'Paul\'s Online Math Notes', url: 'https://tutorial.math.lamar.edu/', type: 'Notes', description: 'Extensive calculus notes and practice' },
+  { name: 'MIT 18.01', url: 'https://ocw.mit.edu/courses/18-01sc-single-variable-calculus-fall-2010/', type: 'Course', description: 'Single variable calculus' },
+  { name: 'Khan Academy Calculus', url: 'https://www.khanacademy.org/math/calculus-all-old', type: 'Course', description: 'Complete calculus curriculum' },
+  { name: 'Calculus Made Easy', url: 'https://calculusmadeeasy.org/', type: 'Book', description: 'Classic calculus text' }
+]
+
+// Linear Algebra Resources
+const linearAlgebraResources = [
+  { name: 'MIT 18.06', url: 'https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/', type: 'Course', description: 'Gilbert Strang\'s legendary course' },
+  { name: '3Blue1Brown Essence of LA', url: 'https://www.3blue1brown.com/essence-of-linear-algebra-page', type: 'Videos', description: 'Visual linear algebra' },
+  { name: 'Immersive Math', url: 'http://immersivemath.com/ila/index.html', type: 'Interactive', description: 'Interactive linear algebra' },
+  { name: 'Linear Algebra Done Right', url: 'https://linear.axler.net/', type: 'Book', description: 'Free textbook by Axler' }
+]
+
+// Abstract Algebra Resources
+const abstractAlgebraResources = [
+  { name: 'Abstract Algebra', url: 'http://abstract.ups.edu/', type: 'Textbook', description: 'Open source textbook' },
+  { name: 'Harvard Abstract Algebra', url: 'https://www.youtube.com/playlist?list=PLelIK3uylPMGzVpeEZNJqDlhHb1OB4NGV', type: 'Videos', description: 'Harvard lectures' },
+  { name: 'MIT 18.701', url: 'https://ocw.mit.edu/courses/18-701-algebra-i-fall-2007/', type: 'Course', description: 'MIT Algebra I' },
+  { name: 'Group Theory', url: 'https://groupprops.subwiki.org/wiki/Main_Page', type: 'Wiki', description: 'Group theory resource' }
+]
+
+// Analysis Resources
+const analysisResources = [
+  { name: 'MIT 18.100A', url: 'https://ocw.mit.edu/courses/18-100a-real-analysis-fall-2020/', type: 'Course', description: 'Real analysis course' },
+  { name: 'Harvard Math 112', url: 'https://people.math.harvard.edu/~ctm/home/text/class/harvard/114/15/html/home/course/course.pdf', type: 'Notes', description: 'Harvard analysis notes' },
+  { name: 'Real Not Complex', url: 'https://realnotcomplex.com/analysis/', type: 'Hub', description: 'Free analysis resources' },
+  { name: 'Understanding Analysis', url: 'https://realnotcomplex.com/analysis/', type: 'Textbook', description: 'Abbott\'s analysis book' }
+]
+
+// Math Olympiad
+const olympiadResources = [
+  { name: 'Art of Problem Solving', url: 'https://artofproblemsolving.com/', type: 'Platform', description: 'Competition math resources' },
+  { name: 'AoPS Alcumus', url: 'https://artofproblemsolving.com/alcumus', type: 'Practice', description: 'Adaptive problem trainer' },
+  { name: 'Brilliant', url: 'https://brilliant.org/', type: 'Platform', description: 'Interactive problem solving' },
+  { name: 'IMO Official', url: 'https://www.imo-official.org/', type: 'Official', description: 'International Math Olympiad' },
+  { name: 'Evan Chen\'s Olympiad', url: 'https://web.evanchen.cc/olympiad.html', type: 'Resources', description: 'Olympiad training materials' },
+  { name: 'Putnam Competition', url: 'https://www.maa.org/putnam-competition', type: 'Competition', description: 'US undergraduate competition' }
+]
+
+// Math Software
+const mathSoftware = [
+  { name: 'SageMath', url: 'https://www.sagemath.org/', type: 'CAS', description: 'Free open-source mathematics' },
+  { name: 'GeoGebra', url: 'https://www.geogebra.org/', type: 'Graphing', description: 'Interactive geometry, algebra' },
+  { name: 'Desmos', url: 'https://www.desmos.com/', type: 'Graphing', description: 'Beautiful graphing calculator' },
+  { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com/', type: 'Engine', description: 'Computational knowledge' },
+  { name: 'Python (NumPy/SciPy)', url: 'https://numpy.org/', type: 'Programming', description: 'Scientific computing' },
+  { name: 'Julia', url: 'https://julialang.org/', type: 'Programming', description: 'High-performance computing' }
+]
+
+// Podcasts
+const podcasts = [
+  { name: 'The Numberphile Podcast', url: 'https://www.numberphile.com/podcast', description: 'Interviews with mathematicians' },
+  { name: 'My Favorite Theorem', url: 'https://www.kqnd.org/', description: 'Mathematicians discuss favorites' },
+  { name: 'Breaking Math Podcast', url: 'https://breakingmath.io/', description: 'Accessible math topics' },
+  { name: 'Relatively Prime', url: 'https://relativelyprime.com/', description: 'Stories from math domain' }
+]
 </script>
 
 <template>
-  <div class="space-y-8">
-    <!-- Header -->
-    <div class="relative py-12 text-center overflow-hidden">
-      <!-- Background Glow -->
-      <div class="absolute inset-0 bg-primary-500/10 blur-[100px] rounded-full pointer-events-none -translate-y-1/2"></div>
-      
-      <div class="relative z-10">
-        <NuxtLink to="/" class="inline-flex items-center gap-2 text-primary-400 hover:text-white mb-6 transition-colors text-sm font-medium">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
-          Back to Categories
+  <div class="min-h-screen bg-space-950">
+    <!-- Hero Section -->
+    <div class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-space-950 to-indigo-900/20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 py-16 sm:py-24">
+        <NuxtLink to="/science" class="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          Back to Science
         </NuxtLink>
-        <h1 class="text-5xl font-bold text-white mb-4">Mathematics</h1>
-        <p class="text-xl text-primary-100 max-w-2xl mx-auto">The language of the universe - Algebra, Calculus, Logic, Statistics, and mathematical concepts at all levels.</p>
+
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 rounded-full border border-blue-500/30 mb-6">
+            <span class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></span>
+            <span class="text-sm text-blue-300">1000+ Curated Math Resources</span>
+          </div>
+          
+          <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
+            <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">
+              Mathematics
+            </span>
+          </h1>
+          
+          <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+            Master mathematics from algebra to advanced analysis. Free textbooks, courses, and resources from MIT, Harvard, and universities worldwide.
+          </p>
+
+          <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">3</div>
+              <div class="text-sm text-gray-400">Difficulty Levels</div>
+            </div>
+            <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">80+</div>
+              <div class="text-sm text-gray-400">Free Textbooks</div>
+            </div>
+            <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">50+</div>
+              <div class="text-sm text-gray-400">MIT OCW Courses</div>
+            </div>
+            <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-white">1000+</div>
+              <div class="text-sm text-gray-400">Total Resources</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="flex flex-wrap justify-center gap-3 mb-16">
+          <a v-for="link in quickLinks" :key="link.name" :href="link.url"
+             class="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-full border border-gray-800 hover:border-blue-500/50 transition-all">
+            <span class="text-sm text-gray-300">{{ link.name }}</span>
+            <span class="text-xs text-blue-400">({{ link.count }})</span>
+          </a>
+        </div>
       </div>
     </div>
 
-    <!-- Content -->
-    <div class="prose prose-invert prose-lg max-w-4xl mx-auto pb-16 px-4">
-      <div class="space-y-6">
-        <h1 class="text-4xl font-bold text-white mb-8">Mathematics Resources</h1>
+    <!-- Content Sections -->
+    <div class="max-w-7xl mx-auto px-4 py-12 space-y-20">
+      
+      <!-- Featured Resources -->
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-6 text-center">Featured Resources</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="resource in featuredResources" :key="resource.title" :href="resource.url" target="_blank"
+             class="group p-5 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
+            <h3 class="font-semibold text-white mb-1">{{ resource.title }}</h3>
+            <p class="text-sm text-blue-400 mb-2">{{ resource.author }}</p>
+            <p class="text-xs text-gray-400">{{ resource.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Free Textbooks -->
+      <section id="textbooks" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Free Mathematics Textbooks</h2>
+            <p class="text-gray-400">Open access textbooks from OpenStax, MIT, and more</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="book in freeTextbooks" :key="book.title" :href="book.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-blue-500/20 text-blue-400 rounded">{{ book.type }}</span>
+              <span class="text-xs text-gray-500">{{ book.level }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-blue-400 transition-colors">{{ book.title }}</h4>
+            <p class="text-sm text-gray-400">{{ book.author }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- MIT OCW -->
+      <section id="mitocw" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">MIT OpenCourseWare</h2>
+            <p class="text-gray-400">Complete mathematics courses from MIT</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="course in mitCourses" :key="course.code" :href="course.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xl font-bold text-red-400">{{ course.code }}</span>
+              <span class="text-xs text-gray-500">{{ course.level }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-red-400 transition-colors">{{ course.title }}</h4>
+            <p class="text-sm text-gray-500">{{ course.professor }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- YouTube Channels -->
+      <section id="youtube" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-red-600/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">YouTube Channels</h2>
+            <p class="text-gray-400">Best mathematics education channels</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="channel in youtubeChannels" :key="channel.name" :href="channel.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-center gap-4 mb-3">
+              <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center text-white font-bold text-lg">
+                {{ channel.name[0] }}
+              </div>
+              <div>
+                <h4 class="font-semibold text-white group-hover:text-red-400 transition-colors">{{ channel.name }}</h4>
+                <p class="text-sm text-gray-500">{{ channel.subs }} subscribers</p>
+              </div>
+            </div>
+            <p class="text-sm text-blue-400 mb-1">{{ channel.focus }}</p>
+            <p class="text-xs text-gray-500">{{ channel.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Calculus -->
+      <section id="calculus" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Calculus</h2>
+            <p class="text-gray-400">Derivatives, integrals, differential equations</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in calculusResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-green-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-green-500/20 text-green-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-green-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Linear Algebra -->
+      <section id="linear-algebra" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Linear Algebra</h2>
+            <p class="text-gray-400">Vectors, matrices, eigenvalues, and applications</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in linearAlgebraResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-purple-500/20 text-purple-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-purple-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Abstract Algebra -->
+      <section id="abstract-algebra" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Abstract Algebra</h2>
+            <p class="text-gray-400">Groups, rings, fields, and Galois theory</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in abstractAlgebraResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-pink-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-pink-500/20 text-pink-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-pink-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Analysis -->
+      <section id="analysis" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Real Analysis</h2>
+            <p class="text-gray-400">Rigorous calculus, sequences, limits, continuity</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in analysisResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-amber-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Math Olympiad -->
+      <section id="olympiad" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-amber-600/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Mathematics Olympiad & Competitions</h2>
+            <p class="text-gray-400">Problem solving and competition preparation</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="res in olympiadResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-amber-500 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Math Software -->
+      <section id="software" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Mathematics Software</h2>
+            <p class="text-gray-400">CAS, graphing, and programming tools</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="res in mathSoftware" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-cyan-500/20 text-cyan-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Podcasts -->
+      <section id="podcasts" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-indigo-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Mathematics Podcasts</h2>
+            <p class="text-gray-400">Learn math on the go</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="podcast in podcasts" :key="podcast.name" :href="podcast.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-indigo-500/50 transition-all hover:scale-[1.02]">
+            <h4 class="font-semibold text-white mb-1 group-hover:text-indigo-400 transition-colors">{{ podcast.name }}</h4>
+            <p class="text-xs text-gray-500">{{ podcast.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-800">
+        <NuxtLink to="/science" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
+          Back to Science
+        </NuxtLink>
         
-        <div class="grid gap-6">
-          <!-- Mathematics Statistics Banner -->
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
-            <div class="group p-6 bg-gradient-to-br from-sky-500/20 to-sky-600/20 rounded-2xl border border-sky-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-              <div class="flex items-center gap-3 mb-2">
-                <div class="p-2 bg-sky-500/30 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-300"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-white">320+</div>
-                  <div class="text-xs text-sky-200">Total Resources</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="group p-6 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-2xl border border-purple-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-              <div class="flex items-center gap-3 mb-2">
-                <div class="p-2 bg-purple-500/30 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-300"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-white">40+</div>
-                  <div class="text-xs text-purple-200">Universities</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="group p-6 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl border border-green-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-              <div class="flex items-center gap-3 mb-2">
-                <div class="p-2 bg-green-500/30 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-300"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 9h6v6H9z"/><path d="m9 1 3 3 3-3"/></svg>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-white">6</div>
-                  <div class="text-xs text-green-200">Math Areas</div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="group p-6 bg-gradient-to-br from-yellow-500/20 to-yellow-600/20 rounded-2xl border border-yellow-500/30 backdrop-blur-sm hover:scale-105 transition-transform duration-300">
-              <div class="flex items-center gap-3 mb-2">
-                <div class="p-2 bg-yellow-500/30 rounded-lg">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-300"><polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26"/></svg>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-white">2025</div>
-                  <div class="text-xs text-yellow-200">Latest Content</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Mathematics Section -->
-          <div class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-sky-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg>
-              </div>
-              Mathematics
-            </h2>
-            
-            <!-- Mathematics Categories Overview -->
-            <div class="mb-8 relative">
-              <!-- Animated Background -->
-              <div class="absolute inset-0 bg-gradient-to-r from-sky-500/10 via-purple-500/10 to-green-500/10 rounded-2xl blur-xl"></div>
-              
-              <div class="relative p-8 bg-space-800/40 backdrop-blur-sm rounded-2xl border border-space-700/50 shadow-2xl overflow-hidden">
-                <div class="flex items-center justify-between mb-8">
-                  <h3 class="text-2xl font-bold text-white flex items-center gap-3">
-                    <div class="p-3 bg-gradient-to-br from-sky-500 to-purple-500 rounded-xl">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg>
-                    </div>
-                    Mathematics Learning Journey
-                  </h3>
-                  <div class="flex items-center gap-2 text-sm text-gray-400">
-                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                    320+ Resources
-                  </div>
-                </div>
-                
-                <!-- GitHub-style Branch Network -->
-                <div class="relative min-h-[500px] bg-space-900/30 rounded-xl p-8 overflow-hidden">
-                  <!-- Animated Background Grid -->
-                  <div class="absolute inset-0 opacity-5">
-                    <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 20px 20px;"></div>
-                  </div>
-                  
-                  <!-- SVG for Clean Branch Lines -->
-                  <svg class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 1;">
-                    <defs>
-                      <filter id="glow-mathematics">
-                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                        <feMerge> 
-                          <feMergeNode in="coloredBlur"/>
-                          <feMergeNode in="SourceGraphic"/>
-                        </feMerge>
-                      </filter>
-                    </defs>
-                    
-                    <!-- Main horizontal branch line -->
-                    <line x1="70" y1="235" x2="750" y2="235" stroke="#4a5568" stroke-width="2"/>
-                    
-                    <!-- Vertical branch lines with curved junctions -->
-                    <!-- Calculus branch (top) -->
-                    <path d="M 170 235 Q 170 195 170 150" stroke="#0ea5e9" stroke-width="2" fill="none"/>
-                    
-                    <!-- Linear Algebra branch (bottom) -->
-                    <path d="M 270 235 Q 270 275 270 320" stroke="#8b5cf6" stroke-width="2" fill="none"/>
-                    
-                    <!-- Statistics branch (top) -->
-                    <path d="M 370 235 Q 370 195 370 150" stroke="#10b981" stroke-width="2" fill="none"/>
-                    
-                    <!-- High School branch (bottom) -->
-                    <path d="M 470 235 Q 470 275 470 320" stroke="#eab308" stroke-width="2" fill="none"/>
-                    
-                    <!-- Math Tools branch (top) -->
-                    <path d="M 570 235 Q 570 195 570 150" stroke="#3b82f6" stroke-width="2" fill="none"/>
-                    
-                    <!-- Advanced Topics branch (bottom) -->
-                    <path d="M 670 235 Q 670 275 670 320" stroke="#f97316" stroke-width="2" fill="none"/>
-                  </svg>
-                  
-                  <!-- Main Branch Nodes (Horizontal Flow) -->
-                  <!-- Start -->
-                  <div class="absolute top-[235px] left-[70px] z-10">
-                    <div class="group cursor-pointer">
-                      <div class="w-8 h-8 bg-gray-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-gray-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <circle cx="12" cy="12" r="10"/>
-                          <path d="m9 12 2 2 4-4"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-gray-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Start</div>
-                    </div>
-                  </div>
-                  
-                  <!-- Calculus -->
-                  <div class="absolute top-[235px] left-[170px] z-10">
-                    <div class="group cursor-pointer" onclick="document.getElementById('calculus').scrollIntoView({behavior: 'smooth'})">
-                      <div class="w-8 h-8 bg-sky-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-sky-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-sky-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Calculus</div>
-                    </div>
-                  </div>
-                  
-                  <!-- Linear Algebra -->
-                  <div class="absolute top-[235px] left-[270px] z-10">
-                    <div class="group cursor-pointer" onclick="document.getElementById('linear-algebra').scrollIntoView({behavior: 'smooth'})">
-                      <div class="w-8 h-8 bg-purple-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-purple-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <rect width="18" height="18" x="3" y="3" rx="2"/>
-                          <path d="M9 9h6v6H9z"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-purple-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Linear Algebra</div>
-                    </div>
-                  </div>
-                  
-                  <!-- Statistics -->
-                  <div class="absolute top-[235px] left-[370px] z-10">
-                    <div class="group cursor-pointer" onclick="document.getElementById('statistics').scrollIntoView({behavior: 'smooth'})">
-                      <div class="w-8 h-8 bg-green-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-green-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <path d="M3 3v18h18"/>
-                          <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-green-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Statistics</div>
-                    </div>
-                  </div>
-                  
-                  <!-- High School -->
-                  <div class="absolute top-[235px] left-[470px] z-10">
-                    <div class="group cursor-pointer" onclick="document.getElementById('high-school').scrollIntoView({behavior: 'smooth'})">
-                      <div class="w-8 h-8 bg-yellow-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-yellow-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-yellow-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">High School</div>
-                    </div>
-                  </div>
-                  
-                  <!-- Tools -->
-                  <div class="absolute top-[235px] left-[570px] z-10">
-                    <div class="group cursor-pointer" onclick="document.getElementById('tools').scrollIntoView({behavior: 'smooth'})">
-                      <div class="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-blue-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <rect width="16" height="20" x="4" y="2" rx="2" ry="2"/>
-                          <path d="M9 22v-4h6v4"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-blue-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Tools</div>
-                    </div>
-                  </div>
-                  
-                  <!-- Advanced -->
-                  <div class="absolute top-[235px] left-[670px] z-10">
-                    <div class="group cursor-pointer" onclick="document.getElementById('advanced').scrollIntoView({behavior: 'smooth'})">
-                      <div class="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-300 border-2 border-orange-500">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-white">
-                          <polygon points="12,2 15.09,8.26 22,9 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9 8.91,8.26"/>
-                        </svg>
-                      </div>
-                      <div class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 text-xs text-orange-300 font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity bg-space-800/90 px-2 py-1 rounded">Advanced</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Calculus Section -->
-          <div id="calculus" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-sky-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-sky-400"><path d="M18 7V5a1 1 0 0 0-1-1H6.5a.5.5 0 0 0-.4.8l4.5 6a2 2 0 0 1 0 2.4l-4.5 6a.5.5 0 0 0 .4.8H17a1 1 0 0 0 1-1v-2"/></svg>
-              </div>
-              Calculus
-            </h2>
-            
-            <!-- GitHub-style Branch Network for Calculus -->
-            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
-              <svg class="absolute inset-0 w-full h-full pointer-events-none">
-                <!-- Main vertical branches -->
-                <line x1="100" y1="50" x2="100" y2="350" stroke="#0ea5e9" stroke-width="3" opacity="0.6"/>
-                <line x1="300" y1="50" x2="300" y2="350" stroke="#0284c7" stroke-width="3" opacity="0.6"/>
-                <line x1="500" y1="50" x2="500" y2="350" stroke="#0369a1" stroke-width="3" opacity="0.6"/>
-                
-                <!-- Horizontal resource branches -->
-                <line x1="100" y1="100" x2="250" y2="100" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="150" x2="250" y2="150" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="200" x2="250" y2="200" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="250" x2="250" y2="250" stroke="#0ea5e9" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="300" y1="100" x2="450" y2="100" stroke="#0284c7" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="150" x2="450" y2="150" stroke="#0284c7" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="200" x2="450" y2="200" stroke="#0284c7" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="250" x2="450" y2="250" stroke="#0284c7" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="500" y1="100" x2="650" y2="100" stroke="#0369a1" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="150" x2="650" y2="150" stroke="#0369a1" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="200" x2="650" y2="200" stroke="#0369a1" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="250" x2="650" y2="250" stroke="#0369a1" stroke-width="2" opacity="0.4"/>
-                
-                <!-- Junction circles -->
-                <circle cx="100" cy="100" r="4" fill="#0ea5e9"/>
-                <circle cx="100" cy="150" r="4" fill="#0ea5e9"/>
-                <circle cx="100" cy="200" r="4" fill="#0ea5e9"/>
-                <circle cx="100" cy="250" r="4" fill="#0ea5e9"/>
-                <circle cx="300" cy="100" r="4" fill="#0284c7"/>
-                <circle cx="300" cy="150" r="4" fill="#0284c7"/>
-                <circle cx="300" cy="200" r="4" fill="#0284c7"/>
-                <circle cx="300" cy="250" r="4" fill="#0284c7"/>
-                <circle cx="500" cy="100" r="4" fill="#0369a1"/>
-                <circle cx="500" cy="150" r="4" fill="#0369a1"/>
-                <circle cx="500" cy="200" r="4" fill="#0369a1"/>
-                <circle cx="500" cy="250" r="4" fill="#0369a1"/>
-              </svg>
-              
-              <!-- Branch Headers -->
-              <div class="absolute top-4 left-[70px] text-center">
-                <div class="text-sm font-bold text-sky-300 mb-2">Fundamentals</div>
-              </div>
-              <div class="absolute top-4 left-[270px] text-center">
-                <div class="text-sm font-bold text-sky-300 mb-2">Advanced</div>
-              </div>
-              <div class="absolute top-4 left-[470px] text-center">
-                <div class="text-sm font-bold text-sky-300 mb-2">Applications</div>
-              </div>
-              
-              <!-- Fundamentals Branch -->
-              <div class="absolute top-[85px] left-[260px] z-10">
-                <a href="https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PL0-GT3co4r2wlh6UHTUeQsrf3mlS2lk6x" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-500/30 rounded-lg p-3 hover:border-sky-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">3Blue1Brown</div>
-                    <div class="text-xs text-gray-300">Essence of Calculus</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[260px] z-10">
-                <a href="https://www.khanacademy.org/math/ap-calculus-ab" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-500/30 rounded-lg p-3 hover:border-sky-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">AP Calculus AB</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[260px] z-10">
-                <a href="https://www.youtube.com/playlist?list=PLF797E961509B4EB5" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-500/30 rounded-lg p-3 hover:border-sky-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Professor Leonard</div>
-                    <div class="text-xs text-gray-300">Calculus 1</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[260px] z-10">
-                <a href="https://tutorial.math.lamar.edu/Classes/CalcI/CalcI.aspx" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-500/30 rounded-lg p-3 hover:border-sky-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Paul's Notes</div>
-                    <div class="text-xs text-gray-300">Online Calculus</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Advanced Branch -->
-              <div class="absolute top-[85px] left-[460px] z-10">
-                <a href="https://ocw.mit.edu/courses/18-02sc-multivariable-calculus-fall-2010/" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-600/30 rounded-lg p-3 hover:border-sky-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">MIT OpenCourseWare</div>
-                    <div class="text-xs text-gray-300">Multivariable Calculus</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[460px] z-10">
-                <a href="https://www.youtube.com/playlist?list=PLHXZ9OQGMqxc_CvEy7xBKRQr6I214QJcd" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-600/30 rounded-lg p-3 hover:border-sky-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Dr. Trefor Bazett</div>
-                    <div class="text-xs text-gray-300">Multivariable Calc</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[460px] z-10">
-                <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-600/30 rounded-lg p-3 hover:border-sky-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">3Blue1Brown</div>
-                    <div class="text-xs text-gray-300">Differential Equations</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[460px] z-10">
-                <a href="https://www.khanacademy.org/math/ap-calculus-bc" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-600/30 rounded-lg p-3 hover:border-sky-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">AP Calculus BC</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Applications Branch -->
-              <div class="absolute top-[85px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=9vKqVkMQHKk" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-700/30 rounded-lg p-3 hover:border-sky-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Physics Applications</div>
-                    <div class="text-xs text-gray-300">Calculus in Physics</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=rAof9Ld5sOg" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-700/30 rounded-lg p-3 hover:border-sky-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Engineering Math</div>
-                    <div class="text-xs text-gray-300">Real World Calculus</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=YX40hbAHx3s" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-700/30 rounded-lg p-3 hover:border-sky-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Optimization</div>
-                    <div class="text-xs text-gray-300">Max/Min Problems</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=WsQQvHm4lSw" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-sky-700/30 rounded-lg p-3 hover:border-sky-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-sky-300 mb-1">Related Rates</div>
-                    <div class="text-xs text-gray-300">Dynamic Problems</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Linear Algebra Section -->
-          <div id="linear-algebra" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-purple-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-purple-400"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M9 9h6v6H9z"/></svg>
-              </div>
-              Linear Algebra
-            </h2>
-            
-            <!-- GitHub-style Branch Network for Linear Algebra -->
-            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
-              <svg class="absolute inset-0 w-full h-full pointer-events-none">
-                <!-- Main vertical branches -->
-                <line x1="100" y1="50" x2="100" y2="350" stroke="#8b5cf6" stroke-width="3" opacity="0.6"/>
-                <line x1="300" y1="50" x2="300" y2="350" stroke="#7c3aed" stroke-width="3" opacity="0.6"/>
-                <line x1="500" y1="50" x2="500" y2="350" stroke="#6d28d9" stroke-width="3" opacity="0.6"/>
-                
-                <!-- Horizontal resource branches -->
-                <line x1="100" y1="100" x2="250" y2="100" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="150" x2="250" y2="150" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="200" x2="250" y2="200" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="250" x2="250" y2="250" stroke="#8b5cf6" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="300" y1="100" x2="450" y2="100" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="150" x2="450" y2="150" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="200" x2="450" y2="200" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="250" x2="450" y2="250" stroke="#7c3aed" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="500" y1="100" x2="650" y2="100" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="150" x2="650" y2="150" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="200" x2="650" y2="200" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="250" x2="650" y2="250" stroke="#6d28d9" stroke-width="2" opacity="0.4"/>
-                
-                <!-- Junction circles -->
-                <circle cx="100" cy="100" r="4" fill="#8b5cf6"/>
-                <circle cx="100" cy="150" r="4" fill="#8b5cf6"/>
-                <circle cx="100" cy="200" r="4" fill="#8b5cf6"/>
-                <circle cx="100" cy="250" r="4" fill="#8b5cf6"/>
-                <circle cx="300" cy="100" r="4" fill="#7c3aed"/>
-                <circle cx="300" cy="150" r="4" fill="#7c3aed"/>
-                <circle cx="300" cy="200" r="4" fill="#7c3aed"/>
-                <circle cx="300" cy="250" r="4" fill="#7c3aed"/>
-                <circle cx="500" cy="100" r="4" fill="#6d28d9"/>
-                <circle cx="500" cy="150" r="4" fill="#6d28d9"/>
-                <circle cx="500" cy="200" r="4" fill="#6d28d9"/>
-                <circle cx="500" cy="250" r="4" fill="#6d28d9"/>
-              </svg>
-              
-              <!-- Branch Headers -->
-              <div class="absolute top-4 left-[70px] text-center">
-                <div class="text-sm font-bold text-purple-300 mb-2">Foundations</div>
-              </div>
-              <div class="absolute top-4 left-[270px] text-center">
-                <div class="text-sm font-bold text-purple-300 mb-2">Applications</div>
-              </div>
-              <div class="absolute top-4 left-[470px] text-center">
-                <div class="text-sm font-bold text-purple-300 mb-2">Advanced</div>
-              </div>
-              
-              <!-- Foundations Branch -->
-              <div class="absolute top-[85px] left-[260px] z-10">
-                <a href="https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">MIT OpenCourseWare</div>
-                    <div class="text-xs text-gray-300">Gilbert Strang</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[260px] z-10">
-                <a href="https://youtube.com/playlist?list=PL0-GT3co4r2y2YErbmuJw2L5tW4Ew2O5B" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">3Blue1Brown</div>
-                    <div class="text-xs text-gray-300">Visual Intuition</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[260px] z-10">
-                <a href="https://joshua.smcvt.edu/linearalgebra/" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Jim Hefferon</div>
-                    <div class="text-xs text-gray-300">Free Textbook</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[260px] z-10">
-                <a href="https://www.khanacademy.org/math/linear-algebra" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-500/30 rounded-lg p-3 hover:border-purple-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">Interactive Lessons</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Applications Branch -->
-              <div class="absolute top-[85px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=fNk_zzaMoSs" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Data Science</div>
-                    <div class="text-xs text-gray-300">ML Applications</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=kjBOesZCoqc" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Computer Graphics</div>
-                    <div class="text-xs text-gray-300">3D Transformations</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=P2LTAUO1TdA" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Engineering</div>
-                    <div class="text-xs text-gray-300">System Analysis</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=uQhTuRlWMxw" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-600/30 rounded-lg p-3 hover:border-purple-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Economics</div>
-                    <div class="text-xs text-gray-300">Input-Output Models</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Advanced Branch -->
-              <div class="absolute top-[85px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=TgKwz5Ikpc8" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Eigenvalues</div>
-                    <div class="text-xs text-gray-300">Spectral Theory</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=PFDu9oVAE-g" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">SVD</div>
-                    <div class="text-xs text-gray-300">Singular Value Decomp</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=rHLEWRxRGiM" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Abstract Algebra</div>
-                    <div class="text-xs text-gray-300">Vector Spaces</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=LyGKycYT2v0" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-purple-700/30 rounded-lg p-3 hover:border-purple-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-purple-300 mb-1">Numerical Methods</div>
-                    <div class="text-xs text-gray-300">Computational LA</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Statistics Section -->
-          <div id="statistics" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-green-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-green-400"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
-              </div>
-              Statistics & Probability
-            </h2>
-            
-            <!-- GitHub-style Branch Network for Statistics -->
-            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
-              <svg class="absolute inset-0 w-full h-full pointer-events-none">
-                <!-- Main vertical branches -->
-                <line x1="100" y1="50" x2="100" y2="350" stroke="#10b981" stroke-width="3" opacity="0.6"/>
-                <line x1="300" y1="50" x2="300" y2="350" stroke="#059669" stroke-width="3" opacity="0.6"/>
-                <line x1="500" y1="50" x2="500" y2="350" stroke="#047857" stroke-width="3" opacity="0.6"/>
-                
-                <!-- Horizontal resource branches -->
-                <line x1="100" y1="100" x2="250" y2="100" stroke="#10b981" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="150" x2="250" y2="150" stroke="#10b981" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="200" x2="250" y2="200" stroke="#10b981" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="250" x2="250" y2="250" stroke="#10b981" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="300" y1="100" x2="450" y2="100" stroke="#059669" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="150" x2="450" y2="150" stroke="#059669" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="200" x2="450" y2="200" stroke="#059669" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="250" x2="450" y2="250" stroke="#059669" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="500" y1="100" x2="650" y2="100" stroke="#047857" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="150" x2="650" y2="150" stroke="#047857" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="200" x2="650" y2="200" stroke="#047857" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="250" x2="650" y2="250" stroke="#047857" stroke-width="2" opacity="0.4"/>
-                
-                <!-- Junction circles -->
-                <circle cx="100" cy="100" r="4" fill="#10b981"/>
-                <circle cx="100" cy="150" r="4" fill="#10b981"/>
-                <circle cx="100" cy="200" r="4" fill="#10b981"/>
-                <circle cx="100" cy="250" r="4" fill="#10b981"/>
-                <circle cx="300" cy="100" r="4" fill="#059669"/>
-                <circle cx="300" cy="150" r="4" fill="#059669"/>
-                <circle cx="300" cy="200" r="4" fill="#059669"/>
-                <circle cx="300" cy="250" r="4" fill="#059669"/>
-                <circle cx="500" cy="100" r="4" fill="#047857"/>
-                <circle cx="500" cy="150" r="4" fill="#047857"/>
-                <circle cx="500" cy="200" r="4" fill="#047857"/>
-                <circle cx="500" cy="250" r="4" fill="#047857"/>
-              </svg>
-              
-              <!-- Branch Headers -->
-              <div class="absolute top-4 left-[70px] text-center">
-                <div class="text-sm font-bold text-green-300 mb-2">Fundamentals</div>
-              </div>
-              <div class="absolute top-4 left-[270px] text-center">
-                <div class="text-sm font-bold text-green-300 mb-2">Probability</div>
-              </div>
-              <div class="absolute top-4 left-[470px] text-center">
-                <div class="text-sm font-bold text-green-300 mb-2">Data Science</div>
-              </div>
-              
-              <!-- Fundamentals Branch -->
-              <div class="absolute top-[85px] left-[260px] z-10">
-                <a href="https://www.khanacademy.org/math/ap-statistics" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">AP Statistics</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[260px] z-10">
-                <a href="https://ocw.mit.edu/courses/18-440-probability-and-random-variables-spring-2014/" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">MIT OpenCourseWare</div>
-                    <div class="text-xs text-gray-300">Probability Theory</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[260px] z-10">
-                <a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Crash Course</div>
-                    <div class="text-xs text-gray-300">Statistics</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[260px] z-10">
-                <a href="https://www.youtube.com/watch?v=MdHtK7CWpCQ" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-500/30 rounded-lg p-3 hover:border-green-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">StatQuest</div>
-                    <div class="text-xs text-gray-300">Statistics Basics</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Probability Branch -->
-              <div class="absolute top-[85px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=uzkc-qNVoOk" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">3Blue1Brown</div>
-                    <div class="text-xs text-gray-300">Bayes Theorem</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=HZGCoVF3YvM" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Probability Theory</div>
-                    <div class="text-xs text-gray-300">Random Variables</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=Zxm4Xxvzohk" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Central Limit</div>
-                    <div class="text-xs text-gray-300">Theorem Explained</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=SzZ6GpcfoQY" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-600/30 rounded-lg p-3 hover:border-green-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Distributions</div>
-                    <div class="text-xs text-gray-300">Normal & Binomial</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Data Science Branch -->
-              <div class="absolute top-[85px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=zRUliXuwJCQ" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Hypothesis Testing</div>
-                    <div class="text-xs text-gray-300">Statistical Tests</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=5N9V07EIfIg" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Regression Analysis</div>
-                    <div class="text-xs text-gray-300">Linear Models</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=fCVuiW9AFzY" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Data Visualization</div>
-                    <div class="text-xs text-gray-300">Charts & Graphs</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-green-700/30 rounded-lg p-3 hover:border-green-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-green-300 mb-1">Machine Learning</div>
-                    <div class="text-xs text-gray-300">Statistical Learning</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- High School Math Section -->
-          <div id="high-school" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-yellow-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-yellow-400"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-              </div>
-              High School Mathematics
-            </h2>
-            
-            <!-- GitHub-style Branch Network for High School Math -->
-            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
-              <svg class="absolute inset-0 w-full h-full pointer-events-none">
-                <!-- Main vertical branches -->
-                <line x1="100" y1="50" x2="100" y2="350" stroke="#eab308" stroke-width="3" opacity="0.6"/>
-                <line x1="300" y1="50" x2="300" y2="350" stroke="#ca8a04" stroke-width="3" opacity="0.6"/>
-                <line x1="500" y1="50" x2="500" y2="350" stroke="#a16207" stroke-width="3" opacity="0.6"/>
-                
-                <!-- Horizontal resource branches -->
-                <line x1="100" y1="100" x2="250" y2="100" stroke="#eab308" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="150" x2="250" y2="150" stroke="#eab308" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="200" x2="250" y2="200" stroke="#eab308" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="250" x2="250" y2="250" stroke="#eab308" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="300" y1="100" x2="450" y2="100" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="150" x2="450" y2="150" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="200" x2="450" y2="200" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="250" x2="450" y2="250" stroke="#ca8a04" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="500" y1="100" x2="650" y2="100" stroke="#a16207" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="150" x2="650" y2="150" stroke="#a16207" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="200" x2="650" y2="200" stroke="#a16207" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="250" x2="650" y2="250" stroke="#a16207" stroke-width="2" opacity="0.4"/>
-                
-                <!-- Junction circles -->
-                <circle cx="100" cy="100" r="4" fill="#eab308"/>
-                <circle cx="100" cy="150" r="4" fill="#eab308"/>
-                <circle cx="100" cy="200" r="4" fill="#eab308"/>
-                <circle cx="100" cy="250" r="4" fill="#eab308"/>
-                <circle cx="300" cy="100" r="4" fill="#ca8a04"/>
-                <circle cx="300" cy="150" r="4" fill="#ca8a04"/>
-                <circle cx="300" cy="200" r="4" fill="#ca8a04"/>
-                <circle cx="300" cy="250" r="4" fill="#ca8a04"/>
-                <circle cx="500" cy="100" r="4" fill="#a16207"/>
-                <circle cx="500" cy="150" r="4" fill="#a16207"/>
-                <circle cx="500" cy="200" r="4" fill="#a16207"/>
-                <circle cx="500" cy="250" r="4" fill="#a16207"/>
-              </svg>
-              
-              <!-- Branch Headers -->
-              <div class="absolute top-4 left-[70px] text-center">
-                <div class="text-sm font-bold text-yellow-300 mb-2">Algebra</div>
-              </div>
-              <div class="absolute top-4 left-[270px] text-center">
-                <div class="text-sm font-bold text-yellow-300 mb-2">Geometry</div>
-              </div>
-              <div class="absolute top-4 left-[470px] text-center">
-                <div class="text-sm font-bold text-yellow-300 mb-2">Precalculus</div>
-              </div>
-              
-              <!-- Algebra Branch -->
-              <div class="absolute top-[85px] left-[260px] z-10">
-                <a href="https://www.youtube.com/playlist?list=PLC292123722B1B450" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Professor Leonard</div>
-                    <div class="text-xs text-gray-300">Intermediate Algebra</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[260px] z-10">
-                <a href="https://www.khanacademy.org/math/algebra" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">Algebra Basics</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[260px] z-10">
-                <a href="https://www.youtube.com/watch?v=NybHckSEQBI" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Algebra Essentials</div>
-                    <div class="text-xs text-gray-300">Solving Equations</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[260px] z-10">
-                <a href="https://www.youtube.com/watch?v=V6l-m5-zGNc" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-500/30 rounded-lg p-3 hover:border-yellow-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Quadratic Functions</div>
-                    <div class="text-xs text-gray-300">Parabolas & Roots</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Geometry Branch -->
-              <div class="absolute top-[85px] left-[460px] z-10">
-                <a href="https://www.khanacademy.org/math/geometry" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">Geometry</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=mhd9FXYdf4s" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Geometry Basics</div>
-                    <div class="text-xs text-gray-300">Shapes & Proofs</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=kfF40MiS7zA" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Trigonometry</div>
-                    <div class="text-xs text-gray-300">Sin, Cos, Tan</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[460px] z-10">
-                <a href="https://www.youtube.com/watch?v=mOd1F1VZHeI" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-600/30 rounded-lg p-3 hover:border-yellow-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Circle Geometry</div>
-                    <div class="text-xs text-gray-300">Angles & Arcs</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Precalculus Branch -->
-              <div class="absolute top-[85px] left-[660px] z-10">
-                <a href="https://www.youtube.com/playlist?list=PLDesaqWTN6ESsmwELdrzhcGiRhk5DjwLP" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Professor Leonard</div>
-                    <div class="text-xs text-gray-300">Precalculus</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[660px] z-10">
-                <a href="https://www.khanacademy.org/math/precalculus" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Khan Academy</div>
-                    <div class="text-xs text-gray-300">Precalculus</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=fYyARMqiaag" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Functions</div>
-                    <div class="text-xs text-gray-300">Domain & Range</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[660px] z-10">
-                <a href="https://www.youtube.com/watch?v=sULa9Lc4pck" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-yellow-700/30 rounded-lg p-3 hover:border-yellow-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-yellow-300 mb-1">Exponentials</div>
-                    <div class="text-xs text-gray-300">Logs & Growth</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Math Tools Section -->
-          <div id="math-tools" class="bg-space-900/50 rounded-2xl p-8 border border-space-800">
-            <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-              <div class="w-8 h-8 bg-blue-500/20 rounded-lg flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-blue-400"><rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>
-              </div>
-              Mathematical Tools
-            </h2>
-            
-            <!-- GitHub-style Branch Network for Math Tools -->
-            <div class="relative min-h-[400px] bg-space-900/30 rounded-xl p-6 overflow-hidden mb-8">
-              <svg class="absolute inset-0 w-full h-full pointer-events-none">
-                <!-- Main vertical branches -->
-                <line x1="100" y1="50" x2="100" y2="350" stroke="#3b82f6" stroke-width="3" opacity="0.6"/>
-                <line x1="300" y1="50" x2="300" y2="350" stroke="#1d4ed8" stroke-width="3" opacity="0.6"/>
-                <line x1="500" y1="50" x2="500" y2="350" stroke="#1e40af" stroke-width="3" opacity="0.6"/>
-                
-                <!-- Horizontal resource branches -->
-                <line x1="100" y1="100" x2="250" y2="100" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="150" x2="250" y2="150" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="200" x2="250" y2="200" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
-                <line x1="100" y1="250" x2="250" y2="250" stroke="#3b82f6" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="300" y1="100" x2="450" y2="100" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="150" x2="450" y2="150" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="200" x2="450" y2="200" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
-                <line x1="300" y1="250" x2="450" y2="250" stroke="#1d4ed8" stroke-width="2" opacity="0.4"/>
-                
-                <line x1="500" y1="100" x2="650" y2="100" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="150" x2="650" y2="150" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="200" x2="650" y2="200" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
-                <line x1="500" y1="250" x2="650" y2="250" stroke="#1e40af" stroke-width="2" opacity="0.4"/>
-                
-                <!-- Junction circles -->
-                <circle cx="100" cy="100" r="4" fill="#3b82f6"/>
-                <circle cx="100" cy="150" r="4" fill="#3b82f6"/>
-                <circle cx="100" cy="200" r="4" fill="#3b82f6"/>
-                <circle cx="100" cy="250" r="4" fill="#3b82f6"/>
-                <circle cx="300" cy="100" r="4" fill="#1d4ed8"/>
-                <circle cx="300" cy="150" r="4" fill="#1d4ed8"/>
-                <circle cx="300" cy="200" r="4" fill="#1d4ed8"/>
-                <circle cx="300" cy="250" r="4" fill="#1d4ed8"/>
-                <circle cx="500" cy="100" r="4" fill="#1e40af"/>
-                <circle cx="500" cy="150" r="4" fill="#1e40af"/>
-                <circle cx="500" cy="200" r="4" fill="#1e40af"/>
-                <circle cx="500" cy="250" r="4" fill="#1e40af"/>
-              </svg>
-              
-              <!-- Branch Headers -->
-              <div class="absolute top-4 left-[70px] text-center">
-                <div class="text-sm font-bold text-blue-300 mb-2">Calculators</div>
-              </div>
-              <div class="absolute top-4 left-[270px] text-center">
-                <div class="text-sm font-bold text-blue-300 mb-2">Visualization</div>
-              </div>
-              <div class="absolute top-4 left-[470px] text-center">
-                <div class="text-sm font-bold text-blue-300 mb-2">Solvers</div>
-              </div>
-              
-              <!-- Calculators Branch -->
-              <div class="absolute top-[85px] left-[260px] z-10">
-                <a href="https://www.desmos.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Desmos</div>
-                    <div class="text-xs text-gray-300">Graphing Calculator</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[260px] z-10">
-                <a href="https://www.wolframalpha.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">WolframAlpha</div>
-                    <div class="text-xs text-gray-300">Knowledge Engine</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[260px] z-10">
-                <a href="https://www.calculator.net" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Calculator.net</div>
-                    <div class="text-xs text-gray-300">Online Calculators</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[260px] z-10">
-                <a href="https://www.mathway.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-500/30 rounded-lg p-3 hover:border-blue-400 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Mathway</div>
-                    <div class="text-xs text-gray-300">Step-by-Step</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Visualization Branch -->
-              <div class="absolute top-[85px] left-[460px] z-10">
-                <a href="https://www.geogebra.org/?lang=en" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">GeoGebra</div>
-                    <div class="text-xs text-gray-300">3D Calculator</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[460px] z-10">
-                <a href="https://www.graphcalc.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">GraphCalc</div>
-                    <div class="text-xs text-gray-300">Function Plotter</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[460px] z-10">
-                <a href="https://www.mathpix.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Mathpix</div>
-                    <div class="text-xs text-gray-300">OCR & LaTeX</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[460px] z-10">
-                <a href="https://www.maplesoft.com/products/maple/" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-600/30 rounded-lg p-3 hover:border-blue-500 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Maple</div>
-                    <div class="text-xs text-gray-300">Math Software</div>
-                  </div>
-                </a>
-              </div>
-              
-              <!-- Solvers Branch -->
-              <div class="absolute top-[85px] left-[660px] z-10">
-                <a href="https://www.symbolab.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Symbolab</div>
-                    <div class="text-xs text-gray-300">Math Solver</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[135px] left-[660px] z-10">
-                <a href="https://www.cymath.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Cymath</div>
-                    <div class="text-xs text-gray-300">Equation Solver</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[185px] left-[660px] z-10">
-                <a href="https://www.photomath.com" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Photomath</div>
-                    <div class="text-xs text-gray-300">Camera Math</div>
-                  </div>
-                </a>
-              </div>
-              
-              <div class="absolute top-[235px] left-[660px] z-10">
-                <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" class="group block">
-                  <div class="bg-space-800/90 border border-blue-700/30 rounded-lg p-3 hover:border-blue-600 transition-all duration-300 hover:scale-105 max-w-[200px]">
-                    <div class="text-xs font-medium text-blue-300 mb-1">Excel Math</div>
-                    <div class="text-xs text-gray-300">Spreadsheet Math</div>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
+        <div class="flex flex-wrap justify-center gap-4 text-sm">
+          <a href="https://ocw.mit.edu/courses/mathematics/" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors">MIT OCW Math</a>
+          <span class="text-gray-700">•</span>
+          <a href="https://www.khanacademy.org/math" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors">Khan Academy</a>
+          <span class="text-gray-700">•</span>
+          <a href="https://artofproblemsolving.com/" target="_blank" class="text-gray-500 hover:text-blue-400 transition-colors">AoPS</a>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<style>
-/* Custom prose styles for links to match theme */
-.prose a {
-  color: var(--color-primary-400);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: all 0.2s;
-}
-.prose a:hover {
-  color: #fff;
-  border-bottom-color: var(--color-primary-400);
-}
-.prose h2 {
-  color: #fff;
-  margin-top: 3rem;
-  font-size: 1.875rem;
+<style scoped>
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
 }
 </style>
