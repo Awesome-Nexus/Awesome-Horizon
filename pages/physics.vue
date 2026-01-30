@@ -616,6 +616,172 @@ const moreYoutubeChannels = [
   { name: 'Arvin Ash', url: 'https://www.youtube.com/@arvinash', subs: '1M+', focus: 'Quantum/Relativity', level: 'Intermediate' },
   { name: 'MathTheBeautiful', url: 'https://www.youtube.com/@MathTheBeautiful', subs: '300K+', focus: 'Math Physics', level: 'Advanced' }
 ]
+
+// ============================================
+// PHYSICS SUMMER SCHOOLS & WORKSHOPS
+// ============================================
+const summerSchools = [
+  // Astrophysics
+  { name: 'Summer Science Program (SSP)', url: 'https://ssp.org/astrophysics/', location: 'USA (Multi-campus)', duration: '5-6 weeks', level: 'High School', focus: 'Astrophysics' },
+  { name: 'Caltech Relativistic Astrophysics', url: 'https://relastro-school-2025.caltech.edu/', location: 'Pasadena, USA', duration: '1 week', level: 'Graduate', focus: 'Black holes, GWs' },
+  { name: 'Kavli Summer Program', url: 'https://kspa.soe.ucsc.edu/', location: 'UC Santa Cruz, USA', duration: '6 weeks', level: 'Grad/Postdoc', focus: 'Astrophysics' },
+  { name: 'Yale YSPA', url: 'https://yspa.yale.edu/', location: 'Connecticut, USA', duration: '6 weeks', level: 'High School', focus: 'Observational Astronomy' },
+  { name: 'ASPIRE Amsterdam', url: 'https://aspire.science.uva.nl/', location: 'Netherlands', duration: '8 weeks', level: 'MSc', focus: 'Exoplanets' },
+  // Condensed Matter
+  { name: 'Princeton PSSCMP', url: 'https://pccm.princeton.edu/education/psscmp', location: 'New Jersey, USA', duration: '1 week', level: 'Graduate', focus: 'Quantum Materials' },
+  { name: 'Boulder School', url: 'https://www.colorado.edu/conference/bss/home', location: 'Colorado, USA', duration: '3+ weeks', level: 'Graduate', focus: 'Soft Matter' },
+  { name: 'Los Alamos LACCMSS', url: 'https://laccmss.github.io/2026/', location: 'New Mexico, USA', duration: '2 weeks', level: 'Graduate', focus: 'Computational CM' },
+  { name: 'Les Houches Frontiers of CM', url: 'https://frontiers-les-houches.org/', location: 'French Alps', duration: '2 weeks', level: 'MSc/PhD', focus: 'Condensed Matter' },
+  // Particle Physics
+  { name: 'CERN Summer Student', url: 'https://home.cern/summer-student-programme', location: 'Geneva, Switzerland', duration: '8-13 weeks', level: 'BSc/MSc', focus: 'Particle Physics' },
+  { name: 'SJTU Summer School', url: 'https://en.zhiyuan.sjtu.edu.cn/en/ce/summerschool/3', location: 'Shanghai, China', duration: '2-4 weeks', level: 'Undergraduate', focus: 'QFT, Particles' },
+  // International
+  { name: 'ICTP Schools', url: 'https://www.ictp.it/', location: 'Trieste, Italy', duration: 'Varies', level: 'All', focus: 'Multiple Areas' },
+  { name: 'Les Houches Schools', url: 'https://www.houches-school-physics.org/', location: 'French Alps', duration: '2-4 weeks', level: 'Various', focus: 'All Physics' }
+]
+
+// ============================================
+// PHYSICS SOCIETIES WORLDWIDE
+// ============================================
+const physicsSocieties = [
+  // Major International
+  { name: 'IUPAP', url: 'https://iupap.org/', country: 'International', type: 'Union', description: 'International Union of Pure and Applied Physics' },
+  { name: 'Optica (OSA)', url: 'https://www.optica.org/', country: 'International', type: 'Society', description: 'Optics and photonics society' },
+  { name: 'SPIE', url: 'https://spie.org/', country: 'International', type: 'Society', description: 'International society for optics and photonics' },
+  // Americas
+  { name: 'American Physical Society', url: 'https://www.aps.org/', country: 'USA', type: 'Society', description: 'Largest physics society in US' },
+  { name: 'AAPT', url: 'https://www.aapt.org/', country: 'USA', type: 'Teachers', description: 'American Association of Physics Teachers' },
+  { name: 'Canadian Association of Physicists', url: 'https://www.cap.ca/', country: 'Canada', type: 'Society', description: 'Canadian physics society' },
+  { name: 'Brazilian Physical Society', url: 'https://www.sbfisica.org.br/', country: 'Brazil', type: 'Society', description: 'Sociedade Brasileira de Física' },
+  // Europe
+  { name: 'Institute of Physics', url: 'https://www.iop.org/', country: 'UK', type: 'Society', description: 'UK and Ireland physics society' },
+  { name: 'European Physical Society', url: 'https://www.eps.org/', country: 'Europe', type: 'Society', description: 'European physics society' },
+  { name: 'German Physical Society', url: 'https://www.dpg-physik.de/', country: 'Germany', type: 'Society', description: 'Deutsche Physikalische Gesellschaft' },
+  { name: 'French Physical Society', url: 'https://www.sfpnet.fr/', country: 'France', type: 'Society', description: 'Société Française de Physique' },
+  { name: 'Italian Physical Society', url: 'https://www.sif.it/', country: 'Italy', type: 'Society', description: 'Società Italiana di Fisica' },
+  // Asia-Pacific
+  { name: 'Physical Society of Japan', url: 'https://www.jps.or.jp/', country: 'Japan', type: 'Society', description: 'Japanese physics society' },
+  { name: 'Chinese Physical Society', url: 'http://www.cps-net.org.cn/', country: 'China', type: 'Society', description: 'Chinese physics society' },
+  { name: 'Australian Institute of Physics', url: 'https://www.aip.org.au/', country: 'Australia', type: 'Society', description: 'Australian physics society' },
+  // Specialized
+  { name: 'American Nuclear Society', url: 'https://www.ans.org/', country: 'USA', type: 'Nuclear', description: 'Nuclear physics society' },
+  { name: 'Acoustical Society of America', url: 'https://acousticalsociety.org/', country: 'USA', type: 'Acoustics', description: 'Acoustics professional society' },
+  { name: 'Society of Exploration Geophysicists', url: 'https://seg.org/', country: 'International', type: 'Geophysics', description: 'Geophysics professional society' }
+]
+
+// ============================================
+// BIOPHYSICS RESOURCES
+// ============================================
+const biophysicsResources = [
+  { name: 'Physics of Living Systems', url: 'https://link.springer.com/book/10.1007/978-3-319-30647-6', type: 'Textbook', description: 'Undergraduate biophysics by Fabrizio Cleri' },
+  { name: 'MIT Biophysics', url: 'https://physics.mit.edu/research-areas/biophysics/', type: 'Research', description: 'Graduate Certificate in Biophysics' },
+  { name: 'Max Planck Institute of Biophysics', url: 'https://www.biophys.mpg.de/en', type: 'Institute', description: 'Protein structure and function research' },
+  { name: 'Johns Hopkins Biophysics', url: 'https://biophysics.jhu.edu/', type: 'Institute', description: 'Macromolecular structure research' },
+  { name: 'NIH Biophysics Center', url: 'https://www.nhlbi.nih.gov/about/intramural-research/biochemistry-and-biophysics', type: 'Research', description: 'Single molecule biophysics' },
+  { name: 'Physics of Living Systems Org', url: 'https://physicsoflivingsystems.org/', type: 'Organization', description: 'Community resource for PoLS scientists' },
+  { name: 'NSF PoLS Program', url: 'https://www.nsf.gov/funding/opportunities/pols-physics-living-systems', type: 'Funding', description: 'NSF Physics of Living Systems' }
+]
+
+// ============================================
+// GEOPHYSICS RESOURCES
+// ============================================
+const geophysicsResources = [
+  { name: 'MIT OCW Geophysics', url: 'https://ocw.mit.edu/courses/12-201-essentials-of-geophysics-fall-2004/', type: 'Course', description: 'Essentials of geophysics' },
+  { name: 'SEG Training', url: 'https://seg.org/education/courses/', type: 'Courses', description: '100+ geophysics courses' },
+  { name: 'SEG Wiki', url: 'https://wiki.seg.org/', type: 'Wiki', description: 'Encyclopedic Dictionary of Applied Geophysics' },
+  { name: 'USGS Geophysics Institutions', url: 'https://www.usgs.gov/programs/earthquake-hazards/science/geophysics-institutions-throughout-world', type: 'Directory', description: 'Global geophysics institutions' },
+  { name: 'edX Geophysics', url: 'https://www.edx.org/learn/geophysics', type: 'Courses', description: 'Online geophysics courses' },
+  { name: 'Colorado School of Mines', url: 'https://geophysics.mines.edu/energy-geophysics-certificate/', type: 'Certificate', description: 'Energy Geophysics Certificate' }
+]
+
+// ============================================
+// OPTICS & PHOTONICS RESOURCES
+// ============================================
+const opticsResources = [
+  // Textbooks
+  { name: 'Physics of Light and Optics (BYU)', url: 'https://optics.byu.edu/textbook', type: 'Textbook', description: 'Free undergraduate optics text' },
+  { name: 'BSc Optics (TU Delft)', url: 'https://open.umn.edu/opentextbooks/textbooks/982', type: 'Textbook', description: 'Open textbook on optics basics' },
+  { name: 'RP Photonics Encyclopedia', url: 'https://www.rp-photonics.com/encyclopedia.html', type: 'Encyclopedia', description: '1137+ articles on optics and photonics' },
+  // Courses
+  { name: 'MIT Lasers and Fiberoptics', url: 'https://ocw.mit.edu/courses/res-6-005', type: 'Course', description: '36+ hours of laser lectures' },
+  { name: 'MITx Atomic and Optical Physics', url: 'https://mitxonline.mit.edu/courses/course-v1:MITxT+8.421x/', type: 'Course', description: 'Foundations for atomic/optical physics' },
+  // Software
+  { name: 'Ray Optics Simulation', url: 'https://phydemo.app/ray-optics/', type: 'Software', description: 'Free web-based optics simulator' },
+  { name: '3DOptix', url: 'https://design.3doptix.com/', type: 'Software', description: 'Cloud-based optical design' },
+  { name: 'OSLO Edu', url: 'https://www.lambdares.com/oslo', type: 'Software', description: 'Free educational optics design' },
+  // Societies
+  { name: 'Optica (OSA)', url: 'https://www.optica.org/', type: 'Society', description: 'Leading optics society' },
+  { name: 'SPIE', url: 'https://spie.org/', type: 'Society', description: 'International optics society' },
+  { name: 'IEEE Photonics Society', url: 'https://photonicssociety.org/', type: 'Society', description: 'Photonics technology society' }
+]
+
+// ============================================
+// ACOUSTICS & FLUID DYNAMICS RESOURCES
+// ============================================
+const acousticsResources = [
+  { name: 'Fundamentals of Acoustics (Kinsler)', url: 'https://jontalle.web.engr.illinois.edu/Public/BOOKS/KinslerFreyCoopSanders.00.pdf', type: 'Textbook', description: 'Classic acoustics textbook' },
+  { name: 'Understanding Acoustics', url: 'https://library.oapen.org/handle/20.500.12657/42912', type: 'Textbook', description: 'Open access acoustics book' },
+  { name: 'ASA Standards', url: 'https://asastandards.org/', type: 'Standards', description: 'Acoustical Society standards' },
+  { name: 'Acoustical Society of America', url: 'https://acousticalsociety.org/', type: 'Society', description: 'Professional acoustics society' },
+  { name: 'Pyroomacoustics', url: 'https://github.com/LCAV/pyroomacoustics', type: 'Software', description: 'Python audio signal processing' },
+  { name: 'k-Wave', url: 'https://github.com/ucl-bug/k-wave', type: 'Software', description: 'Acoustic wave field simulation' }
+]
+
+const fluidDynamicsResources = [
+  { name: 'Basics of Fluid Mechanics', url: 'https://open.umn.edu/opentextbooks/textbooks/85', type: 'Textbook', description: 'Open textbook on fluid mechanics' },
+  { name: 'MIT OCW Fluid Dynamics', url: 'https://ocw.mit.edu/courses/2-06-fluid-dynamics-spring-2013/', type: 'Course', description: 'Complete MIT fluid mechanics' },
+  { name: 'NASA Glenn Aerodynamics', url: 'https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/learn-about-aerodynamics/', type: 'Educational', description: 'Comprehensive aerodynamics guide' },
+  { name: 'NASA Turbulence Modeling', url: 'https://turbmodels.larc.nasa.gov/', type: 'Reference', description: 'Turbulence model documentation' },
+  { name: 'JHTDB', url: 'https://turbulence.pha.jhu.edu/', type: 'Database', description: 'Johns Hopkins turbulence databases' },
+  { name: 'OpenFOAM', url: 'https://openfoam.org/', type: 'Software', description: 'Open source CFD' },
+  { name: 'SU2', url: 'https://su2code.github.io/', type: 'Software', description: 'Multiphysics CFD suite' }
+]
+
+// ============================================
+// PLASMA & NUCLEAR PHYSICS RESOURCES
+// ============================================
+const plasmaResources = [
+  { name: 'Awesome Plasma Physics Courses', url: 'https://github.com/amerlo94/awesome-plasma-physics-courses', type: 'GitHub', description: 'Curated list of plasma physics courses' },
+  { name: 'AIP Physics of Plasmas', url: 'https://pubs.aip.org/aip/pop/pages/resources', type: 'Journal', description: 'Review and tutorial papers' },
+  { name: 'LLNL HEDS Center', url: 'https://heds-center.llnl.gov/', type: 'Research', description: 'High Energy Density Science' },
+  { name: 'Space Plasma Physics (St Andrews)', url: 'http://solar-mcs.wp.st-andrews.ac.uk/files/2023/08/INTRO_PLASMA_desktop.pdf', type: 'Lecture Notes', description: 'Fundamentals of plasma physics' },
+  { name: 'Laser-Plasma Tutorial (arXiv)', url: 'https://arxiv.org/abs/1806.06014', type: 'Tutorial', description: 'Tutorial on laser-plasma interactions' }
+]
+
+// ============================================
+// INTERNATIONAL TEXTBOOKS
+// ============================================
+const internationalTextbooks = [
+  // Russian
+  { name: 'Landau-Lifshitz (Russian)', url: 'https://archive.org/', language: 'Russian', type: 'Textbook', description: 'Original 10-volume theoretical physics' },
+  { name: 'Irodov Problems', url: 'https://archive.org/', language: 'Russian', type: 'Problems', description: '~1900 challenging physics problems' },
+  { name: 'Mir Titles Archive', url: 'https://mirtitles.org/', language: 'Multiple', type: 'Archive', description: 'Soviet-era physics textbooks' },
+  // German
+  { name: 'Demtröder Experimental Physics', url: 'https://www.springer.com/', language: 'German', type: 'Textbook', description: '4-volume German physics series' },
+  { name: 'Gerthsen Physics', url: 'https://www.springer.com/', language: 'German', type: 'Textbook', description: 'Classic German physics textbook' },
+  { name: 'Nolting Theoretical Physics', url: 'https://www.springer.com/', language: 'German', type: 'Textbook', description: 'Comprehensive theoretical physics' },
+  // French
+  { name: 'Éditions Mir Physics', url: 'https://mirtitles.org/', language: 'French', type: 'Textbook', description: 'Russian books in French translation' },
+  { name: 'Dunod Physique', url: 'https://www.dunod.com/', language: 'French', type: 'Textbook', description: 'French physics textbook series' },
+  // Chinese
+  { name: 'Chinese Physical Society', url: 'http://www.cps-net.org.cn/', language: 'Chinese', type: 'Society', description: '35,000+ members, 11 journals' },
+  { name: 'Tsinghua Physics', url: 'https://www.phys.tsinghua.edu.cn/', language: 'Chinese', type: 'University', description: 'Tsinghua University physics' },
+  // Indian
+  { name: 'HC Verma Concepts of Physics', url: 'https://www.fisica.net/', language: 'English', type: 'Textbook', description: 'Most popular Indian physics text' },
+  { name: 'DC Pandey Understanding Physics', url: 'https://arihantbooks.com/', language: 'English', type: 'Textbook', description: 'JEE preparation series' },
+  { name: 'IIT JEE Resources', url: 'https://www.nptel.ac.in/', language: 'English', type: 'Resources', description: 'Indian competitive exam resources' }
+]
+
+// ============================================
+// PHILOSOPHY & HISTORY OF PHYSICS
+// ============================================
+const philosophyPhysics = [
+  { name: 'Stanford Encyclopedia - Phil Physics', url: 'https://plato.stanford.edu/entries/physics/', type: 'Encyclopedia', description: 'Peer-reviewed philosophy of physics' },
+  { name: 'Philosophy of Physics Journal', url: 'https://philosophyofphysics.lse.ac.uk/', type: 'Journal', description: 'LSE open access journal' },
+  { name: 'Interpretations of QM (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics', type: 'Encyclopedia', description: 'QM interpretations overview' },
+  { name: 'Foundational Attitudes Survey', url: 'https://arxiv.org/abs/1301.1069', type: 'Paper', description: 'Physicists attitudes toward QM foundations' },
+  { name: 'Einstein Archives', url: 'https://einsteinpapers.press.princeton.edu/', type: 'Archive', description: 'Princeton Einstein Papers Project' }
+]
 </script>
 
 <template>
@@ -1506,6 +1672,225 @@ const moreYoutubeChannels = [
             </div>
             <p class="text-sm text-red-400 mb-1">{{ channel.focus }}</p>
             <p class="text-xs text-gray-500">Level: {{ channel.level }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Physics Summer Schools -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Physics Summer Schools & Workshops</h2>
+            <p class="text-gray-400">Intensive programs worldwide for physics students</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="school in summerSchools" :key="school.name" :href="school.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-sky-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-sky-500/20 text-sky-400 rounded">{{ school.duration }}</span>
+              <span class="text-xs text-gray-500">{{ school.level }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-sky-400 transition-colors">{{ school.name }}</h4>
+            <p class="text-sm text-sky-400 mb-1">{{ school.focus }}</p>
+            <p class="text-xs text-gray-500">{{ school.location }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Physics Societies Worldwide -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Physics Societies Worldwide</h2>
+            <p class="text-gray-400">Professional organizations from around the globe</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a v-for="society in physicsSocieties" :key="society.name" :href="society.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-violet-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-violet-500/20 text-violet-400 rounded">{{ society.country }}</span>
+              <span class="text-xs text-gray-500">{{ society.type }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-violet-400 transition-colors">{{ society.name }}</h4>
+            <p class="text-xs text-gray-500">{{ society.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Biophysics Resources -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Biophysics & Physics of Living Systems</h2>
+            <p class="text-gray-400">Resources at the intersection of physics and biology</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in biophysicsResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-emerald-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Geophysics Resources -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Geophysics & Planetary Science</h2>
+            <p class="text-gray-400">Earth and planetary physics resources</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="res in geophysicsResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-amber-500 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Optics & Photonics -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Optics, Photonics & Laser Physics</h2>
+            <p class="text-gray-400">Light, lasers, and optical physics resources</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in opticsResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-cyan-500/20 text-cyan-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Acoustics & Fluid Dynamics -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Acoustics & Fluid Dynamics</h2>
+            <p class="text-gray-400">Sound, fluids, and continuum mechanics resources</p>
+          </div>
+        </div>
+
+        <h3 class="text-lg font-semibold text-blue-400 mb-4">Acoustics</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+          <a v-for="res in acousticsResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-blue-500/20 text-blue-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-blue-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+
+        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Fluid Dynamics</h3>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="res in fluidDynamicsResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-indigo-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-indigo-500/20 text-indigo-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-indigo-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Plasma & Nuclear Physics -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Plasma & Nuclear Physics</h2>
+            <p class="text-gray-400">Fusion energy, plasmas, and nuclear physics</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="res in plasmaResources" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-orange-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-orange-500/20 text-orange-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-orange-500 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- International Textbooks -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-fuchsia-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-fuchsia-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">International Textbooks & Resources</h2>
+            <p class="text-gray-400">Physics resources from around the world</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="res in internationalTextbooks" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-fuchsia-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-fuchsia-500/20 text-fuchsia-400 rounded">{{ res.language }}</span>
+              <span class="text-xs text-gray-500">{{ res.type }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-fuchsia-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Philosophy & History of Physics -->
+      <section class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-stone-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Philosophy & History of Physics</h2>
+            <p class="text-gray-400">Foundations, interpretations, and historical perspectives</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="res in philosophyPhysics" :key="res.name" :href="res.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-stone-500/50 transition-all hover:scale-[1.02]">
+            <span class="text-xs px-2 py-0.5 bg-stone-500/20 text-stone-400 rounded">{{ res.type }}</span>
+            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-stone-400 transition-colors">{{ res.name }}</h4>
+            <p class="text-xs text-gray-500">{{ res.description }}</p>
           </a>
         </div>
       </section>
