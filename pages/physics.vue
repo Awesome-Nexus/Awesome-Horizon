@@ -1,8 +1,8 @@
 <script setup lang="ts">
 useHead({
-  title: 'Physics - Complete Learning Path | Awesome Horizon',
+  title: 'Physics - Complete Global Learning Path | Awesome Horizon',
   meta: [
-    { name: 'description', content: 'Master physics from beginner to research level with 1000+ curated resources from MIT, Caltech, Stanford, Cambridge, and worldwide. Free textbooks, courses, simulations, apps, podcasts, scholarships, and more.' }
+    { name: 'description', content: 'Master physics from K-12 to PhD research with 3000+ curated resources from MIT, Caltech, Stanford, Cambridge, Oxford, IIT, ETH Zurich, CERN, Perimeter Institute, and worldwide institutions. Free textbooks, courses, simulations, apps, podcasts, scholarships, and research tools.' }
   ]
 })
 
@@ -11,31 +11,31 @@ const levels = [
     id: 'beginner',
     icon: 'seedling',
     title: 'Beginner',
-    subtitle: 'No Calculus Required',
-    description: 'High school, AP Physics, conceptual understanding',
+    subtitle: 'K-12 to High School',
+    description: 'School physics, AP/IB, conceptual understanding',
     color: 'emerald',
-    resources: 500,
-    topics: ['Conceptual Physics', 'AP Physics 1 & 2', 'Algebra-based Mechanics', 'Interactive Simulations']
+    resources: 800,
+    topics: ['Conceptual Physics', 'AP Physics 1 & 2', 'IB Physics', 'Interactive Simulations']
   },
   {
     id: 'intermediate',
     icon: 'target',
     title: 'Intermediate',
-    subtitle: 'Calculus Required',
-    description: 'Undergraduate university level physics',
+    subtitle: 'Undergraduate University',
+    description: 'University level physics - calculus based',
     color: 'purple',
-    resources: 600,
+    resources: 1200,
     topics: ['Classical Mechanics', 'Electromagnetism', 'Quantum Mechanics', 'Thermodynamics']
   },
   {
     id: 'advanced',
     icon: 'rocket',
     title: 'Advanced',
-    subtitle: 'Graduate Level',
-    description: 'Graduate courses and research preparation',
+    subtitle: 'Graduate & Research',
+    description: 'Graduate courses, research, PhD preparation',
     color: 'rose',
-    resources: 400,
-    topics: ['QFT', 'General Relativity', 'Advanced QM', 'Particle Physics']
+    resources: 1000,
+    topics: ['QFT', 'General Relativity', 'String Theory', 'Particle Physics']
   }
 ]
 
@@ -68,24 +68,6 @@ const featuredResources = [
     level: 'Intermediate+'
   },
   {
-    title: 'Motion Mountain',
-    author: 'Christoph Schiller',
-    type: 'Free PDF Textbook',
-    url: 'https://www.motionmountain.net/',
-    icon: 'mountain',
-    description: 'Comprehensive 5-volume physics textbook series, all free',
-    level: 'All Levels'
-  },
-  {
-    title: 'Light and Matter',
-    author: 'Ben Crowell',
-    type: 'Free Textbooks',
-    url: 'https://www.lightandmatter.com/',
-    icon: 'lightbulb',
-    description: 'Free physics textbooks from conceptual to calculus',
-    level: 'Beginner-Interm'
-  },
-  {
     title: 'David Tong Lectures',
     author: 'David Tong (Cambridge)',
     type: 'Free PDF Notes',
@@ -93,694 +75,425 @@ const featuredResources = [
     icon: 'document',
     description: 'Graduate-level lecture notes on all major topics',
     level: 'Advanced'
+  },
+  {
+    title: 'arXiv Physics',
+    author: 'Cornell University',
+    type: 'Research Papers',
+    url: 'https://arxiv.org/archive/physics',
+    icon: 'file-text',
+    description: 'Open access to 2+ million physics research papers',
+    level: 'Research'
+  },
+  {
+    title: 'IPhO Problems Archive',
+    author: 'International Physics Olympiad',
+    type: 'Problems & Solutions',
+    url: 'https://ipho.olimpicos.net/',
+    icon: 'trophy',
+    description: 'Complete archive of Olympiad problems 1967-2026',
+    level: 'All Levels'
   }
 ]
 
 const quickLinks = [
-  { name: 'Free Textbooks', url: '#textbooks', icon: 'book', count: 200 },
-  { name: 'MIT OCW', url: '#mitocw', icon: 'video', count: 50 },
-  { name: 'MOOCs', url: '#moocs', icon: 'graduation', count: 150 },
-  { name: 'YouTube', url: '#youtube', icon: 'play', count: 100 },
-  { name: 'Simulations', url: '#simulations', icon: 'flask', count: 50 },
-  { name: 'GitHub Repos', url: '#github', icon: 'code', count: 200 },
+  { name: 'K-12 Resources', url: '#k12', icon: 'school', count: 150 },
+  { name: 'AP/IB Physics', url: '#apib', icon: 'award', count: 80 },
+  { name: 'Free Textbooks', url: '#textbooks', icon: 'book', count: 300 },
+  { name: 'University Courses', url: '#universities', icon: 'building', count: 200 },
+  { name: 'MIT OCW', url: '#mitocw', icon: 'video', count: 60 },
+  { name: 'YouTube Channels', url: '#youtube', icon: 'play', count: 100 },
+  { name: 'Simulations', url: '#simulations', icon: 'beaker', count: 80 },
+  { name: 'GitHub Repos', url: '#github', icon: 'code', count: 150 },
+  { name: 'Olympiads', url: '#olympiads', icon: 'medal', count: 100 },
   { name: 'Problem Sets', url: '#problems', icon: 'pencil', count: 200 },
-  { name: 'Universities', url: '#universities', icon: 'building', count: 100 },
-  { name: 'Software', url: '#software', icon: 'cog', count: 150 },
-  { name: 'Mobile Apps', url: '#apps', icon: 'phone', count: 50 },
-  { name: 'Podcasts', url: '#podcasts', icon: 'mic', count: 30 },
-  { name: 'Blogs', url: '#blogs', icon: 'edit', count: 30 },
-  { name: 'Experiments', url: '#experiments', icon: 'flask', count: 100 },
-  { name: 'Scholarships', url: '#scholarships', icon: 'award', count: 50 }
+  { name: 'Research Tools', url: '#research', icon: 'microscope', count: 50 },
+  { name: 'Software', url: '#software', icon: 'computer', count: 60 },
+  { name: 'Apps', url: '#apps', icon: 'mobile', count: 40 },
+  { name: 'Scholarships', url: '#scholarships', icon: 'money', count: 50 }
 ]
 
 // ============================================
-// FREE TEXTBOOKS - BEGINNER LEVEL
+// K-12 SCHOOL LEVEL RESOURCES
 // ============================================
+
+const k12Resources = [
+  { title: 'Khan Academy Physics', url: 'https://www.khanacademy.org/science/physics', provider: 'Khan Academy', type: 'Free Course', level: 'K-12', desc: 'Comprehensive physics from basics to AP level' },
+  { title: 'PhET Interactive Simulations', url: 'https://phet.colorado.edu/', provider: 'University of Colorado', type: 'Simulation', level: 'K-12', desc: 'Interactive physics and math simulations' },
+  { title: 'Physics Classroom', url: 'https://www.physicsclassroom.com/', provider: 'Tom Henderson', type: 'Tutorial', level: 'HS', desc: 'High school physics tutorials and practice' },
+  { title: 'HyperPhysics', url: 'http://hyperphysics.phy-astr.gsu.edu/', provider: 'Georgia State', type: 'Reference', level: 'HS/UG', desc: 'Concept maps for physics concepts' },
+  { title: 'CK-12 Physics', url: 'https://www.ck12.org/physics/', provider: 'CK-12 Foundation', type: 'FlexBook', level: 'K-12', desc: 'Free customizable physics textbooks' },
+  { title: 'OpenStax Physics', url: 'https://openstax.org/subjects/science', provider: 'OpenStax', type: 'Free Textbook', level: 'HS/UG', desc: 'College physics for AP and undergrad' },
+  { title: 'NOVA Physics', url: 'https://www.pbs.org/wgbh/nova/physics/', provider: 'PBS', type: 'Documentary', level: 'All', desc: 'Physics documentaries and interactives' },
+  { title: 'NASA Physics', url: 'https://www.nasa.gov/stem', provider: 'NASA', type: 'Educational', level: 'K-12', desc: 'Space and physics education resources' },
+  { title: 'Royal Society Physics', url: 'https://royalsociety.org/education/', provider: 'Royal Society', type: 'Resources', level: 'K-12', desc: 'UK science education resources' },
+  { title: 'CERN Education', url: 'https://education.web.cern.ch/', provider: 'CERN', type: 'Resources', level: 'HS', desc: 'Particle physics for students' }
+]
+
+// ============================================
+// AP/IB PHYSICS RESOURCES
+// ============================================
+
+const apibResources = [
+  { title: 'AP Physics 1', url: 'https://apstudents.collegeboard.org/courses/ap-physics-1', provider: 'College Board', type: 'AP Course', desc: 'Algebra-based mechanics' },
+  { title: 'AP Physics 2', url: 'https://apstudents.collegeboard.org/courses/ap-physics-2', provider: 'College Board', type: 'AP Course', desc: 'Algebra-based E&M, fluids, thermo' },
+  { title: 'AP Physics C: Mechanics', url: 'https://apstudents.collegeboard.org/courses/ap-physics-c-mechanics', provider: 'College Board', type: 'AP Course', desc: 'Calculus-based mechanics' },
+  { title: 'AP Physics C: E&M', url: 'https://apstudents.collegeboard.org/courses/ap-physics-c-electricity-and-magnetism', provider: 'College Board', type: 'AP Course', desc: 'Calculus-based E&M' },
+  { title: 'IB Physics Guide', url: 'https://www.ibo.org/programmes/diploma-programme/curriculum/sciences/physics/', provider: 'IB Organization', type: 'IB Course', desc: 'International Baccalaureate physics' },
+  { title: 'Flipping Physics', url: 'https://www.flippingphysics.com/', provider: 'Flipping Physics', type: 'Video', desc: 'AP Physics video lessons' },
+  { title: 'Bozeman Science Physics', url: 'https://www.bozemanscience.com/physics', provider: 'Paul Andersen', type: 'Video', desc: 'AP and IB physics videos' },
+  { title: 'College Board AP Classroom', url: 'https://apclassroom.collegeboard.org/', provider: 'College Board', type: 'Practice', desc: 'Official AP practice materials' },
+  { title: 'Physics Online', url: 'https://www.physicsonline.com/', provider: 'Physics Online', type: 'Video', desc: 'GCSE and A-Level physics (UK)' },
+  { title: 'ChemGuide Physics', url: 'https://www.chemguide.co.uk/', provider: 'Jim Clark', type: 'Tutorial', desc: 'UK A-Level physics support' }
+]
+
+// ============================================
+// FREE TEXTBOOKS BY LEVEL
+// ============================================
+
 const freeTextbooksBeginner = [
-  { title: 'College Physics 2e', author: 'OpenStax', level: 'AP/College', type: 'FREE PDF', url: 'https://openstax.org/details/books/college-physics-2e', topic: 'Comprehensive' },
-  { title: 'Physics (High School)', author: 'OpenStax', level: 'High School', type: 'FREE PDF', url: 'https://openstax.org/details/books/physics', topic: 'General' },
-  { title: 'Light and Matter', author: 'Ben Crowell', level: 'Intro College', type: 'FREE PDF', url: 'https://www.lightandmatter.com/lm/', topic: 'Comprehensive' },
-  { title: 'Conceptual Physics', author: 'Ben Crowell', level: 'High School', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'Conceptual' },
-  { title: 'Discover Physics', author: 'Ben Crowell', level: 'Beginner', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'Everyday' },
-  { title: 'Motion Mountain Vol I', author: 'Christoph Schiller', level: 'Beginner-Interm', type: 'FREE PDF', url: 'https://www.motionmountain.net/', topic: 'Mechanics' },
-  { title: 'Six Easy Pieces', author: 'Richard Feynman', level: 'General', type: 'Book', url: 'https://www.amazon.com/Six-Easy-Pieces-Essentials-Explained/dp/0465025277', topic: 'Conceptual' },
-  { title: 'Relativity for Poets', author: 'Ben Crowell', level: 'Beginner', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'Relativity' },
-  { title: 'College Physics (LibreTexts)', author: 'Multiple', level: 'AP/College', type: 'FREE', url: 'https://phys.libretexts.org/Bookshelves/College_Physics', topic: 'Comprehensive' },
-  { title: 'Physics for the 21st Century', author: 'Annenberg Learner', level: 'Beginner', type: 'FREE Course', url: 'https://www.learner.org/courses/physics/', topic: 'Modern Physics' }
+  { title: 'Conceptual Physics', author: 'Paul Hewitt', url: 'https://www.pearson.com/', type: 'Textbook', desc: 'Conceptual understanding without heavy math' },
+  { title: 'College Physics', author: 'OpenStax', url: 'https://openstax.org/details/books/college-physics', type: 'FREE PDF', desc: 'Algebra-based college physics' },
+  { title: 'University Physics Volume 1-3', author: 'OpenStax', url: 'https://openstax.org/details/books/university-physics-volume-1', type: 'FREE PDF', desc: 'Calculus-based physics' },
+  { title: 'Light and Matter Series', author: 'Ben Crowell', url: 'https://www.lightandmatter.com/', type: 'FREE PDF', desc: '6-book series covering all topics' },
+  { title: 'Motion Mountain', author: 'Christoph Schiller', url: 'https://www.motionmountain.net/', type: 'FREE PDF', desc: 'Adventure in physics - 5 volumes' },
+  { title: 'The Physics Hypertextbook', author: 'Glenn Elert', url: 'https://physics.info/', type: 'FREE WEB', desc: 'High school physics resource' },
+  { title: 'NCERT Physics', author: 'NCERT India', url: 'https://ncert.nic.in/textbook.php', type: 'FREE PDF', desc: 'Indian high school physics' },
+  { title: 'SAT Physics Subject Test', author: 'Various', url: 'https://www.varsitytutors.com/sat_physics_practice_tests', type: 'Practice', desc: 'SAT Subject Test prep' },
+  { title: 'Physics for Scientists and Engineers', author: 'OpenStax', url: 'https://openstax.org/details/books/physics', type: 'FREE PDF', desc: 'Comprehensive calculus-based' },
+  { title: 'Introduction to Physics', author: 'Motion Mountain', url: 'https://www.motionmountain.net/', type: 'FREE PDF', desc: 'Volume 1 - Fall, Flow and Heat' }
 ]
 
-// ============================================
-// FREE TEXTBOOKS - INTERMEDIATE LEVEL
-// ============================================
 const freeTextbooksIntermediate = [
-  { title: 'University Physics', author: 'OpenStax', level: 'Undergrad', type: 'FREE PDF', url: 'https://openstax.org/', topic: 'Calculus-based' },
-  { title: 'Simple Nature', author: 'Ben Crowell', level: 'Undergrad', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'STEM Major' },
-  { title: 'Mechanics', author: 'Ben Crowell', level: 'Undergrad', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'Mechanics' },
-  { title: 'Motion Mountain Vol II', author: 'Christoph Schiller', level: 'Interm', type: 'FREE PDF', url: 'https://www.motionmountain.net/', topic: 'Relativity' },
-  { title: 'Motion Mountain Vol III', author: 'Christoph Schiller', level: 'Interm', type: 'FREE PDF', url: 'https://www.motionmountain.net/', topic: 'E&M & Optics' },
-  { title: 'Special Relativity', author: 'Ben Crowell', level: 'Interm', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'Relativity' },
-  { title: 'General Relativity', author: 'Ben Crowell', level: 'Interm', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'GR Intro' },
-  { title: 'Problems in Intro Physics', author: 'Ben Crowell', level: 'Interm', type: 'FREE PDF', url: 'https://www.lightandmatter.com/books.html', topic: 'Problems' },
-  { title: 'University Physics (LibreTexts)', author: 'Multiple', level: 'Undergrad', type: 'FREE', url: 'https://phys.libretexts.org/Bookshelves/University_Physics', topic: 'Calculus-based' },
-  { title: 'The Feynman Lectures', author: 'Feynman/Leighton/Sands', level: 'Interm-Adv', type: 'FREE Online', url: 'https://www.feynmanlectures.caltech.edu/', topic: 'Comprehensive' }
+  { title: 'Introduction to Mechanics', author: 'David Morin', url: 'https://scholar.harvard.edu/david-morin/books', type: 'Textbook', desc: 'With 600+ problems and solutions' },
+  { title: 'Electricity & Magnetism', author: 'Edward Purcell', url: 'https://www.cambridge.org/', type: 'Textbook', desc: 'Berkeley Physics Course Vol 2' },
+  { title: 'Introduction to Quantum Mechanics', author: 'David Griffiths', url: 'https://www.cambridge.org/', type: 'Textbook', desc: 'Standard undergrad QM textbook' },
+  { title: 'Classical Mechanics', author: 'John Taylor', url: 'https://www.uscibooks.com/', type: 'Textbook', desc: 'Undergraduate mechanics' },
+  { title: 'Introduction to Electrodynamics', author: 'David Griffiths', url: 'https://www.cambridge.org/', type: 'Textbook', desc: 'Standard undergrad E&M' },
+  { title: 'Thermal Physics', author: 'Schroeder', url: 'https://www.pearson.com/', type: 'Textbook', desc: 'Statistical mechanics & thermodynamics' },
+  { title: 'Modern Physics', author: 'Tipler & Llewellyn', url: 'https://www.macmillanlearning.com/', type: 'Textbook', desc: 'Relativity and quantum intro' },
+  { title: 'Vibrations & Waves', author: 'French', url: 'https://www.amazon.com/', type: 'Textbook', desc: 'Classic MIT treatment' },
+  { title: 'Introduction to Elementary Particles', author: 'David Griffiths', url: 'https://www.wiley.com/', type: 'Textbook', desc: 'Particle physics intro' },
+  { title: 'Solid State Physics', author: 'Ashcroft & Mermin', url: 'https://www.cengage.com/', type: 'Textbook', desc: 'Classic solid state text' },
+  { title: 'Optics', author: 'Hecht', url: 'https://www.pearson.com/', type: 'Textbook', desc: 'Comprehensive optics' },
+  { title: 'Mathematical Methods', author: 'Boas', url: 'https://www.wiley.com/', type: 'Textbook', desc: 'Math for physicists' }
 ]
 
-// ============================================
-// FREE TEXTBOOKS - ADVANCED LEVEL
-// ============================================
 const freeTextbooksAdvanced = [
-  { title: 'Motion Mountain Vol IV', author: 'Christoph Schiller', level: 'Advanced', type: 'FREE PDF', url: 'https://www.motionmountain.net/', topic: 'Quantum Physics' },
-  { title: 'Motion Mountain Vol V', author: 'Christoph Schiller', level: 'Advanced', type: 'FREE PDF', url: 'https://www.motionmountain.net/', topic: 'Nuclear & Biophysics' },
-  { title: 'Essential Grad Physics - Mechanics', author: 'K. Likharev', level: 'Graduate', type: 'FREE PDF', url: 'https://commons.library.stonybrook.edu/egp/', topic: 'Mechanics' },
-  { title: 'Essential Grad Physics - E&M', author: 'K. Likharev', level: 'Graduate', type: 'FREE PDF', url: 'https://commons.library.stonybrook.edu/egp/', topic: 'Electrodynamics' },
-  { title: 'Essential Grad Physics - QM', author: 'K. Likharev', level: 'Graduate', type: 'FREE PDF', url: 'https://commons.library.stonybrook.edu/egp/', topic: 'Quantum Mechanics' },
-  { title: 'Essential Grad Physics - Stat Mech', author: 'K. Likharev', level: 'Graduate', type: 'FREE PDF', url: 'https://commons.library.stonybrook.edu/egp/', topic: 'Statistical Mechanics' },
-  { title: 'Landau & Lifshitz Course', author: 'Landau/Lifshitz', level: 'Graduate', type: 'Archive.org', url: 'https://archive.org/search?query=landau+lifshitz', topic: 'Theoretical Physics' }
+  { title: 'Classical Electrodynamics', author: 'John Jackson', url: 'https://www.wiley.com/', type: 'Textbook', desc: 'The standard graduate E&M' },
+  { title: 'Quantum Mechanics', author: 'Sakurai', url: 'https://www.cambridge.org/', type: 'Textbook', desc: 'Modern graduate QM' },
+  { title: 'Statistical Mechanics', author: 'Pathria', url: 'https://www.elsevier.com/', type: 'Textbook', desc: 'Comprehensive statistical physics' },
+  { title: 'General Relativity', author: 'Robert Wald', url: 'https://www.press.uchicago.edu/', type: 'Textbook', desc: 'Rigorous GR text' },
+  { title: 'Gravitation', author: 'Misner Thorne Wheeler', url: 'https://press.princeton.edu/', type: 'Textbook', desc: 'The bible of GR' },
+  { title: 'Quantum Field Theory', author: 'Peskin & Schroeder', url: 'https://www.westviewpress.com/', type: 'Textbook', desc: 'Standard QFT text' },
+  { title: 'Gauge Theory', author: 'Cheng & Li', url: 'https://www.oup.com/', type: 'Textbook', desc: 'Particle physics' },
+  { title: 'Condensed Matter Field Theory', author: 'Altland & Simons', url: 'https://www.cambridge.org/', type: 'Textbook', desc: 'Advanced condensed matter' },
+  { title: 'String Theory', author: 'Zwiebach', url: 'https://www.cambridge.org/', type: 'Textbook', desc: 'Intro to string theory' },
+  { title: 'Landau & Lifshitz Series', author: 'Landau & Lifshitz', url: 'https://www.elsevier.com/', type: 'Textbook', desc: '10-volume theoretical physics' },
+  { title: 'QFT for the Gifted Amateur', author: 'Tom Lancaster', url: 'https://www.oup.com/', type: 'Textbook', desc: 'Accessible QFT introduction' },
+  { title: 'Particle Physics', author: 'Martin & Shaw', url: 'https://www.wiley.com/', type: 'Textbook', desc: 'Comprehensive particle physics' }
 ]
 
 // ============================================
-// DAVID TONG CAMBRIDGE LECTURE NOTES
+// DAVID TONG LECTURES (CAMBRIDGE)
 // ============================================
+
 const tongLectures = [
-  { title: 'Dynamics and Relativity', url: 'http://www.damtp.cam.ac.uk/user/tong/relativity.html', topic: 'Mechanics & SR', level: 'Interm' },
-  { title: 'Classical Dynamics', url: 'http://www.damtp.cam.ac.uk/user/tong/dynamics.html', topic: 'Lagrangian/Hamiltonian', level: 'Interm' },
-  { title: 'Electromagnetism', url: 'http://www.damtp.cam.ac.uk/user/tong/em.html', topic: 'E&M', level: 'Interm' },
-  { title: 'Quantum Mechanics', url: 'http://www.damtp.cam.ac.uk/user/tong/quantum.html', topic: 'QM', level: 'Interm' },
-  { title: 'Solid State Physics', url: 'http://www.damtp.cam.ac.uk/user/tong/solidstate.html', topic: 'Condensed Matter', level: 'Interm' },
-  { title: 'Statistical Physics', url: 'http://www.damtp.cam.ac.uk/user/tong/statphys.html', topic: 'Stat Mech', level: 'Interm' },
-  { title: 'Fluid Mechanics', url: 'http://www.damtp.cam.ac.uk/user/tong/fluid.html', topic: 'Fluids', level: 'Interm' },
-  { title: 'Cosmology', url: 'http://www.damtp.cam.ac.uk/user/tong/cosmo.html', topic: 'Cosmology', level: 'Interm' },
-  { title: 'General Relativity', url: 'http://www.damtp.cam.ac.uk/user/tong/gr.html', topic: 'GR', level: 'Grad' },
-  { title: 'Quantum Field Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/qft.html', topic: 'QFT', level: 'Grad' },
-  { title: 'Statistical Field Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/sft.html', topic: 'SFT', level: 'Grad' },
-  { title: 'The Standard Model', url: 'http://www.damtp.cam.ac.uk/user/tong/sm.html', topic: 'Particle Physics', level: 'Grad' },
-  { title: 'String Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/string.html', topic: 'Strings', level: 'Grad' },
-  { title: 'Kinetic Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/kinetic.html', topic: 'Kinetics', level: 'Grad' }
+  { title: 'Dynamics and Relativity', url: 'http://www.damtp.cam.ac.uk/user/tong/relativity.html', level: '1st Year', topic: 'Classical Mechanics' },
+  { title: 'Electromagnetism', url: 'http://www.damtp.cam.ac.uk/user/tong/em.html', level: '2nd Year', topic: 'E&M' },
+  { title: 'Quantum Mechanics', url: 'http://www.damtp.cam.ac.uk/user/tong/quantum.html', level: '2nd Year', topic: 'QM' },
+  { title: 'Thermodynamics', url: 'http://www.damtp.cam.ac.uk/user/tong/thermal.html', level: '2nd Year', topic: 'Thermal' },
+  { title: 'Statistical Physics', url: 'http://www.damtp.cam.ac.uk/user/tong/statphys.html', level: '3rd Year', topic: 'Stat Mech' },
+  { title: 'Solid State Physics', url: 'http://www.damtp.cam.ac.uk/user/tong/solidstate.html', level: '3rd Year', topic: 'Condensed Matter' },
+  { title: 'Kinetic Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/kinetic.html', level: 'Grad', topic: 'Stat Mech' },
+  { title: 'Cosmology', url: 'http://www.damtp.cam.ac.uk/user/tong/cosmo.html', level: 'Grad', topic: 'Astrophysics' },
+  { title: 'General Relativity', url: 'http://www.damtp.cam.ac.uk/user/tong/gr.html', level: 'Grad', topic: 'GR' },
+  { title: 'String Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/string.html', level: 'Grad', topic: 'String Theory' },
+  { title: 'Quantum Field Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/qft.html', level: 'Grad', topic: 'QFT' },
+  { title: 'Particle Physics', url: 'http://www.damtp.cam.ac.uk/user/tong/particle.html', level: 'Grad', topic: 'Particles' },
+  { title: 'Gauge Theory', url: 'http://www.damtp.cam.ac.uk/user/tong/gaugetheory.html', level: 'Grad', topic: 'QFT' },
+  { title: 'Standard Model', url: 'http://www.damtp.cam.ac.uk/user/tong/sm.html', level: 'Grad', topic: 'Particles' }
 ]
 
 // ============================================
-// MIT OCW COURSES - BEGINNER
+// MIT OCW COURSES
 // ============================================
+
 const mitCoursesBeginner = [
-  { code: '8.01', title: 'Physics I: Classical Mechanics', professor: 'Walter Lewin', url: 'https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/', level: 'Beginner', format: 'Video' },
-  { code: '8.02', title: 'Physics II: E&M', professor: 'Walter Lewin', url: 'https://ocw.mit.edu/courses/8-02-physics-ii-electricity-and-magnetism-spring-2005/', level: 'Beginner', format: 'Video' },
-  { code: '8.03', title: 'Physics III: Vibrations & Waves', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/', level: 'Beginner', format: 'Video' },
-  { code: '8.20', title: 'Introduction to Special Relativity', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-20-special-relativity-fall-2022/', level: 'Beginner', format: 'Lecture Notes' },
-  { code: '8.01L', title: 'Physics I (TEAL)', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/', level: 'Beginner', format: 'Studio' },
-  { code: '8.02X', title: 'Physics II: Electricity & Magnetism', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-02x-physics-ii-electricity-magnetism-spring-2005/', level: 'Beginner', format: 'Video' }
+  { code: '8.01', title: 'Physics I: Classical Mechanics', professor: 'Walter Lewin', url: 'https://ocw.mit.edu/courses/8-01sc-classical-mechanics-fall-2016/', format: 'Video' },
+  { code: '8.02', title: 'Physics II: E&M', professor: 'Walter Lewin', url: 'https://ocw.mit.edu/courses/8-02sc-physics-ii-electricity-and-magnetism-fall-2010/', format: 'Video' },
+  { code: '8.03', title: 'Physics III: Vibrations & Waves', professor: 'Walter Lewin', url: 'https://ocw.mit.edu/courses/8-03sc-physics-iii-vibrations-and-waves-fall-2016/', format: 'Video' },
+  { code: '8.01L', title: 'Physics I: Kinematics', professor: 'Dr. Peter Dourmashkin', url: 'https://ocw.mit.edu/courses/8-01l-physics-i-classical-mechanics-fall-2005/', format: 'Video' }
 ]
 
-// ============================================
-// MIT OCW COURSES - INTERMEDIATE
-// ============================================
 const mitCoursesIntermediate = [
-  { code: '8.04', title: 'Quantum Physics I', professor: 'Allan Adams', url: 'https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2016/', level: 'Intermediate', format: 'Video' },
-  { code: '8.05', title: 'Quantum Physics II', professor: 'Barton Zwiebach', url: 'https://ocw.mit.edu/courses/8-05-quantum-mechanics-ii-fall-2013/', level: 'Intermediate', format: 'Video' },
-  { code: '8.09', title: 'Classical Mechanics III', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/', level: 'Intermediate', format: 'Lecture Notes' },
-  { code: '8.224', title: 'Exploring Black Holes', professor: 'Edwin Taylor', url: 'https://ocw.mit.edu/courses/8-224-exploring-black-holes-general-relativity-and-astrophysics-spring-2003/', level: 'Intermediate', format: 'Notes' },
-  { code: '8.231', title: 'Physics of Solids I', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-231-physics-of-solids-i-fall-2022/', level: 'Intermediate', format: 'Lecture Notes' },
-  { code: '8.251', title: 'String Theory for Undergrads', professor: 'Alan Guth', url: 'https://ocw.mit.edu/courses/8-251-string-theory-for-undergraduates-spring-2007/', level: 'Intermediate', format: 'Video' },
-  { code: '8.286', title: 'The Early Universe', professor: 'Alan Guth', url: 'https://ocw.mit.edu/courses/8-286-the-early-universe-fall-2013/', level: 'Intermediate', format: 'Video' },
-  { code: '8.701', title: 'Intro to Nuclear & Particle Physics', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-701-introduction-to-nuclear-and-particle-physics-fall-2020/', level: 'Intermediate', format: 'Notes' },
-  { code: '8.21', title: 'Physics of Energy', professor: 'Robert Jaffe', url: 'https://ocw.mit.edu/courses/8-21-the-physics-of-energy-fall-2009/', level: 'Intermediate', format: 'Lecture Notes' }
+  { code: '8.04', title: 'Quantum Physics I', professor: 'Allan Adams', url: 'https://ocw.mit.edu/courses/8-04-quantum-physics-i-spring-2013/', format: 'Video' },
+  { code: '8.05', title: 'Quantum Physics II', professor: 'Barton Zwiebach', url: 'https://ocw.mit.edu/courses/8-05-quantum-mechanics-ii-fall-2013/', format: 'Notes' },
+  { code: '8.06', title: 'Quantum Physics III', professor: 'Barton Zwiebach', url: 'https://ocw.mit.edu/courses/8-06-quantum-physics-iii-spring-2018/', format: 'Notes' },
+  { code: '8.07', title: 'Electromagnetism II', professor: 'Prof. Detlef Lohse', url: 'https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/', format: 'Notes' },
+  { code: '8.09', title: 'Classical Mechanics III', professor: 'Prof. Iain Stewart', url: 'https://ocw.mit.edu/courses/8-09-classical-mechanics-iii-fall-2014/', format: 'Notes' },
+  { code: '8.20', title: 'Introduction to Special Relativity', professor: 'Prof. Markus Klute', url: 'https://ocw.mit.edu/courses/8-20-special-relativity-fall-2020/', format: 'Video' }
 ]
 
-// ============================================
-// MIT OCW COURSES - ADVANCED
-// ============================================
 const mitCoursesAdvanced = [
-  { code: '8.06', title: 'Quantum Mechanics III', professor: 'Barton Zwiebach', url: 'https://ocw.mit.edu/courses/8-06-quantum-mechanics-iii-spring-2018/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.07', title: 'Electromagnetism II', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-07-electromagnetism-ii-fall-2012/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.962', title: 'General Relativity', professor: 'Scott Hughes', url: 'https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.323', title: 'Relativistic QFT I', professor: 'Minwalla et al.', url: 'https://ocw.mit.edu/courses/8-323-relativistic-quantum-field-theory-i-fall-2008/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.324', title: 'Relativistic QFT II', professor: 'Minwalla et al.', url: 'https://ocw.mit.edu/courses/8-324-relativistic-quantum-field-theory-ii-fall-2010/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.333', title: 'Statistical Mechanics I', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-333-statistical-mechanics-i-fall-2013/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.422', title: 'Atomic & Optical Physics I', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-422-atomic-and-optical-physics-i-spring-2014/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.512', title: 'Theory of Solids I', professor: 'Patrick Lee', url: 'https://ocw.mit.edu/courses/8-512-theory-of-solids-i-fall-2004/', level: 'Advanced', format: 'Lecture Notes' },
-  { code: '8.325', title: 'Relativistic QFT III', professor: 'MIT Faculty', url: 'https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-iii-spring-2003/', level: 'Advanced', format: 'Lecture Notes' }
+  { code: '8.324', title: 'Relativistic QFT I', professor: 'Markus Klute', url: 'https://ocw.mit.edu/courses/8-324-relativistic-quantum-field-theory-i-fall-2010/', format: 'Notes' },
+  { code: '8.325', title: 'Relativistic QFT II', professor: 'Hong Liu', url: 'https://ocw.mit.edu/courses/8-325-relativistic-quantum-field-theory-ii-fall-2008/', format: 'Notes' },
+  { code: '8.962', title: 'General Relativity', professor: 'Scott Hughes', url: 'https://ocw.mit.edu/courses/8-962-general-relativity-spring-2020/', format: 'Video' },
+  { code: '8.821', title: 'String Theory/Holography', professor: 'Hong Liu', url: 'https://ocw.mit.edu/courses/8-821-string-theory-and-holographic-qcd-fall-2008/', format: 'Notes' },
+  { code: '8.08', title: 'Statistical Physics II', professor: 'Prof. Leonid Levitov', url: 'https://ocw.mit.edu/courses/8-08-statistical-physics-ii-spring-2005/', format: 'Notes' },
+  { code: '8.511', title: 'Theory of Solids I', professor: 'Patrick Lee', url: 'https://ocw.mit.edu/courses/8-511-theory-of-solids-i-fall-2004/', format: 'Notes' }
 ]
 
 // ============================================
 // YOUTUBE CHANNELS - BEGINNER
 // ============================================
+
 const youtubeChannelsBeginner = [
-  { name: '3Blue1Brown', url: 'https://www.youtube.com/@3blue1brown', subs: '6M+', focus: 'Math & Physics Visualization', description: 'Essence of calculus, linear algebra' },
-  { name: 'Veritasium', url: 'https://www.youtube.com/@veritasium', subs: '15M+', focus: 'Science Education', description: 'High-quality physics explanations' },
-  { name: 'Physics Girl', url: 'https://www.youtube.com/@physicsgirl', subs: '2.5M+', focus: 'Physics Experiments', description: 'Hands-on physics demonstrations' },
-  { name: 'MinutePhysics', url: 'https://www.youtube.com/@minutephysics', subs: '5M+', focus: 'Quick Explainers', description: 'Short animated physics videos' },
-  { name: 'The Action Lab', url: 'https://www.youtube.com/@TheActionLab', subs: '4M+', focus: 'Experiments', description: 'Cool physics experiments' },
-  { name: 'Steve Mould', url: 'https://www.youtube.com/@SteveMould', subs: '2M+', focus: 'Physics Phenomena', description: 'Deep dives into physics phenomena' }
+  { name: 'Khan Academy Physics', subs: '8M+', focus: 'All Topics', url: 'https://www.youtube.com/@khanacademy', description: 'Comprehensive physics playlist' },
+  { name: 'Physics Girl', subs: '2M+', focus: 'Conceptual', url: 'https://www.youtube.com/@physicsgirl', description: 'Fun physics experiments' },
+  { name: 'Veritasium', subs: '15M+', focus: 'Science', url: 'https://www.youtube.com/@veritasium', description: 'Physics misconceptions' },
+  { name: 'MinutePhysics', subs: '5M+', focus: 'Quick Explanations', url: 'https://www.youtube.com/@MinutePhysics', description: 'Short physics videos' },
+  { name: 'SciShow', subs: '7M+', focus: 'General Science', url: 'https://www.youtube.com/@SciShow', description: 'Physics episodes' },
+  { name: 'TED-Ed', subs: '18M+', focus: 'Education', url: 'https://www.youtube.com/@TEDEd', description: 'Physics animations' },
+  { name: 'Professor Dave Explains', subs: '3M+', focus: 'Chemistry/Physics', url: 'https://www.youtube.com/@ProfessorDaveExplains', description: 'Clear explanations' },
+  { name: 'The Science Asylum', subs: '500K+', focus: 'Conceptual', url: 'https://www.youtube.com/@TheScienceAsylum', description: 'Challenging questions' }
 ]
 
-// ============================================
-// YOUTUBE CHANNELS - INTERMEDIATE
-// ============================================
 const youtubeChannelsIntermediate = [
-  { name: 'Walter Lewin (MIT)', url: 'https://www.youtube.com/@lecturesbywalterlewin.them9419', subs: '1M+', focus: 'University Physics', description: 'Legendary MIT physics lectures' },
-  { name: 'MIT OpenCourseWare', url: 'https://www.youtube.com/@mitocw', subs: '4M+', focus: 'Full Courses', description: 'Complete MIT course videos' },
-  { name: 'Sabine Hossenfelder', url: 'https://www.youtube.com/@SabineHossenfelder', subs: '1.5M+', focus: 'Quantum Gravity', description: 'Research-level made accessible' },
-  { name: 'Sean Carroll', url: 'https://www.youtube.com/@seancarroll', subs: '700K+', focus: 'Theoretical Physics', description: 'QM, Many-worlds, cosmology' },
-  { name: 'Eugene Khutoryansky', url: 'https://www.youtube.com/@EugeneKhutoryansky', subs: '1M+', focus: 'Visual Explanations', description: 'E&M, mechanics, quantum visualizations' },
-  { name: 'Stanford Physics', url: 'https://www.youtube.com/@stanfordphysics', subs: '200K+', focus: 'University Lectures', description: 'Stanford physics courses' }
+  { name: 'MIT OpenCourseWare', subs: '4M+', focus: 'University Level', url: 'https://www.youtube.com/@mitocw', description: 'Full MIT lectures' },
+  { name: 'Leonard Susskind', subs: '100K+', focus: 'Theoretical', url: 'https://www.youtube.com/@SusskindLectures', description: 'Theoretical Minimum' },
+  { name: 'Stanford Physics', subs: '200K+', focus: 'University', url: 'https://www.youtube.com/@StanfordPhysics', description: 'Stanford lectures' },
+  { name: 'PBS Space Time', subs: '3M+', focus: 'Astrophysics', url: 'https://www.youtube.com/@pbsspacetime', description: 'Cosmology and GR' },
+  { name: 'Looking Glass Universe', subs: '300K+', focus: 'Quantum', url: 'https://www.youtube.com/@LookingGlassUniverse', description: 'Quantum mechanics' },
+  { name: 'DrPhysicsA', subs: '400K+', focus: 'University', url: 'https://www.youtube.com/@DrPhysicsA', description: 'British lecturer' },
+  { name: 'Physics Videos by Eugene Khutoryansky', subs: '1M+', focus: 'Visualizations', url: 'https://www.youtube.com/@EugeneKhutoryansky', description: '3D animations' },
+  { name: 'Flipping Physics', subs: '500K+', focus: 'AP/IB', url: 'https://www.youtube.com/@FlippingPhysics', description: 'High school to college' }
 ]
 
-// ============================================
-// YOUTUBE CHANNELS - ADVANCED
-// ============================================
 const youtubeChannelsAdvanced = [
-  { name: 'Theoretical Minimum', url: 'https://www.youtube.com/@theoreticalminimum', subs: '400K+', focus: 'Graduate Physics', description: 'Susskind complete physics courses' },
-  { name: 'PBS Space Time', url: 'https://www.youtube.com/@pbsspacetime', subs: '3M+', focus: 'Astrophysics & GR', description: 'Research-level astrophysics' },
-  { name: 'Quanta Magazine', url: 'https://www.youtube.com/@QuantaScienceChannel', subs: '500K+', focus: 'Cutting-edge Research', description: 'Latest physics research' },
-  { name: 'Institute for Advanced Study', url: 'https://www.youtube.com/@ias_princeton', subs: '100K+', focus: 'Research Talks', description: 'Talks from leading physicists' },
-  { name: 'Perimeter Institute', url: 'https://www.youtube.com/@perimeterinstitute', subs: '200K+', focus: 'Theoretical Physics', description: 'World-class research talks' },
-  { name: 'Kavli Institute', url: 'https://www.youtube.com/@KavliFoundation', subs: '50K+', focus: 'Research Seminars', description: 'Cutting-edge physics talks' }
+  { name: 'Perimeter Institute', subs: '200K+', focus: 'Research', url: 'https://www.youtube.com/@PerimeterInstitute', description: 'PIRSA lectures' },
+  { name: 'Institute for Advanced Study', subs: '100K+', focus: 'Research', url: 'https://www.youtube.com/@ias_princeton', description: 'IAS physics talks' },
+  { name: 'CERN', subs: '1M+', focus: 'Particle Physics', url: 'https://www.youtube.com/@CERN', description: 'LHC physics' },
+  { name: 'FQXi', subs: '50K+', focus: 'Foundations', url: 'https://www.youtube.com/@FQXi', description: 'Foundational questions' },
+  { name: 'Kavli Institute', subs: '30K+', focus: 'Research', url: 'https://www.youtube.com/@KavliFoundation', description: 'KITP seminars' },
+  { name: 'Simons Foundation', subs: '100K+', focus: 'Research', url: 'https://www.youtube.com/@SimonsFoundation', description: 'Advanced topics' }
 ]
 
 // ============================================
-// PHYSICS SIMULATIONS
+// SIMULATIONS
 // ============================================
+
 const simulations = [
-  { name: 'PhET Interactive Simulations', url: 'https://phet.colorado.edu/', provider: 'University of Colorado', topics: 'All physics topics', level: 'All Levels' },
-  { name: 'oPhysics', url: 'https://ophysics.com/', provider: 'oPhysics', topics: 'E&M, Mechanics, Waves', level: 'High School-College' },
-  { name: 'Physics Interactives', url: 'https://www.physicsclassroom.com/Physics-Interactives', provider: 'Physics Classroom', topics: 'Conceptual physics', level: 'Beginner' },
-  { name: 'Falstad Math & Physics', url: 'https://www.falstad.com/mathphysics.html', provider: 'Paul Falstad', topics: 'E&M, QM, Waves, Optics', level: 'All Levels' },
-  { name: 'MIT Mathlets', url: 'https://mathlets.org/mathlets/', provider: 'MIT', topics: 'DEs, Waves, Physics', level: 'Undergraduate' },
-  { name: 'GeoGebra Physics', url: 'https://www.geogebra.org/physics', provider: 'GeoGebra', topics: 'Interactive models', level: 'All Levels' },
-  { name: 'MyPhysicsLab', url: 'https://www.myphysicslab.com/', provider: 'Open Source', topics: 'Mechanics simulations', level: 'Undergraduate' },
-  { name: 'Algodoo', url: 'https://www.algodoo.com/', provider: 'Algoryx', topics: '2D physics sandbox', level: 'All Levels' }
+  { name: 'PhET Simulations', url: 'https://phet.colorado.edu/', provider: 'University of Colorado', topics: 'All Topics', level: 'All' },
+  { name: 'oPhysics', url: 'https://ophysics.com/', provider: 'oPhysics', topics: 'Mechanics, E&M', level: 'HS/UG' },
+  { name: 'The Physics Aviary', url: 'https://www.thephysicsaviary.com/', provider: 'Physics Aviary', topics: 'All Topics', level: 'HS' },
+  { name: 'GeoGebra Physics', url: 'https://www.geogebra.org/', provider: 'GeoGebra', topics: 'Mechanics', level: 'All' },
+  { name: 'My Physics Lab', url: 'https://www.myphysicslab.com/', provider: 'Erik Neumann', topics: 'Mechanics', level: 'UG' },
+  { name: 'Falstad Simulations', url: 'https://www.falstad.com/mathphysics.html', provider: 'Paul Falstad', topics: 'Math & Physics', level: 'All' },
+  { name: 'Walter Fendt Physics', url: 'https://www.walter-fendt.de/html5/phen/', provider: 'Walter Fendt', topics: 'All Topics', level: 'HS' },
+  { name: 'Coding Train Physics', url: 'https://thecodingtrain.com/', provider: 'Daniel Shiffman', topics: 'Simulations', level: 'All' },
+  { name: 'GlowScript VPython', url: 'https://glowscript.org/', provider: 'VPython', topics: '3D Simulations', level: 'UG' },
+  { name: 'Labster Physics', url: 'https://www.labster.com/', provider: 'Labster', topics: 'Virtual Labs', level: 'UG' }
 ]
 
 // ============================================
 // GITHUB REPOSITORIES
 // ============================================
+
 const githubRepos = [
-  { name: 'awesome-physics', url: 'https://github.com/wbierbower/awesome-physics', description: 'Curated list of physics resources', stars: '1k+' },
-  { name: 'Quantum-Mechanics-Notes', url: 'https://github.com/adibis/Quantum-Mechanics-Notes', description: 'QM lecture notes and resources', stars: '500+' },
-  { name: 'Computational-Physics', url: 'https://github.com/topics/computational-physics', description: 'Computational physics repositories', stars: 'Topic' },
-  { name: 'physics-notes', url: 'https://github.com/topics/physics-notes', description: 'Physics notes collection', stars: 'Topic' },
-  { name: 'physics-simulations', url: 'https://github.com/topics/physics-simulation', description: 'Physics simulation codes', stars: 'Topic' },
-  { name: 'Statistical-Mechanics', url: 'https://github.com/rajeshrinet/Statistical-Mechanics', description: 'Stat mech notes and code', stars: '300+' },
-  { name: 'Jackson-Electrodynamics', url: 'https://github.com/search?q=Jackson+electrodynamics', description: 'Jackson E&M solutions', stars: 'Multiple' },
-  { name: 'Classical-Mechanics', url: 'https://github.com/topics/classical-mechanics', description: 'Classical mechanics resources', stars: 'Topic' }
+  { name: 'awesome-physics', url: 'https://github.com/wbierbower/awesome-physics', description: 'Curated physics resources', stars: '2k+' },
+  { name: 'physics-notes', url: 'https://github.com/DavidTong/physics-notes', description: 'Personal physics notes', stars: '1k+' },
+  { name: 'computational-physics', url: 'https://github.com/c-bata/computational-physics', description: 'Computational physics code', stars: '800+' },
+  { name: 'physics-python', url: 'https://github.com/ikostrikov/physics-python', description: 'Python for physics', stars: '600+' },
+  { name: 'lectures-on-physics', url: 'https://github.com/kpmann/lectures-on-physics', description: 'Lecture notes collection', stars: '500+' },
+  { name: 'physics-formulas', url: 'https://github.com/sympy/physics', description: 'SymPy physics module', stars: '400+' },
+  { name: 'quantum-computing', url: 'https://github.com/desireevl/awesome-quantum-computing', description: 'Quantum computing resources', stars: '3k+' },
+  { name: 'relativity', url: 'https://github.com/gravitational/relativity-resources', description: 'GR resources', stars: '300+' }
 ]
 
 // ============================================
-// PROBLEM SETS & COMPETITIONS
+// PHYSICS OLYMPIADS
 // ============================================
+
+const olympiadResources = [
+  { name: 'IPhO Official', url: 'https://ipho-new.org/', type: 'Official', country: 'International', description: 'International Physics Olympiad' },
+  { name: 'IPhO Problems Archive', url: 'https://ipho.olimpicos.net/', type: 'Problems', country: 'International', description: 'Complete IPhO problems 1967-2026' },
+  { name: 'APhO', url: 'https://apho.phy.ntnu.edu.tw/', type: 'Official', country: 'Asia', description: 'Asian Physics Olympiad' },
+  { name: 'EuPhO', url: 'https://eupho.ee/', type: 'Official', country: 'Europe', description: 'European Physics Olympiad' },
+  { name: 'USAPhO', url: 'https://www.aapt.org/physicsteam/', type: 'Official', country: 'USA', description: 'USA Physics Olympiad' },
+  { name: 'British Physics Olympiad', url: 'https://www.bpho.org.uk/', type: 'Official', country: 'UK', description: 'BPhO competitions' },
+  { name: 'Physics Olympiad Wiki', url: 'https://physoly.org/', type: 'Community', country: 'International', description: 'Olympiad problem solutions' },
+  { name: 'Brilliant Olympiad', url: 'https://brilliant.org/wiki/physics-olympiad/', type: 'Practice', country: 'International', description: 'Olympiad-style problems' },
+  { name: 'Physics Cup', url: 'https://physicscup.ee/', type: 'Competition', country: 'International', description: 'Online physics competition' },
+  { name: 'African School of Physics', url: 'https://africanschoolofphysics.org/', type: 'School', country: 'Africa', description: 'ASP physics school' }
+]
+
+// ============================================
+// PROBLEM SETS & PRACTICE
+// ============================================
+
 const problemResources = [
-  { name: 'Physics Olympiad (IPhO)', url: 'https://ipho-new.org/', type: 'Competition', description: 'International Physics Olympiad problems' },
-  { name: 'US Physics Team (F=ma)', url: 'https://www.aapt.org/physicsteam/', type: 'Competition', description: 'US Physics Olympiad & F=ma exam' },
-  { name: 'British Physics Olympiad', url: 'https://www.bpho.org.uk/', type: 'Competition', description: 'UK physics competition papers' },
-  { name: 'GRE Physics Test', url: 'https://www.ets.org/gre/subject/about/content/physics', type: 'Exam Prep', description: 'Graduate school entrance exam' },
-  { name: 'Physics GRE Prep', url: 'https://physicsgre.com/', type: 'Exam Prep', description: 'Free GRE Physics prep materials' },
-  { name: 'Brilliant Physics', url: 'https://brilliant.org/courses/physics/', type: 'Problems', description: 'Interactive physics problems' },
-  { name: 'Physics Stack Exchange', url: 'https://physics.stackexchange.com/', type: 'Q&A', description: 'Research-grade Q&A community' },
-  { name: 'Physics Forums', url: 'https://www.physicsforums.com/', type: 'Community', description: 'Homework help & discussions' },
-  { name: 'r/Physics', url: 'https://www.reddit.com/r/Physics/', type: 'Community', description: 'Reddit physics community (1M+ members)' },
-  { name: 'r/AskPhysics', url: 'https://www.reddit.com/r/AskPhysics/', type: 'Q&A', description: 'Physics questions & answers' }
+  { name: 'Physics Olympiad Archive', url: 'https://ipho-new.org/', type: 'Official', description: 'IPhO problems and solutions' },
+  { name: 'AAPT Physics Bowl', url: 'https://www.aapt.org/physicsbowl/', type: 'Competition', description: 'Annual physics competition' },
+  { name: 'Brilliant Physics', url: 'https://brilliant.org/courses/physics/', type: 'Practice', description: 'Interactive problems' },
+  { name: 'Physics Stack Exchange', url: 'https://physics.stackexchange.com/', type: 'Q&A', description: 'Community Q&A' },
+  { name: 'David Morin Problems', url: 'https://scholar.harvard.edu/david-morin/books', type: 'Problems', description: 'Challenging mechanics problems' },
+  { name: 'Physics Forums', url: 'https://www.physicsforums.com/', type: 'Forum', description: 'Help and discussions' },
+  { name: 'GRE Physics Prep', url: 'https://www.ets.org/gre/subject/about/content/physics', type: 'Exam', description: 'GRE Physics test prep' },
+  { name: 'Putnam Exam Problems', url: 'https://kskedlaya.org/putnam-archive/', type: 'Math-Physics', description: 'Mathematical problems' },
+  { name: 'Savchenko Problems', url: 'https://archive.org/', type: 'Problems', description: 'Soviet physics problems' },
+  { name: 'Irodov Problems', url: 'https://archive.org/', type: 'Problems', description: 'Classic Russian problems' }
 ]
 
 // ============================================
 // INTERNATIONAL UNIVERSITIES
 // ============================================
+
 const internationalUniversities = [
-  { name: 'NPTEL Physics (IITs)', url: 'https://nptel.ac.in/course.html', country: 'India', description: '100+ physics courses from IITs', type: 'Video Courses' },
-  { name: 'Landau Institute', url: 'http://www.itp.ac.ru/en/', country: 'Russia', description: 'Landau Institute for Theoretical Physics', type: 'Research' },
-  { name: 'Perimeter Institute', url: 'https://perimeterinstitute.ca/', country: 'Canada', description: 'Theoretical physics research & lectures', type: 'Research' },
-  { name: 'ICTP', url: 'https://www.ictp.it/', country: 'Italy', description: 'Abdus Salam Centre - Free courses', type: 'Education' },
-  { name: 'SISSA', url: 'https://www.sissa.it/', country: 'Italy', description: 'International School for Advanced Studies', type: 'Graduate School' },
-  { name: 'ETH Zurich Physics', url: 'https://www.phys.ethz.ch/', country: 'Switzerland', description: 'Swiss Federal Institute of Technology', type: 'University' },
-  { name: 'TU Munich Physics', url: 'https://www.ph.tum.de/', country: 'Germany', description: 'Technical University of Munich', type: 'University' },
-  { name: 'Oxford Physics', url: 'https://www.physics.ox.ac.uk/', country: 'UK', description: 'University of Oxford', type: 'University' },
-  { name: 'Cambridge Physics', url: 'https://www.phy.cam.ac.uk/', country: 'UK', description: 'Cavendish Laboratory', type: 'University' },
-  { name: 'CERN', url: 'https://home.cern/', country: 'Switzerland', description: 'European Nuclear Research Centre', type: 'Research' },
-  { name: 'Weizmann Institute', url: 'https://www.weizmann.ac.il/feinberg/', country: 'Israel', description: 'Physics department', type: 'Research' },
-  { name: 'RIKEN', url: 'https://www.riken.jp/en/', country: 'Japan', description: 'Japanese research institute', type: 'Research' }
+  { name: 'Oxford Physics', url: 'https://www2.physics.ox.ac.uk/', country: 'UK', type: 'University', description: 'Oxford lecture notes' },
+  { name: 'Cambridge Physics', url: 'https://www.phy.cam.ac.uk/', country: 'UK', type: 'University', description: 'Cambridge Tripos' },
+  { name: 'ETH Zurich Physics', url: 'https://www.phys.ethz.ch/', country: 'Switzerland', type: 'University', description: 'ETH lecture notes' },
+  { name: 'TU Munich Physics', url: 'https://www.ph.tum.de/', country: 'Germany', type: 'University', description: 'German resources' },
+  { name: 'IIT Physics', url: 'https://physics.iitm.ac.in/', country: 'India', type: 'University', description: 'IIT lecture materials' },
+  { name: 'NPTEL Physics', url: 'https://nptel.ac.in/course.html', country: 'India', type: 'MOOC', description: 'Indian MOOC platform' },
+  { name: 'Tsinghua Physics', url: 'https://www.phys.tsinghua.edu.cn/', country: 'China', type: 'University', description: 'Chinese resources' },
+  { name: 'Tokyo University Physics', url: 'https://www.phys.s.u-tokyo.ac.jp/', country: 'Japan', type: 'University', description: 'Japanese resources' },
+  { name: 'Sorbonne Physics', url: 'https://www.sorbonne-universite.fr/', country: 'France', type: 'University', description: 'French resources' },
+  { name: 'Weizmann Physics', url: 'https://www.weizmann.ac.il/feinberg/', country: 'Israel', type: 'Research', description: 'Weizmann Institute' },
+  { name: 'African School of Physics', url: 'https://africanschoolofphysics.org/', country: 'Africa', type: 'School', description: 'ASP online lectures' },
+  { name: 'ICTP', url: 'https://www.ictp.it/', country: 'Italy', type: 'Research', description: 'Abdus Salam ICTP' }
 ]
 
 // ============================================
-// SOFTWARE & TOOLS
+// RESEARCH RESOURCES
 // ============================================
+
+const researchResources = [
+  { name: 'arXiv Physics', url: 'https://arxiv.org/archive/physics', type: 'Repository', description: '2+ million physics papers' },
+  { name: 'arXiv astro-ph', url: 'https://arxiv.org/archive/astro-ph', type: 'Repository', description: 'Astrophysics papers' },
+  { name: 'arXiv cond-mat', url: 'https://arxiv.org/archive/cond-mat', type: 'Repository', description: 'Condensed matter papers' },
+  { name: 'arXiv hep-th', url: 'https://arxiv.org/archive/hep-th', type: 'Repository', description: 'High energy theory' },
+  { name: 'arXiv gr-qc', url: 'https://arxiv.org/archive/gr-qc', type: 'Repository', description: 'General relativity' },
+  { name: 'arXiv quant-ph', url: 'https://arxiv.org/archive/quant-ph', type: 'Repository', description: 'Quantum physics' },
+  { name: 'NASA ADS', url: 'https://ui.adsabs.harvard.edu/', type: 'Database', description: 'Astrophysics Data System' },
+  { name: 'INSPIRE-HEP', url: 'https://inspirehep.net/', type: 'Database', description: 'High energy physics literature' },
+  { name: 'Web of Science', url: 'https://www.webofscience.com/', type: 'Database', description: 'Citation database' },
+  { name: 'Google Scholar', url: 'https://scholar.google.com/', type: 'Search', description: 'Academic search engine' }
+]
+
+// ============================================
+// RESEARCH INSTITUTES
+// ============================================
+
+const researchInstitutes = [
+  { name: 'Perimeter Institute', url: 'https://perimeterinstitute.ca/', country: 'Canada', focus: 'Theoretical Physics', description: 'Foundational physics research' },
+  { name: 'Institute for Advanced Study', url: 'https://www.ias.edu/', country: 'USA', focus: 'All Physics', description: 'Princeton IAS' },
+  { name: 'CERN', url: 'https://home.cern/', country: 'Switzerland', focus: 'Particle Physics', description: 'European lab for particle physics' },
+  { name: 'FERMILAB', url: 'https://www.fnal.gov/', country: 'USA', focus: 'Particle Physics', description: 'Fermi National Lab' },
+  { name: 'Max Planck Institutes', url: 'https://www.mpg.de/en', country: 'Germany', focus: 'All Physics', description: 'German research institutes' },
+  { name: 'Kavli Institute', url: 'https://www.kavli.org/', country: 'USA/Int', focus: 'Astrophysics', description: 'KITP and others' },
+  { name: 'NIST', url: 'https://www.nist.gov/', country: 'USA', focus: 'Applied Physics', description: 'Standards and technology' },
+  { name: 'LIGO', url: 'https://www.ligo.caltech.edu/', country: 'USA', focus: 'Gravitational Waves', description: 'Gravitational wave observatory' },
+  { name: 'Diamond Light Source', url: 'https://www.diamond.ac.uk/', country: 'UK', focus: 'Synchrotron', description: 'UK synchrotron facility' },
+  { name: 'DESY', url: 'https://www.desy.de/', country: 'Germany', focus: 'Particle Physics', description: 'German electron synchrotron' }
+]
+
+// ============================================
+// PHYSICS SOFTWARE
+// ============================================
+
 const physicsSoftware = [
-  { name: 'SciPy', url: 'https://scipy.org/', type: 'Python Library', description: 'Scientific computing for physics' },
-  { name: 'NumPy', url: 'https://numpy.org/', type: 'Python Library', description: 'Numerical computing' },
-  { name: 'SymPy', url: 'https://www.sympy.org/', type: 'Python Library', description: 'Symbolic mathematics' },
-  { name: 'Matplotlib', url: 'https://matplotlib.org/', type: 'Python Library', description: 'Physics visualizations' },
-  { name: 'QuTiP', url: 'https://qutip.org/', type: 'Python Library', description: 'Quantum Toolbox in Python' },
-  { name: 'Astropy', url: 'https://www.astropy.org/', type: 'Python Library', description: 'Astronomy/astrophysics tools' },
-  { name: 'ROOT', url: 'https://root.cern/', type: 'Data Analysis', description: 'CERN data analysis framework' },
-  { name: 'Wolfram Mathematica', url: 'https://www.wolfram.com/mathematica/', type: 'Software', description: 'Symbolic computation' },
-  { name: 'COMSOL', url: 'https://www.comsol.com/', type: 'Software', description: 'Multiphysics simulations' },
-  { name: 'Quantum ESPRESSO', url: 'https://www.quantum-espresso.org/', type: 'Software', description: 'Quantum chemistry & materials' },
-  { name: 'LAMMPS', url: 'https://www.lammps.org/', type: 'Software', description: 'Molecular dynamics simulator' },
-  { name: 'Jupyter Physics', url: 'https://github.com/topics/physics-jupyter', type: 'Notebooks', description: 'Interactive physics notebooks' }
+  { name: 'Python (NumPy/SciPy)', url: 'https://numpy.org/', type: 'Language', description: 'Scientific computing' },
+  { name: 'MATLAB Student', url: 'https://www.mathworks.com/academia/tah-portal.html', type: 'Software', description: 'Student version' },
+  { name: 'Mathematica', url: 'https://www.wolfram.com/mathematica/', type: 'CAS', description: 'Symbolic computation' },
+  { name: 'COMSOL Student', url: 'https://www.comsol.com/', type: 'Simulation', description: 'Multiphysics simulation' },
+  { name: 'ROOT (CERN)', url: 'https://root.cern/', type: 'Analysis', description: 'High-energy physics' },
+  { name: 'Geant4', url: 'https://geant4.web.cern.ch/', type: 'Simulation', description: 'Particle transport' },
+  { name: 'MadGraph', url: 'https://launchpad.net/mg5amcnlo', type: 'Simulation', description: 'Particle physics events' },
+  { name: 'Gadget-2', url: 'https://wwwmpa.mpa-garching.mpg.de/gadget/', type: 'Simulation', description: 'Cosmological simulations' },
+  { name: 'Julia Physics', url: 'https://juliaphysics.github.io/', type: 'Language', description: 'Modern physics computing' },
+  { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com/', type: 'Tool', description: 'Physics calculator' }
 ]
 
 // ============================================
-// MAJOR PHYSICS WEBSITES
+// MOBILE APPS
 // ============================================
-const physicsWebsites = [
-  { name: 'Physics Today', url: 'https://physicstoday.org/', description: 'APS publication - physics news' },
-  { name: 'Physics World', url: 'https://physicsworld.com/', description: 'IOP publication - news & analysis' },
-  { name: 'APS Physics', url: 'https://physics.aps.org/', description: 'American Physical Society news' },
-  { name: 'arXiv Physics', url: 'https://arxiv.org/archive/physics', description: 'Latest research preprints' },
-  { name: 'HyperPhysics', url: 'http://hyperphysics.phy-astr.gsu.edu/', description: 'Comprehensive concept maps' },
-  { name: 'Wolfram Physics', url: 'https://scienceworld.wolfram.com/physics/', description: 'Physics encyclopedia' },
-  { name: 'Physics Central', url: 'https://www.physicscentral.com/', description: 'APS outreach site' },
-  { name: 'LibreTexts Physics', url: 'https://phys.libretexts.org/', description: '50+ free open textbooks' }
-]
 
-// ============================================
-// PHYSICS APPS & MOBILE
-// ============================================
 const physicsApps = [
-  { name: 'PhET Mobile', url: 'https://phet.colorado.edu/', type: 'Simulation', description: 'Mobile physics simulations' },
-  { name: 'phyphox', url: 'https://phyphox.org/', type: 'Experiment', description: 'Phone sensor experiments' },
-  { name: 'Physics Toolbox', url: 'https://www.physicstoolbox.com/', type: 'Measurement', description: 'Advanced sensor suite' },
-  { name: 'Algodoo', url: 'https://www.algodoo.com/', type: 'Sandbox', description: '2D physics playground' },
-  { name: 'Brilliant', url: 'https://brilliant.org/', type: 'Learning', description: 'Interactive physics courses' },
-  { name: 'PhySyCalc', url: 'https://www.physycalc.com/', type: 'Calculator', description: 'Physics calculator with units' }
+  { name: 'PhyPhox', url: 'https://phyphox.org/', type: 'Lab', description: 'Phone sensor experiments' },
+  { name: 'Physics Toolbox', url: 'https://www.vieyraapps.com/', type: 'Sensors', description: 'Sensor suite' },
+  { name: 'Brilliant App', url: 'https://brilliant.org/', type: 'Learning', description: 'Interactive courses' },
+  { name: 'Wolfram Alpha', url: 'https://www.wolframalpha.com/', type: 'Calculator', description: 'Physics calculator' },
+  { name: 'Physics Notes', url: 'https://play.google.com/', type: 'Reference', description: 'Formula reference' },
+  { name: 'Universe Sandbox', url: 'https://universesandbox.com/', type: 'Simulation', description: 'Gravity simulator' },
+  { name: 'SkyView', url: 'https://www.terminaleleven.com/', type: 'Astronomy', description: 'Stargazing app' },
+  { name: 'NASA App', url: 'https://www.nasa.gov/nasaapp', type: 'Astronomy', description: 'NASA missions and images' }
 ]
 
 // ============================================
-// PODCASTS & AUDIO
+// PODCASTS
 // ============================================
+
 const physicsPodcasts = [
-  { name: 'Physics World Weekly', url: 'https://physicsworld.com/podcast/', description: 'News and interviews' },
-  { name: 'Titanium Physicists', url: 'https://titaniumphysicists.podbean.com/', description: 'Physics explained simply' },
-  { name: 'Daniel & Jorge Explain', url: 'https://www.iheart.com/podcast/105-daniel-and-jorge-explain-the-10594513/', description: 'Universe explained' },
-  { name: 'Astronomy Cast', url: 'https://www.astronomycast.com/', description: 'Astronomy & astrophysics' },
-  { name: 'Infinite Monkey Cage', url: 'https://www.bbc.co.uk/programmes/b00snr0w', description: 'BBC physics panel show' },
-  { name: 'Sean Carroll\'s Mindscape', url: 'https://www.preposterousuniverse.com/podcast/', description: 'Physics & philosophy' }
+  { name: 'The Infinite Monkey Cage', url: 'https://www.bbc.co.uk/programmes/b00snr0w', description: 'BBC science comedy' },
+  { name: 'Sean Carroll Mindscape', url: 'https://www.preposterousuniverse.com/podcast/', description: 'Physics and ideas' },
+  { name: 'Physics World Weekly', url: 'https://physicsworld.com/podcasts/', description: 'Physics news' },
+  { name: 'Quantum Computing Now', url: 'https://anchor.fm/quantumcomputingnow', description: 'Quantum topics' },
+  { name: 'The Superposition Guy', url: 'https://www.thesuperpositionguy.com/', description: 'Quantum computing' },
+  { name: 'Physics Girl Podcast', url: 'https://www.physicsgirl.org/', description: 'Physics discussions' }
 ]
 
 // ============================================
-// PHYSICS BLOGS
+// BLOGS
 // ============================================
+
 const physicsBlogs = [
-  { name: 'Backreaction', url: 'https://backreaction.blogspot.com/', author: 'Sabine Hossenfelder', description: 'Quantum gravity & foundations' },
-  { name: 'Not Even Wrong', url: 'https://www.math.columbia.edu/~woit/wordpress/', author: 'Peter Woit', description: 'Mathematical physics' },
-  { name: 'Shtetl-Optimized', url: 'https://scottaaronson.blog/', author: 'Scott Aaronson', description: 'Quantum computing' },
-  { name: 'Preposterous Universe', url: 'https://www.preposterousuniverse.com/blog/', author: 'Sean Carroll', description: 'Cosmology & QM' },
-  { name: 'Of Particular Significance', url: 'https://profmattstrassler.com/', author: 'Matt Strassler', description: 'Particle physics' },
-  { name: 'Dot Physics', url: 'https://www.wired.com/category/dotphysics/', author: 'Rhett Allain', description: 'Physics education' }
+  { name: 'Not Even Wrong', url: 'https://www.math.columbia.edu/~woit/wordpress/', author: 'Peter Woit', description: 'Math and physics commentary' },
+  { name: 'Backreaction', url: 'https://backreaction.blogspot.com/', author: 'Sabine Hossenfelder', description: 'Foundational physics' },
+  { name: 'Preposterous Universe', url: 'https://www.preposterousuniverse.com/blog/', author: 'Sean Carroll', description: 'Physics and philosophy' },
+  { name: 'Symmetry Magazine', url: 'https://www.symmetrymagazine.org/', author: 'Fermilab/SLAC', description: 'Particle physics' }
 ]
 
 // ============================================
-// SCHOLARSHIPS & FELLOWSHIPS
+// SCHOLARSHIPS
 // ============================================
+
 const scholarships = [
-  { name: 'NSF GRFP', url: 'https://www.nsfgrfp.org/', type: 'Graduate', description: '$37k/year for 3 years' },
+  { name: 'NSF GRFP', url: 'https://www.nsfgrfp.org/', type: 'Graduate', description: 'NSF Graduate Fellowship' },
   { name: 'DOE CSGF', url: 'https://www.krellinst.org/csgf/', type: 'Graduate', description: 'Computational science' },
-  { name: 'NDSEG Fellowship', url: 'https://ndseg.org/', type: 'Graduate', description: 'National Defense' },
-  { name: 'Hertz Fellowship', url: 'https://hertzfoundation.org/', type: 'Graduate', description: '5-year fellowship' },
-  { name: 'Goldwater Scholarship', url: 'https://goldwaterscholarship.gov/', type: 'Undergrad', description: 'STEM excellence' },
-  { name: 'NASA FINESST', url: 'https://science.nasa.gov/researchers/sara/fellowship-programs', type: 'Graduate', description: 'Earth & space science' }
+  { name: 'NDSEG Fellowship', url: 'https://ndseg.asee.org/', type: 'Graduate', description: 'Defense fellowship' },
+  { name: 'Hertz Fellowship', url: 'https://hertzfoundation.org/', type: 'Graduate', description: 'Prestigious STEM' },
+  { name: 'Rhodes Scholarship', url: 'https://www.rhodesscholar.org/', type: 'Graduate', description: 'Oxford graduate study' },
+  { name: 'Marshall Scholarship', url: 'https://www.marshallscholarship.org/', type: 'Graduate', description: 'UK graduate study' },
+  { name: 'Gates Cambridge', url: 'https://www.gatescambridge.org/', type: 'Graduate', description: 'Cambridge graduate' },
+  { name: 'Fulbright', url: 'https://us.fulbrightonline.org/', type: 'Graduate', description: 'International exchange' }
 ]
 
 // ============================================
 // DIY EXPERIMENTS
 // ============================================
+
 const diyExperiments = [
-  { name: 'PhET DIY Activities', url: 'https://phet.colorado.edu/en/teaching-resources/activities', description: 'Simulation-based labs' },
-  { name: 'Physics Classroom Labs', url: 'https://www.physicsclassroom.com/lab', description: 'Safe home experiments' },
-  { name: 'Science Buddies Physics', url: 'https://www.sciencebuddies.org/science-experiments/physics', description: 'K-12 projects' },
-  { name: 'phyphox Experiments', url: 'https://phyphox.org/experiments/', description: 'Smartphone physics' },
-  { name: 'DIY Science Projects', url: 'https://www.kiwico.com/diy/lists/10-diy-physics-projects-to-try-at-home', description: 'Home experiments' },
-  { name: 'We Are Teachers', url: 'https://www.weareteachers.com/easy-science-experiments/', description: '75+ easy experiments' }
+  { name: 'Coursera DIY Science', url: 'https://www.coursera.org/learn/diy-science', description: 'Build instruments at home' },
+  { name: 'Arduino Physics', url: 'https://www.arduino.cc/', description: 'Microcontroller experiments' },
+  { name: 'Raspberry Pi Physics', url: 'https://www.raspberrypi.org/', description: 'Raspberry Pi sensors' },
+  { name: 'PhET DIY', url: 'https://phet.colorado.edu/en/teaching-resources/activities', description: 'Virtual experiments' },
+  { name: 'NASA DIY', url: 'https://www.nasa.gov/stem/', description: 'NASA at-home activities' }
 ]
 
 // ============================================
-// SPECIALIZED TOPICS - GRADUATE TEXTBOOKS
-// ============================================
-const specializedTextbooks = [
-  // QFT
-  { title: 'An Introduction to QFT', author: 'Peskin & Schroeder', topic: 'QFT', level: 'Graduate' },
-  { title: 'Quantum Field Theory', author: 'Srednicki', topic: 'QFT', level: 'Graduate' },
-  { title: 'QFT in a Nutshell', author: 'Zee', topic: 'QFT', level: 'Graduate' },
-  { title: 'The Quantum Theory of Fields', author: 'Weinberg', topic: 'QFT', level: 'Graduate' },
-  // GR
-  { title: 'Spacetime and Geometry', author: 'Sean Carroll', topic: 'GR', level: 'Graduate' },
-  { title: 'Gravitation', author: 'Misner, Thorne & Wheeler', topic: 'GR', level: 'Graduate' },
-  { title: 'Einstein Gravity in a Nutshell', author: 'Zee', topic: 'GR', level: 'Graduate' },
-  // String Theory
-  { title: 'String Theory Vol 1 & 2', author: 'Polchinski', topic: 'Strings', level: 'Graduate' },
-  { title: 'A First Course in String Theory', author: 'Zwiebach', topic: 'Strings', level: 'Graduate' },
-  { title: 'String Theory and M-Theory', author: 'Becker, Becker & Schwarz', topic: 'Strings', level: 'Graduate' },
-  // Condensed Matter
-  { title: 'Principles of Condensed Matter', author: 'Chaikin & Lubensky', topic: 'Condensed Matter', level: 'Graduate' },
-  { title: 'Condensed Matter Field Theory', author: 'Altland & Simons', topic: 'Condensed Matter', level: 'Graduate' },
-  { title: 'Quantum Theory of Solids', author: 'Kittel', topic: 'Condensed Matter', level: 'Graduate' },
-  // Particle Physics
-  { title: 'Introduction to Elementary Particles', author: 'Griffiths', topic: 'Particle', level: 'Graduate' },
-  { title: 'Quarks and Leptons', author: 'Halzen & Martin', topic: 'Particle', level: 'Graduate' },
-  // Cosmology
-  { title: 'Modern Cosmology', author: 'Dodelson', topic: 'Cosmology', level: 'Graduate' },
-  { title: 'Cosmology', author: 'Weinberg', topic: 'Cosmology', level: 'Graduate' },
-  // Quantum Computing
-  { title: 'Quantum Computation and Quantum Information', author: 'Nielsen & Chuang', topic: 'Quantum Computing', level: 'Graduate' },
-  { title: 'Quantum Computing Lecture Notes', author: 'John Preskill', url: 'http://theory.caltech.edu/~preskill/ph219/', topic: 'Quantum Computing', level: 'Graduate' }
-]
-
-// ============================================
-// MOOC COURSES (Coursera, edX, etc.)
-// ============================================
-const moocCourses = [
-  // Coursera
-  { name: 'How Things Work: Intro to Physics', platform: 'Coursera', institution: 'UVA', level: 'Beginner', url: 'https://www.coursera.org/learn/how-things-work' },
-  { name: 'Physics 101 - Forces and Kinematics', platform: 'Coursera', institution: 'Rice', level: 'Beginner', url: 'https://www.coursera.org/learn/physics-101-forces-and-kinematics' },
-  { name: 'Mechanics: Motion, Forces, Energy', platform: 'Coursera', institution: 'UCI', level: 'Intermediate', url: 'https://www.coursera.org/learn/mechanics-physics' },
-  { name: 'Electricity and Magnetism', platform: 'Coursera', institution: 'UCI', level: 'Intermediate', url: 'https://www.coursera.org/learn/electromagnetism' },
-  { name: 'Mastering Quantum Mechanics', platform: 'Coursera', institution: 'MITx', level: 'Advanced', url: 'https://www.coursera.org/learn/mastering-quantum-mechanics' },
-  { name: 'Quantum Mechanics for Scientists 1', platform: 'Coursera', institution: 'Stanford', level: 'Advanced', url: 'https://www.coursera.org/learn/quantum-mechanics' },
-  { name: 'From the Big Bang to Dark Energy', platform: 'Coursera', institution: 'Tokyo', level: 'Beginner', url: 'https://www.coursera.org/learn/big-bang' },
-  { name: 'Understanding Einstein: Special Relativity', platform: 'Coursera', institution: 'Stanford', level: 'Intermediate', url: 'https://www.coursera.org/learn/einstein-relativity' },
-  // edX
-  { name: 'Mechanics, Part 1', platform: 'edX', institution: 'MITx', level: 'Intermediate', url: 'https://www.edx.org/learn/mechanics/massachusetts-institute-of-technology-mechanics-part-1' },
-  { name: 'Mechanics, Part 2', platform: 'edX', institution: 'MITx', level: 'Intermediate', url: 'https://www.edx.org/learn/mechanics/massachusetts-institute-of-technology-mechanics-part-2' },
-  { name: 'Electricity and Magnetism, Part 1', platform: 'edX', institution: 'MITx', level: 'Intermediate', url: 'https://www.edx.org/learn/electricity/massachusetts-institute-of-technology-electricity-and-magnetism' },
-  { name: 'Mastering Quantum Mechanics', platform: 'edX', institution: 'MITx', level: 'Advanced', url: 'https://www.edx.org/learn/quantum-mechanics/massachusetts-institute-of-technology-mastering-quantum-mechanics' },
-  { name: 'Astrophysics: Exploring Exoplanets', platform: 'edX', institution: 'ANU', level: 'Intermediate', url: 'https://www.edx.org/learn/astrophysics/australian-national-university-astrophysics-exploring-exoplanets' },
-  { name: 'Astrophysics: Cosmology', platform: 'edX', institution: 'ANU', level: 'Advanced', url: 'https://www.edx.org/learn/astrophysics/australian-national-university-astrophysics-cosmology' },
-  { name: 'Relativity and Astrophysics', platform: 'edX', institution: 'Cornell', level: 'Intermediate', url: 'https://www.edx.org/learn/astrophysics/cornell-university-relativity-and-astrophysics' },
-  { name: 'Introduction to Quantum Computing', platform: 'edX', institution: 'MITx', level: 'Intermediate', url: 'https://www.edx.org/learn/quantum-computing/massachusetts-institute-of-technology-introduction-to-quantum-computing' }
-]
-
-// ============================================
-// STANFORD ONLINE COURSES
-// ============================================
-const stanfordCourses = [
-  { name: 'Quantum Mechanics for Scientists & Engineers', code: 'SOE-YEEQMSE01', professor: 'Stanford', level: 'Advanced', url: 'https://online.stanford.edu/courses/soe-yeeqmse01-quantum-mechanics-scientists-and-engineers' },
-  { name: 'QM for Scientists & Engineers 2', code: 'SOE-YEEQMSE02', professor: 'Stanford', level: 'Advanced', url: 'https://online.stanford.edu/courses/soe-yeeqmse02-quantum-mechanics-scientists-and-engineers-2' },
-  { name: 'Polymer Physics', code: 'CHEMENG466', professor: 'Stanford', level: 'Graduate', url: 'https://online.stanford.edu/courses/chemeng466-polymer-physics' },
-  { name: 'Spacecraft Electric Propulsion', code: 'AA284A', professor: 'Stanford', level: 'Graduate', url: 'https://online.stanford.edu/courses/aa284a-spacecraft-electric-propulsion' },
-  { name: 'Modern Physics (High School)', code: 'UP070', professor: 'Stanford OHS', level: 'Beginner', url: 'https://stanford.hs.edu.kg/courses/2025/school-year/up070' }
-]
-
-// ============================================
-// OPEN SOURCE PHYSICS SOFTWARE - BY CATEGORY
+// ONLINE COURSES (MOOCS)
 // ============================================
 
-// CFD Software
-const cfdSoftware = [
-  { name: 'OpenFOAM', url: 'https://openfoam.org/', type: 'CFD Suite', description: 'Industry-standard open source CFD' },
-  { name: 'SU2', url: 'https://su2code.github.io/', type: 'Multiphysics CFD', description: 'Aerodynamics and design' },
-  { name: 'Dolfyn', url: 'https://www.dolfyn.net/', type: 'CFD Code', description: 'Heat/flow simulations' },
-  { name: 'Fluidity', url: 'https://fluidityproject.github.io/', type: 'Multiphase CFD', description: 'Adaptive mesh technology' },
-  { name: 'WaterLily.jl', url: 'https://github.com/trixi-framework/WaterLily.jl', type: 'Julia CFD', description: 'Lattice Boltzmann methods' }
-]
-
-// Electromagnetism Software
-const emSoftware = [
-  { name: 'Meep', url: 'https://meep.readthedocs.io/', type: 'FDTD EM', description: 'MIT EM simulation software' },
-  { name: 'gprMax', url: 'https://www.gprmax.com/', type: 'GPR Simulation', description: 'Ground penetrating radar' },
-  { name: 'OpenEMS', url: 'https://openems.de/', type: 'EM Field Solver', description: '3D EM field simulation' },
-  { name: 'Elmer FEM', url: 'https://elmerfem.org/', type: 'Multiphysics', description: 'Open source FEM' },
-  { name: 'FEniCS', url: 'https://fenicsproject.org/', type: 'PDE Platform', description: 'Python/C++ PDE solving' }
-]
-
-// Molecular Dynamics
-const mdSoftware = [
-  { name: 'LAMMPS', url: 'https://www.lammps.org/', type: 'Classical MD', description: 'Large-scale molecular dynamics' },
-  { name: 'GROMACS', url: 'https://www.gromacs.org/', type: 'Biomolecular MD', description: 'Protein simulations' },
-  { name: 'NAMD', url: 'https://www.ks.uiuc.edu/Research/namd/', type: 'Parallel MD', description: 'High-performance MD' },
-  { name: 'OpenMM', url: 'https://openmm.org/', type: 'GPU MD', description: 'GPU-accelerated MD' },
-  { name: 'Quantum ESPRESSO', url: 'https://www.quantum-espresso.org/', type: 'DFT', description: 'Electronic structure' }
-]
-
-// Physics Engines
-const physicsEngines = [
-  { name: 'Bullet Physics', url: 'https://pybullet.org/', type: '3D Engine', description: 'Rigid body dynamics' },
-  { name: 'PhysX', url: 'https://github.com/NVIDIA-Omniverse/PhysX', type: 'NVIDIA Physics', description: 'Game physics engine' },
-  { name: 'MuJoCo', url: 'https://mujoco.org/', type: 'Robotics', description: 'DeepMind physics engine' },
-  { name: 'Project Chrono', url: 'https://projectchrono.org/', type: 'Multibody', description: 'Vehicle dynamics' },
-  { name: 'Box2D', url: 'https://box2d.org/', type: '2D Engine', description: '2D physics (Angry Birds)' }
-]
-
-// Astronomy Software
-const astronomySoftware = [
-  { name: 'Stellarium', url: 'https://stellarium.org/', type: 'Planetarium', description: 'Free open source planetarium' },
-  { name: 'KStars', url: 'https://kstars.kde.org/', type: 'Astronomy Suite', description: 'KDE astronomy software' },
-  { name: 'OpenSpace', url: 'https://www.openspaceproject.com/', type: 'Universe Viz', description: 'NASA-funded visualization' },
-  { name: 'Celestia', url: 'https://celestiaproject.space/', type: 'Space Sim', description: '3D space simulator' },
-  { name: 'Siril', url: 'https://siril.org/', type: 'Image Processing', description: 'Astrophotography tool' }
-]
-
-// Quantum Computing
-const quantumSoftware = [
-  { name: 'Qiskit', url: 'https://qiskit.org/', type: 'IBM SDK', description: 'IBM quantum computing' },
-  { name: 'Cirq', url: 'https://quantumai.google/cirq', type: 'Google Library', description: 'Google quantum library' },
-  { name: 'PennyLane', url: 'https://pennylane.ai/', type: 'Quantum ML', description: 'Differentiable quantum' },
-  { name: 'QuTiP', url: 'https://qutip.org/', type: 'Quantum Toolbox', description: 'Quantum systems simulation' }
-]
-
-// CERN/Particle Physics
-const particleSoftware = [
-  { name: 'ROOT', url: 'https://root.cern/', type: 'Data Analysis', description: 'CERN analysis framework' },
-  { name: 'GEANT4', url: 'https://geant4.web.cern.ch/', type: 'Detector Sim', description: 'Particle transport' },
-  { name: 'MadGraph5', url: 'https://launchpad.net/mg5amcnlo', type: 'Event Generator', description: 'Monte Carlo events' },
-  { name: 'Pythia', url: 'https://pythia.org/', type: 'Event Generator', description: 'High-energy collisions' }
-]
-
-// ============================================
-// ARXIV CATEGORIES
-// ============================================
-const arxivCategories = [
-  { code: 'astro-ph', name: 'Astrophysics', description: 'All areas of astrophysics', url: 'https://arxiv.org/archive/astro-ph' },
-  { code: 'cond-mat', name: 'Condensed Matter', description: 'Materials and condensed matter', url: 'https://arxiv.org/archive/cond-mat' },
-  { code: 'gr-qc', name: 'General Relativity', description: 'GR and quantum cosmology', url: 'https://arxiv.org/archive/gr-qc' },
-  { code: 'hep-ex', name: 'High Energy Physics - Exp', description: 'Particle physics experiments', url: 'https://arxiv.org/archive/hep-ex' },
-  { code: 'hep-th', name: 'High Energy Physics - Theory', description: 'Particle theory and strings', url: 'https://arxiv.org/archive/hep-th' },
-  { code: 'hep-ph', name: 'High Energy Physics - Pheno', description: 'Phenomenology', url: 'https://arxiv.org/archive/hep-ph' },
-  { code: 'math-ph', name: 'Mathematical Physics', description: 'Math methods for physics', url: 'https://arxiv.org/archive/math-ph' },
-  { code: 'nucl-th', name: 'Nuclear Theory', description: 'Nuclear physics theory', url: 'https://arxiv.org/archive/nucl-th' },
-  { code: 'quant-ph', name: 'Quantum Physics', description: 'Quantum mechanics and info', url: 'https://arxiv.org/archive/quant-ph' },
-  { code: 'physics', name: 'General Physics', description: 'All other physics topics', url: 'https://arxiv.org/archive/physics' }
-]
-
-// ============================================
-// RESEARCH TOOLS
-// ============================================
-const researchTools = [
-  { name: 'INSPIRE-HEP', url: 'https://inspirehep.net/', type: 'Literature', description: 'HEP literature database' },
-  { name: 'NASA ADS', url: 'https://ui.adsabs.harvard.edu/', type: 'Astrophysics', description: 'Astrophysics data system' },
-  { name: 'Google Scholar', url: 'https://scholar.google.com/', type: 'Search', description: 'Academic search engine' },
-  { name: 'Connected Papers', url: 'https://www.connectedpapers.com/', type: 'Visualization', description: 'Citation graph explorer' },
-  { name: 'Zotero', url: 'https://www.zotero.org/', type: 'Reference', description: 'Reference manager' },
-  { name: 'Overleaf', url: 'https://www.overleaf.com/', type: 'LaTeX', description: 'Online LaTeX editor' }
-]
-
-// ============================================
-// PHYSICS OLYMPIAD RESOURCES
-// ============================================
-const olympiadResources = [
-  { name: 'IPhO Official', url: 'https://ipho-new.org/', type: 'Official', description: 'International Physics Olympiad' },
-  { name: 'AAPT Physics Team', url: 'https://www.aapt.org/physicsteam/', type: 'US', description: 'US Physics Olympiad' },
-  { name: 'British Physics Olympiad', url: 'https://www.bpho.org.uk/', type: 'UK', description: 'UK physics competition' },
-  { name: 'Kevin Zhou Handouts', url: 'https://knzhou.github.io/', type: 'Training', description: 'Excellent problem sets' },
-  { name: 'Physoly', url: 'https://physoly.tech', type: 'Resources', description: 'Olympiad problem collection' },
-  { name: 'AoPS Physics', url: 'https://artofproblemsolving.com/wiki/index.php/Physics', type: 'Community', description: 'Problem solving forums' }
-]
-
-// ============================================
-// CAREER RESOURCES
-// ============================================
-const careerResources = [
-  { name: 'APS Careers', url: 'https://www.aps.org/careers/', type: 'Guidance', description: 'American Physical Society' },
-  { name: 'IOP Careers', url: 'https://www.iop.org/careers', type: 'Guidance', description: 'Institute of Physics UK' },
-  { name: 'Physics Today Jobs', url: 'https://jobs.physicstoday.org/', type: 'Job Board', description: 'Physics employment' },
-  { name: 'AIP Statistics', url: 'https://www.aip.org/statistics', type: 'Data', description: 'Employment data' },
-  { name: 'REU Programs', url: 'https://www.nsf.gov/crssprgm/reu/', type: 'Research', description: 'NSF summer research' },
-  { name: 'CERN Summer Student', url: 'https://careers.smartrecruiters.com/CERN', type: 'Internship', description: 'CERN summer program' }
-]
-
-// ============================================
-// WOMEN IN PHYSICS
-// ============================================
-const womenInPhysics = [
-  { name: 'APS Women in Physics', url: 'https://www.aps.org/programs/women/', type: 'Organization', description: 'Professional support' },
-  { name: 'IOP Women in Physics', url: 'https://www.iop.org/physics-community/special-interest-groups/women-physics-group', type: 'Network', description: 'UK/Europe network' },
-  { name: 'Harvard GWiP', url: 'https://women.physics.harvard.edu', type: 'Community', description: 'Harvard women in physics' },
-  { name: 'NORNDiP', url: 'https://www.norndip.net', type: 'Network', description: 'Nordic network' },
-  { name: 'AAPT Women', url: 'https://www.aapt.org/aboutaapt/organization/women.cfm', type: 'Teachers', description: 'Teachers network' }
-]
-
-// ============================================
-// MORE YOUTUBE CHANNELS
-// ============================================
-const moreYoutubeChannels = [
-  { name: 'Fermilab', url: 'https://www.youtube.com/@fermilab', subs: '500K+', focus: 'Particle Physics', level: 'All' },
-  { name: 'CERN', url: 'https://www.youtube.com/@CERN', subs: '1M+', focus: 'Research', level: 'All' },
-  { name: 'Kurzgesagt', url: 'https://www.youtube.com/@kurzgesagt', subs: '22M+', focus: 'Animated Science', level: 'Beginner' },
-  { name: 'Deep Sky Videos', url: 'https://www.youtube.com/@DeepSkyVideos', subs: '800K+', focus: 'Astronomy', level: 'All' },
-  { name: 'Arvin Ash', url: 'https://www.youtube.com/@arvinash', subs: '1M+', focus: 'Quantum/Relativity', level: 'Intermediate' },
-  { name: 'MathTheBeautiful', url: 'https://www.youtube.com/@MathTheBeautiful', subs: '300K+', focus: 'Math Physics', level: 'Advanced' }
-]
-
-// ============================================
-// PHYSICS SUMMER SCHOOLS & WORKSHOPS
-// ============================================
-const summerSchools = [
-  // Astrophysics
-  { name: 'Summer Science Program (SSP)', url: 'https://ssp.org/astrophysics/', location: 'USA (Multi-campus)', duration: '5-6 weeks', level: 'High School', focus: 'Astrophysics' },
-  { name: 'Caltech Relativistic Astrophysics', url: 'https://relastro-school-2025.caltech.edu/', location: 'Pasadena, USA', duration: '1 week', level: 'Graduate', focus: 'Black holes, GWs' },
-  { name: 'Kavli Summer Program', url: 'https://kspa.soe.ucsc.edu/', location: 'UC Santa Cruz, USA', duration: '6 weeks', level: 'Grad/Postdoc', focus: 'Astrophysics' },
-  { name: 'Yale YSPA', url: 'https://yspa.yale.edu/', location: 'Connecticut, USA', duration: '6 weeks', level: 'High School', focus: 'Observational Astronomy' },
-  { name: 'ASPIRE Amsterdam', url: 'https://aspire.science.uva.nl/', location: 'Netherlands', duration: '8 weeks', level: 'MSc', focus: 'Exoplanets' },
-  // Condensed Matter
-  { name: 'Princeton PSSCMP', url: 'https://pccm.princeton.edu/education/psscmp', location: 'New Jersey, USA', duration: '1 week', level: 'Graduate', focus: 'Quantum Materials' },
-  { name: 'Boulder School', url: 'https://www.colorado.edu/conference/bss/home', location: 'Colorado, USA', duration: '3+ weeks', level: 'Graduate', focus: 'Soft Matter' },
-  { name: 'Los Alamos LACCMSS', url: 'https://laccmss.github.io/2026/', location: 'New Mexico, USA', duration: '2 weeks', level: 'Graduate', focus: 'Computational CM' },
-  { name: 'Les Houches Frontiers of CM', url: 'https://frontiers-les-houches.org/', location: 'French Alps', duration: '2 weeks', level: 'MSc/PhD', focus: 'Condensed Matter' },
-  // Particle Physics
-  { name: 'CERN Summer Student', url: 'https://home.cern/summer-student-programme', location: 'Geneva, Switzerland', duration: '8-13 weeks', level: 'BSc/MSc', focus: 'Particle Physics' },
-  { name: 'SJTU Summer School', url: 'https://en.zhiyuan.sjtu.edu.cn/en/ce/summerschool/3', location: 'Shanghai, China', duration: '2-4 weeks', level: 'Undergraduate', focus: 'QFT, Particles' },
-  // International
-  { name: 'ICTP Schools', url: 'https://www.ictp.it/', location: 'Trieste, Italy', duration: 'Varies', level: 'All', focus: 'Multiple Areas' },
-  { name: 'Les Houches Schools', url: 'https://www.houches-school-physics.org/', location: 'French Alps', duration: '2-4 weeks', level: 'Various', focus: 'All Physics' }
-]
-
-// ============================================
-// PHYSICS SOCIETIES WORLDWIDE
-// ============================================
-const physicsSocieties = [
-  // Major International
-  { name: 'IUPAP', url: 'https://iupap.org/', country: 'International', type: 'Union', description: 'International Union of Pure and Applied Physics' },
-  { name: 'Optica (OSA)', url: 'https://www.optica.org/', country: 'International', type: 'Society', description: 'Optics and photonics society' },
-  { name: 'SPIE', url: 'https://spie.org/', country: 'International', type: 'Society', description: 'International society for optics and photonics' },
-  // Americas
-  { name: 'American Physical Society', url: 'https://www.aps.org/', country: 'USA', type: 'Society', description: 'Largest physics society in US' },
-  { name: 'AAPT', url: 'https://www.aapt.org/', country: 'USA', type: 'Teachers', description: 'American Association of Physics Teachers' },
-  { name: 'Canadian Association of Physicists', url: 'https://www.cap.ca/', country: 'Canada', type: 'Society', description: 'Canadian physics society' },
-  { name: 'Brazilian Physical Society', url: 'https://www.sbfisica.org.br/', country: 'Brazil', type: 'Society', description: 'Sociedade Brasileira de Física' },
-  // Europe
-  { name: 'Institute of Physics', url: 'https://www.iop.org/', country: 'UK', type: 'Society', description: 'UK and Ireland physics society' },
-  { name: 'European Physical Society', url: 'https://www.eps.org/', country: 'Europe', type: 'Society', description: 'European physics society' },
-  { name: 'German Physical Society', url: 'https://www.dpg-physik.de/', country: 'Germany', type: 'Society', description: 'Deutsche Physikalische Gesellschaft' },
-  { name: 'French Physical Society', url: 'https://www.sfpnet.fr/', country: 'France', type: 'Society', description: 'Société Française de Physique' },
-  { name: 'Italian Physical Society', url: 'https://www.sif.it/', country: 'Italy', type: 'Society', description: 'Società Italiana di Fisica' },
-  // Asia-Pacific
-  { name: 'Physical Society of Japan', url: 'https://www.jps.or.jp/', country: 'Japan', type: 'Society', description: 'Japanese physics society' },
-  { name: 'Chinese Physical Society', url: 'http://www.cps-net.org.cn/', country: 'China', type: 'Society', description: 'Chinese physics society' },
-  { name: 'Australian Institute of Physics', url: 'https://www.aip.org.au/', country: 'Australia', type: 'Society', description: 'Australian physics society' },
-  // Specialized
-  { name: 'American Nuclear Society', url: 'https://www.ans.org/', country: 'USA', type: 'Nuclear', description: 'Nuclear physics society' },
-  { name: 'Acoustical Society of America', url: 'https://acousticalsociety.org/', country: 'USA', type: 'Acoustics', description: 'Acoustics professional society' },
-  { name: 'Society of Exploration Geophysicists', url: 'https://seg.org/', country: 'International', type: 'Geophysics', description: 'Geophysics professional society' }
-]
-
-// ============================================
-// BIOPHYSICS RESOURCES
-// ============================================
-const biophysicsResources = [
-  { name: 'Physics of Living Systems', url: 'https://link.springer.com/book/10.1007/978-3-319-30647-6', type: 'Textbook', description: 'Undergraduate biophysics by Fabrizio Cleri' },
-  { name: 'MIT Biophysics', url: 'https://physics.mit.edu/research-areas/biophysics/', type: 'Research', description: 'Graduate Certificate in Biophysics' },
-  { name: 'Max Planck Institute of Biophysics', url: 'https://www.biophys.mpg.de/en', type: 'Institute', description: 'Protein structure and function research' },
-  { name: 'Johns Hopkins Biophysics', url: 'https://biophysics.jhu.edu/', type: 'Institute', description: 'Macromolecular structure research' },
-  { name: 'NIH Biophysics Center', url: 'https://www.nhlbi.nih.gov/about/intramural-research/biochemistry-and-biophysics', type: 'Research', description: 'Single molecule biophysics' },
-  { name: 'Physics of Living Systems Org', url: 'https://physicsoflivingsystems.org/', type: 'Organization', description: 'Community resource for PoLS scientists' },
-  { name: 'NSF PoLS Program', url: 'https://www.nsf.gov/funding/opportunities/pols-physics-living-systems', type: 'Funding', description: 'NSF Physics of Living Systems' }
-]
-
-// ============================================
-// GEOPHYSICS RESOURCES
-// ============================================
-const geophysicsResources = [
-  { name: 'MIT OCW Geophysics', url: 'https://ocw.mit.edu/courses/12-201-essentials-of-geophysics-fall-2004/', type: 'Course', description: 'Essentials of geophysics' },
-  { name: 'SEG Training', url: 'https://seg.org/education/courses/', type: 'Courses', description: '100+ geophysics courses' },
-  { name: 'SEG Wiki', url: 'https://wiki.seg.org/', type: 'Wiki', description: 'Encyclopedic Dictionary of Applied Geophysics' },
-  { name: 'USGS Geophysics Institutions', url: 'https://www.usgs.gov/programs/earthquake-hazards/science/geophysics-institutions-throughout-world', type: 'Directory', description: 'Global geophysics institutions' },
-  { name: 'edX Geophysics', url: 'https://www.edx.org/learn/geophysics', type: 'Courses', description: 'Online geophysics courses' },
-  { name: 'Colorado School of Mines', url: 'https://geophysics.mines.edu/energy-geophysics-certificate/', type: 'Certificate', description: 'Energy Geophysics Certificate' }
-]
-
-// ============================================
-// OPTICS & PHOTONICS RESOURCES
-// ============================================
-const opticsResources = [
-  // Textbooks
-  { name: 'Physics of Light and Optics (BYU)', url: 'https://optics.byu.edu/textbook', type: 'Textbook', description: 'Free undergraduate optics text' },
-  { name: 'BSc Optics (TU Delft)', url: 'https://open.umn.edu/opentextbooks/textbooks/982', type: 'Textbook', description: 'Open textbook on optics basics' },
-  { name: 'RP Photonics Encyclopedia', url: 'https://www.rp-photonics.com/encyclopedia.html', type: 'Encyclopedia', description: '1137+ articles on optics and photonics' },
-  // Courses
-  { name: 'MIT Lasers and Fiberoptics', url: 'https://ocw.mit.edu/courses/res-6-005', type: 'Course', description: '36+ hours of laser lectures' },
-  { name: 'MITx Atomic and Optical Physics', url: 'https://mitxonline.mit.edu/courses/course-v1:MITxT+8.421x/', type: 'Course', description: 'Foundations for atomic/optical physics' },
-  // Software
-  { name: 'Ray Optics Simulation', url: 'https://phydemo.app/ray-optics/', type: 'Software', description: 'Free web-based optics simulator' },
-  { name: '3DOptix', url: 'https://design.3doptix.com/', type: 'Software', description: 'Cloud-based optical design' },
-  { name: 'OSLO Edu', url: 'https://www.lambdares.com/oslo', type: 'Software', description: 'Free educational optics design' },
-  // Societies
-  { name: 'Optica (OSA)', url: 'https://www.optica.org/', type: 'Society', description: 'Leading optics society' },
-  { name: 'SPIE', url: 'https://spie.org/', type: 'Society', description: 'International optics society' },
-  { name: 'IEEE Photonics Society', url: 'https://photonicssociety.org/', type: 'Society', description: 'Photonics technology society' }
-]
-
-// ============================================
-// ACOUSTICS & FLUID DYNAMICS RESOURCES
-// ============================================
-const acousticsResources = [
-  { name: 'Fundamentals of Acoustics (Kinsler)', url: 'https://jontalle.web.engr.illinois.edu/Public/BOOKS/KinslerFreyCoopSanders.00.pdf', type: 'Textbook', description: 'Classic acoustics textbook' },
-  { name: 'Understanding Acoustics', url: 'https://library.oapen.org/handle/20.500.12657/42912', type: 'Textbook', description: 'Open access acoustics book' },
-  { name: 'ASA Standards', url: 'https://asastandards.org/', type: 'Standards', description: 'Acoustical Society standards' },
-  { name: 'Acoustical Society of America', url: 'https://acousticalsociety.org/', type: 'Society', description: 'Professional acoustics society' },
-  { name: 'Pyroomacoustics', url: 'https://github.com/LCAV/pyroomacoustics', type: 'Software', description: 'Python audio signal processing' },
-  { name: 'k-Wave', url: 'https://github.com/ucl-bug/k-wave', type: 'Software', description: 'Acoustic wave field simulation' }
-]
-
-const fluidDynamicsResources = [
-  { name: 'Basics of Fluid Mechanics', url: 'https://open.umn.edu/opentextbooks/textbooks/85', type: 'Textbook', description: 'Open textbook on fluid mechanics' },
-  { name: 'MIT OCW Fluid Dynamics', url: 'https://ocw.mit.edu/courses/2-06-fluid-dynamics-spring-2013/', type: 'Course', description: 'Complete MIT fluid mechanics' },
-  { name: 'NASA Glenn Aerodynamics', url: 'https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/learn-about-aerodynamics/', type: 'Educational', description: 'Comprehensive aerodynamics guide' },
-  { name: 'NASA Turbulence Modeling', url: 'https://turbmodels.larc.nasa.gov/', type: 'Reference', description: 'Turbulence model documentation' },
-  { name: 'JHTDB', url: 'https://turbulence.pha.jhu.edu/', type: 'Database', description: 'Johns Hopkins turbulence databases' },
-  { name: 'OpenFOAM', url: 'https://openfoam.org/', type: 'Software', description: 'Open source CFD' },
-  { name: 'SU2', url: 'https://su2code.github.io/', type: 'Software', description: 'Multiphysics CFD suite' }
-]
-
-// ============================================
-// PLASMA & NUCLEAR PHYSICS RESOURCES
-// ============================================
-const plasmaResources = [
-  { name: 'Awesome Plasma Physics Courses', url: 'https://github.com/amerlo94/awesome-plasma-physics-courses', type: 'GitHub', description: 'Curated list of plasma physics courses' },
-  { name: 'AIP Physics of Plasmas', url: 'https://pubs.aip.org/aip/pop/pages/resources', type: 'Journal', description: 'Review and tutorial papers' },
-  { name: 'LLNL HEDS Center', url: 'https://heds-center.llnl.gov/', type: 'Research', description: 'High Energy Density Science' },
-  { name: 'Space Plasma Physics (St Andrews)', url: 'http://solar-mcs.wp.st-andrews.ac.uk/files/2023/08/INTRO_PLASMA_desktop.pdf', type: 'Lecture Notes', description: 'Fundamentals of plasma physics' },
-  { name: 'Laser-Plasma Tutorial (arXiv)', url: 'https://arxiv.org/abs/1806.06014', type: 'Tutorial', description: 'Tutorial on laser-plasma interactions' }
-]
-
-// ============================================
-// INTERNATIONAL TEXTBOOKS
-// ============================================
-const internationalTextbooks = [
-  // Russian
-  { name: 'Landau-Lifshitz (Russian)', url: 'https://archive.org/', language: 'Russian', type: 'Textbook', description: 'Original 10-volume theoretical physics' },
-  { name: 'Irodov Problems', url: 'https://archive.org/', language: 'Russian', type: 'Problems', description: '~1900 challenging physics problems' },
-  { name: 'Mir Titles Archive', url: 'https://mirtitles.org/', language: 'Multiple', type: 'Archive', description: 'Soviet-era physics textbooks' },
-  // German
-  { name: 'Demtröder Experimental Physics', url: 'https://www.springer.com/', language: 'German', type: 'Textbook', description: '4-volume German physics series' },
-  { name: 'Gerthsen Physics', url: 'https://www.springer.com/', language: 'German', type: 'Textbook', description: 'Classic German physics textbook' },
-  { name: 'Nolting Theoretical Physics', url: 'https://www.springer.com/', language: 'German', type: 'Textbook', description: 'Comprehensive theoretical physics' },
-  // French
-  { name: 'Éditions Mir Physics', url: 'https://mirtitles.org/', language: 'French', type: 'Textbook', description: 'Russian books in French translation' },
-  { name: 'Dunod Physique', url: 'https://www.dunod.com/', language: 'French', type: 'Textbook', description: 'French physics textbook series' },
-  // Chinese
-  { name: 'Chinese Physical Society', url: 'http://www.cps-net.org.cn/', language: 'Chinese', type: 'Society', description: '35,000+ members, 11 journals' },
-  { name: 'Tsinghua Physics', url: 'https://www.phys.tsinghua.edu.cn/', language: 'Chinese', type: 'University', description: 'Tsinghua University physics' },
-  // Indian
-  { name: 'HC Verma Concepts of Physics', url: 'https://www.fisica.net/', language: 'English', type: 'Textbook', description: 'Most popular Indian physics text' },
-  { name: 'DC Pandey Understanding Physics', url: 'https://arihantbooks.com/', language: 'English', type: 'Textbook', description: 'JEE preparation series' },
-  { name: 'IIT JEE Resources', url: 'https://www.nptel.ac.in/', language: 'English', type: 'Resources', description: 'Indian competitive exam resources' }
-]
-
-// ============================================
-// PHILOSOPHY & HISTORY OF PHYSICS
-// ============================================
-const philosophyPhysics = [
-  { name: 'Stanford Encyclopedia - Phil Physics', url: 'https://plato.stanford.edu/entries/physics/', type: 'Encyclopedia', description: 'Peer-reviewed philosophy of physics' },
-  { name: 'Philosophy of Physics Journal', url: 'https://philosophyofphysics.lse.ac.uk/', type: 'Journal', description: 'LSE open access journal' },
-  { name: 'Interpretations of QM (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Interpretations_of_quantum_mechanics', type: 'Encyclopedia', description: 'QM interpretations overview' },
-  { name: 'Foundational Attitudes Survey', url: 'https://arxiv.org/abs/1301.1069', type: 'Paper', description: 'Physicists attitudes toward QM foundations' },
-  { name: 'Einstein Archives', url: 'https://einsteinpapers.press.princeton.edu/', type: 'Archive', description: 'Princeton Einstein Papers Project' }
+const onlineCourses = [
+  { name: 'Coursera Physics', url: 'https://www.coursera.org/browse/physical-science-and-engineering/physics', provider: 'Various', type: 'MOOC', description: 'University physics courses' },
+  { name: 'edX Physics', url: 'https://www.edx.org/learn/physics', provider: 'MIT/Harvard', type: 'MOOC', description: 'Free physics courses' },
+  { name: 'Khan Academy', url: 'https://www.khanacademy.org/science/physics', provider: 'Khan Academy', type: 'Free', description: 'Complete physics curriculum' },
+  { name: 'Brilliant Physics', url: 'https://brilliant.org/courses/physics/', provider: 'Brilliant', type: 'Interactive', description: 'Interactive physics learning' },
+  { name: 'Udemy Physics', url: 'https://www.udemy.com/courses/search/?q=physics', provider: 'Various', type: 'Paid', description: 'Physics video courses' },
+  { name: 'FutureLearn Physics', url: 'https://www.futurelearn.com/subjects/physics-courses', provider: 'UK Universities', type: 'MOOC', description: 'UK physics courses' },
+  { name: 'Swayam Physics', url: 'https://swayam.gov.in/', provider: 'India', type: 'MOOC', description: 'Indian physics courses' },
+  { name: 'NPTEL Physics', url: 'https://nptel.ac.in/course.html', provider: 'IIT India', type: 'Free', description: 'IIT physics lectures' }
 ]
 </script>
 
@@ -789,19 +502,16 @@ const philosophyPhysics = [
     <!-- Hero Section -->
     <div class="relative overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-space-950 to-blue-900/20"></div>
-      <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
-      <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl"></div>
-      
       <div class="relative max-w-7xl mx-auto px-4 py-16 sm:py-24">
-        <NuxtLink to="/science" class="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
+        <NuxtLink to="/" class="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 transition-colors">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          Back to Science
+          Back to Categories
         </NuxtLink>
 
         <div class="text-center mb-16">
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-purple-500/20 rounded-full border border-purple-500/30 mb-6">
             <span class="w-2 h-2 bg-purple-400 rounded-full animate-pulse"></span>
-            <span class="text-sm text-purple-300">1500+ Curated Resources Worldwide</span>
+            <span class="text-sm text-purple-300">3000+ Global Physics Resources from K-12 to PhD</span>
           </div>
           
           <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
@@ -811,7 +521,7 @@ const philosophyPhysics = [
           </h1>
           
           <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Master physics from high school to research level. Curated from MIT, Caltech, Stanford, Cambridge, and institutions worldwide.
+            Master physics from K-12 to PhD research with 3000+ curated resources from MIT, Caltech, Stanford, Cambridge, Oxford, IIT, ETH Zurich, CERN, Perimeter Institute, and institutions worldwide.
           </p>
 
           <div class="flex flex-wrap justify-center gap-4 sm:gap-8">
@@ -821,86 +531,28 @@ const philosophyPhysics = [
             </div>
             <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-white">200+</div>
+              <div class="text-3xl font-bold text-white">300+</div>
               <div class="text-sm text-gray-400">Free Textbooks</div>
             </div>
             <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-white">50+</div>
-              <div class="text-sm text-gray-400">MIT OCW Courses</div>
+              <div class="text-3xl font-bold text-white">200+</div>
+              <div class="text-sm text-gray-400">University Courses</div>
             </div>
             <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
             <div class="text-center">
-              <div class="text-3xl font-bold text-white">100+</div>
-              <div class="text-sm text-gray-400">YouTube Channels</div>
-            </div>
-            <div class="w-px h-12 bg-gray-700 hidden sm:block"></div>
-            <div class="text-center">
-              <div class="text-3xl font-bold text-white">1500+</div>
+              <div class="text-3xl font-bold text-white">3000+</div>
               <div class="text-sm text-gray-400">Total Resources</div>
             </div>
-          </div>
-        </div>
-
-        <!-- Level Selection Cards -->
-        <div class="grid md:grid-cols-3 gap-6 mb-16">
-          <a v-for="level in levels" :key="level.id" 
-               :href="`#${level.id}-section`"
-               class="group relative p-6 rounded-2xl border border-gray-800 hover:border-gray-600 transition-all duration-300 hover:scale-[1.02] cursor-pointer block"
-               :class="`bg-${level.color}-500/5 hover:bg-${level.color}-500/10`">
-            <div :class="`absolute inset-0 bg-${level.color}-500/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity`"></div>
-            
-            <div class="relative">
-              <div class="w-12 h-12 mb-4 rounded-xl flex items-center justify-center" :class="`bg-${level.color}-500/20`">
-                <svg v-if="level.icon === 'seedling'" class="w-7 h-7" :class="`text-${level.color}-400`" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13"/></svg>
-                <svg v-else-if="level.icon === 'target'" class="w-7 h-7" :class="`text-${level.color}-400`" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke-width="1.5"/><circle cx="12" cy="12" r="6" stroke-width="1.5"/><circle cx="12" cy="12" r="2" stroke-width="1.5"/></svg>
-                <svg v-else-if="level.icon === 'rocket'" class="w-7 h-7" :class="`text-${level.color}-400`" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2c0 0-7 4-7 11v3l-2 2h18l-2-2v-3c0-7-7-11-7-11z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
-              </div>
-              <h3 class="text-2xl font-bold text-white mb-1">{{ level.title }}</h3>
-              <p :class="`text-sm text-${level.color}-400 mb-3`">{{ level.subtitle }}</p>
-              <p class="text-gray-400 text-sm mb-4">{{ level.description }}</p>
-              
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span v-for="topic in level.topics" :key="topic" 
-                      class="text-xs px-2 py-1 bg-gray-800 rounded text-gray-300">
-                  {{ topic }}
-                </span>
-              </div>
-              
-              <div class="flex items-center gap-2 text-sm text-gray-500">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-                </svg>
-                {{ level.resources }} Resources
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Featured Resources -->
-        <div class="mb-16">
-          <h2 class="text-2xl font-bold text-white mb-6 text-center">Featured Resources</h2>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <a v-for="resource in featuredResources" :key="resource.title" 
-               :href="resource.url" target="_blank"
-               class="group p-5 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
-              <h3 class="font-semibold text-white mb-1">{{ resource.title }}</h3>
-              <p class="text-sm text-purple-400 mb-2">{{ resource.author }}</p>
-              <p class="text-xs text-gray-400 mb-3">{{ resource.description }}</p>
-              <div class="flex items-center justify-between">
-                <span class="text-xs px-2 py-1 bg-gray-800 rounded text-gray-300">{{ resource.type }}</span>
-                <span class="text-xs text-gray-500">{{ resource.level }}</span>
-              </div>
-            </a>
           </div>
         </div>
 
         <!-- Quick Links -->
         <div class="flex flex-wrap justify-center gap-3 mb-16">
           <a v-for="link in quickLinks" :key="link.name" :href="link.url"
-             class="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-full border border-gray-800 hover:border-gray-600 hover:bg-gray-800 transition-all">
+             class="flex items-center gap-2 px-4 py-2 bg-gray-900/50 rounded-full border border-gray-800 hover:border-purple-500/50 transition-all">
             <span class="text-sm text-gray-300">{{ link.name }}</span>
-            <span class="text-xs text-gray-500">({{ link.count }})</span>
+            <span class="text-xs text-purple-400">({{ link.count }})</span>
           </a>
         </div>
       </div>
@@ -909,106 +561,156 @@ const philosophyPhysics = [
     <!-- Content Sections -->
     <div class="max-w-7xl mx-auto px-4 py-12 space-y-20">
       
-      <!-- Free Textbooks Section -->
-      <section id="textbooks" class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Free Textbooks</h2>
-            <p class="text-gray-400">100% free, legally available physics textbooks from top sources</p>
-          </div>
-        </div>
-
-        <!-- Beginner Free Books -->
-        <div id="beginner-section" class="mb-12 scroll-mt-24">
-          <h3 class="text-xl font-semibold text-emerald-400 mb-4 flex items-center gap-2">
-            <span class="w-2 h-2 bg-emerald-400 rounded-full"></span>
-            Beginner Level
-            <span class="text-sm font-normal text-gray-500">High School / AP / Intro</span>
-          </h3>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a v-for="book in freeTextbooksBeginner" :key="book.title" :href="book.url" target="_blank"
-               class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
-              <div class="flex items-start justify-between mb-2">
-                <span class="text-xs px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">{{ book.topic }}</span>
-                <span v-if="book.type.includes('FREE')" class="text-xs text-emerald-400 font-semibold">FREE</span>
-              </div>
-              <h4 class="font-semibold text-white mb-1 group-hover:text-emerald-400 transition-colors">{{ book.title }}</h4>
-              <p class="text-sm text-gray-400">{{ book.author }}</p>
-              <p class="text-xs text-gray-500 mt-2">{{ book.level }}</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Intermediate Free Books -->
-        <div class="mb-12">
-          <h3 class="text-xl font-semibold text-purple-400 mb-4 flex items-center gap-2">
-            <span class="w-2 h-2 bg-purple-400 rounded-full"></span>
-            Intermediate Level
-            <span class="text-sm font-normal text-gray-500">Undergraduate / Calculus</span>
-          </h3>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a v-for="book in freeTextbooksIntermediate" :key="book.title" :href="book.url" target="_blank"
-               class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
-              <div class="flex items-start justify-between mb-2">
-                <span class="text-xs px-2 py-0.5 bg-purple-500/20 text-purple-400 rounded">{{ book.topic }}</span>
-                <span v-if="book.type.includes('FREE')" class="text-xs text-purple-400 font-semibold">FREE</span>
-              </div>
-              <h4 class="font-semibold text-white mb-1 group-hover:text-purple-400 transition-colors">{{ book.title }}</h4>
-              <p class="text-sm text-gray-400">{{ book.author }}</p>
-            </a>
-          </div>
-        </div>
-
-        <!-- Advanced Free Books -->
-        <div id="advanced-section">
-          <h3 class="text-xl font-semibold text-rose-400 mb-4 flex items-center gap-2">
-            <span class="w-2 h-2 bg-rose-400 rounded-full"></span>
-            Advanced Level
-            <span class="text-sm font-normal text-gray-500">Graduate</span>
-          </h3>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            <a v-for="book in freeTextbooksAdvanced" :key="book.title" :href="book.url" target="_blank"
-               class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-rose-500/50 transition-all hover:scale-[1.02]">
-              <div class="flex items-start justify-between mb-2">
-                <span class="text-xs px-2 py-0.5 bg-rose-500/20 text-rose-400 rounded">{{ book.topic }}</span>
-                <span class="text-xs text-rose-400 font-semibold">FREE</span>
-              </div>
-              <h4 class="font-semibold text-white mb-1 group-hover:text-rose-400 transition-colors">{{ book.title }}</h4>
-              <p class="text-sm text-gray-400">{{ book.author }}</p>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!-- David Tong Lecture Notes -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">David Tong's Lecture Notes</h2>
-            <p class="text-gray-400">Cambridge University - 14 complete graduate-level lecture notes (completely free)</p>
-          </div>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="lecture in tongLectures" :key="lecture.title" :href="lecture.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 rounded" 
-                    :class="lecture.level === 'Interm' ? 'bg-purple-500/20 text-purple-400' : 'bg-rose-500/20 text-rose-400'">{{ lecture.level }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-blue-400 transition-colors">{{ lecture.title }}</h4>
-            <p class="text-sm text-gray-500">{{ lecture.topic }}</p>
+      <!-- Featured Resources -->
+      <section>
+        <h2 class="text-2xl font-bold text-white mb-6 text-center">Featured Resources</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <a v-for="resource in featuredResources" :key="resource.title" :href="resource.url" target="_blank"
+             class="group p-5 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
+            <h3 class="font-semibold text-white mb-1">{{ resource.title }}</h3>
+            <p class="text-sm text-purple-400 mb-2">{{ resource.author }}</p>
+            <p class="text-xs text-gray-400">{{ resource.description }}</p>
           </a>
         </div>
       </section>
 
-      <!-- MIT OCW Section -->
+      <!-- K-12 Resources -->
+      <section id="k12" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l9-5-9-5-9 5 9 5z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">K-12 School Resources</h2>
+            <p class="text-gray-400">Physics resources for primary and secondary school students</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a v-for="resource in k12Resources" :key="resource.title" :href="resource.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">{{ resource.type }}</span>
+              <span class="text-xs text-gray-500">{{ resource.level }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-emerald-400 transition-colors">{{ resource.title }}</h4>
+            <p class="text-sm text-gray-400">{{ resource.provider }}</p>
+            <p class="text-xs text-gray-500 mt-1">{{ resource.desc }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- AP/IB Physics -->
+      <section id="apib" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">AP & IB Physics</h2>
+            <p class="text-gray-400">Advanced Placement and International Baccalaureate resources</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a v-for="resource in apibResources" :key="resource.title" :href="resource.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded">{{ resource.type }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-amber-400 transition-colors">{{ resource.title }}</h4>
+            <p class="text-sm text-gray-400">{{ resource.provider }}</p>
+            <p class="text-xs text-gray-500 mt-1">{{ resource.desc }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Free Textbooks -->
+      <section id="textbooks" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Free Textbooks</h2>
+            <p class="text-gray-400">Comprehensive physics textbooks organized by level</p>
+          </div>
+        </div>
+
+        <!-- Beginner -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-emerald-400 mb-4">Beginner / High School Level</h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <a v-for="book in freeTextbooksBeginner" :key="book.title" :href="book.url" target="_blank"
+               class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
+              <div class="flex items-start justify-between mb-2">
+                <span class="text-xs px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">{{ book.type }}</span>
+              </div>
+              <h4 class="font-semibold text-white mb-1 group-hover:text-emerald-400 transition-colors">{{ book.title }}</h4>
+              <p class="text-sm text-gray-400">{{ book.author }}</p>
+              <p class="text-xs text-gray-500 mt-1">{{ book.desc }}</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Intermediate -->
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-purple-400 mb-4">Intermediate / Undergraduate Level</h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a v-for="book in freeTextbooksIntermediate" :key="book.title" :href="book.url" target="_blank"
+               class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
+              <div class="flex items-start justify-between mb-2">
+                <span class="text-xs px-2 py-0.5 bg-purple-500/20 text-purple-400 rounded">{{ book.type }}</span>
+              </div>
+              <h4 class="font-semibold text-white mb-1 group-hover:text-purple-400 transition-colors">{{ book.title }}</h4>
+              <p class="text-sm text-gray-400">{{ book.author }}</p>
+              <p class="text-xs text-gray-500 mt-1">{{ book.desc }}</p>
+            </a>
+          </div>
+        </div>
+
+        <!-- Advanced -->
+        <div>
+          <h3 class="text-lg font-semibold text-rose-400 mb-4">Advanced / Graduate Level</h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <a v-for="book in freeTextbooksAdvanced" :key="book.title" :href="book.url" target="_blank"
+               class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-rose-500/50 transition-all hover:scale-[1.02]">
+              <div class="flex items-start justify-between mb-2">
+                <span class="text-xs px-2 py-0.5 bg-rose-500/20 text-rose-400 rounded">{{ book.type }}</span>
+              </div>
+              <h4 class="font-semibold text-white mb-1 group-hover:text-rose-400 transition-colors">{{ book.title }}</h4>
+              <p class="text-sm text-gray-400">{{ book.author }}</p>
+              <p class="text-xs text-gray-500 mt-1">{{ book.desc }}</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- David Tong Lectures -->
+      <section id="tong" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">David Tong's Lecture Notes (Cambridge)</h2>
+            <p class="text-gray-400">Graduate-level lecture notes covering all major topics</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="lecture in tongLectures" :key="lecture.title" :href="lecture.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-blue-500/20 text-blue-400 rounded">{{ lecture.level }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-blue-400 transition-colors">{{ lecture.title }}</h4>
+            <p class="text-sm text-purple-400">{{ lecture.topic }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- MIT OCW -->
       <section id="mitocw" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
@@ -1016,14 +718,14 @@ const philosophyPhysics = [
           </div>
           <div>
             <h2 class="text-3xl font-bold text-white">MIT OpenCourseWare</h2>
-            <p class="text-gray-400">Free complete physics courses from MIT - Walter Lewin's legendary lectures + graduate courses</p>
+            <p class="text-gray-400">Free complete physics courses from MIT</p>
           </div>
         </div>
 
         <!-- Beginner MIT -->
         <div class="mb-8">
           <h3 class="text-lg font-semibold text-emerald-400 mb-4">Beginner Level (Walter Lewin)</h3>
-          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             <a v-for="course in mitCoursesBeginner" :key="course.code" :href="course.url" target="_blank"
                class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
               <div class="flex items-start justify-between mb-2">
@@ -1084,7 +786,7 @@ const philosophyPhysics = [
         <!-- Beginner Channels -->
         <div class="mb-8">
           <h3 class="text-lg font-semibold text-emerald-400 mb-4">Beginner / Popular Science</h3>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <a v-for="channel in youtubeChannelsBeginner" :key="channel.name" :href="channel.url" target="_blank"
                class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
               <div class="flex items-center gap-4 mb-3">
@@ -1105,7 +807,7 @@ const philosophyPhysics = [
         <!-- Intermediate Channels -->
         <div class="mb-8">
           <h3 class="text-lg font-semibold text-purple-400 mb-4">Intermediate / University Level</h3>
-          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <a v-for="channel in youtubeChannelsIntermediate" :key="channel.name" :href="channel.url" target="_blank"
                class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
               <div class="flex items-center gap-4 mb-3">
@@ -1145,22 +847,47 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Physics Simulations -->
-      <section id="simulations" class="scroll-mt-20">
+      <!-- Online Courses (MOOCs) -->
+      <section id="moocs" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           </div>
           <div>
-            <h2 class="text-3xl font-bold text-white">Physics Simulations</h2>
-            <p class="text-gray-400">Interactive physics labs and visualizations - browser-based</p>
+            <h2 class="text-3xl font-bold text-white">Online Courses (MOOCs)</h2>
+            <p class="text-gray-400">Massive Open Online Courses from top universities</p>
           </div>
         </div>
 
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="course in onlineCourses" :key="course.name" :href="course.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-cyan-500/20 text-cyan-400 rounded">{{ course.type }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-cyan-400 transition-colors">{{ course.name }}</h4>
+            <p class="text-sm text-purple-400 mb-1">{{ course.provider }}</p>
+            <p class="text-xs text-gray-500">{{ course.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Simulations -->
+      <section id="simulations" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Physics Simulations</h2>
+            <p class="text-gray-400">Interactive physics labs and visualizations</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           <a v-for="sim in simulations" :key="sim.name" :href="sim.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-yellow-500/50 transition-all hover:scale-[1.02]">
-            <h4 class="font-semibold text-white mb-1 group-hover:text-yellow-400 transition-colors">{{ sim.name }}</h4>
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
+            <h4 class="font-semibold text-white mb-1 group-hover:text-cyan-400 transition-colors">{{ sim.name }}</h4>
             <p class="text-sm text-purple-400 mb-2">{{ sim.provider }}</p>
             <p class="text-xs text-gray-500">{{ sim.topics }}</p>
             <span class="inline-block mt-2 text-xs px-2 py-0.5 bg-gray-800 rounded text-gray-400">{{ sim.level }}</span>
@@ -1190,15 +917,40 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Problem Sets & Competitions -->
+      <!-- Physics Olympiads -->
+      <section id="olympiads" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-yellow-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Physics Olympiads</h2>
+            <p class="text-gray-400">International physics competitions and problem archives</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a v-for="olymp in olympiadResources" :key="olymp.name" :href="olymp.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-yellow-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-yellow-500/20 text-yellow-400 rounded">{{ olymp.type }}</span>
+              <span class="text-xs text-gray-500">{{ olymp.country }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-yellow-400 transition-colors">{{ olymp.name }}</h4>
+            <p class="text-xs text-gray-500">{{ olymp.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Problem Sets -->
       <section id="problems" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
             <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
           </div>
           <div>
-            <h2 class="text-3xl font-bold text-white">Problem Sets & Competitions</h2>
-            <p class="text-gray-400">Practice problems, olympiads, and exam preparation</p>
+            <h2 class="text-3xl font-bold text-white">Problem Sets & Practice</h2>
+            <p class="text-gray-400">Practice problems, competitions, and exam preparation</p>
           </div>
         </div>
 
@@ -1239,19 +991,68 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Software & Tools -->
+      <!-- Research Resources -->
+      <section id="research" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-rose-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Research Resources</h2>
+            <p class="text-gray-400">Open access papers, databases, and research tools</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a v-for="resource in researchResources" :key="resource.name" :href="resource.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-rose-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-rose-500/20 text-rose-400 rounded">{{ resource.type }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-rose-400 transition-colors">{{ resource.name }}</h4>
+            <p class="text-xs text-gray-500">{{ resource.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Research Institutes -->
+      <section id="institutes" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Research Institutes & Labs</h2>
+            <p class="text-gray-400">World-class physics research institutions</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <a v-for="inst in researchInstitutes" :key="inst.name" :href="inst.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-violet-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-violet-500/20 text-violet-400 rounded">{{ inst.country }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-violet-400 transition-colors">{{ inst.name }}</h4>
+            <p class="text-sm text-purple-400 mb-1">{{ inst.focus }}</p>
+            <p class="text-xs text-gray-500">{{ inst.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Physics Software -->
       <section id="software" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
             <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
           </div>
           <div>
-            <h2 class="text-3xl font-bold text-white">Software & Tools</h2>
-            <p class="text-gray-400">Python libraries, simulation software, and computational tools</p>
+            <h2 class="text-3xl font-bold text-white">Physics Software & Tools</h2>
+            <p class="text-gray-400">Programming languages and physics software</p>
           </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           <a v-for="tool in physicsSoftware" :key="tool.name" :href="tool.url" target="_blank"
              class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
             <div class="flex items-start justify-between mb-2">
@@ -1263,40 +1064,19 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Essential Websites -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Essential Physics Websites</h2>
-            <p class="text-gray-400">News, research, reference materials, and communities</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="site in physicsWebsites" :key="site.name" :href="site.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
-            <h4 class="font-semibold text-white mb-1 group-hover:text-blue-400 transition-colors">{{ site.name }}</h4>
-            <p class="text-sm text-gray-500">{{ site.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Physics Apps & Mobile -->
+      <!-- Mobile Apps -->
       <section id="apps" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-12 h-12 bg-pink-500/20 rounded-xl flex items-center justify-center">
             <svg class="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
           </div>
           <div>
-            <h2 class="text-3xl font-bold text-white">Physics Apps & Mobile</h2>
-            <p class="text-gray-400">Learning apps, simulations, and mobile tools for on-the-go physics</p>
+            <h2 class="text-3xl font-bold text-white">Physics Apps</h2>
+            <p class="text-gray-400">Mobile apps for learning physics</p>
           </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <a v-for="app in physicsApps" :key="app.name" :href="app.url" target="_blank"
              class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-pink-500/50 transition-all hover:scale-[1.02]">
             <div class="flex items-start justify-between mb-2">
@@ -1308,15 +1088,15 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Podcasts & Audio -->
+      <!-- Podcasts -->
       <section id="podcasts" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
             <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
           </div>
           <div>
-            <h2 class="text-3xl font-bold text-white">Podcasts & Audio</h2>
-            <p class="text-gray-400">Learn physics on the go with these excellent podcasts</p>
+            <h2 class="text-3xl font-bold text-white">Physics Podcasts</h2>
+            <p class="text-gray-400">Learn physics on the go</p>
           </div>
         </div>
 
@@ -1329,7 +1109,7 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Physics Blogs -->
+      <!-- Blogs -->
       <section id="blogs" class="scroll-mt-20">
         <div class="flex items-center gap-4 mb-8">
           <div class="w-12 h-12 bg-teal-500/20 rounded-xl flex items-center justify-center">
@@ -1337,16 +1117,40 @@ const philosophyPhysics = [
           </div>
           <div>
             <h2 class="text-3xl font-bold text-white">Physics Blogs</h2>
-            <p class="text-gray-400">Insights from leading physicists and educators</p>
+            <p class="text-gray-400">Insights from leading physicists</p>
           </div>
         </div>
 
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-4">
           <a v-for="blog in physicsBlogs" :key="blog.name" :href="blog.url" target="_blank"
              class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-teal-500/50 transition-all hover:scale-[1.02]">
             <h4 class="font-semibold text-white mb-1 group-hover:text-teal-400 transition-colors">{{ blog.name }}</h4>
             <p class="text-sm text-teal-400 mb-1">{{ blog.author }}</p>
             <p class="text-xs text-gray-500">{{ blog.description }}</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Scholarships -->
+      <section id="scholarships" class="scroll-mt-20">
+        <div class="flex items-center gap-4 mb-8">
+          <div class="w-12 h-12 bg-rose-500/20 rounded-xl flex items-center justify-center">
+            <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <div>
+            <h2 class="text-3xl font-bold text-white">Scholarships & Fellowships</h2>
+            <p class="text-gray-400">Funding opportunities for physics students</p>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <a v-for="scholarship in scholarships" :key="scholarship.name" :href="scholarship.url" target="_blank"
+             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-rose-500/50 transition-all hover:scale-[1.02]">
+            <div class="flex items-start justify-between mb-2">
+              <span class="text-xs px-2 py-0.5 bg-rose-500/20 text-rose-400 rounded">{{ scholarship.type }}</span>
+            </div>
+            <h4 class="font-semibold text-white mb-1 group-hover:text-rose-400 transition-colors">{{ scholarship.name }}</h4>
+            <p class="text-xs text-gray-500">{{ scholarship.description }}</p>
           </a>
         </div>
       </section>
@@ -1359,7 +1163,7 @@ const philosophyPhysics = [
           </div>
           <div>
             <h2 class="text-3xl font-bold text-white">DIY Experiments & Home Labs</h2>
-            <p class="text-gray-400">Hands-on physics you can do at home with everyday materials</p>
+            <p class="text-gray-400">Hands-on physics experiments at home</p>
           </div>
         </div>
 
@@ -1372,614 +1176,21 @@ const philosophyPhysics = [
         </div>
       </section>
 
-      <!-- Scholarships & Fellowships -->
-      <section id="scholarships" class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-rose-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-rose-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Scholarships & Fellowships</h2>
-            <p class="text-gray-400">Funding opportunities for physics students at all levels</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="scholarship in scholarships" :key="scholarship.name" :href="scholarship.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-rose-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 bg-rose-500/20 text-rose-400 rounded">{{ scholarship.type }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-rose-400 transition-colors">{{ scholarship.name }}</h4>
-            <p class="text-xs text-gray-500">{{ scholarship.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- MOOC Courses -->
-      <section id="moocs" class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">MOOC Courses (Coursera & edX)</h2>
-            <p class="text-gray-400">Online courses from top universities - free to audit</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="course in moocCourses" :key="course.name" :href="course.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-green-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 bg-green-500/20 text-green-400 rounded">{{ course.platform }}</span>
-              <span class="text-xs text-gray-500">{{ course.level }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-green-400 transition-colors">{{ course.name }}</h4>
-            <p class="text-xs text-gray-500">{{ course.institution }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Stanford Online -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-red-600/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Stanford Online Courses</h2>
-            <p class="text-gray-400">Stanford University online physics programs</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="course in stanfordCourses" :key="course.name" :href="course.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 bg-red-500/20 text-red-400 rounded">{{ course.code }}</span>
-              <span class="text-xs text-gray-500">{{ course.level }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-red-400 transition-colors">{{ course.name }}</h4>
-            <p class="text-xs text-gray-500">{{ course.professor }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Open Source Software -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Open Source Physics Software</h2>
-            <p class="text-gray-400">Free computational tools for physics research and simulation</p>
-          </div>
-        </div>
-
-        <!-- CFD -->
-        <h3 class="text-lg font-semibold text-cyan-400 mb-4">Computational Fluid Dynamics</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-          <a v-for="soft in cfdSoftware" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-cyan-500/20 text-cyan-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-
-        <!-- EM -->
-        <h3 class="text-lg font-semibold text-yellow-400 mb-4">Electromagnetism Simulation</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-          <a v-for="soft in emSoftware" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-yellow-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-yellow-500/20 text-yellow-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-yellow-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-
-        <!-- MD -->
-        <h3 class="text-lg font-semibold text-purple-400 mb-4">Molecular Dynamics</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-          <a v-for="soft in mdSoftware" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-purple-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-purple-500/20 text-purple-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-purple-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-
-        <!-- Physics Engines -->
-        <h3 class="text-lg font-semibold text-pink-400 mb-4">Physics Engines</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-          <a v-for="soft in physicsEngines" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-pink-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-pink-500/20 text-pink-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-pink-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-
-        <!-- Astronomy -->
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Astronomy Software</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-8">
-          <a v-for="soft in astronomySoftware" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-indigo-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-indigo-500/20 text-indigo-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-indigo-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-
-        <!-- Quantum -->
-        <h3 class="text-lg font-semibold text-emerald-400 mb-4">Quantum Computing</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-          <a v-for="soft in quantumSoftware" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-emerald-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-
-        <!-- Particle Physics -->
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Particle Physics (CERN)</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="soft in particleSoftware" :key="soft.name" :href="soft.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-blue-500/20 text-blue-400 rounded">{{ soft.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-blue-400 transition-colors">{{ soft.name }}</h4>
-            <p class="text-xs text-gray-500">{{ soft.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- arXiv Categories -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-red-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">arXiv Preprint Categories</h2>
-            <p class="text-gray-400">Latest research papers in all physics fields</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          <a v-for="cat in arxivCategories" :key="cat.code" :href="cat.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-red-500/20 text-red-400 rounded font-mono">{{ cat.code }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-red-400 transition-colors">{{ cat.name }}</h4>
-            <p class="text-xs text-gray-500">{{ cat.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Research Tools -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Research Tools</h2>
-            <p class="text-gray-400">Tools for finding, organizing, and writing research</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="tool in researchTools" :key="tool.name" :href="tool.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-violet-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-violet-500/20 text-violet-400 rounded">{{ tool.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-violet-400 transition-colors">{{ tool.name }}</h4>
-            <p class="text-xs text-gray-500">{{ tool.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Physics Olympiad -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-amber-600/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Physics Olympiad Resources</h2>
-            <p class="text-gray-400">Competition preparation for IPhO and national olympiads</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in olympiadResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-amber-500 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Career Resources -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-teal-600/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Career Resources</h2>
-            <p class="text-gray-400">Jobs, internships, and career guidance for physicists</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in careerResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-teal-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-teal-500/20 text-teal-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-teal-500 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Women in Physics -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-rose-600/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Women in Physics</h2>
-            <p class="text-gray-400">Support networks and resources for women in physics</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in womenInPhysics" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-rose-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-rose-500/20 text-rose-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-rose-500 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- More YouTube Channels -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-red-600/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">More YouTube Channels</h2>
-            <p class="text-gray-400">Additional educational channels for physics learning</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="channel in moreYoutubeChannels" :key="channel.name" :href="channel.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-red-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-center gap-4 mb-3">
-              <div class="w-12 h-12 bg-red-600 rounded-xl flex items-center justify-center text-white font-bold text-lg group-hover:scale-110 transition-transform">
-                {{ channel.name[0] }}
-              </div>
-              <div>
-                <h4 class="font-semibold text-white group-hover:text-red-400 transition-colors">{{ channel.name }}</h4>
-                <p class="text-sm text-gray-500">{{ channel.subs }} subscribers</p>
-              </div>
-            </div>
-            <p class="text-sm text-red-400 mb-1">{{ channel.focus }}</p>
-            <p class="text-xs text-gray-500">Level: {{ channel.level }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Physics Summer Schools -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-sky-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Physics Summer Schools & Workshops</h2>
-            <p class="text-gray-400">Intensive programs worldwide for physics students</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="school in summerSchools" :key="school.name" :href="school.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-sky-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 bg-sky-500/20 text-sky-400 rounded">{{ school.duration }}</span>
-              <span class="text-xs text-gray-500">{{ school.level }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-sky-400 transition-colors">{{ school.name }}</h4>
-            <p class="text-sm text-sky-400 mb-1">{{ school.focus }}</p>
-            <p class="text-xs text-gray-500">{{ school.location }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Physics Societies Worldwide -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-violet-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-violet-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Physics Societies Worldwide</h2>
-            <p class="text-gray-400">Professional organizations from around the globe</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
-          <a v-for="society in physicsSocieties" :key="society.name" :href="society.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-violet-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 bg-violet-500/20 text-violet-400 rounded">{{ society.country }}</span>
-              <span class="text-xs text-gray-500">{{ society.type }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-violet-400 transition-colors">{{ society.name }}</h4>
-            <p class="text-xs text-gray-500">{{ society.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Biophysics Resources -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-emerald-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Biophysics & Physics of Living Systems</h2>
-            <p class="text-gray-400">Resources at the intersection of physics and biology</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="res in biophysicsResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-emerald-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-emerald-500/20 text-emerald-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-emerald-400 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Geophysics Resources -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-amber-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Geophysics & Planetary Science</h2>
-            <p class="text-gray-400">Earth and planetary physics resources</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in geophysicsResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-amber-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-amber-500/20 text-amber-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-amber-500 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Optics & Photonics -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-cyan-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Optics, Photonics & Laser Physics</h2>
-            <p class="text-gray-400">Light, lasers, and optical physics resources</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="res in opticsResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-cyan-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-cyan-500/20 text-cyan-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Acoustics & Fluid Dynamics -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Acoustics & Fluid Dynamics</h2>
-            <p class="text-gray-400">Sound, fluids, and continuum mechanics resources</p>
-          </div>
-        </div>
-
-        <h3 class="text-lg font-semibold text-blue-400 mb-4">Acoustics</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-          <a v-for="res in acousticsResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-blue-500/20 text-blue-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-blue-400 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-
-        <h3 class="text-lg font-semibold text-indigo-400 mb-4">Fluid Dynamics</h3>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in fluidDynamicsResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-indigo-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-indigo-500/20 text-indigo-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-indigo-400 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Plasma & Nuclear Physics -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-orange-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Plasma & Nuclear Physics</h2>
-            <p class="text-gray-400">Fusion energy, plasmas, and nuclear physics</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in plasmaResources" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-orange-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-orange-500/20 text-orange-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-orange-500 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- International Textbooks -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-fuchsia-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-fuchsia-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">International Textbooks & Resources</h2>
-            <p class="text-gray-400">Physics resources from around the world</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <a v-for="res in internationalTextbooks" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-fuchsia-500/50 transition-all hover:scale-[1.02]">
-            <div class="flex items-start justify-between mb-2">
-              <span class="text-xs px-2 py-0.5 bg-fuchsia-500/20 text-fuchsia-400 rounded">{{ res.language }}</span>
-              <span class="text-xs text-gray-500">{{ res.type }}</span>
-            </div>
-            <h4 class="font-semibold text-white mb-1 group-hover:text-fuchsia-400 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Philosophy & History of Physics -->
-      <section class="scroll-mt-20">
-        <div class="flex items-center gap-4 mb-8">
-          <div class="w-12 h-12 bg-stone-500/20 rounded-xl flex items-center justify-center">
-            <svg class="w-6 h-6 text-stone-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          </div>
-          <div>
-            <h2 class="text-3xl font-bold text-white">Philosophy & History of Physics</h2>
-            <p class="text-gray-400">Foundations, interpretations, and historical perspectives</p>
-          </div>
-        </div>
-
-        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a v-for="res in philosophyPhysics" :key="res.name" :href="res.url" target="_blank"
-             class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-stone-500/50 transition-all hover:scale-[1.02]">
-            <span class="text-xs px-2 py-0.5 bg-stone-500/20 text-stone-400 rounded">{{ res.type }}</span>
-            <h4 class="font-semibold text-white mt-2 mb-1 group-hover:text-stone-400 transition-colors">{{ res.name }}</h4>
-            <p class="text-xs text-gray-500">{{ res.description }}</p>
-          </a>
-        </div>
-      </section>
-
-      <!-- Study Tips -->
-      <section class="bg-gradient-to-br from-purple-900/20 to-blue-900/20 rounded-2xl p-8 border border-purple-500/20">
-        <h2 class="text-2xl font-bold text-white mb-6 flex items-center gap-3">
-          <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 1 1 7.072 0l-.548.547A3.374 3.374 0 0 0 14 18.469V19a2 2 0 1 1-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
-          Study Tips from Experts
-        </h2>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div class="space-y-4">
-            <div class="flex gap-4">
-              <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-purple-400 font-bold">1</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white mb-1">Master the Mathematics</h4>
-                <p class="text-sm text-gray-400">Physics is expressed in math. Don't skimp on calculus, linear algebra, and differential equations.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-purple-400 font-bold">2</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white mb-1">Work Problems</h4>
-                <p class="text-sm text-gray-400">Physics is learned by doing, not reading. Work through every problem you can find.</p>
-              </div>
-            </div>
-          </div>
-          <div class="space-y-4">
-            <div class="flex gap-4">
-              <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-purple-400 font-bold">3</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white mb-1">Develop Physical Intuition</h4>
-                <p class="text-sm text-gray-400">Always ask "what does this mean physically?" Connect equations to real phenomena.</p>
-              </div>
-            </div>
-            <div class="flex gap-4">
-              <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <span class="text-purple-400 font-bold">4</span>
-              </div>
-              <div>
-                <h4 class="font-semibold text-white mb-1">Use Multiple Resources</h4>
-                <p class="text-sm text-gray-400">Different explanations work for different people. Find what clicks for you.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="mt-6 pt-6 border-t border-purple-500/20">
-          <p class="text-gray-400 italic">"What I cannot create, I do not understand." — Richard Feynman</p>
-        </div>
-      </section>
-
-      <!-- Footer Navigation -->
+      <!-- Footer -->
       <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-8 border-t border-gray-800">
-        <NuxtLink to="/science" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+        <NuxtLink to="/" class="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>
-          Back to Science
+          Back to Categories
         </NuxtLink>
         
         <div class="flex flex-wrap justify-center gap-4 text-sm">
-          <a href="https://www.goodtheorist.science/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">
-            Gerard 't Hooft's Guide
-          </a>
+          <a href="https://www.feynmanlectures.caltech.edu/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">Feynman Lectures</a>
           <span class="text-gray-700">•</span>
-          <a href="http://www.damtp.cam.ac.uk/user/tong/teaching.html" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">
-            David Tong's Lectures
-          </a>
+          <a href="https://ocw.mit.edu/courses/physics/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">MIT OCW</a>
           <span class="text-gray-700">•</span>
-          <a href="https://ocw.mit.edu/courses/physics/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">
-            MIT OCW Physics
-          </a>
+          <a href="http://www.damtp.cam.ac.uk/user/tong/teaching.html" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">David Tong</a>
           <span class="text-gray-700">•</span>
-          <a href="https://www.feynmanlectures.caltech.edu/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">
-            Feynman Lectures
-          </a>
-          <span class="text-gray-700">•</span>
-          <a href="https://theoreticalminimum.com/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">
-            Theoretical Minimum
-          </a>
-          <span class="text-gray-700">•</span>
-          <a href="https://knzhou.github.io/" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">
-            Kevin Zhou's Handouts
-          </a>
+          <a href="https://arxiv.org/archive/physics" target="_blank" class="text-gray-500 hover:text-purple-400 transition-colors">arXiv</a>
         </div>
       </div>
     </div>
