@@ -10,7 +10,7 @@
 [![Nuxt 3](https://img.shields.io/badge/Nuxt-3.x-00DC82.svg?style=for-the-badge&logo=nuxt.js)](https://nuxt.com/)
 [![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D.svg?style=for-the-badge&logo=vue.js)](https://vuejs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](docs/CONTRIBUTING.md)
 
 [🚀 View Demo](http://localhost:3310) • [📚 Documentation](#documentation) • [🐛 Report Issue](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) • [💡 Request Feature](https://github.com/Awesome-Nexus/Awesome-Horizon/issues/new?labels=enhancement)
 
@@ -134,13 +134,14 @@ npm run dev
 | Resource | Description | Link |
 |----------|-------------|------|
 | **STEAM Master Index** | Complete hub of all resources | [STEAM_MASTER_INDEX.md](STEAM_MASTER_INDEX.md) |
-| **Physics Master** | 2000+ physics resources (K-12 to PhD) | [physics_master_resources.md](physics_master_resources.md) |
-| **Chemistry Master** | 1500+ chemistry resources | [chemistry_master_resources.md](chemistry_master_resources.md) |
-| **Biology Master** | 1500+ biology resources | [biology_master_resources.md](biology_master_resources.md) |
-| **Mathematics Master** | 2000+ math resources | [mathematics_master_resources.md](mathematics_master_resources.md) |
-| **Computer Science Master** | 2000+ CS resources | [computer_science_master_resources.md](computer_science_master_resources.md) |
-| **K-12 STEAM** | Resources for young learners | [k12_steam_resources.md](k12_steam_resources.md) |
-| **Earth & Astronomy** | Space and earth sciences | [earth_astronomy_learning_resources.md](earth_astronomy_learning_resources.md) |
+| **📁 Resources Folder** | All organized resources | [resources/](resources/) |
+| **Physics Master** | 2000+ physics resources (K-12 to PhD) | [resources/physics/](resources/physics/) |
+| **Chemistry Master** | 1500+ chemistry resources | [resources/chemistry/](resources/chemistry/) |
+| **Biology Master** | 1500+ biology resources | [resources/biology/](resources/biology/) |
+| **Mathematics Master** | 2000+ math resources | [resources/mathematics/](resources/mathematics/) |
+| **Computer Science Master** | 2000+ CS resources | [resources/computer-science/](resources/computer-science/) |
+| **K-12 STEAM** | Resources for young learners | [resources/k12/](resources/k12/) |
+| **Earth & Astronomy** | Space and earth sciences | [resources/earth-astronomy/](resources/earth-astronomy/) |
 
 ---
 
@@ -215,7 +216,7 @@ We welcome contributions from educators, students, and developers! Here's how yo
 4. **📤 Push** to the branch: `git push origin feature/amazing-feature`
 5. **🔀 Open** a Pull Request
 
-📖 See [**CONTRIBUTING.md**](CONTRIBUTING.md) for detailed guidelines.
+📖 See [**CONTRIBUTING.md**](docs/CONTRIBUTING.md) for detailed guidelines.
 
 ---
 

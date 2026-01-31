@@ -26,23 +26,23 @@ This comprehensive collection represents the world's most extensive compilation 
 
 | Subject | Master File | Resources Count | Levels |
 |---------|-------------|-----------------|--------|
-| **Physics** | [physics_master_resources.md](physics_master_resources.md) | 2000+ | K-12 to PhD |
-| **Chemistry** | [chemistry_master_resources.md](chemistry_master_resources.md) | 1500+ | K-12 to PhD |
-| **Biology** | [biology_master_resources.md](biology_master_resources.md) | 1500+ | K-12 to PhD |
-| **Mathematics** | [mathematics_master_resources.md](mathematics_master_resources.md) | 2000+ | K-12 to Research |
-| **Computer Science** | [computer_science_master_resources.md](computer_science_master_resources.md) | 2000+ | Beginner to Expert |
-| **Engineering** | [engineering_learning_resources_comprehensive.md](engineering_learning_resources_comprehensive.md) | 2000+ | All disciplines |
-| **Arts & Design** | [arts_design_resources.md](arts_design_resources.md) | 1000+ | All mediums |
-| **Earth Sciences & Astronomy** | [earth_astronomy_learning_resources.md](earth_astronomy_learning_resources.md) | 1500+ | All levels |
+| **Physics** | [resources/physics/](resources/physics/) | 2000+ | K-12 to PhD |
+| **Chemistry** | [resources/chemistry/](resources/chemistry/) | 1500+ | K-12 to PhD |
+| **Biology** | [resources/biology/](resources/biology/) | 1500+ | K-12 to PhD |
+| **Mathematics** | [resources/mathematics/](resources/mathematics/) | 2000+ | K-12 to Research |
+| **Computer Science** | [resources/computer-science/](resources/computer-science/) | 2000+ | Beginner to Expert |
+| **Engineering** | [resources/engineering/](resources/engineering/) | 2000+ | All disciplines |
+| **Arts & Design** | [resources/arts/](resources/arts/) | 1000+ | All mediums |
+| **Earth Sciences & Astronomy** | [resources/earth-astronomy/](resources/earth-astronomy/) | 1500+ | All levels |
 
 ### Supporting Resources
 
 | Resource | Description | File |
 |----------|-------------|------|
-| **K-12 STEAM Resources** | Comprehensive K-12 collection | [k12_steam_resources.md](k12_steam_resources.md) |
-| **Online Learning Platforms** | MOOCs and platforms | [ONLINE_LEARNING_RESOURCES.md](ONLINE_LEARNING_RESOURCES.md) |
-| **International OER** | Global open resources | [international_oer_resources.md](international_oer_resources.md) |
-| **Physics Communities** | Research communities | [physics_communities_research.md](physics_communities_research.md) |
+| **K-12 STEAM Resources** | Comprehensive K-12 collection | [resources/k12/](resources/k12/) |
+| **Online Learning Platforms** | MOOCs and platforms | [resources/general/](resources/general/) |
+| **International OER** | Global open resources | [resources/general/](resources/general/) |
+| **Physics Communities** | Research communities | [resources/physics/](resources/physics/) |
 
 ---
 
