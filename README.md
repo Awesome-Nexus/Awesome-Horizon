@@ -17,8 +17,19 @@
 <!-- Animated Divider -->
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-<!-- Platform Preview -->
-<img src="https://via.placeholder.com/900x450/0f172a/ffffff?text=🌟+Awesome+Horizon+Platform+Preview&font=roboto&weight=700&size=40" alt="Platform Preview" width="90%" style="border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); margin: 20px 0;"/>
+<!-- Platform Preview - Add screenshot here -->
+<!-- 
+  TODO: Add actual platform screenshot here
+  Recommended: 1200x600px screenshot of homepage
+  Upload to: public/preview.png or public/preview.jpg
+  Then update: src="./public/preview.png"
+-->
+
+<div align="center">
+  <a href="https://awesome-horizon.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🌐%20View%20Live%20Platform-Click%20Here-00C9A7?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0f172a" height="50"/>
+  </a>
+</div>
 
 <!-- Quick Links -->
 <p align="center">
