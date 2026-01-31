@@ -8,17 +8,19 @@ defineProps<{
   icon: Component
   colorClass: string
   textColorClass: string
+  borderColorClass: string
 }>()
 </script>
 
 <template>
   <NuxtLink 
     :to="to" 
-    class="group relative flex flex-col items-center p-6 bg-space-900 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-space-800 overflow-hidden h-full hover:border-primary-500/50 hover:bg-space-800"
+    class="group relative flex flex-col items-center p-6 bg-space-900 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-space-800 overflow-hidden h-full hover:bg-space-800"
+    :class="borderColorClass"
   >
     <!-- Title Above Icon -->
     <div class="w-full text-center mb-6">
-      <h3 class="text-xl font-bold text-white group-hover:text-primary-400 transition-colors">
+      <h3 class="text-xl font-bold text-white group-hover:text-current transition-colors" :class="textColorClass">
         {{ title }}
       </h3>
     </div>

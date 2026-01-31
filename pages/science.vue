@@ -161,8 +161,8 @@ const levels = [
         <h2 class="text-2xl font-bold text-white mb-6 text-center">Featured Science Resources</h2>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           <a v-for="r in featuredResources" :key="r.name" :href="r.url" target="_blank"
-             class="group p-5 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-primary-500/50 transition-all hover:scale-[1.02]">
-            <h3 class="font-semibold text-white mb-1 group-hover:text-primary-400 transition-colors">{{ r.name }}</h3>
+             class="group p-5 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-blue-500/50 transition-all hover:scale-[1.02]">
+            <h3 class="font-semibold text-white mb-1 group-hover:text-blue-400 transition-colors">{{ r.name }}</h3>
             <p class="text-sm text-gray-400">{{ r.desc }}</p>
           </a>
         </div>

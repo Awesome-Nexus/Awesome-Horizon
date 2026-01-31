@@ -130,6 +130,7 @@
             <span>and dedication to education</span>
           </div>
           <p class="text-gray-500 text-sm">&copy; {{ new Date().getFullYear() }} Awesome Horizon. Empowering learners worldwide.</p>
+          <p class="text-gray-500 text-xs mt-2">Last Published: v1.0.0 (January 31, 2026)</p>
         </div>
       </div>
     </footer>

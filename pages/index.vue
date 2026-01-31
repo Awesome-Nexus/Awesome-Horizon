@@ -23,7 +23,8 @@ const categories = [
     to: '/science',
     icon: FlaskConical,
     colorClass: 'bg-purple-500/20 text-purple-300',
-    textColorClass: 'text-purple-300'
+    textColorClass: 'text-purple-300',
+    borderColorClass: 'hover:border-purple-500/50'
   },
   {
     title: 'Technology',
@@ -31,7 +32,8 @@ const categories = [
     to: '/technology',
     icon: Cpu,
     colorClass: 'bg-emerald-500/20 text-emerald-300',
-    textColorClass: 'text-emerald-300'
+    textColorClass: 'text-emerald-300',
+    borderColorClass: 'hover:border-emerald-500/50'
   },
   {
     title: 'Engineering',
@@ -39,7 +41,8 @@ const categories = [
     to: '/engineering',
     icon: Wrench,
     colorClass: 'bg-amber-500/20 text-amber-300',
-    textColorClass: 'text-amber-300'
+    textColorClass: 'text-amber-300',
+    borderColorClass: 'hover:border-amber-500/50'
   },
   {
     title: 'Arts',
@@ -47,7 +50,8 @@ const categories = [
     to: '/arts',
     icon: Palette,
     colorClass: 'bg-rose-500/20 text-rose-300',
-    textColorClass: 'text-rose-300'
+    textColorClass: 'text-rose-300',
+    borderColorClass: 'hover:border-rose-500/50'
   },
   {
     title: 'Mathematics',
@@ -55,7 +59,8 @@ const categories = [
     to: '/mathematics',
     icon: Sigma,
     colorClass: 'bg-sky-500/20 text-sky-300',
-    textColorClass: 'text-sky-300'
+    textColorClass: 'text-sky-300',
+    borderColorClass: 'hover:border-sky-500/50'
   }
 ]
 </script>
@@ -63,13 +68,27 @@ const categories = [
 <template>
   <div class="space-y-16">
     <!-- Hero Section -->
-    <section class="text-center space-y-8 pt-16 pb-12 relative overflow-hidden">
+    <section class="text-center space-y-8 pt-8 pb-12 relative overflow-hidden">
+      <!-- Version Badge - Top Right Corner -->
+      <div class="absolute top-0 right-0 z-20">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-lime-500/10 border border-lime-500/20 rounded-bl-lg text-lime-300 text-xs font-medium">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+            <line x1="16" x2="16" y1="2" y2="6"/>
+            <line x1="8" x2="8" y1="2" y2="6"/>
+            <line x1="3" x2="21" y1="10" y2="10"/>
+          </svg>
+          Last Published: v1.0.0 (January 31, 2026)
+        </div>
+      </div>
+
       <!-- Background Effects -->
       <div class="absolute inset-0 bg-gradient-to-br from-primary-500/10 via-emerald-500/5 to-purple-500/10 blur-[120px] rounded-full pointer-events-none"></div>
       <div class="absolute top-20 left-1/4 w-72 h-72 bg-primary-500/5 rounded-full blur-[100px] animate-pulse"></div>
       <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-[120px] animate-pulse delay-1000"></div>
       
       <div class="relative z-10 w-full px-8">
+        
         <!-- Main Headline -->
         <div class="space-y-6">
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/10 border border-primary-500/20 rounded-full text-primary-300 text-sm font-medium mb-0">
