@@ -1,313 +1,246 @@
 <div align="center">
 
-# 🌟 Awesome Horizon
+<!-- Animated Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Awesome%20Horizon&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=The%20World's%20Most%20Comprehensive%20STEAM%20Learning%20Platform&descSize=18&descAlignY=55" width="100%"/>
 
-**A curated educational resource platform for STEAM learning**
+<!-- Premium Badges Row -->
+<div align="center">
 
-[![Last Published](https://img.shields.io/badge/Last%20Published-v1.0.0%20(January%2031%2C%202026)-blue.svg?style=for-the-badge)](STEAM_MASTER_INDEX.md)
-[![Resources](https://img.shields.io/badge/Resources-15%2C000+-brightgreen.svg?style=for-the-badge)](STEAM_MASTER_INDEX.md)
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
-[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.x-00DC82.svg?style=for-the-badge&logo=nuxt.js)](https://nuxt.com/)
-[![Vue 3](https://img.shields.io/badge/Vue-3.x-4FC08D.svg?style=for-the-badge&logo=vue.js)](https://vuejs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6.svg?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge)](docs/CONTRIBUTING.md)
-
-[🚀 View Demo](http://localhost:3310) • [📚 Documentation](#documentation) • [🐛 Report Issue](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) • [💡 Request Feature](https://github.com/Awesome-Nexus/Awesome-Horizon/issues/new?labels=enhancement)
-
-![Awesome Horizon Preview](https://via.placeholder.com/800x400/1a1a2e/ffffff?text=Awesome+Horizon+Preview)
+[![Version](https://img.shields.io/badge/Version-v1.0.0-00C9A7?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/Awesome-Nexus/Awesome-Horizon/releases)
+[![Resources](https://img.shields.io/badge/📚%20Resources-15,000+-FF6B6B?style=for-the-badge)](STEAM_MASTER_INDEX.md)
+[![STEAM](https://img.shields.io/badge/STEAM-7%20Subjects-4ECDC4?style=for-the-badge&logo=steam&logoColor=white)](STEAM_MASTER_INDEX.md)
+[![License](https://img.shields.io/badge/License-MIT-FFD93D?style=for-the-badge&logo=opensourceinitiative&logoColor=black)](LICENSE)
+[![Contributors](https://img.shields.io/badge/👥%20Contributors-Welcome-6C5CE7?style=for-the-badge)](docs/CONTRIBUTING.md)
 
 </div>
 
----
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-## 📅 Last Published
+<!-- Platform Preview -->
+<img src="https://via.placeholder.com/900x450/0f172a/ffffff?text=🌟+Awesome+Horizon+Platform+Preview&font=roboto&weight=700&size=40" alt="Platform Preview" width="90%" style="border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); margin: 20px 0;"/>
 
-**Last Published: v1.0.0 (January 31, 2026)** - Resources freshly updated with 15,000+ curated materials!
+<!-- Quick Links -->
+<p align="center">
+  <a href="https://awesome-horizon.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Site-00C9A7?style=for-the-badge&logo=vercel&logoColor=white" height="35"/>
+  </a>
+  &nbsp;
+  <a href="STEAM_MASTER_INDEX.md">
+    <img src="https://img.shields.io/badge/📖%20Browse%20Resources-Master%20Index-4ECDC4?style=for-the-badge" height="35"/>
+  </a>
+  &nbsp;
+  <a href="docs/CONTRIBUTING.md">
+    <img src="https://img.shields.io/badge/🤝%20Contribute-Join%20Us-6C5CE7?style=for-the-badge" height="35"/>
+  </a>
+</p>
 
----
+</div>
 
-## 🎯 About
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
-**Awesome Horizon** is an open-source platform that curates high-quality learning resources across **Science, Technology, Engineering, Arts, and Mathematics (STEAM)**. Built with modern web technologies to provide an exceptional learning experience for students, educators, and lifelong learners.
+## 🎯 What is Awesome Horizon?
 
-### ✨ Key Features
+<div align="center">
 
-<table>
+**Awesome Horizon** is the world's most comprehensive, open-source educational platform curating **15,000+ free learning resources** across **Science, Technology, Engineering, Arts, and Mathematics (STEAM)**.
+
+<img src="https://img.shields.io/badge/🌍%20Global%20Coverage-100+%20Countries-FF6B6B?style=flat-square"/>
+<img src="https://img.shields.io/badge/🎓%20All%20Levels-K--12%20to%20PhD-4ECDC4?style=flat-square"/>
+<img src="https://img.shields.io/badge/💯%20Free-Open%20Source-00C9A7?style=flat-square"/>
+
+</div>
+
+### ✨ Why Choose Awesome Horizon?
+
+<table align="center">
 <tr>
-<td align="center" width="33%">
-<img src="https://via.placeholder.com/80x80/8B5CF6/ffffff?text=🎯" alt="Curated" width="60"/>
-<h4>🎯 Curated Quality</h4>
-<p>Hand-picked resources vetted by educators and industry professionals</p>
+<td width="33%" align="center">
+
+### 🎯 **Curated Quality**
+*Hand-picked resources vetted by educators and industry professionals*
+
 </td>
-<td align="center" width="33%">
-<img src="https://via.placeholder.com/80x80/10B981/ffffff?text=🌟" alt="Comprehensive" width="60"/>
-<h4>🌟 Comprehensive Coverage</h4>
-<p>From K-12 to college-level and beyond, covering all educational stages</p>
+<td width="33%" align="center">
+
+### 🌐 **Global Reach**
+*Resources from 100+ countries in multiple languages*
+
 </td>
-<td align="center" width="33%">
-<img src="https://via.placeholder.com/80x80/F59E0B/ffffff?text=🚀" alt="Modern" width="60"/>
-<h4>🚀 Modern Learning</h4>
-<p>Interactive simulations, video lectures, and cutting-edge educational tools</p>
+<td width="33%" align="center">
+
+### 🎓 **All Levels**
+*From kindergarten to cutting-edge research*
+
 </td>
 </tr>
 </table>
 
----
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 📊 Resource Statistics
+
+<div align="center">
+
+| Category | Resources | Coverage | Folder |
+|:--------:|:---------:|:--------:|:------:|
+| ⚛️ **Physics** | 2,000+ | K-12 to PhD | [`resources/physics/`](resources/physics/) |
+| 🧪 **Chemistry** | 1,500+ | K-12 to PhD | [`resources/chemistry/`](resources/chemistry/) |
+| 🧬 **Biology** | 1,500+ | K-12 to PhD | [`resources/biology/`](resources/biology/) |
+| 📐 **Mathematics** | 2,000+ | K-12 to Research | [`resources/mathematics/`](resources/mathematics/) |
+| 💻 **Computer Science** | 2,000+ | Beginner to Expert | [`resources/computer-science/`](resources/computer-science/) |
+| ⚙️ **Engineering** | 2,000+ | All Disciplines | [`resources/engineering/`](resources/engineering/) |
+| 🎨 **Arts & Design** | 1,000+ | All Mediums | [`resources/arts/`](resources/arts/) |
+| 🌍 **Earth & Astronomy** | 1,500+ | All Levels | [`resources/earth-astronomy/`](resources/earth-astronomy/) |
+| 👶 **K-12 STEAM** | 2,000+ | Ages 5-18 | [`resources/k12/`](resources/k12/) |
+
+<br>
+
+### 🏆 **Total: 15,000+ Curated Resources**
+
+</div>
+
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## 🚀 Quick Start
+
+### Access Resources
 
 ```bash
 # Clone the repository
 git clone https://github.com/Awesome-Nexus/Awesome-Horizon.git
-cd Awesome-Horizon
 
-# Install dependencies
-npm install
+# Navigate to resources
+cd Awesome-Horizon/resources/
 
-# Start development server
-npm run dev
+# Explore any subject
+cd physics/        # Physics resources
+cd computer-science/  # Programming & CS
+cd mathematics/    # Math resources
 ```
 
-🌐 Visit **http://localhost:3310** to explore the platform
+### 🎯 Start Learning
 
----
+1. **📖 Browse the [STEAM Master Index](STEAM_MASTER_INDEX.md)** - Your gateway to all resources
+2. **🔬 Choose a Subject** - Pick from 7 STEAM categories
+3. **🎓 Select Your Level** - K-12, Undergraduate, Graduate, or Research
+4. **🚀 Start Learning** - All resources are free and open access!
 
-## 🛠️ Tech Stack
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 📁 Repository Structure
+
+```
+Awesome-Horizon/
+├── 📄 README.md                    ← You are here!
+├── 📄 STEAM_MASTER_INDEX.md        ← Start here for all resources
+├── 📁 docs/                        ← Documentation
+│   ├── CONTRIBUTING.md
+│   ├── CODE_OF_CONDUCT.md
+│   └── CHANGELOG.md
+├── 📁 resources/                   ← 🎯 All learning resources
+│   ├── 📁 physics/                 ⚛️ Physics (2,000+)
+│   ├── 📁 chemistry/               🧪 Chemistry (1,500+)
+│   ├── 📁 biology/                 🧬 Biology (1,500+)
+│   ├── 📁 mathematics/             📐 Math (2,000+)
+│   ├── 📁 computer-science/        💻 CS (2,000+)
+│   ├── 📁 engineering/             ⚙️ Engineering (2,000+)
+│   ├── 📁 arts/                    🎨 Arts (1,000+)
+│   ├── 📁 earth-astronomy/         🌍 Earth & Space (1,500+)
+│   ├── 📁 k12/                     👶 K-12 Resources (2,000+)
+│   └── 📁 general/                 📚 General resources
+├── 📁 components/                  ← Vue components
+├── 📁 pages/                       ← Nuxt pages
+├── 📁 layouts/                     ← Nuxt layouts
+└── 📁 content/                     ← Content files
+```
+
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
+
+## 🌟 Featured Resources
 
 <div align="center">
 
-| Technology | Purpose | Version |
-|:----------:|:-------:|:-------:|
-| ![Nuxt](https://img.shields.io/badge/Nuxt-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white) | **Framework** | 3.x |
-| ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white) | **UI Library** | 3.x |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white) | **Language** | 5.x |
-| ![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white) | **Styling** | 3.x |
-| ![Nuxt Content](https://img.shields.io/badge/Nuxt_Content-00DC82?style=for-the-badge&logo=nuxt.js&logoColor=white) | **CMS** | 2.x |
+### 🎓 **Top Learning Platforms**
+
+[![Khan Academy](https://img.shields.io/badge/Khan%20Academy-14BF96?style=for-the-badge&logo=khanacademy&logoColor=white)](https://www.khanacademy.org/)
+[![MIT OCW](https://img.shields.io/badge/MIT%20OpenCourseWare-A31F34?style=for-the-badge&logo=mit&logoColor=white)](https://ocw.mit.edu/)
+[![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=coursera&logoColor=white)](https://www.coursera.org/)
+[![edX](https://img.shields.io/badge/edX-02262B?style=for-the-badge&logo=edx&logoColor=white)](https://www.edx.org/)
+
+### 💻 **Programming & CS**
+
+[![freeCodeCamp](https://img.shields.io/badge/freeCodeCamp-0A0A23?style=for-the-badge&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/)
 
 </div>
 
----
-
-## 📚 Categories
-
-<div align="center">
-
-<table>
-<tr>
-<td width="20%" align="center">
-<img src="https://via.placeholder.com/80x80/8B5CF6/ffffff?text=🔬" alt="Science" width="60"/>
-<br><strong>🔬 Science</strong>
-<br><sub>Physics • Chemistry • Biology<br>Psychology • Environmental</sub>
-<br><a href="physics_master_resources.md">Physics Guide</a> • <a href="chemistry_master_resources.md">Chemistry Guide</a> • <a href="biology_master_resources.md">Biology Guide</a>
-</td>
-<td width="20%" align="center">
-<img src="https://via.placeholder.com/80x80/10B981/ffffff?text=💻" alt="Technology" width="60"/>
-<br><strong>💻 Technology</strong>
-<br><sub>Programming • AI • Web Dev<br>Mobile • Data Science</sub>
-<br><a href="computer_science_master_resources.md">CS Master Guide</a>
-</td>
-<td width="20%" align="center">
-<img src="https://via.placeholder.com/80x80/F59E0B/ffffff?text=⚙️" alt="Engineering" width="60"/>
-<br><strong>⚙️ Engineering</strong>
-<br><sub>Civil • Mechanical • Electrical<br>Aerospace • Chemical</sub>
-<br><a href="engineering_learning_resources_comprehensive.md">Engineering Guide</a>
-</td>
-<td width="20%" align="center">
-<img src="https://via.placeholder.com/80x80/EC4899/ffffff?text=🎨" alt="Arts" width="60"/>
-<br><strong>🎨 Arts</strong>
-<br><sub>Design • Music • Visual<br>History • Digital Arts</sub>
-<br><a href="arts_design_resources.md">Arts & Design Guide</a>
-</td>
-<td width="20%" align="center">
-<img src="https://via.placeholder.com/80x80/3B82F6/ffffff?text=📐" alt="Mathematics" width="60"/>
-<br><strong>📐 Mathematics</strong>
-<br><sub>Algebra • Calculus • Statistics<br>Linear Algebra • Geometry</sub>
-<br><a href="mathematics_master_resources.md">Math Master Guide</a>
-</td>
-</tr>
-</table>
-
-</div>
-
-### 🎯 Quick Access: Master Resource Collection
-
-| Resource | Description | Link |
-|----------|-------------|------|
-| **STEAM Master Index** | Complete hub of all resources | [STEAM_MASTER_INDEX.md](STEAM_MASTER_INDEX.md) |
-| **📁 Resources Folder** | All organized resources | [resources/](resources/) |
-| **Physics Master** | 2000+ physics resources (K-12 to PhD) | [resources/physics/](resources/physics/) |
-| **Chemistry Master** | 1500+ chemistry resources | [resources/chemistry/](resources/chemistry/) |
-| **Biology Master** | 1500+ biology resources | [resources/biology/](resources/biology/) |
-| **Mathematics Master** | 2000+ math resources | [resources/mathematics/](resources/mathematics/) |
-| **Computer Science Master** | 2000+ CS resources | [resources/computer-science/](resources/computer-science/) |
-| **K-12 STEAM** | Resources for young learners | [resources/k12/](resources/k12/) |
-| **Earth & Astronomy** | Space and earth sciences | [resources/earth-astronomy/](resources/earth-astronomy/) |
-
----
-
-## 📁 Project Structure
-
-```
-awesome-horizon/
-├── 📁 components/              # Reusable Vue components
-├── 📁 content/                 # Educational content (Markdown)
-│   ├── 📄 science.md           # Science resources
-│   ├── 📄 technology.md        # Technology resources
-│   ├── 📄 engineering.md       # Engineering resources
-│   ├── 📄 arts.md              # Arts resources
-│   └── 📄 mathematics.md       # Mathematics resources
-├── 📁 pages/                   # Application pages & routing
-├── 📁 layouts/                 # Layout templates
-├── 📁 public/                  # Static assets
-├── 📁 server/                  # Server-side code
-├── 📄 STEAM_MASTER_INDEX.md    # Master index of all resources ⭐
-├── 📄 physics_master_resources.md      # Comprehensive physics guide
-├── 📄 chemistry_master_resources.md    # Comprehensive chemistry guide
-├── 📄 biology_master_resources.md      # Comprehensive biology guide
-├── 📄 mathematics_master_resources.md  # Comprehensive math guide
-├── 📄 computer_science_master_resources.md  # CS guide
-├── 📄 engineering_learning_resources_comprehensive.md  # Engineering guide
-├── 📄 k12_steam_resources.md   # K-12 resources
-├── ⚙️ nuxt.config.ts           # Nuxt configuration
-├── ⚙️ tailwind.config.ts       # Tailwind configuration
-└── 📄 package.json             # Dependencies & scripts
-```
-
----
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## 🤝 Contributing
 
-We welcome contributions from educators, students, and developers! Here's how you can help:
-
 <div align="center">
 
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://via.placeholder.com/60x60/8B5CF6/ffffff?text=📚" alt="Add Resources" width="50"/>
-<br><strong>📚 Add Resources</strong>
-<br><sub>Curate quality educational content</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://via.placeholder.com/60x60/10B981/ffffff?text=🐛" alt="Fix Bugs" width="50"/>
-<br><strong>🐛 Fix Bugs</strong>
-<br><sub>Improve platform stability</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://via.placeholder.com/60x60/F59E0B/ffffff?text=💡" alt="Suggest Ideas" width="50"/>
-<br><strong>💡 Suggest Ideas</strong>
-<br><sub>Propose new features</sub>
-</td>
-<td align="center" width="25%">
-<img src="https://via.placeholder.com/60x60/EC4899/ffffff?text=📝" alt="Write Docs" width="50"/>
-<br><strong>📝 Write Docs</strong>
-<br><sub>Enhance documentation</sub>
-</td>
-</tr>
-</table>
+We welcome contributions from educators, students, and developers worldwide!
+
+<a href="docs/CONTRIBUTING.md">
+  <img src="https://img.shields.io/badge/📖%20Read%20Contributing%20Guide-6C5CE7?style=for-the-badge" height="35"/>
+</a>
+
+<br><br>
+
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=for-the-badge&logo=github)](docs/CONTRIBUTING.md)
+[![Open Issues](https://img.shields.io/github/issues/Awesome-Nexus/Awesome-Horizon?style=for-the-badge&logo=github)](https://github.com/Awesome-Nexus/Awesome-Horizon/issues)
 
 </div>
 
-### 🔄 Contribution Workflow
+### 🎯 How to Contribute
 
-1. **🍴 Fork** the repository
-2. **🌿 Create** your feature branch: `git checkout -b feature/amazing-feature`
-3. **💾 Commit** your changes: `git commit -m 'feat: add amazing feature'`
-4. **📤 Push** to the branch: `git push origin feature/amazing-feature`
-5. **🔀 Open** a Pull Request
+1. 🍴 **Fork** the repository
+2. 🌿 **Create** your feature branch: `git checkout -b feature/amazing-resource`
+3. 💾 **Add** your resources to the appropriate folder
+4. 📝 **Update** links in README if needed
+5. 🔀 **Submit** a Pull Request
 
-📖 See [**CONTRIBUTING.md**](docs/CONTRIBUTING.md) for detailed guidelines.
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
----
-
-## 🛠️ Development
-
-<div align="center">
-
-| Command | Description |
-|:--------|:------------|
-| `npm run dev` | 🚀 Start development server at localhost:3310 |
-| `npm run build` | 🏗️ Build for production |
-| `npm run preview` | 👀 Preview production build |
-| `npm run lint` | 🔍 Run ESLint |
-| `npm run type-check` | ✅ Run TypeScript checks |
-
-</div>
-
----
-
-## 📊 Statistics
+## 📜 License
 
 <div align="center">
-
-![Resources](https://img.shields.io/badge/Resources-15,000+-brightgreen?style=for-the-badge)
-![Countries](https://img.shields.io/badge/Countries-100+-blue?style=for-the-badge)
-![Subjects](https://img.shields.io/badge/STEAM%20Subjects-7+-purple?style=for-the-badge)
-![GitHub stars](https://img.shields.io/github/stars/Awesome-Nexus/Awesome-Horizon?style=for-the-badge&logo=github)
-![GitHub forks](https://img.shields.io/github/forks/Awesome-Nexus/Awesome-Horizon?style=for-the-badge&logo=github)
-
-</div>
-
-### Resource Breakdown
-
-| Category | Resources | Coverage |
-|----------|-----------|----------|
-| **Physics** | 2,000+ | K-12 to PhD Research |
-| **Chemistry** | 1,500+ | K-12 to PhD Research |
-| **Biology** | 1,500+ | K-12 to PhD Research |
-| **Mathematics** | 2,000+ | K-12 to Research |
-| **Computer Science** | 2,000+ | Beginner to Expert |
-| **Engineering** | 2,000+ | All Disciplines |
-| **Arts & Design** | 1,000+ | All Mediums |
-| **Earth & Astronomy** | 1,500+ | All Levels |
-| **K-12 STEAM** | 2,000+ | Ages 5-18 |
-
-**Total: 15,000+ curated educational resources from 100+ countries!**
-
----
-
-## 📄 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
----
-
-## 🆘 Support & Community
-
-<div align="center">
-
-| Platform | Purpose |
-|:--------:|:--------|
-| 🐛 [**GitHub Issues**](https://github.com/Awesome-Nexus/Awesome-Horizon/issues) | Bug reports & feature requests |
-| 💬 [**GitHub Discussions**](https://github.com/Awesome-Nexus/Awesome-Horizon/discussions) | Community discussions |
-| 📧 [**Email**](mailto:support@awesome-horizon.dev) | Direct support |
+[![MIT License](https://img.shields.io/badge/License-MIT-FFD93D?style=for-the-badge&logo=opensourceinitiative&logoColor=black)](LICENSE)
 
 </div>
 
----
+<!-- Animated Divider -->
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" width="100%">
 
 ## 🙏 Acknowledgments
 
 <div align="center">
 
-Built with ❤️ using [**Nuxt**](https://nuxt.com/), [**Vue**](https://vuejs.org/), and [**Tailwind CSS**](https://tailwindcss.com/)
+Special thanks to all the amazing organizations and educators who make these resources freely available:
 
-Special thanks to all [**contributors**](https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors) who make this project possible!
+**MIT OpenCourseWare** • **Khan Academy** • **OpenStax** • **PhET** • **Coursera** • **edX** • **NPTEL**
 
-</div>
-
----
-
-<div align="center">
-
-**🌟 Made with dedication by educators, for learners worldwide 🌟**
-
-[⭐ **Star us on GitHub**](https://github.com/Awesome-Nexus/Awesome-Horizon) • [🐦 **Follow on Twitter**](https://twitter.com/awesome-horizon) • [💼 **Connect on LinkedIn**](https://linkedin.com/company/awesome-horizon)
-
----
-
-*Empowering the next generation through curated educational excellence*
-
-**Last Published: v1.0.0 (January 31, 2026)**
+And to all our [**contributors**](https://github.com/Awesome-Nexus/Awesome-Horizon/graphs/contributors) who help make this project better every day! 💙
 
 </div>
+
+<!-- Animated Footer -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Empowering%20Learners%20Worldwide&fontSize=30&fontColor=ffffff&animation=twinkling" width="100%"/>
+
+<!-- 
+  Last Published: v1.0.0 (January 31, 2026)
+  Total Resources: 15,000+
+  Coverage: 100+ Countries | 7 STEAM Subjects | All Levels
+-->
