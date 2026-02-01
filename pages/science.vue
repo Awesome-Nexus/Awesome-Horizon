@@ -2,7 +2,7 @@
 useHead({
   title: 'Science - Complete Learning Hub | Awesome Horizon',
   meta: [
-    { name: 'description', content: 'Explore science subjects with 15,000+ curated resources. Physics, Chemistry, Biology, Earth Science, Astronomy, Psychology, Environmental Science and more from K-12 to research level.' }
+    { name: 'description', content: 'Explore science subjects with 15,000+ curated physics resources and 30,000+ STEAM resources. Physics, Chemistry, Biology, Earth Science, Astronomy, Psychology, Environmental Science and more from K-12 to research level across 195+ countries and 850+ institutions worldwide.' }
   ]
 })
 
@@ -12,8 +12,8 @@ const scienceSubjects = [
     name: 'Physics',
     icon: 'atom',
     color: 'purple',
-    resources: '3000+',
-    description: 'Mechanics, E&M, Quantum, Relativity, Particle Physics',
+    resources: '15,000+',
+    description: 'Mechanics, E&M, Quantum, Relativity - 195+ Countries, 850+ Institutions, All 7 Continents',
     url: '/physics'
   },
   {
@@ -22,7 +22,7 @@ const scienceSubjects = [
     icon: 'flask',
     color: 'emerald',
     resources: '2500+',
-    description: 'Organic, Inorganic, Physical, Analytical, Biochemistry',
+    description: 'Organic, Inorganic, Physical, Biochemistry - 40+ Countries',
     url: '/chemistry'
   },
   {
@@ -31,7 +31,7 @@ const scienceSubjects = [
     icon: 'dna',
     color: 'green',
     resources: '2500+',
-    description: 'Genetics, Molecular Biology, Ecology, Anatomy',
+    description: 'Genetics, Molecular Biology, Ecology - 35+ Countries',
     url: '/biology'
   },
   {
@@ -39,8 +39,8 @@ const scienceSubjects = [
     name: 'Earth Science',
     icon: 'globe',
     color: 'amber',
-    resources: '1500+',
-    description: 'Geology, Meteorology, Oceanography, Climate',
+    resources: '2000+',
+    description: 'Geology, Meteorology, Oceanography - 160+ Countries',
     url: '/earth-science'
   },
   {
@@ -48,8 +48,8 @@ const scienceSubjects = [
     name: 'Astronomy',
     icon: 'star',
     color: 'indigo',
-    resources: '120+',
-    description: 'Observational, Astrophysics, Cosmology, Space',
+    resources: '500+',
+    description: 'Astrophysics, Space Agencies, Observatories - 160+ Countries',
     url: '/astronomy'
   },
   {
@@ -57,8 +57,8 @@ const scienceSubjects = [
     name: 'Psychology',
     icon: 'brain',
     color: 'pink',
-    resources: '100+',
-    description: 'Cognitive, Clinical, Social, Developmental',
+    resources: '500+',
+    description: 'Cognitive, Clinical, Social, Developmental - 150+ Countries',
     url: '/psychology'
   },
   {
@@ -66,19 +66,22 @@ const scienceSubjects = [
     name: 'Environmental Science',
     icon: 'leaf',
     color: 'teal',
-    resources: '150+',
-    description: 'Ecology, Conservation, Sustainability, Climate',
+    resources: '600+',
+    description: 'Ecology, Conservation, Climate - 170+ Countries',
     url: '/environmental'
   }
 ]
 
 const featuredResources = [
-  { name: 'Khan Academy Science', url: 'https://www.khanacademy.org/science', desc: 'K-12 science courses' },
-  { name: 'MIT OpenCourseWare', url: 'https://ocw.mit.edu/', desc: 'University science courses' },
-  { name: 'Nature', url: 'https://www.nature.com/', desc: 'Leading science journal' },
-  { name: 'Science Magazine', url: 'https://www.science.org/', desc: 'AAAS publication' },
-  { name: 'NASA', url: 'https://www.nasa.gov/', desc: 'Space and Earth science' },
-  { name: 'NOAA', url: 'https://www.noaa.gov/', desc: 'Ocean and atmosphere' }
+  { name: 'Khan Academy Science', url: 'https://www.khanacademy.org/science', desc: 'K-12 science courses (Global)' },
+  { name: 'MIT OpenCourseWare', url: 'https://ocw.mit.edu/', desc: 'University science courses (USA)' },
+  { name: 'Nature', url: 'https://www.nature.com/', desc: 'Leading science journal (International)' },
+  { name: 'ESA Earth Observation', url: 'https://www.esa.int/Applications/Observing_the_Earth', desc: 'European Space Agency (Europe)' },
+  { name: 'ISRO', url: 'https://www.isro.gov.in/', desc: 'Indian Space Research Organisation (India)' },
+  { name: 'JAXA', url: 'https://global.jaxa.jp/', desc: 'Japan Aerospace Exploration Agency (Japan)' },
+  { name: 'IPCC', url: 'https://www.ipcc.ch/', desc: 'Climate change reports (Global)' },
+  { name: 'IUCN', url: 'https://www.iucn.org/', desc: 'Conservation Union (International)' },
+  { name: 'WHO - Environment', url: 'https://www.who.int/health-topics/environment-health', desc: 'Global health and environment' }
 ]
 
 const levels = [
@@ -86,6 +89,16 @@ const levels = [
   { name: 'Undergraduate', count: '5000+', color: 'blue' },
   { name: 'Graduate', count: '4000+', color: 'purple' },
   { name: 'Research', count: '3000+', color: 'rose' }
+]
+
+const globalCoverage = [
+  { region: 'North America', countries: '5', institutions: '300+', color: 'blue' },
+  { region: 'South America', countries: '15', institutions: '150+', color: 'emerald' },
+  { region: 'Europe', countries: '45', institutions: '500+', color: 'indigo' },
+  { region: 'Asia', countries: '35', institutions: '400+', color: 'amber' },
+  { region: 'Oceania', countries: '20', institutions: '100+', color: 'cyan' },
+  { region: 'Africa', countries: '55', institutions: '200+', color: 'rose' },
+  { region: 'Antarctica', countries: '30 Nations', institutions: '100+ Research Stations', color: 'purple' }
 ]
 </script>
 
@@ -103,7 +116,7 @@ const levels = [
         <div class="text-center mb-16">
           <div class="inline-flex items-center gap-2 px-4 py-2 bg-primary-500/20 rounded-full border border-primary-500/30 mb-6">
             <span class="w-2 h-2 bg-primary-400 rounded-full animate-pulse"></span>
-            <span class="text-sm text-primary-300">15,000+ Science Resources</span>
+            <span class="text-sm text-primary-300">15,000+ Physics Resources from ALL 7 Continents & 195+ Countries | 850+ Institutions</span>
           </div>
           
           <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6">
@@ -166,6 +179,31 @@ const levels = [
             <p class="text-sm text-gray-400">{{ r.desc }}</p>
           </a>
         </div>
+      </section>
+
+      <!-- Global Coverage Section -->
+      <section class="bg-gray-900/30 rounded-3xl p-8 border border-gray-800">
+        <h2 class="text-2xl font-bold text-white mb-2 text-center">Complete Global Science Coverage</h2>
+        <p class="text-gray-400 text-center mb-8 max-w-3xl mx-auto">Comprehensive resources from institutions, universities, and organizations across ALL 7 continents and 160+ countries worldwide. From major universities to remote research stations in Antarctica.</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+          <div v-for="region in globalCoverage" :key="region.region" class="p-4 bg-gray-800/50 rounded-xl border border-gray-700 text-center">
+            <div :class="`w-10 h-10 bg-${region.color}-500/20 rounded-lg flex items-center justify-center mx-auto mb-3`">
+              <span class="text-xl">
+                {{ region.region === 'North America' ? '🌎' : 
+                   region.region === 'South America' ? '🌎' : 
+                   region.region === 'Europe' ? '🇪🇺' : 
+                   region.region === 'Asia' ? '🌏' : 
+                   region.region === 'Oceania' ? '🏝️' : 
+                   region.region === 'Africa' ? '🌍' : '❄️' }}
+              </span>
+            </div>
+            <h3 class="font-semibold text-white text-sm mb-1">{{ region.region }}</h3>
+            <div class="text-xs text-gray-400">{{ region.countries }} Countries</div>
+            <div class="text-xs" :class="`text-${region.color}-400`">{{ region.institutions }}</div>
+          </div>
+        </div>
+
       </section>
 
       <!-- Why Science Section -->

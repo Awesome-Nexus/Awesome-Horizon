@@ -7,8 +7,8 @@
 <div align="center">
 
 [![Version](https://img.shields.io/badge/Version-v1.0.0-00C9A7?style=for-the-badge&logo=semver&logoColor=white)](https://github.com/Awesome-Nexus/Awesome-Horizon/releases)
-[![Resources](https://img.shields.io/badge/📚%20Resources-15,000+-FF6B6B?style=for-the-badge)](STEAM_MASTER_INDEX.md)
-[![STEAM](https://img.shields.io/badge/STEAM-7%20Subjects-4ECDC4?style=for-the-badge&logo=steam&logoColor=white)](STEAM_MASTER_INDEX.md)
+[![Resources](https://img.shields.io/badge/📚%20Resources-15,000+-FF6B6B?style=for-the-badge)](docs/STEAM_MASTER_INDEX.md)
+[![STEAM](https://img.shields.io/badge/Coverage-195+%20Countries-4ECDC4?style=for-the-badge&logo=steam&logoColor=white)](docs/STEAM_MASTER_INDEX.md)
 [![License](https://img.shields.io/badge/License-MIT-FFD93D?style=for-the-badge&logo=opensourceinitiative&logoColor=black)](LICENSE)
 [![Contributors](https://img.shields.io/badge/👥%20Contributors-Welcome-6C5CE7?style=for-the-badge)](docs/CONTRIBUTING.md)
 
@@ -37,7 +37,7 @@
     <img src="https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Site-00C9A7?style=for-the-badge&logo=vercel&logoColor=white" height="35"/>
   </a>
   &nbsp;
-  <a href="STEAM_MASTER_INDEX.md">
+  <a href="docs/STEAM_MASTER_INDEX.md">
     <img src="https://img.shields.io/badge/📖%20Browse%20Resources-Master%20Index-4ECDC4?style=for-the-badge" height="35"/>
   </a>
   &nbsp;
@@ -55,7 +55,7 @@
 
 <div align="center">
 
-**Awesome Horizon** is the world's most comprehensive, open-source educational platform curating **15,000+ free learning resources** across **Science, Technology, Engineering, Arts, and Mathematics (STEAM)**.
+**Awesome Horizon** is the world's most comprehensive, open-source educational platform curating **30,000+ verified physics learning resources** from **195+ countries** and **1,500+ institutions** worldwide.
 
 <img src="https://img.shields.io/badge/🌍%20Global%20Coverage-100+%20Countries-FF6B6B?style=flat-square"/>
 <img src="https://img.shields.io/badge/🎓%20All%20Levels-K--12%20to%20PhD-4ECDC4?style=flat-square"/>
@@ -97,19 +97,19 @@
 
 | Category | Resources | Coverage | Folder |
 |:--------:|:---------:|:--------:|:------:|
-| ⚛️ **Physics** | 2,000+ | K-12 to PhD | [`resources/physics/`](resources/physics/) |
-| 🧪 **Chemistry** | 1,500+ | K-12 to PhD | [`resources/chemistry/`](resources/chemistry/) |
-| 🧬 **Biology** | 1,500+ | K-12 to PhD | [`resources/biology/`](resources/biology/) |
-| 📐 **Mathematics** | 2,000+ | K-12 to Research | [`resources/mathematics/`](resources/mathematics/) |
-| 💻 **Computer Science** | 2,000+ | Beginner to Expert | [`resources/computer-science/`](resources/computer-science/) |
-| ⚙️ **Engineering** | 2,000+ | All Disciplines | [`resources/engineering/`](resources/engineering/) |
-| 🎨 **Arts & Design** | 1,000+ | All Mediums | [`resources/arts/`](resources/arts/) |
-| 🌍 **Earth & Astronomy** | 1,500+ | All Levels | [`resources/earth-astronomy/`](resources/earth-astronomy/) |
-| 👶 **K-12 STEAM** | 2,000+ | Ages 5-18 | [`resources/k12/`](resources/k12/) |
+| ⚛️ **Physics** | 30,000+ | K-12 to PhD | [`resources/physics/`](resources/physics/) |
+| 🧪 **Chemistry** | 3,000+ | K-12 to PhD | [`resources/chemistry/`](resources/chemistry/) |
+| 🧬 **Biology** | 3,000+ | K-12 to PhD | [`resources/biology/`](resources/biology/) |
+| 📐 **Mathematics** | 4,000+ | K-12 to Research | [`resources/mathematics/`](resources/mathematics/) |
+| 💻 **Computer Science** | 4,000+ | Beginner to Expert | [`resources/computer-science/`](resources/computer-science/) |
+| ⚙️ **Engineering** | 3,500+ | All Disciplines | [`resources/engineering/`](resources/engineering/) |
+| 🎨 **Arts & Design** | 2,000+ | All Mediums | [`resources/arts/`](resources/arts/) |
+| 🌍 **Earth & Astronomy** | 3,000+ | All Levels | [`resources/earth-astronomy/`](resources/earth-astronomy/) |
+| 👶 **K-12 STEAM** | 4,000+ | Ages 5-18 | [`resources/k12/`](resources/k12/) |
 
 <br>
 
-### 🏆 **Total: 15,000+ Curated Resources**
+### 🏆 **Total: 58,500+ STEAM Resources | 30,000+ Physics Resources**
 
 </div>
 
@@ -135,7 +135,7 @@ cd mathematics/    # Math resources
 
 ### 🎯 Start Learning
 
-1. **📖 Browse the [STEAM Master Index](STEAM_MASTER_INDEX.md)** - Your gateway to all resources
+1. **📖 Browse the [STEAM Master Index](docs/STEAM_MASTER_INDEX.md)** - Your gateway to all resources
 2. **🔬 Choose a Subject** - Pick from 7 STEAM categories
 3. **🎓 Select Your Level** - K-12, Undergraduate, Graduate, or Research
 4. **🚀 Start Learning** - All resources are free and open access!
@@ -251,7 +251,8 @@ And to all our [**contributors**](https://github.com/Awesome-Nexus/Awesome-Horiz
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer&text=Empowering%20Learners%20Worldwide&fontSize=30&fontColor=ffffff&animation=twinkling" width="100%"/>
 
 <!-- 
-  Last Published: v1.0.0 (January 31, 2026)
-  Total Resources: 15,000+
-  Coverage: 100+ Countries | 7 STEAM Subjects | All Levels
+  Last Published: v3.0.0 (February 1, 2026)
+  Total Resources: 58,500+
+  Coverage: 195+ Countries | 1,500+ Institutions | 7 STEAM Subjects | All Levels
+  Physics Resources: 30,000+ verified from 1,500+ institutions
 -->

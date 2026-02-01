@@ -14,6 +14,15 @@
         
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex gap-6 items-center">
+          <!-- Search Button -->
+          <NuxtLink 
+            to="/search"
+            class="flex items-center gap-2 px-3 py-1.5 bg-space-800 hover:bg-space-700 text-gray-300 hover:text-white rounded-lg transition-colors text-sm font-medium"
+          >
+            <Icon name="search" class="w-4 h-4" />
+            <span class="hidden lg:inline">Search</span>
+          </NuxtLink>
+
           <NuxtLink 
             to="/about" 
             class="flex items-center gap-2 text-gray-300 hover:text-primary-400 transition-colors text-sm font-medium"
@@ -51,6 +60,16 @@
       <!-- Mobile Menu -->
       <div v-if="mobileMenuOpen" class="md:hidden border-t border-space-800 bg-space-900/95 backdrop-blur-md">
         <nav class="px-4 py-4 space-y-2">
+          <!-- Search -->
+          <NuxtLink 
+            to="/search"
+            @click="mobileMenuOpen = false"
+            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-primary-400 hover:bg-space-800 rounded-lg transition-colors"
+          >
+            <Icon name="search" class="w-5 h-5" />
+            <span>Search Resources</span>
+          </NuxtLink>
+
           <NuxtLink 
             to="/about" 
             @click="mobileMenuOpen = false"
@@ -78,8 +97,9 @@
       </div>
     </header>
     
+    <!-- Page Content with Transition -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <slot />
+      <NuxtPage />
     </main>
     
     <footer class="border-t border-space-800 py-12 mt-16 bg-space-900/50">
@@ -115,6 +135,7 @@
             <h3 class="text-white font-semibold">Connect</h3>
             <div class="space-y-2">
               <NuxtLink to="/about" class="block text-gray-400 hover:text-primary-400 transition-colors text-sm">About Us</NuxtLink>
+              <NuxtLink to="/search" class="block text-gray-400 hover:text-primary-400 transition-colors text-sm">Search</NuxtLink>
               <a href="https://github.com/Awesome-Nexus/Awesome-Horizon" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-primary-400 transition-colors text-sm">GitHub Repository</a>
             </div>
           </div>

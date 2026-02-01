@@ -1,0 +1,28 @@
+{
+  "name": "Awesome Horizon",
+  "short_name": "Awesome Horizon",
+  "description": "Curated educational resources for STEAM education",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#a855f7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "learning", "steam"],
+  "lang": "en",
+  "dir": "ltr",
+  "prefer_related_applications": false
+}
