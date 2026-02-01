@@ -8,5 +8,9 @@
   "outputDirectory": ".output/public",
   "git": {
     "deploymentEnabled": true
+  },
+  "github": {
+    "enabled": true,
+    "silent": false
   }
 }
