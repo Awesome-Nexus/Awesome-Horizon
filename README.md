@@ -256,3 +256,4 @@ And to all our [**contributors**](https://github.com/Awesome-Nexus/Awesome-Horiz
   Coverage: 195+ Countries | 1,500+ Institutions | 7 STEAM Subjects | All Levels
   Physics Resources: 30,000+ verified from 1,500+ institutions
 -->
+# Deploy Trigger
