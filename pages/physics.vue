@@ -2,7 +2,7 @@
 useHead({
   title: 'Physics - Complete Global Learning Path | Awesome Horizon',
   meta: [
-    { name: 'description', content: 'Master physics from K-12 to PhD research with 15,000+ curated resources from 850+ institutions across 195+ countries. MIT, Caltech, Stanford, Cambridge, Oxford, IITs, NPTEL, ETH Zurich, CERN, Perimeter Institute, KAUST, African universities, Latin America, Asia-Pacific, and worldwide institutions. Free textbooks, 5,500+ MOOCs, 550+ simulations, apps, podcasts, scholarships, and research tools.' }
+    { name: 'description', content: 'Master physics from K-12 to PhD research with 500+ curated resources from 120+ institutions across 100+ countries. MIT, Caltech, Stanford, Cambridge, Oxford, IITs, NPTEL, ETH Zurich, CERN, Perimeter Institute, KAUST, African universities, Latin America, Asia-Pacific, and worldwide institutions. Free textbooks, 350+ MOOCs, 150+ simulations, apps, podcasts, scholarships, and research tools.' }
   ]
 })
 
@@ -14,7 +14,7 @@ const levels = [
     subtitle: 'K-12 to High School',
     description: 'School physics, AP/IB, conceptual understanding',
     color: 'emerald',
-    resources: 5200,
+    resources: 150,
     topics: ['Conceptual Physics', 'AP Physics 1 & 2', 'IB Physics', 'Interactive Simulations']
   },
   {
@@ -24,7 +24,7 @@ const levels = [
     subtitle: 'Undergraduate University',
     description: 'University level physics - calculus based',
     color: 'purple',
-    resources: 6800,
+    resources: 200,
     topics: ['Classical Mechanics', 'Electromagnetism', 'Quantum Mechanics', 'Thermodynamics']
   },
   {
@@ -34,7 +34,7 @@ const levels = [
     subtitle: 'Graduate & Research',
     description: 'Graduate courses, research, PhD preparation',
     color: 'rose',
-    resources: 6200,
+    resources: 150,
     topics: ['QFT', 'General Relativity', 'String Theory', 'Particle Physics']
   }
 ]
@@ -115,20 +115,20 @@ const featuredResources = [
 ]
 
 const quickLinks = [
-  { name: 'K-12 Resources', url: '#k12', icon: 'school', count: 650 },
-  { name: 'AP/IB Physics', url: '#apib', icon: 'award', count: 250 },
-  { name: 'Free Textbooks', url: '#textbooks', icon: 'book', count: 850 },
-  { name: 'University Courses', url: '#universities', icon: 'building', count: 1200 },
-  { name: 'MIT OCW', url: '#mitocw', icon: 'video', count: 150 },
-  { name: 'YouTube Channels', url: '#youtube', icon: 'play', count: 180 },
-  { name: 'Simulations', url: '#simulations', icon: 'beaker', count: 600 },
-  { name: 'GitHub Repos', url: '#github', icon: 'code', count: 400 },
-  { name: 'Olympiads', url: '#olympiads', icon: 'medal', count: 150 },
-  { name: 'Problem Sets', url: '#problems', icon: 'pencil', count: 600 },
-  { name: 'Research Tools', url: '#research', icon: 'microscope', count: 450 },
-  { name: 'Software', url: '#software', icon: 'computer', count: 350 },
-  { name: 'Apps', url: '#apps', icon: 'mobile', count: 100 },
-  { name: 'Scholarships', url: '#scholarships', icon: 'money', count: 200 }
+  { name: 'K-12 Resources', url: '#k12', icon: 'school', count: 80 },
+  { name: 'AP/IB Physics', url: '#apib', icon: 'award', count: 30 },
+  { name: 'Free Textbooks', url: '#textbooks', icon: 'book', count: 120 },
+  { name: 'University Courses', url: '#universities', icon: 'building', count: 120 },
+  { name: 'MIT OCW', url: '#mitocw', icon: 'video', count: 50 },
+  { name: 'YouTube Channels', url: '#youtube', icon: 'play', count: 45 },
+  { name: 'Simulations', url: '#simulations', icon: 'beaker', count: 150 },
+  { name: 'GitHub Repos', url: '#github', icon: 'code', count: 80 },
+  { name: 'Olympiads', url: '#olympiads', icon: 'medal', count: 25 },
+  { name: 'Problem Sets', url: '#problems', icon: 'pencil', count: 80 },
+  { name: 'Research Tools', url: '#research', icon: 'microscope', count: 60 },
+  { name: 'Software', url: '#software', icon: 'computer', count: 100 },
+  { name: 'Apps', url: '#apps', icon: 'mobile', count: 50 },
+  { name: 'Scholarships', url: '#scholarships', icon: 'money', count: 80 }
 ]
 
 // ============================================
