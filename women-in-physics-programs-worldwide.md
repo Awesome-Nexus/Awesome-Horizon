@@ -19,16 +19,32 @@ A comprehensive guide to programs, organizations, networks, and resources suppor
 ## 1. International Programs
 
 ### 1.1 IUPAP Working Group on Women in Physics (WG5)
-- **URL:** https://iupap.org/wg/wg5/
+- **URL:** https://www.iupap.org/who-we-are/internal-organization/working-groups/wg5-women-in-physics/
 - **Region:** International (Global)
-- **Description:** The International Union of Pure and Applied Physics (IUPAP) Working Group 5 is dedicated to the study and promotion of women in physics worldwide. It surveys the present situation of women physicists, analyzes problems, and recommends solutions. The working group organizes the International Conference on Women in Physics (ICWIP) every three years.
+- **Description:** The International Union of Pure and Applied Physics (IUPAP) Working Group 5 was created in 1999 and is dedicated to the study and promotion of women in physics worldwide. It surveys the present situation of women physicists, analyzes problems, and recommends solutions. The working group organizes the International Conference on Women in Physics (ICWIP) every three years.
 - **Type:** International Organization, Advocacy
+- **Key Achievements:**
+  - Global surveys in 2002, 2006, 2009-10, and 2018 (with ten other ISC Unions)
+  - International Day of Women in Physics (IDWIP) - February 11th annually
+  - Waterloo Charter for inclusive physics practice
+  - Harassment Policy for IUPAP sponsored conferences
 
 ### 1.2 International Conference on Women in Physics (ICWIP)
-- **URL:** https://iupap.org/wg/wg5/icip/
+- **URL:** https://www.iupap.org/who-we-are/internal-organization/working-groups/wg5-women-in-physics/wg5-conferences-and-meetings/
 - **Region:** International (Rotating Host Countries)
-- **Description:** Held every three years since 2002, ICWIP brings together women physicists from around the world to discuss challenges, share best practices, and develop strategies to increase women's participation in physics. Past conferences have been held in countries including UK, Brazil, South Korea, USA, Canada, and India.
+- **Description:** Held every three years since 2002, ICWIP brings together women physicists from around the world to discuss challenges, share best practices, and develop strategies to increase women's participation in physics. Over 92 different countries and 1300+ delegates have attended ICWIPs.
 - **Type:** International Conference
+- **Conference History:**
+  | Year | Location | Host Country |
+  |------|----------|--------------|
+  | 2002 | Paris | France |
+  | 2005 | Rio de Janeiro | Brazil |
+  | 2008 | Seoul | Korea |
+  | 2011 | Stellenbosch | South Africa |
+  | 2014 | Waterloo | Canada |
+  | 2017 | Birmingham | UK (with Malala Yousafzai) |
+  | 2020 | Melbourne (virtual) | Australia |
+  | 2023 | Virtual event | India (July 10-14) |
 
 ### 1.3 Organization for Women in Science for the Developing World (OWSD)
 - **URL:** https://owsd.net/
@@ -37,16 +53,33 @@ A comprehensive guide to programs, organizations, networks, and resources suppor
 - **Type:** International Organization, Fellowships
 
 ### 1.4 L'Oréal-UNESCO For Women in Science International Awards
-- **URL:** https://www.forwomeninscience.com/
+- **URL:** https://www.unesco.org/en/prizes/women-science
 - **Region:** International (Global)
-- **Description:** Created in 1998, this program honors five eminent women scientists each year from five different regions of the world. It also includes the International Rising Talents program for young women scientists and national/regional fellowship programs in over 100 countries.
+- **Description:** Created in 1998, this program honors five eminent women scientists each year from five different regions of the world. It also includes the International Rising Talents program for young women scientists and national/regional fellowship programs in over 140 countries.
 - **Type:** Awards, Fellowships
+- **Statistics (2024):**
+  - 132 laureates recognized since 1998
+  - 7 laureates subsequently received Nobel Prizes
+  - 4,400+ women researchers supported globally
+  - 140+ countries covered by national programs
+- **Regional Awards:**
+  - Africa and the Arab States
+  - Asia and the Pacific
+  - Europe
+  - Latin America and the Caribbean
+  - North America
+- **Rising Talents:** 15 promising young women scientists annually (doctoral or post-doctoral level)
 
 ### 1.5 UNESCO Women in STEM Initiative
 - **URL:** https://www.unesco.org/en/gender-equality/education/stem
 - **Region:** International (Global)
 - **Description:** UNESCO works to promote gender equality in STEM education and careers globally. They publish reports on the STEM gender gap, support policy development, and coordinate the International Day of Women and Girls in Science (February 11).
 - **Type:** International Organization, Advocacy
+- **Key Activities:**
+  - STEM and Gender Advancement (SAGA) project
+  - International Day of Women and Girls in Science (February 11)
+  - Publications on STEM gender gap
+  - Policy development support
 
 ### 1.6 International Day of Women and Girls in Science
 - **URL:** https://www.unesco.org/en/days/women-girls-science
@@ -57,8 +90,13 @@ A comprehensive guide to programs, organizations, networks, and resources suppor
 ### 1.7 CERN Diversity and Inclusion Programs
 - **URL:** https://home.cern/about/who-we-are/diversity
 - **Region:** International (Europe-based, Global participation)
-- **Description:** CERN operates several initiatives to support women in physics including the Women in Technology group, shadowing programs, and the Early Career, Gender & Diversity Office (ECGD) for LHCb collaboration. CERN also sends researchers to schools to inspire young women into science.
+- **Description:** CERN operates several initiatives to support women in physics including the Women in Technology (WIT) group, shadowing programs, and the Early Career, Gender & Diversity Office (ECGD) for LHCb collaboration. CERN also sends researchers to schools to inspire young women into science.
 - **Type:** Research Institution Programs
+- **Key Programs:**
+  - Women in Technology (WIT) mentorship and networking
+  - Shadowing programs for career development
+  - Early Career, Gender & Diversity Office
+  - School outreach programs
 
 ### 1.8 European Platform of Women Scientists (EPWS)
 - **URL:** https://epws.org/
@@ -274,9 +312,14 @@ A comprehensive guide to programs, organizations, networks, and resources suppor
 
 ### 6.2 Marie Skłodowska-Curie Actions (MSCA)
 - **URL:** https://marie-sklodowska-curie-actions.ec.europa.eu/
-- **Region:** Europe
-- **Description:** EU-funded fellowships for researchers at all career stages. Named after the pioneering physicist, these fellowships support mobility and career development for women and men in physics research across Europe.
+- **Region:** Europe (Global participation)
+- **Description:** The European Union's reference programme for doctoral education and postdoctoral training. Named after the pioneering physicist, these fellowships support mobility and career development for women and men in physics research across Europe and beyond.
 - **Type:** Fellowship Program
+- **2026 Milestone:** Celebrating 30th anniversary (1996-2026)
+- **Statistics:**
+  - 2024 Call: Record number of applications and grants
+  - 2025 Budget: €652 million for 65+ projects
+  - Supported 4,400+ women researchers to date
 
 ### 6.3 Lise Meitner Fellowship
 - **URL:** https://www.fwf.ac.at/en/
