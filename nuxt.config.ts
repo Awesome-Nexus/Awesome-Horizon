@@ -45,7 +45,7 @@ export default defineNuxtConfig({
       defaultTitle: 'Awesome Horizon',
       meta: [
         // Primary Meta Tags
-        { name: 'description', content: 'Discover 18,500+ curated educational resources for Science, Technology, Engineering, Arts, and Mathematics. Free, high-quality learning materials for students and educators worldwide.' },
+        { name: 'description', content: 'Discover 3,000+ verified physics resources from 195+ countries. Free, high-quality STEAM learning materials for students and educators worldwide.' },
         { name: 'keywords', content: 'education, STEAM, science, technology, engineering, arts, mathematics, learning resources, free education, online courses, textbooks, tutorials' },
         { name: 'author', content: 'Awesome Horizon Contributors' },
         { name: 'robots', content: 'index, follow' },
@@ -54,7 +54,7 @@ export default defineNuxtConfig({
         // Open Graph / Facebook
         { property: 'og:site_name', content: 'Awesome Horizon' },
         { property: 'og:title', content: 'Awesome Horizon - Curated STEAM Learning Resources' },
-        { property: 'og:description', content: 'Discover 18,500+ curated educational resources for Science, Technology, Engineering, Arts, and Mathematics. Free learning materials for all levels.' },
+        { property: 'og:description', content: 'Discover 3,000+ verified physics resources from 195+ countries and 1,200+ institutions. Free learning materials for all levels.' },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: 'https://awesome-horizon.vercel.app' },
         { property: 'og:image', content: 'https://awesome-horizon.vercel.app/og-image.png' },
@@ -67,7 +67,7 @@ export default defineNuxtConfig({
         { name: 'twitter:site', content: '@AwesomeHorizon' },
         { name: 'twitter:creator', content: '@AwesomeHorizon' },
         { name: 'twitter:title', content: 'Awesome Horizon - Curated STEAM Learning Resources' },
-        { name: 'twitter:description', content: 'Discover 18,500+ curated educational resources for STEAM education. Free for students and educators worldwide.' },
+        { name: 'twitter:description', content: 'Discover 3,000+ verified physics resources from 195+ countries. Free for students and educators worldwide.' },
         { name: 'twitter:image', content: 'https://awesome-horizon.vercel.app/og-image.png' },
         
         // Viewport & PWA

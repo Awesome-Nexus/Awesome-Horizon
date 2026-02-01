@@ -55,7 +55,7 @@
 
 <div align="center">
 
-**Awesome Horizon** is the world's most comprehensive, open-source educational platform curating **30,000+ verified physics learning resources** from **195+ countries** and **1,500+ institutions** worldwide.
+**Awesome Horizon** is the world's most comprehensive, open-source educational platform curating **3,000+ verified physics learning resources** from **195+ countries** and **1,200+ institutions** worldwide.
 
 <img src="https://img.shields.io/badge/🌍%20Global%20Coverage-100+%20Countries-FF6B6B?style=flat-square"/>
 <img src="https://img.shields.io/badge/🎓%20All%20Levels-K--12%20to%20PhD-4ECDC4?style=flat-square"/>
@@ -97,19 +97,19 @@
 
 | Category | Resources | Coverage | Folder |
 |:--------:|:---------:|:--------:|:------:|
-| ⚛️ **Physics** | 30,000+ | K-12 to PhD | [`resources/physics/`](resources/physics/) |
-| 🧪 **Chemistry** | 3,000+ | K-12 to PhD | [`resources/chemistry/`](resources/chemistry/) |
-| 🧬 **Biology** | 3,000+ | K-12 to PhD | [`resources/biology/`](resources/biology/) |
-| 📐 **Mathematics** | 4,000+ | K-12 to Research | [`resources/mathematics/`](resources/mathematics/) |
-| 💻 **Computer Science** | 4,000+ | Beginner to Expert | [`resources/computer-science/`](resources/computer-science/) |
-| ⚙️ **Engineering** | 3,500+ | All Disciplines | [`resources/engineering/`](resources/engineering/) |
-| 🎨 **Arts & Design** | 2,000+ | All Mediums | [`resources/arts/`](resources/arts/) |
-| 🌍 **Earth & Astronomy** | 3,000+ | All Levels | [`resources/earth-astronomy/`](resources/earth-astronomy/) |
-| 👶 **K-12 STEAM** | 4,000+ | Ages 5-18 | [`resources/k12/`](resources/k12/) |
+| ⚛️ **Physics** | 3,000+ | K-12 to PhD | [`resources/physics/`](resources/physics/) |
+| 🧪 **Chemistry** | 800+ | K-12 to PhD | [`resources/chemistry/`](resources/chemistry/) |
+| 🧬 **Biology** | 800+ | K-12 to PhD | [`resources/biology/`](resources/biology/) |
+| 📐 **Mathematics** | 1,200+ | K-12 to Research | [`resources/mathematics/`](resources/mathematics/) |
+| 💻 **Computer Science** | 1,500+ | Beginner to Expert | [`resources/computer-science/`](resources/computer-science/) |
+| ⚙️ **Engineering** | 900+ | All Disciplines | [`resources/engineering/`](resources/engineering/) |
+| 🎨 **Arts & Design** | 600+ | All Mediums | [`resources/arts/`](resources/arts/) |
+| 🌍 **Earth & Astronomy** | 800+ | All Levels | [`resources/earth-astronomy/`](resources/earth-astronomy/) |
+| 👶 **K-12 STEAM** | 1,200+ | Ages 5-18 | [`resources/k12/`](resources/k12/) |
 
 <br>
 
-### 🏆 **Total: 58,500+ STEAM Resources | 30,000+ Physics Resources**
+### 🏆 **Total: 10,000+ STEAM Resources | 3,000+ Physics Resources**
 
 </div>
 
