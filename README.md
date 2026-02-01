@@ -257,3 +257,5 @@ And to all our [**contributors**](https://github.com/Awesome-Nexus/Awesome-Horiz
   Physics Resources: 30,000+ verified from 1,500+ institutions
 -->
 # Deploy Trigger
+
+<!-- Deployed: 2026-02-01 11:03:41 UTC -->
