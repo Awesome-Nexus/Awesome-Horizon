@@ -152,9 +152,9 @@ const quickLinks = [
   { name: 'Open Data', url: '#opendata', icon: 'database', count: 9 },
   { name: 'Conferences', url: '#conferences', icon: 'calendar', count: 9 },
   { name: 'Nobel Prizes', url: '#nobel', icon: 'star', count: 8 },
-  { name: 'Africa', url: '/subjects/physics-worldwide-regions-2026', icon: 'globe', count: 250 },
-  { name: 'Asia', url: '/subjects/physics-worldwide-regions-2026', icon: 'globe', count: 800 },
-  { name: 'Latin America', url: '/subjects/physics-worldwide-regions-2026', icon: 'globe', count: 200 },
+  { name: 'Global Resources', url: '/subjects/physics-regions-round1', icon: 'globe', count: 370 },
+  { name: 'Research R2', url: '/subjects/physics-research-round2', icon: 'building-2', count: 680 },
+  { name: 'Education R3', url: '/subjects/physics-education-round3', icon: 'graduation-cap', count: 500 },
   { name: 'Medical Physics', url: '/subjects/physics-specialized-areas-2026', icon: 'heart', count: 20 },
   { name: 'Geophysics', url: '/subjects/physics-specialized-areas-2026', icon: 'earth', count: 15 },
   { name: 'Optics', url: '/subjects/physics-specialized-areas-2026', icon: 'eye', count: 25 }
