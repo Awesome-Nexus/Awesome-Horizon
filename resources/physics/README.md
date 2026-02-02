@@ -58,13 +58,13 @@ This master index catalogs the most comprehensive collection of physics educatio
 | 16 | **[Research 2026](research-2026.md)** | Latest research statistics, trends | Latest data |
 | 17 | **[Scholarships](scholarships-fellowships-verified.md)** | Global funding opportunities | 100+ scholarships |
 
-### DEEP RESEARCH ROUNDS (Content Subjects)
+### 🎯 DEEP RESEARCH ROUNDS (Content Subjects)
 
 | Round | File | Coverage | Resources |
 |-------|------|----------|-----------|
-| **Round 1** | [Worldwide Regions](physics-worldwide-regions-2026.md) | Regional institutions by continent | 370+ institutions |
-| **Round 2** | [Research Infrastructure](physics-worldwide-deep-research-round2-2026.md) | MPI, CAS, INFN, CNRS, RIKEN, corporate R&D | 680+ resources |
-| **Round 3** | [Education & Media](physics-worldwide-deep-research-round3-2026.md) | PER centers, careers, media, under-represented regions | 500+ resources |
+| **Round 1** | [Worldwide Regions](/subjects/physics-regions-round1) | Regional institutions by continent | 370+ institutions |
+| **Round 2** | [Research Infrastructure](/subjects/physics-research-round2) | MPI, CAS, INFN, CNRS, RIKEN, corporate R&D | 680+ resources |
+| **Round 3** | [Education & Media](/subjects/physics-education-round3) | PER centers, careers, media, under-represented regions | 500+ resources |
 
 ---
 
@@ -72,10 +72,9 @@ This master index catalogs the most comprehensive collection of physics educatio
 
 ### Website Pages
 - **Main Physics Page:** [/physics](/physics)
-- **Subject Content:** [/subjects/physics-worldwide-regions-2026](/subjects/physics-worldwide-regions-2026)
-- **Subject Content:** [/subjects/physics-regions-round1](/subjects/physics-regions-round1)
-- **Subject Content:** [/subjects/physics-research-round2](/subjects/physics-research-round2)
-- **Subject Content:** [/subjects/physics-education-round3](/subjects/physics-education-round3)
+- **Subject Content:** [/subjects/physics-regions-round1](/subjects/physics-regions-round1) - Regional Institutions
+- **Subject Content:** [/subjects/physics-research-round2](/subjects/physics-research-round2) - Research Infrastructure  
+- **Subject Content:** [/subjects/physics-education-round3](/subjects/physics-education-round3) - Education & Media
 
 ### Resource Files
 - All resource files are in `/resources/physics/`
