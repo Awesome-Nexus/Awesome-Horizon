@@ -954,7 +954,7 @@ const developmentalResources = [
 
         <!-- Asia-Pacific -->
         <div>
-          <h3 class="text-lg font-semibold text-orange-400 mb-4">🌏 Asia-Pacific</h3>
+          <h3 class="text-lg font-semibold text-orange-400 mb-4 flex items-center gap-2"><Icon name="globe" class="w-5 h-5" /> Asia-Pacific</h3>
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             <a v-for="resource in countryResourcesAsiaPacific" :key="resource.name" :href="resource.url" target="_blank"
                class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-orange-500/50 transition-all hover:scale-[1.02]">

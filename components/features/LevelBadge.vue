@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Sprout, Target, Rocket, Microscope } from 'lucide-vue-next'
+
 interface Props {
   level: 'beginner' | 'intermediate' | 'advanced' | 'research'
   count?: string | number
@@ -10,22 +12,22 @@ const levelConfig = {
   beginner: {
     color: 'emerald',
     label: 'Beginner',
-    icon: '🌱'
+    icon: Sprout
   },
   intermediate: {
     color: 'purple',
     label: 'Intermediate',
-    icon: '🎯'
+    icon: Target
   },
   advanced: {
     color: 'rose',
     label: 'Advanced',
-    icon: '🚀'
+    icon: Rocket
   },
   research: {
     color: 'blue',
     label: 'Research',
-    icon: '🔬'
+    icon: Microscope
   }
 }
 
@@ -41,7 +43,7 @@ const config = computed(() => levelConfig[props.level])
       {{ count }}
     </div>
     <div class="text-sm text-gray-400 flex items-center justify-center gap-1">
-      <span>{{ config.icon }}</span>
+      <component :is="config.icon" class="w-4 h-4" />
       <span>{{ config.label }}</span>
     </div>
   </div>

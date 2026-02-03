@@ -50,7 +50,7 @@ useBreadcrumbSchema([
           :value="page"
         />
         <div v-else class="text-center py-16">
-          <div class="text-6xl mb-4">📚</div>
+          <Icon name="book-open" class="w-16 h-16 mx-auto mb-4 text-primary-400" />
           <h1 class="text-3xl font-bold text-white mb-4">
             {{ toTitleCase(slug) }} Resources
           </h1>

@@ -1594,7 +1594,7 @@ const nobelPhysics = [
              class="group p-4 bg-gray-900/50 rounded-xl border border-gray-800 hover:border-gray-500 transition-all hover:scale-[1.02]">
             <h4 class="font-semibold text-white mb-1 group-hover:text-gray-300 transition-colors">{{ repo.name }}</h4>
             <p class="text-sm text-gray-400 mb-2">{{ repo.description }}</p>
-            <span class="text-xs text-yellow-500">★ {{ repo.stars }}</span>
+            <span class="text-xs text-yellow-500 flex items-center gap-1"><Icon name="star" class="w-3 h-3 fill-current" /> {{ repo.stars }}</span>
           </a>
         </div>
       </section>

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Search, AlertTriangle } from 'lucide-vue-next'
+
 interface Props {
   error: {
     statusCode: number
@@ -53,9 +55,10 @@ const errorInfo = computed(() => {
           class="w-32 h-32 rounded-full flex items-center justify-center"
           :class="error.statusCode === 404 ? 'bg-amber-500/20' : 'bg-red-500/20'"
         >
-          <span class="text-6xl">
-            {{ error.statusCode === 404 ? '🔍' : '⚠️' }}
-          </span>
+          <component 
+            :is="error.statusCode === 404 ? Search : AlertTriangle" 
+            class="w-16 h-16 text-amber-500"
+          />
         </div>
       </div>
 
