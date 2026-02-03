@@ -13,13 +13,41 @@
         </NuxtLink>
         
         <!-- Desktop Navigation -->
-        <nav class="hidden md:flex gap-6 items-center">
+        <nav class="hidden md:flex gap-4 items-center">
+          <!-- Categories Dropdown -->
+          <div class="relative group">
+            <button class="flex items-center gap-2 px-3 py-1.5 text-gray-300 hover:text-white transition-colors text-sm font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/><path d="M6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+              Subjects
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-180 transition-transform"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="absolute top-full left-0 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="bg-space-900 border border-space-700 rounded-xl shadow-xl p-2 min-w-[200px]">
+                <NuxtLink to="/science" class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-space-800 text-gray-300 hover:text-purple-400 transition-colors text-sm">
+                  <Icon name="flask" :size="16" class="text-purple-400" /> Science
+                </NuxtLink>
+                <NuxtLink to="/technology" class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-space-800 text-gray-300 hover:text-cyan-400 transition-colors text-sm">
+                  <Icon name="cpu" :size="16" class="text-cyan-400" /> Technology
+                </NuxtLink>
+                <NuxtLink to="/engineering" class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-space-800 text-gray-300 hover:text-orange-400 transition-colors text-sm">
+                  <Icon name="cog" :size="16" class="text-orange-400" /> Engineering
+                </NuxtLink>
+                <NuxtLink to="/arts" class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-space-800 text-gray-300 hover:text-pink-400 transition-colors text-sm">
+                  <Icon name="palette" :size="16" class="text-pink-400" /> Arts
+                </NuxtLink>
+                <NuxtLink to="/mathematics" class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-space-800 text-gray-300 hover:text-indigo-400 transition-colors text-sm">
+                  <Icon name="sigma" :size="16" class="text-indigo-400" /> Mathematics
+                </NuxtLink>
+              </div>
+            </div>
+          </div>
+
           <!-- Search Button -->
           <NuxtLink 
             to="/search"
             class="flex items-center gap-2 px-3 py-1.5 bg-space-800 hover:bg-space-700 text-gray-300 hover:text-white rounded-lg transition-colors text-sm font-medium"
           >
-            <Icon name="search" class="w-4 h-4" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <span class="hidden lg:inline">Search</span>
           </NuxtLink>
 
@@ -58,15 +86,60 @@
       </div>
 
       <!-- Mobile Menu -->
-      <div v-if="mobileMenuOpen" class="md:hidden border-t border-space-800 bg-space-900/95 backdrop-blur-md">
+      <div v-if="mobileMenuOpen" class="md:hidden border-t border-space-800 bg-space-900/95 backdrop-blur-md max-h-[80vh] overflow-y-auto">
         <nav class="px-4 py-4 space-y-2">
+          <!-- Categories -->
+          <div class="px-4 py-2 text-xs font-semibold text-gray-500 uppercase tracking-wider">Categories</div>
+          <NuxtLink 
+            to="/science"
+            @click="mobileMenuOpen = false"
+            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-purple-400 hover:bg-space-800 rounded-lg transition-colors"
+          >
+            <Icon name="flask" :size="16" class="text-purple-400" />
+            <span>Science</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/technology"
+            @click="mobileMenuOpen = false"
+            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-cyan-400 hover:bg-space-800 rounded-lg transition-colors"
+          >
+            <Icon name="cpu" :size="16" class="text-cyan-400" />
+            <span>Technology</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/engineering"
+            @click="mobileMenuOpen = false"
+            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-orange-400 hover:bg-space-800 rounded-lg transition-colors"
+          >
+            <Icon name="cog" :size="16" class="text-orange-400" />
+            <span>Engineering</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/arts"
+            @click="mobileMenuOpen = false"
+            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-pink-400 hover:bg-space-800 rounded-lg transition-colors"
+          >
+            <Icon name="palette" :size="16" class="text-pink-400" />
+            <span>Arts</span>
+          </NuxtLink>
+          <NuxtLink 
+            to="/mathematics"
+            @click="mobileMenuOpen = false"
+            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-indigo-400 hover:bg-space-800 rounded-lg transition-colors"
+          >
+            <Icon name="sigma" :size="16" class="text-indigo-400" />
+            <span>Mathematics</span>
+          </NuxtLink>
+
+          <div class="border-t border-space-800 my-2"></div>
+
           <!-- Search -->
           <NuxtLink 
             to="/search"
             @click="mobileMenuOpen = false"
             class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-primary-400 hover:bg-space-800 rounded-lg transition-colors"
           >
-            <Icon name="search" class="w-5 h-5" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             <span>Search Resources</span>
           </NuxtLink>
 
@@ -151,7 +224,7 @@
             <span>and dedication to education</span>
           </div>
           <p class="text-gray-500 text-sm">&copy; {{ new Date().getFullYear() }} Awesome Horizon. Empowering learners worldwide.</p>
-          <p class="text-gray-500 text-xs mt-2">Last Published: v1.0.0 (January 31, 2026)</p>
+          <p class="text-gray-500 text-xs mt-2">Last Published: v3.0.0 (February 3, 2026)</p>
         </div>
       </div>
     </footer>
