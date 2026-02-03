@@ -152,14 +152,7 @@ const globalCoverage = [
              :class="`hover:border-${subject.color}-500`">
             <div class="flex items-center justify-between mb-4">
               <div :class="`w-12 h-12 bg-${subject.color}-500/20 rounded-xl flex items-center justify-center`">
-                <span class="text-2xl">{{ 
-                  subject.id === 'physics' ? '⚛️' : 
-                  subject.id === 'chemistry' ? '🧪' : 
-                  subject.id === 'biology' ? '🧬' : 
-                  subject.id === 'earth-science' ? '🌍' : 
-                  subject.id === 'astronomy' ? '🔭' :
-                  subject.id === 'psychology' ? '🧠' : '🌱'
-                }}</span>
+                <Icon :name="subject.icon" :size="24" :class="`text-${subject.color}-400`" />
               </div>
               <span :class="`text-xs px-2 py-1 bg-${subject.color}-500/20 text-${subject.color}-400 rounded-full`">{{ subject.resources }}</span>
             </div>
@@ -189,14 +182,11 @@ const globalCoverage = [
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
           <div v-for="region in globalCoverage" :key="region.region" class="p-4 bg-gray-800/50 rounded-xl border border-gray-700 text-center">
             <div :class="`w-10 h-10 bg-${region.color}-500/20 rounded-lg flex items-center justify-center mx-auto mb-3`">
-              <span class="text-xl">
-                {{ region.region === 'North America' ? '🌎' : 
-                   region.region === 'South America' ? '🌎' : 
-                   region.region === 'Europe' ? '🇪🇺' : 
-                   region.region === 'Asia' ? '🌏' : 
-                   region.region === 'Oceania' ? '🏝️' : 
-                   region.region === 'Africa' ? '🌍' : '❄️' }}
-              </span>
+              <Icon 
+                :name="region.region === 'Europe' ? 'landmark' : region.region === 'Oceania' ? 'leaf' : region.region === 'Antarctica' ? 'snowflake' : 'globe'" 
+                :size="20" 
+                :class="`text-${region.color}-400`" 
+              />
             </div>
             <h3 class="font-semibold text-white text-sm mb-1">{{ region.region }}</h3>
             <div class="text-xs text-gray-400">{{ region.countries }} Countries</div>
@@ -212,21 +202,21 @@ const globalCoverage = [
         <div class="grid md:grid-cols-3 gap-6 text-center">
           <div class="p-4">
             <div class="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-              <span class="text-2xl">🔬</span>
+              <Icon name="flask" :size="24" class="text-blue-400" />
             </div>
             <h3 class="font-semibold text-white mb-2">Understand the World</h3>
             <p class="text-sm text-gray-400">Discover how the universe works from atoms to galaxies</p>
           </div>
           <div class="p-4">
             <div class="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-              <span class="text-2xl">💡</span>
+              <Icon name="zap" :size="24" class="text-green-400" />
             </div>
             <h3 class="font-semibold text-white mb-2">Solve Problems</h3>
             <p class="text-sm text-gray-400">Develop critical thinking and analytical skills</p>
           </div>
           <div class="p-4">
             <div class="w-12 h-12 bg-purple-500/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-              <span class="text-2xl">🚀</span>
+              <Icon name="rocket" :size="24" class="text-purple-400" />
             </div>
             <h3 class="font-semibold text-white mb-2">Shape the Future</h3>
             <p class="text-sm text-gray-400">Drive innovation in technology, medicine, and sustainability</p>

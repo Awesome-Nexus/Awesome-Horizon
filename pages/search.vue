@@ -3,8 +3,8 @@ import { useDebounceFn } from '@vueuse/core'
 
 // SEO
 useSEO({
-  title: 'Search Resources',
-  description: 'Search through 15,000+ curated STEAM learning resources. Find textbooks, courses, simulations, and more.',
+  title: 'Search 140,000+ STEAM Learning Resources',
+  description: 'Search through 140,000+ curated resources across 47 subjects. Find textbooks, courses, tutorials, and more for Science, Technology, Engineering, Arts, and Mathematics.',
   type: 'website'
 })
 
@@ -52,12 +52,41 @@ watch(searchQuery, (newQuery) => {
 
 // Popular searches
 const popularSearches = [
-  'Physics',
-  'Chemistry',
+  'Computer Science',
   'Calculus',
-  'Programming',
+  'Physics',
+  'AI & Machine Learning',
+  'Mechanical Engineering',
+  'Web Development',
   'MIT OCW',
-  'Khan Academy'
+  '3Blue1Brown',
+  'Khan Academy',
+  'Linear Algebra'
+]
+
+// Subject quick links for all 47 subjects
+const subjectQuickLinks = [
+  // Technology
+  { name: 'CS', icon: 'cpu', slug: 'technology/computer-science' },
+  { name: 'AI/ML', icon: 'brain', slug: 'technology/artificial-intelligence' },
+  { name: 'Cyber', icon: 'shield', slug: 'technology/cybersecurity' },
+  { name: 'Web Dev', icon: 'globe', slug: 'technology/web-development' },
+  // Engineering
+  { name: 'Mech', icon: 'cog', slug: 'engineering/mechanical' },
+  { name: 'Elec', icon: 'zap', slug: 'engineering/electrical' },
+  { name: 'Civil', icon: 'building2', slug: 'engineering/civil' },
+  // Arts
+  { name: 'Art', icon: 'palette', slug: 'arts/visual-arts' },
+  { name: 'Music', icon: 'music', slug: 'arts/music' },
+  { name: 'Design', icon: 'pentool', slug: 'arts/graphic-design' },
+  // Math
+  { name: 'Calc', icon: 'trendingup', slug: 'mathematics/calculus' },
+  { name: 'LA', icon: 'grid3x3', slug: 'mathematics/linear-algebra' },
+  { name: 'Stats', icon: 'piechart', slug: 'mathematics/statistics-probability' },
+  // Science
+  { name: 'Physics', icon: 'atom', slug: 'physics' },
+  { name: 'Chem', icon: 'flask', slug: 'chemistry' },
+  { name: 'Bio', icon: 'dna', slug: 'biology' },
 ]
 
 // Categories for filtering
@@ -96,10 +125,10 @@ const clearSearch = () => {
       <!-- Header -->
       <div class="text-center mb-12">
         <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">
-          Search Resources
+          Search 140,000+ Resources
         </h1>
         <p class="text-xl text-gray-400 max-w-2xl mx-auto">
-          Search through 15,000+ curated STEAM learning resources
+          Search across 47 subjects including Computer Science, Engineering, Arts, and Mathematics
         </p>
       </div>
 
@@ -136,6 +165,22 @@ const clearSearch = () => {
           >
             {{ term }}
           </button>
+        </div>
+
+        <!-- Quick Subject Links -->
+        <div class="mt-6 pt-6 border-t border-space-800">
+          <p class="text-sm text-gray-500 mb-3">Jump to subject:</p>
+          <div class="flex flex-wrap gap-2">
+            <NuxtLink
+              v-for="subject in subjectQuickLinks"
+              :key="subject.slug"
+              :to="`/${subject.slug}`"
+              class="flex items-center gap-1.5 px-3 py-1.5 bg-space-800 hover:bg-space-700 border border-space-700 hover:border-primary-500/30 rounded-lg transition-colors"
+            >
+              <Icon :name="subject.icon" class="w-4 h-4 text-gray-400" />
+              <span class="text-sm text-gray-300">{{ subject.name }}</span>
+            </NuxtLink>
+          </div>
         </div>
       </div>
 
@@ -230,32 +275,88 @@ const clearSearch = () => {
         </div>
       </div>
 
-      <!-- Browse Categories -->
+      <!-- Browse by Category -->
       <div v-if="!searchQuery || results.length === 0" class="mt-16">
         <h2 class="text-2xl font-bold text-white text-center mb-8">
-          Browse by Category
+          Browse 47 Subjects
         </h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
           <Card
-            v-for="category in categories.slice(1)"
-            :key="category.value"
-            :to="`/${category.value}`"
+            to="/science"
             variant="interactive"
             class="text-center p-6"
           >
-            <div class="text-3xl mb-3">
-              {{ 
-                category.value === 'physics' ? '⚛️' :
-                category.value === 'chemistry' ? '🧪' :
-                category.value === 'biology' ? '🧬' :
-                category.value === 'mathematics' ? '📐' :
-                category.value === 'technology' ? '💻' :
-                category.value === 'engineering' ? '⚙️' :
-                category.value === 'arts' ? '🎨' : '📚'
-              }}
-            </div>
-            <h3 class="font-semibold text-white">{{ category.name }}</h3>
+            <Icon name="microscope" class="w-8 h-8 mx-auto mb-3 text-gray-400" />
+            <h3 class="font-semibold text-white">Science</h3>
+            <p class="text-xs text-gray-500 mt-1">7 subjects</p>
           </Card>
+          <Card
+            to="/technology"
+            variant="interactive"
+            class="text-center p-6"
+          >
+            <Icon name="cpu" class="w-8 h-8 mx-auto mb-3 text-gray-400" />
+            <h3 class="font-semibold text-white">Technology</h3>
+            <p class="text-xs text-gray-500 mt-1">10 subjects</p>
+          </Card>
+          <Card
+            to="/engineering"
+            variant="interactive"
+            class="text-center p-6"
+          >
+            <Icon name="cog" class="w-8 h-8 mx-auto mb-3 text-gray-400" />
+            <h3 class="font-semibold text-white">Engineering</h3>
+            <p class="text-xs text-gray-500 mt-1">10 subjects</p>
+          </Card>
+          <Card
+            to="/arts"
+            variant="interactive"
+            class="text-center p-6"
+          >
+            <Icon name="palette" class="w-8 h-8 mx-auto mb-3 text-gray-400" />
+            <h3 class="font-semibold text-white">Arts</h3>
+            <p class="text-xs text-gray-500 mt-1">10 subjects</p>
+          </Card>
+          <Card
+            to="/mathematics"
+            variant="interactive"
+            class="text-center p-6"
+          >
+            <Icon name="triangle" class="w-8 h-8 mx-auto mb-3 text-gray-400" />
+            <h3 class="font-semibold text-white">Mathematics</h3>
+            <p class="text-xs text-gray-500 mt-1">10 subjects</p>
+          </Card>
+        </div>
+
+        <!-- Featured Subjects -->
+        <div class="mt-12">
+          <h3 class="text-lg font-semibold text-white text-center mb-6">Featured Subjects</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            <NuxtLink to="/technology/computer-science" class="p-4 bg-space-800/50 hover:bg-space-800 border border-space-700 hover:border-blue-500/50 rounded-lg transition-all text-center">
+              <Icon name="cpu" class="w-6 h-6 mx-auto mb-2 text-gray-400" />
+              <div class="text-sm text-white">Computer Science</div>
+            </NuxtLink>
+            <NuxtLink to="/technology/artificial-intelligence" class="p-4 bg-space-800/50 hover:bg-space-800 border border-space-700 hover:border-purple-500/50 rounded-lg transition-all text-center">
+              <Icon name="brain" class="w-6 h-6 mx-auto mb-2 text-gray-400" />
+              <div class="text-sm text-white">AI & ML</div>
+            </NuxtLink>
+            <NuxtLink to="/mathematics/calculus" class="p-4 bg-space-800/50 hover:bg-space-800 border border-space-700 hover:border-violet-500/50 rounded-lg transition-all text-center">
+              <Icon name="trendingup" class="w-6 h-6 mx-auto mb-2 text-gray-400" />
+              <div class="text-sm text-white">Calculus</div>
+            </NuxtLink>
+            <NuxtLink to="/mathematics/linear-algebra" class="p-4 bg-space-800/50 hover:bg-space-800 border border-space-700 hover:border-purple-500/50 rounded-lg transition-all text-center">
+              <Icon name="grid3x3" class="w-6 h-6 mx-auto mb-2 text-gray-400" />
+              <div class="text-sm text-white">Linear Algebra</div>
+            </NuxtLink>
+            <NuxtLink to="/engineering/mechanical" class="p-4 bg-space-800/50 hover:bg-space-800 border border-space-700 hover:border-orange-500/50 rounded-lg transition-all text-center">
+              <Icon name="cog" class="w-6 h-6 mx-auto mb-2 text-gray-400" />
+              <div class="text-sm text-white">Mechanical</div>
+            </NuxtLink>
+            <NuxtLink to="/arts/visual-arts" class="p-4 bg-space-800/50 hover:bg-space-800 border border-space-700 hover:border-pink-500/50 rounded-lg transition-all text-center">
+              <Icon name="palette" class="w-6 h-6 mx-auto mb-2 text-gray-400" />
+              <div class="text-sm text-white">Visual Arts</div>
+            </NuxtLink>
+          </div>
         </div>
       </div>
     </Container>
