@@ -42,15 +42,6 @@
             </div>
           </div>
 
-          <!-- Search Button -->
-          <NuxtLink 
-            to="/search"
-            class="flex items-center gap-2 px-3 py-1.5 bg-space-800 hover:bg-space-700 text-gray-300 hover:text-white rounded-lg transition-colors text-sm font-medium"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <span class="hidden lg:inline">Search</span>
-          </NuxtLink>
-
           <NuxtLink 
             to="/about" 
             class="flex items-center gap-2 text-gray-300 hover:text-primary-400 transition-colors text-sm font-medium"
@@ -131,19 +122,9 @@
             <span>Mathematics</span>
           </NuxtLink>
 
-          <div class="border-t border-space-800 my-2"></div>
+           <div class="border-t border-space-800 my-2"></div>
 
-          <!-- Search -->
-          <NuxtLink 
-            to="/search"
-            @click="mobileMenuOpen = false"
-            class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-primary-400 hover:bg-space-800 rounded-lg transition-colors"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-            <span>Search Resources</span>
-          </NuxtLink>
-
-          <NuxtLink 
+           <NuxtLink
             to="/about" 
             @click="mobileMenuOpen = false"
             class="flex items-center gap-3 px-4 py-3 text-gray-300 hover:text-primary-400 hover:bg-space-800 rounded-lg transition-colors"
@@ -208,7 +189,6 @@
             <h3 class="text-white font-semibold">Connect</h3>
             <div class="space-y-2">
               <NuxtLink to="/about" class="block text-gray-400 hover:text-primary-400 transition-colors text-sm">About Us</NuxtLink>
-              <NuxtLink to="/search" class="block text-gray-400 hover:text-primary-400 transition-colors text-sm">Search</NuxtLink>
               <a href="https://github.com/Awesome-Nexus/Awesome-Horizon" target="_blank" rel="noopener noreferrer" class="block text-gray-400 hover:text-primary-400 transition-colors text-sm">GitHub Repository</a>
             </div>
           </div>
@@ -224,7 +204,7 @@
             <span>and dedication to education</span>
           </div>
           <p class="text-gray-500 text-sm">&copy; {{ new Date().getFullYear() }} Awesome Horizon. Empowering learners worldwide.</p>
-          <p class="text-gray-500 text-xs mt-2">Last Published: v3.0.0 (February 3, 2026)</p>
+          <p class="text-gray-500 text-xs mt-2">Last updated: February 6, 2026</p>
         </div>
       </div>
     </footer>
