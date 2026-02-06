@@ -1,15 +1,19 @@
 <script setup lang="ts">
+defineOptions({
+  name: 'AsyncImage'
+})
+
 interface Props {
   src: string
   alt: string
   width?: number
   height?: number
   placeholder?: string
-  lazy?: boolean
+  loading?: 'lazy' | 'eager'
 }
 
 const props = withDefaults(defineProps<Props>(), {
-  lazy: true
+  loading: 'lazy'
 })
 
 const loaded = ref(false)
@@ -52,7 +56,7 @@ const handleError = () => {
       :alt="alt"
       :width="width"
       :height="height"
-      :loading="lazy ? 'lazy' : 'eager'"
+      :loading="loading"
       class="w-full h-full object-cover transition-opacity duration-300"
       :class="{ 'opacity-0': !loaded, 'opacity-100': loaded }"
       @load="handleLoad"

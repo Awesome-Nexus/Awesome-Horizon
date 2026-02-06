@@ -1,2 +1,23 @@
+# Awesome Horizon - Robots.txt
+# https://awesome-horizon.vercel.app
+
 User-Agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://awesome-horizon.vercel.app/sitemap.xml
+
+# Disallow admin/private pages
+Disallow: /api/
+Disallow: /offline
+Disallow: /500
+Disallow: /404
+
+# Crawl-delay (optional - uncomment if needed)
+# Crawl-Delay: 10
+
+# Host
+Host: https://awesome-horizon.vercel.app
+
+# Render-blocking resources hint
+# Googlebot can handle JS and CSS, so no need to disallow

@@ -41,7 +41,7 @@ export const useSEO = (meta: SEOMeta) => {
   const route = useRoute()
   const config = useRuntimeConfig()
   
-  const siteUrl = 'https://awesome-horizon.vercel.app'
+  const siteUrl = config.public.siteUrl || 'https://awesome-horizon.vercel.app'
   const pageUrl = `${siteUrl}${route.path}`
   
   // Default image
@@ -88,13 +88,16 @@ export const useSEO = (meta: SEOMeta) => {
  * Generate JSON-LD structured data for organization
  */
 export const useOrganizationSchema = () => {
+  const config = useRuntimeConfig()
+  const siteUrl = config.public.siteUrl || 'https://awesome-horizon.vercel.app'
+  
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'Awesome Horizon',
     description: 'Curated educational resources for STEAM education',
-    url: 'https://awesome-horizon.vercel.app',
-    logo: 'https://awesome-horizon.vercel.app/logo.png',
+    url: siteUrl,
+    logo: `${siteUrl}/logo.png`,
     sameAs: [
       'https://github.com/Awesome-Nexus/Awesome-Horizon'
     ],
@@ -121,6 +124,9 @@ export const useOrganizationSchema = () => {
  * Generate JSON-LD breadcrumbs
  */
 export const useBreadcrumbSchema = (items: JSONLDBreadcrumb[]) => {
+  const config = useRuntimeConfig()
+  const siteUrl = config.public.siteUrl || 'https://awesome-horizon.vercel.app'
+  
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -128,7 +134,7 @@ export const useBreadcrumbSchema = (items: JSONLDBreadcrumb[]) => {
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.url.startsWith('http') ? item.url : `https://awesome-horizon.vercel.app${item.url}`
+      item: item.url.startsWith('http') ? item.url : `${siteUrl}${item.url}`
     }))
   }
   

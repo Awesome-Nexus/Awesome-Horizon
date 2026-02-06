@@ -1,132 +1,196 @@
 <script setup lang="ts">
-import { Search, AlertTriangle } from 'lucide-vue-next'
+import { Search, AlertTriangle, Home, RefreshCw, ArrowLeft } from 'lucide-vue-next'
 
 interface Props {
   error: {
     statusCode: number
     statusMessage?: string
     message?: string
+    data?: unknown
   }
 }
 
 const props = defineProps<Props>()
 
 const handleError = () => clearError({ redirect: '/' })
+const reloadPage = () => window.location.reload()
 
-// SEO
 useHead({
-  title: `Error ${props.error.statusCode} - Awesome Horizon`
+  title: `${props.error.statusCode} - Error | Awesome Horizon`,
+  meta: [
+    { name: 'robots', content: 'noindex, nofollow' }
+  ]
 })
 
-// Error messages
-const errorMessages: Record<number, { title: string; description: string }> = {
-  404: {
-    title: 'Page Not Found',
-    description: "The page you're looking for doesn't exist or has been moved."
-  },
-  500: {
-    title: 'Server Error',
-    description: 'Something went wrong on our end. Please try again later.'
-  },
-  403: {
-    title: 'Access Denied',
-    description: "You don't have permission to access this page."
+const errorMessages: Record<number, { icon: string; title: string; description: string; action: string }> = {
+  400: {
+    icon: 'AlertTriangle',
+    title: 'Bad Request',
+    description: 'The server could not understand your request. Please check the URL and try again.',
+    action: 'Go Home'
   },
   401: {
-    title: 'Unauthorized',
-    description: 'Please log in to access this page.'
+    icon: 'AlertTriangle',
+    title: 'Authentication Required',
+    description: 'You need to be logged in to access this page.',
+    action: 'Go Home'
+  },
+  403: {
+    icon: 'AlertTriangle',
+    title: 'Access Denied',
+    description: "You don't have permission to access this resource.",
+    action: 'Go Home'
+  },
+  404: {
+    icon: 'Search',
+    title: 'Page Not Found',
+    description: "The page you're looking for doesn't exist or has been moved to a new location.",
+    action: 'Go Home'
+  },
+  408: {
+    icon: 'AlertTriangle',
+    title: 'Request Timeout',
+    description: 'The server took too long to respond. Please try again.',
+    action: 'Try Again'
+  },
+  429: {
+    icon: 'AlertTriangle',
+    title: 'Too Many Requests',
+    description: 'You\'ve made too many requests. Please wait a moment and try again.',
+    action: 'Go Home'
+  },
+  500: {
+    icon: 'AlertTriangle',
+    title: 'Server Error',
+    description: 'Something went wrong on our end. Our team has been notified and is working on it.',
+    action: 'Try Again'
+  },
+  502: {
+    icon: 'AlertTriangle',
+    title: 'Service Unavailable',
+    description: 'The server is temporarily unavailable. Please try again in a few moments.',
+    action: 'Try Again'
+  },
+  503: {
+    icon: 'AlertTriangle',
+    title: 'Maintenance',
+    description: 'The site is currently undergoing maintenance. Please check back soon.',
+    action: 'Go Home'
+  },
+  504: {
+    icon: 'AlertTriangle',
+    title: 'Gateway Timeout',
+    description: 'The server took too long to respond. Please try again.',
+    action: 'Try Again'
   }
 }
 
 const errorInfo = computed(() => {
   return errorMessages[props.error.statusCode] || {
-    title: 'Something Went Wrong',
-    description: props.error.statusMessage || 'An unexpected error occurred.'
+    icon: 'AlertTriangle',
+    title: 'Unexpected Error',
+    description: props.error.statusMessage || 'An unexpected error occurred. Please try again.',
+    action: 'Go Home'
   }
 })
+
+const iconComponent = computed(() => {
+  const icons: Record<string, object> = {
+    Search,
+    AlertTriangle,
+    Home,
+    RefreshCw
+  }
+  return icons[errorInfo.value.icon] || AlertTriangle
+})
+
+const isClientError = computed(() => props.error.statusCode >= 400 && props.error.statusCode < 500)
 </script>
 
 <template>
   <div class="min-h-screen bg-space-950 text-space-100 flex items-center justify-center px-4">
-    <div class="text-center space-y-8 max-w-lg">
-      <!-- Error Icon -->
+    <div class="text-center space-y-8 max-w-2xl w-full">
+      <!-- Animated Error Icon -->
       <div class="flex justify-center">
         <div 
-          class="w-32 h-32 rounded-full flex items-center justify-center"
-          :class="error.statusCode === 404 ? 'bg-amber-500/20' : 'bg-red-500/20'"
+          class="relative w-40 h-40 rounded-full flex items-center justify-center"
+          :class="isClientError ? 'bg-amber-500/10' : 'bg-red-500/10'"
         >
+          <div 
+            class="absolute inset-0 rounded-full animate-ping opacity-20"
+            :class="isClientError ? 'bg-amber-500' : 'bg-red-500'"
+          />
           <component 
-            :is="error.statusCode === 404 ? Search : AlertTriangle" 
-            class="w-16 h-16 text-amber-500"
+            :is="iconComponent" 
+            class="w-20 h-20 relative z-10"
+            :class="isClientError ? 'text-amber-500' : 'text-red-500'"
           />
         </div>
       </div>
 
       <!-- Error Code -->
       <div class="space-y-2">
-        <h1 class="text-8xl font-bold text-white">
+        <h1 class="text-7xl md:text-9xl font-bold text-white tracking-tight">
           {{ error.statusCode }}
         </h1>
-        <h2 class="text-2xl font-semibold text-gray-300">
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-200">
           {{ errorInfo.title }}
         </h2>
       </div>
 
       <!-- Error Message -->
-      <p class="text-gray-400 text-lg">
+      <p class="text-gray-400 text-lg max-w-md mx-auto leading-relaxed">
         {{ errorInfo.description }}
       </p>
 
       <!-- Actions -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-        <Button
+        <NuxtLink
           to="/"
-          variant="primary"
-          class="inline-flex items-center gap-2"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary-500 hover:bg-primary-600 text-white font-semibold rounded-lg transition-all hover:scale-105 focus:ring-2 focus:ring-primary-500 focus:ring-offset-2 focus:ring-offset-space-950"
         >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-          </svg>
+          <Home class="w-5 h-5" />
           Go Home
-        </Button>
+        </NuxtLink>
 
-        <Button
+        <button
           @click="handleError"
-          variant="secondary"
-          class="inline-flex items-center gap-2"
+          class="inline-flex items-center justify-center gap-2 px-6 py-3 bg-space-800 hover:bg-space-700 text-gray-200 font-semibold rounded-lg border border-space-700 transition-all hover:scale-105 focus:ring-2 focus:ring-space-500 focus:ring-offset-2 focus:ring-offset-space-950"
         >
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-          </svg>
-          Try Again
-        </Button>
+          <ArrowLeft class="w-5 h-5" />
+          Back to Safety
+        </button>
       </div>
 
-      <!-- Help Links -->
-      <div class="pt-8 border-t border-space-800">
-        <p class="text-gray-500 text-sm mb-4">
-          Need help? Try these:
+      <!-- Quick Links -->
+      <div class="pt-12 border-t border-space-800">
+        <p class="text-gray-500 text-sm mb-6">
+          Explore our categories:
         </p>
-        <div class="flex flex-wrap justify-center gap-4 text-sm">
-          <NuxtLink to="/science" class="text-primary-400 hover:text-primary-300 transition-colors">
-            Browse Science
-          </NuxtLink>
-          <NuxtLink to="/technology" class="text-primary-400 hover:text-primary-300 transition-colors">
-            Technology
-          </NuxtLink>
-          <NuxtLink to="/mathematics" class="text-primary-400 hover:text-primary-300 transition-colors">
-            Mathematics
-          </NuxtLink>
-          <NuxtLink to="/about" class="text-primary-400 hover:text-primary-300 transition-colors">
-            About Us
+        <div class="flex flex-wrap justify-center gap-3">
+          <NuxtLink 
+            v-for="category in ['Science', 'Technology', 'Engineering', 'Arts', 'Mathematics']" 
+            :key="category"
+            :to="`/${category.toLowerCase()}`"
+            class="px-4 py-2 bg-space-800/50 hover:bg-space-800 text-gray-300 hover:text-white rounded-full text-sm transition-colors"
+          >
+            {{ category }}
           </NuxtLink>
         </div>
       </div>
 
-      <!-- Error Details (dev only) -->
-      <div v-if="error.message && false" class="mt-8 p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
-        <p class="text-red-400 text-sm font-mono break-all">
-          {{ error.message }}
+      <!-- Help Section -->
+      <div class="pt-8">
+        <p class="text-gray-500 text-sm">
+          Still having issues? 
+          <a 
+            href="https://github.com/Awesome-Nexus/Awesome-Horizon/issues" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="text-primary-400 hover:text-primary-300 underline"
+          >
+            Report an issue
+          </a>
         </p>
       </div>
     </div>

@@ -1,12 +1,14 @@
 {
   "name": "Awesome Horizon",
   "short_name": "Awesome Horizon",
-  "description": "Curated educational resources for STEAM education",
+  "description": "Curated educational resources for Science, Technology, Engineering, Arts, and Mathematics",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#a855f7",
   "orientation": "portrait-primary",
+  "scope": "/",
+  "start_url": "/",
   "icons": [
     {
       "src": "/icon-192x192.png",
@@ -19,10 +21,49 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
     }
   ],
-  "categories": ["education", "learning", "steam"],
+  "categories": ["education", "learning", "reference"],
   "lang": "en",
   "dir": "ltr",
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "shortcuts": [
+    {
+      "name": "Science",
+      "short_name": "Science",
+      "description": "Explore science resources",
+      "url": "/science",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Technology",
+      "short_name": "Tech",
+      "description": "Explore technology resources",
+      "url": "/technology",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Mathematics",
+      "short_name": "Math",
+      "description": "Explore mathematics resources",
+      "url": "/mathematics",
+      "icons": [{ "src": "/icon-192x192.png", "sizes": "192x192" }]
+    }
+  ]
 }

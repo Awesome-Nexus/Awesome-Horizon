@@ -1,91 +1,78 @@
 /**
- * Content-related composables for Nuxt Content
+ * Content-related composables for Nuxt Content v3
  */
 
-/**
- * Fetch all subjects from content
- */
 export const useSubjects = async () => {
-  const { data: subjects } = await useAsyncData('subjects', () =>
-    queryCollection('content')
-      .where('category', 'eq', 'subject')
-      .order('title', 'ASC')
-      .all()
-  )
-  
+  const { data: subjects } = await useAsyncData('subjects', async () => {
+    const all = await queryCollection('content').all()
+    return all.filter(item => item.category === 'subject')
+  })
+
   return {
     subjects: computed(() => subjects.value || [])
   }
 }
 
-/**
- * Fetch resources by category
- */
 export const useResourcesByCategory = (category: string) => {
-  const { data: resources } = useLazyAsyncData(
+  const { data: resources, status } = useLazyAsyncData(
     `resources-${category}`,
-    () => queryCollection('content')
-      .where('category', 'eq', category)
-      .order('title', 'ASC')
-      .all(),
+    async () => {
+      const all = await queryCollection('content').all()
+      return all.filter(item => item.category === category)
+    },
     { server: false }
   )
-  
+
   return {
     resources: computed(() => resources.value || []),
-    loading: computed(() => resources.pending)
+    loading: computed(() => status.value === 'pending')
   }
 }
 
-/**
- * Search content
- */
 export const useContentSearch = (query: Ref<string>) => {
   const debouncedQuery = ref(query.value)
-  
-  // Debounce the search query
+
   watch(query, (newValue) => {
     const timeout = setTimeout(() => {
       debouncedQuery.value = newValue
     }, 300)
     return () => clearTimeout(timeout)
   })
-  
-  const { data: results } = useLazyAsyncData(
+
+  const { data: results, status } = useLazyAsyncData(
     () => `search-${debouncedQuery.value}`,
-    () => {
+    async () => {
       if (!debouncedQuery.value || debouncedQuery.value.length < 2) {
-        return Promise.resolve([])
+        return []
       }
-      
-      return queryCollection('content')
-        .where('title', 'LIKE', `%${debouncedQuery.value}%`)
-        .orWhere('description', 'LIKE', `%${debouncedQuery.value}%`)
-        .limit(10)
-        .all()
+
+      const searchLower = debouncedQuery.value.toLowerCase()
+      const all = await queryCollection('content').all()
+      return all.filter(item =>
+        item.title?.toLowerCase().includes(searchLower) ||
+        item.description?.toLowerCase().includes(searchLower)
+      ).slice(0, 10)
     },
     { watch: [debouncedQuery] }
   )
-  
+
   return {
     results: computed(() => results.value || []),
-    loading: computed(() => results.pending)
+    loading: computed(() => status.value === 'pending')
   }
 }
 
-/**
- * Get related content
- */
 export const useRelatedContent = (currentPath: string, category: string, limit = 3) => {
   const { data: related } = useAsyncData(
     `related-${currentPath}`,
-    () => queryCollection('content')
-      .where('category', 'eq', category)
-      .where('path', 'ne', currentPath)
-      .limit(limit)
-      .all()
+    async () => {
+      const all = await queryCollection('content').all()
+      return all
+        .filter(item => item.category === category && item.path !== currentPath)
+        .slice(0, limit)
+    }
   )
-  
+
   return {
     related: computed(() => related.value || [])
   }

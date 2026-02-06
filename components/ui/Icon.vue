@@ -132,11 +132,17 @@ import {
   School,
   DollarSign,
   FileEdit,
+  Paintbrush,
+  Bot,
+  User,
+  Loader,
+  Satellite,
+  Snowflake,
   type LucideIcon
 } from 'lucide-vue-next'
 
 interface Props {
-  name: keyof typeof icons
+  name: string
   size?: number | string
   class?: string
   strokeWidth?: number
@@ -305,16 +311,41 @@ const icons = {
   'dollar-sign': DollarSign,
   barChart3: BarChart3,
   refresh: RefreshCw,
-  'file-edit': FileEdit
+  'file-edit': FileEdit,
+  paintbrush: Paintbrush,
+  'music-2': Music,
+  wind: Wind,
+  'book-open': BookOpen,
+  'book': BookOpen,
+  'graduation-cap': GraduationCap,
+  'graduation': GraduationCap,
+  user: User,
+  bot: Bot,
+  loader: Loader,
+  satellite: Satellite,
+  'trending-up': TrendingUp,
+  snowflake: Snowflake
 }
 
-const iconComponent = computed(() => icons[props.name] || Globe)
+const iconComponent = computed(() => {
+  const iconName = props.name as keyof typeof icons
+  return icons[iconName] || Globe
+})
+
+const normalizedSize = computed(() => {
+  if (typeof props.size === 'number') return props.size
+  if (typeof props.size === 'string') {
+    const parsed = parseInt(props.size, 10)
+    return isNaN(parsed) ? 24 : parsed
+  }
+  return 24
+})
 </script>
 
 <template>
   <component
     :is="iconComponent"
-    :size="size"
+    :size="normalizedSize"
     :stroke-width="strokeWidth"
     :class="class"
   />

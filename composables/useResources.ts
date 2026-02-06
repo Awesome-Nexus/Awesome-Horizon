@@ -2,6 +2,19 @@
  * Composable for managing resource data
  */
 
+export type ResourceLevel = 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels'
+export type ResourceType = 'course' | 'textbook' | 'video' | 'tutorial' | 'platform' | 'simulation' | 'resource'
+
+export interface Resource {
+  title: string
+  description: string
+  url: string
+  category: string
+  subject: string
+  type: ResourceType
+  level?: ResourceLevel
+}
+
 export interface UseResourcesOptions {
   category?: string
   level?: string
@@ -17,18 +30,23 @@ export const useResources = (options: UseResourcesOptions = {}) => {
     const mergedOpts = { ...options, ...opts }
     loading.value = true
     error.value = null
-    
+
     try {
-      // In a real implementation, this would fetch from an API
-      // For now, we'll return mock data
-      const { data } = await useAsyncData('resources', () => 
-        $fetch('/api/resources', {
-          query: mergedOpts
-        })
-      )
-      
+      const { data } = await useAsyncData('resources', async () => {
+        const all = await queryCollection('content').all()
+        return all.map((item: any) => ({
+          title: item.title || '',
+          description: item.description || '',
+          url: item.url || item.path || '#',
+          category: item.category || '',
+          subject: item.subject || '',
+          type: (item.type as ResourceType) || 'resource',
+          level: item.level as ResourceLevel
+        }))
+      })
+
       if (data.value) {
-        resources.value = data.value as Resource[]
+        resources.value = data.value
       }
     } catch (err) {
       error.value = err as Error
@@ -53,53 +71,5 @@ export const useResources = (options: UseResourcesOptions = {}) => {
     fetchResources,
     filterByLevel,
     filterByType
-  }
-}
-
-/**
- * Composable for search functionality
- */
-export const useResourceSearch = () => {
-  const searchQuery = ref('')
-  const searchResults = ref<Resource[]>([])
-  const isSearching = ref(false)
-
-  const search = async (query: string) => {
-    if (!query.trim()) {
-      searchResults.value = []
-      return
-    }
-
-    isSearching.value = true
-    
-    try {
-      // Search implementation would go here
-      // This could use Fuse.js for fuzzy search or a backend API
-      const { data } = await useAsyncData(`search-${query}`, () => 
-        $fetch('/api/search', {
-          query: { q: query }
-        })
-      )
-      
-      if (data.value) {
-        searchResults.value = data.value as Resource[]
-      }
-    } finally {
-      isSearching.value = false
-    }
-  }
-
-  // Debounced search
-  const debouncedSearch = useDebounceFn(search, 300)
-
-  watch(searchQuery, (newQuery) => {
-    debouncedSearch(newQuery)
-  })
-
-  return {
-    searchQuery,
-    searchResults: readonly(searchResults),
-    isSearching: readonly(isSearching),
-    search
   }
 }

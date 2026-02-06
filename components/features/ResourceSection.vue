@@ -70,7 +70,7 @@ const iconColorClasses: Record<string, string> = {
       >
         <Icon
           :name="icon"
-          :class="['w-6 h-6', iconColorClasses[iconColor]]"
+          :class="`w-6 h-6 ${iconColorClasses[iconColor] || ''}`"
         />
       </div>
       <div>

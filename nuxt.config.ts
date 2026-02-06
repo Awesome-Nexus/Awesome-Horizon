@@ -16,14 +16,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt'
   ],
 
-  // Site configuration for SEO
-  site: {
-    url: 'https://awesome-horizon.vercel.app',
-    name: 'Awesome Horizon',
-    description: 'Curated educational resources for Science, Technology, Engineering, Arts, and Mathematics',
-    defaultLocale: 'en'
-  },
-
   content: {
     build: {
       markdown: {
@@ -42,7 +34,6 @@ export default defineNuxtConfig({
         siteName: 'Awesome Horizon'
       },
       titleTemplate: '%s %separator %siteName',
-      defaultTitle: 'Awesome Horizon',
       meta: [
         // Primary Meta Tags
         { name: 'description', content: 'Discover 3,000+ verified physics resources from 195+ countries. Free, high-quality STEAM learning materials for students and educators worldwide.' },
@@ -137,12 +128,7 @@ export default defineNuxtConfig({
             '@context': 'https://schema.org',
             '@type': 'WebSite',
             name: 'Awesome Horizon',
-            url: 'https://awesome-horizon.vercel.app',
-            potentialAction: {
-              '@type': 'SearchAction',
-              target: 'https://awesome-horizon.vercel.app/search?q={search_term_string}',
-              'query-input': 'required name=search_term_string'
-            }
+            url: 'https://awesome-horizon.vercel.app'
           })
         }
       ],
@@ -157,6 +143,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
+    compressPublicAssets: true,
     prerender: {
       routes: [
         '/',
@@ -175,7 +162,7 @@ export default defineNuxtConfig({
       crawlLinks: true
     },
     routeRules: {
-      // Cache static assets
+      '/api/**': { cors: true },
       '/_nuxt/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
       '/fonts/**': { headers: { 'cache-control': 'public, max-age=31536000, immutable' } },
       '/images/**': { headers: { 'cache-control': 'public, max-age=2592000' } }
