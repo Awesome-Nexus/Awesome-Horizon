@@ -55,6 +55,7 @@ Help us fill out this section! Check out the [Contribute](@/contribute/_index.md
 Help us fill out this section! Check out the [Contribute](@/contribute/_index.md) page.
 
 ## Mechanical Engineering
+- [AgentFEM Exercises](https://lab.haoming-luo.com/learn/en.html) - Six university-level finite-element exercises in mechanics and heat conduction, with reference results and analytical checks; running calculations requires a local AgentFEM installation.
 - [Understanding Engineering Drawings](https://youtu.be/ht9GwXQMgpo) - Fundamentals of Engineering Drawings explained by The Efficient Engineer.
 - [Simple Machines](https://www.youtube.com/playlist?list=PLX2gX-ftPVXUjkEEXJoC0mx8mxTlfqpCn) - Playlist of 8 videos on Simple Machines by Dr. George Mehler.
 - [How Levers, Pulleys and Gear Work](https://youtu.be/JnYVz1TSmBQ) - This video explores different methods that can be use to amplify a force, and focuses on three types of machine - levers, pulleys and gears.
